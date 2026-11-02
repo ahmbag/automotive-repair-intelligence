@@ -1,0 +1,1185 @@
+{
+  "datasetId": "llm-quality-test-v2",
+  "sourceDatasetId": "ari-suspension-synthetic-v1",
+  "sourceChecksum": "960588c090ad9092dc98f59721e08ad8df3718d899012ace0b344fb238ff1384",
+  "selectionVersion": "ari-llm-quality-selection-v2-holdout",
+  "dataClassification": "SYNTHETIC",
+  "caseCount": 60,
+  "checksum": "51d92fc6f86c9021cfa4035bc501cb39cb5636c6a09200a16579991b21aa146d",
+  "cases": [
+    {
+      "id": "1ba28842-9a1f-5826-8281-8d3097744c9d",
+      "category": "DOCUMENT_SUPPORTED",
+      "documentType": "REPAIR_COMPLETION_REPORT",
+      "document": "Volkswagen Passat B8, model year 2019, 15822 km. The front right control arm was replaced. The scheduled suspension operation was completed without unusual findings. Actual labor time: 104 minutes.",
+      "expected": {
+        "manufacturer": "Volkswagen",
+        "model": "Passat B8",
+        "modelYear": 2019,
+        "mileageKm": 15822,
+        "repairCode": "CONTROL_ARM_FRONT_RIGHT_REPLACE",
+        "complicationCodes": [],
+        "knownBeforeRepairCodes": [],
+        "actualLaborMinutes": 104
+      },
+      "manuallyReviewed": true
+    },
+    {
+      "id": "1bdb62ad-8951-5d48-a5d1-4b9ef16e0c39",
+      "category": "DOCUMENT_SUPPORTED",
+      "documentType": "REPAIR_COMPLETION_REPORT",
+      "document": "Mercedes-Benz C-Class W205, model year 2020, 59449 km. The rear left control arm was replaced. The scheduled suspension operation was completed without unusual findings. Actual labor time: 127 minutes.",
+      "expected": {
+        "manufacturer": "Mercedes-Benz",
+        "model": "C-Class W205",
+        "modelYear": 2020,
+        "mileageKm": 59449,
+        "repairCode": "CONTROL_ARM_REAR_LEFT_REPLACE",
+        "complicationCodes": [],
+        "knownBeforeRepairCodes": [],
+        "actualLaborMinutes": 127
+      },
+      "manuallyReviewed": false
+    },
+    {
+      "id": "1c657e53-39cb-5550-a90c-ca90ce8850c2",
+      "category": "DOCUMENT_SUPPORTED",
+      "documentType": "REPAIR_COMPLETION_REPORT",
+      "document": "Ford Focus Mk3, model year 2017, 76632 km. The front left control arm was replaced. Visible corrosion was documented during pre-inspection. The scheduled suspension operation was completed without unusual findings. Actual labor time: 104 minutes.",
+      "expected": {
+        "manufacturer": "Ford",
+        "model": "Focus Mk3",
+        "modelYear": 2017,
+        "mileageKm": 76632,
+        "repairCode": "CONTROL_ARM_FRONT_LEFT_REPLACE",
+        "complicationCodes": [],
+        "knownBeforeRepairCodes": [
+          "VISIBLE_CORROSION"
+        ],
+        "actualLaborMinutes": 104
+      },
+      "manuallyReviewed": false
+    },
+    {
+      "id": "1c9a52eb-17d6-598e-a6ec-2566f9356f1f",
+      "category": "DOCUMENT_SUPPORTED",
+      "documentType": "REPAIR_COMPLETION_REPORT",
+      "document": "\u0160koda Octavia III, model year 2018, 50296 km. The rear right control arm was replaced. The scheduled suspension operation was completed without unusual findings. Actual labor time: 123 minutes.",
+      "expected": {
+        "manufacturer": "\u0160koda",
+        "model": "Octavia III",
+        "modelYear": 2018,
+        "mileageKm": 50296,
+        "repairCode": "CONTROL_ARM_REAR_RIGHT_REPLACE",
+        "complicationCodes": [],
+        "knownBeforeRepairCodes": [],
+        "actualLaborMinutes": 123
+      },
+      "manuallyReviewed": false
+    },
+    {
+      "id": "1e19e601-8982-5983-917f-817968f2eadc",
+      "category": "DOCUMENT_SUPPORTED",
+      "documentType": "REPAIR_COMPLETION_REPORT",
+      "document": "Audi A3 8V, model year 2013, 181867 km. Both front control arms were replaced. The control-arm replacement followed the standard procedure and final checks passed. Actual labor time: 190 minutes.",
+      "expected": {
+        "manufacturer": "Audi",
+        "model": "A3 8V",
+        "modelYear": 2013,
+        "mileageKm": 181867,
+        "repairCode": "CONTROL_ARM_FRONT_PAIR_REPLACE",
+        "complicationCodes": [],
+        "knownBeforeRepairCodes": [],
+        "actualLaborMinutes": 190
+      },
+      "manuallyReviewed": false
+    },
+    {
+      "id": "2014cfba-2a26-5c26-b681-c825e7e37dc7",
+      "category": "DOCUMENT_SUPPORTED",
+      "documentType": "REPAIR_COMPLETION_REPORT",
+      "document": "Opel Astra K, model year 2019, 47251 km. Both front control arms were replaced. Repair completed as planned. No additional dismantling work was required. Actual labor time: 178 minutes.",
+      "expected": {
+        "manufacturer": "Opel",
+        "model": "Astra K",
+        "modelYear": 2019,
+        "mileageKm": 47251,
+        "repairCode": "CONTROL_ARM_FRONT_PAIR_REPLACE",
+        "complicationCodes": [],
+        "knownBeforeRepairCodes": [],
+        "actualLaborMinutes": 178
+      },
+      "manuallyReviewed": false
+    },
+    {
+      "id": "201f5b9b-7d4f-54da-b12d-bee555e89745",
+      "category": "DOCUMENT_SUPPORTED",
+      "documentType": "REPAIR_COMPLETION_REPORT",
+      "document": "Volkswagen Golf VII, model year 2016, 52719 km. The front right control arm was replaced. The control-arm replacement followed the standard procedure and final checks passed. Actual labor time: 109 minutes.",
+      "expected": {
+        "manufacturer": "Volkswagen",
+        "model": "Golf VII",
+        "modelYear": 2016,
+        "mileageKm": 52719,
+        "repairCode": "CONTROL_ARM_FRONT_RIGHT_REPLACE",
+        "complicationCodes": [],
+        "knownBeforeRepairCodes": [],
+        "actualLaborMinutes": 109
+      },
+      "manuallyReviewed": true
+    },
+    {
+      "id": "20ee8eda-265d-5c93-8edd-963e2745dae4",
+      "category": "DOCUMENT_SUPPORTED",
+      "documentType": "REPAIR_COMPLETION_REPORT",
+      "document": "\u0160koda Octavia III, model year 2017, 185294 km. The front right control arm was replaced. Visible corrosion was documented during pre-inspection. The control-arm replacement followed the standard procedure and final checks passed. Actual labor time: 118 minutes.",
+      "expected": {
+        "manufacturer": "\u0160koda",
+        "model": "Octavia III",
+        "modelYear": 2017,
+        "mileageKm": 185294,
+        "repairCode": "CONTROL_ARM_FRONT_RIGHT_REPLACE",
+        "complicationCodes": [],
+        "knownBeforeRepairCodes": [
+          "VISIBLE_CORROSION"
+        ],
+        "actualLaborMinutes": 118
+      },
+      "manuallyReviewed": false
+    },
+    {
+      "id": "211c5f88-9224-5350-b1b5-d98f920d6d4a",
+      "category": "DOCUMENT_SUPPORTED",
+      "documentType": "REPAIR_COMPLETION_REPORT",
+      "document": "Volkswagen Passat B8, model year 2014, 156616 km. The rear right control arm was replaced. Visible corrosion was documented during pre-inspection. The control-arm replacement followed the standard procedure and final checks passed. Actual labor time: 114 minutes.",
+      "expected": {
+        "manufacturer": "Volkswagen",
+        "model": "Passat B8",
+        "modelYear": 2014,
+        "mileageKm": 156616,
+        "repairCode": "CONTROL_ARM_REAR_RIGHT_REPLACE",
+        "complicationCodes": [],
+        "knownBeforeRepairCodes": [
+          "VISIBLE_CORROSION"
+        ],
+        "actualLaborMinutes": 114
+      },
+      "manuallyReviewed": false
+    },
+    {
+      "id": "22034c0c-5749-50f7-a3a0-337d3cadd7e5",
+      "category": "DOCUMENT_SUPPORTED",
+      "documentType": "REPAIR_COMPLETION_REPORT",
+      "document": "Mercedes-Benz C-Class W205, model year 2015, 74451 km. The rear right control arm was replaced. The control-arm replacement followed the standard procedure and final checks passed. Actual labor time: 100 minutes.",
+      "expected": {
+        "manufacturer": "Mercedes-Benz",
+        "model": "C-Class W205",
+        "modelYear": 2015,
+        "mileageKm": 74451,
+        "repairCode": "CONTROL_ARM_REAR_RIGHT_REPLACE",
+        "complicationCodes": [],
+        "knownBeforeRepairCodes": [],
+        "actualLaborMinutes": 100
+      },
+      "manuallyReviewed": false
+    },
+    {
+      "id": "2273f333-343e-507b-b1f5-cb07eb14cb9e",
+      "category": "DOCUMENT_SUPPORTED",
+      "documentType": "REPAIR_COMPLETION_REPORT",
+      "document": "Mercedes-Benz C-Class W205, model year 2017, 125696 km. The front right control arm was replaced. Visible prior damage was documented during pre-inspection. The control-arm replacement followed the standard procedure and final checks passed. Actual labor time: 100 minutes.",
+      "expected": {
+        "manufacturer": "Mercedes-Benz",
+        "model": "C-Class W205",
+        "modelYear": 2017,
+        "mileageKm": 125696,
+        "repairCode": "CONTROL_ARM_FRONT_RIGHT_REPLACE",
+        "complicationCodes": [],
+        "knownBeforeRepairCodes": [
+          "VISIBLE_PRIOR_DAMAGE"
+        ],
+        "actualLaborMinutes": 100
+      },
+      "manuallyReviewed": false
+    },
+    {
+      "id": "22d4282c-3035-5b0e-9643-ca20bbb0d89f",
+      "category": "DOCUMENT_SUPPORTED",
+      "documentType": "REPAIR_COMPLETION_REPORT",
+      "document": "Opel Astra K, model year 2019, 96794 km. The rear right control arm was replaced. The scheduled suspension operation was completed without unusual findings. Actual labor time: 130 minutes.",
+      "expected": {
+        "manufacturer": "Opel",
+        "model": "Astra K",
+        "modelYear": 2019,
+        "mileageKm": 96794,
+        "repairCode": "CONTROL_ARM_REAR_RIGHT_REPLACE",
+        "complicationCodes": [],
+        "knownBeforeRepairCodes": [],
+        "actualLaborMinutes": 130
+      },
+      "manuallyReviewed": false
+    },
+    {
+      "id": "23256c8e-ff98-5222-a3f9-78970a4b8a25",
+      "category": "DOCUMENT_SUPPORTED",
+      "documentType": "REPAIR_COMPLETION_REPORT",
+      "document": "\u0160koda Octavia III, model year 2015, 109642 km. The rear left control arm was replaced. Visible corrosion was documented during pre-inspection. Repair completed as planned. No additional dismantling work was required. Actual labor time: 119 minutes.",
+      "expected": {
+        "manufacturer": "\u0160koda",
+        "model": "Octavia III",
+        "modelYear": 2015,
+        "mileageKm": 109642,
+        "repairCode": "CONTROL_ARM_REAR_LEFT_REPLACE",
+        "complicationCodes": [],
+        "knownBeforeRepairCodes": [
+          "VISIBLE_CORROSION"
+        ],
+        "actualLaborMinutes": 119
+      },
+      "manuallyReviewed": true
+    },
+    {
+      "id": "239de577-a60b-5cbb-b637-274e1b31c91f",
+      "category": "DOCUMENT_SUPPORTED",
+      "documentType": "REPAIR_COMPLETION_REPORT",
+      "document": "Volkswagen Golf VII, model year 2017, 95325 km. The rear right control arm was replaced. Visible corrosion was documented during pre-inspection. The control-arm replacement followed the standard procedure and final checks passed. Actual labor time: 101 minutes.",
+      "expected": {
+        "manufacturer": "Volkswagen",
+        "model": "Golf VII",
+        "modelYear": 2017,
+        "mileageKm": 95325,
+        "repairCode": "CONTROL_ARM_REAR_RIGHT_REPLACE",
+        "complicationCodes": [],
+        "knownBeforeRepairCodes": [
+          "VISIBLE_CORROSION"
+        ],
+        "actualLaborMinutes": 101
+      },
+      "manuallyReviewed": false
+    },
+    {
+      "id": "247d87af-01cb-50a7-a26c-5d923a1581f8",
+      "category": "DOCUMENT_SUPPORTED",
+      "documentType": "REPAIR_COMPLETION_REPORT",
+      "document": "Volkswagen Passat B8, model year 2018, 62065 km. Both front control arms were replaced. The scheduled suspension operation was completed without unusual findings. Actual labor time: 163 minutes.",
+      "expected": {
+        "manufacturer": "Volkswagen",
+        "model": "Passat B8",
+        "modelYear": 2018,
+        "mileageKm": 62065,
+        "repairCode": "CONTROL_ARM_FRONT_PAIR_REPLACE",
+        "complicationCodes": [],
+        "knownBeforeRepairCodes": [],
+        "actualLaborMinutes": 163
+      },
+      "manuallyReviewed": false
+    },
+    {
+      "id": "25519449-3a9f-5e83-84a0-dfd639c94b8a",
+      "category": "DOCUMENT_SUPPORTED",
+      "documentType": "REPAIR_COMPLETION_REPORT",
+      "document": "Volkswagen Passat B8, model year 2020, 50983 km. Both front control arms were replaced. The control-arm replacement followed the standard procedure and final checks passed. Actual labor time: 178 minutes.",
+      "expected": {
+        "manufacturer": "Volkswagen",
+        "model": "Passat B8",
+        "modelYear": 2020,
+        "mileageKm": 50983,
+        "repairCode": "CONTROL_ARM_FRONT_PAIR_REPLACE",
+        "complicationCodes": [],
+        "knownBeforeRepairCodes": [],
+        "actualLaborMinutes": 178
+      },
+      "manuallyReviewed": false
+    },
+    {
+      "id": "26ec4e18-5281-51a9-8b21-6fd6a342b0a3",
+      "category": "DOCUMENT_SUPPORTED",
+      "documentType": "REPAIR_COMPLETION_REPORT",
+      "document": "Volkswagen Passat B8, model year 2023, 46019 km. The front right control arm was replaced. The control-arm replacement followed the standard procedure and final checks passed. Actual labor time: 102 minutes.",
+      "expected": {
+        "manufacturer": "Volkswagen",
+        "model": "Passat B8",
+        "modelYear": 2023,
+        "mileageKm": 46019,
+        "repairCode": "CONTROL_ARM_FRONT_RIGHT_REPLACE",
+        "complicationCodes": [],
+        "knownBeforeRepairCodes": [],
+        "actualLaborMinutes": 102
+      },
+      "manuallyReviewed": false
+    },
+    {
+      "id": "26ed8e20-57e2-5c34-8fe5-2b32708984a8",
+      "category": "DOCUMENT_SUPPORTED",
+      "documentType": "REPAIR_COMPLETION_REPORT",
+      "document": "Volkswagen Golf VII, model year 2017, 93851 km. The rear right control arm was replaced. The scheduled suspension operation was completed without unusual findings. Actual labor time: 126 minutes.",
+      "expected": {
+        "manufacturer": "Volkswagen",
+        "model": "Golf VII",
+        "modelYear": 2017,
+        "mileageKm": 93851,
+        "repairCode": "CONTROL_ARM_REAR_RIGHT_REPLACE",
+        "complicationCodes": [],
+        "knownBeforeRepairCodes": [],
+        "actualLaborMinutes": 126
+      },
+      "manuallyReviewed": false
+    },
+    {
+      "id": "278a108d-4e41-5fd9-b5d3-e9f6e48f0572",
+      "category": "DOCUMENT_SUPPORTED",
+      "documentType": "REPAIR_COMPLETION_REPORT",
+      "document": "Volkswagen Golf VII, model year 2018, 74672 km. The rear right control arm was replaced. The control-arm replacement followed the standard procedure and final checks passed. Actual labor time: 125 minutes.",
+      "expected": {
+        "manufacturer": "Volkswagen",
+        "model": "Golf VII",
+        "modelYear": 2018,
+        "mileageKm": 74672,
+        "repairCode": "CONTROL_ARM_REAR_RIGHT_REPLACE",
+        "complicationCodes": [],
+        "knownBeforeRepairCodes": [],
+        "actualLaborMinutes": 125
+      },
+      "manuallyReviewed": true
+    },
+    {
+      "id": "27f60b55-a1fa-5f86-b4c2-66d0315d50e8",
+      "category": "DOCUMENT_SUPPORTED",
+      "documentType": "REPAIR_COMPLETION_REPORT",
+      "document": "\u0160koda Octavia III, model year 2012, 178837 km. The rear right control arm was replaced. Repair completed as planned. No additional dismantling work was required. Actual labor time: 135 minutes.",
+      "expected": {
+        "manufacturer": "\u0160koda",
+        "model": "Octavia III",
+        "modelYear": 2012,
+        "mileageKm": 178837,
+        "repairCode": "CONTROL_ARM_REAR_RIGHT_REPLACE",
+        "complicationCodes": [],
+        "knownBeforeRepairCodes": [],
+        "actualLaborMinutes": 135
+      },
+      "manuallyReviewed": false
+    },
+    {
+      "id": "34da8f77-0360-5a40-81f0-6bfe8bc17c20",
+      "category": "DOCUMENT_SUPPORTED",
+      "documentType": "REPAIR_COMPLETION_REPORT",
+      "document": "\u0160koda Octavia III, model year 2012, 157647 km. The front left control arm was replaced. Visible corrosion was documented during pre-inspection. Visible prior damage was documented during pre-inspection. Additional work was carried out around the worn bushing mounting area. Actual labor time: 146 minutes.",
+      "expected": {
+        "manufacturer": "\u0160koda",
+        "model": "Octavia III",
+        "modelYear": 2012,
+        "mileageKm": 157647,
+        "repairCode": "CONTROL_ARM_FRONT_LEFT_REPLACE",
+        "complicationCodes": [
+          "DAMAGED_BUSHING_SEAT"
+        ],
+        "knownBeforeRepairCodes": [
+          "VISIBLE_CORROSION",
+          "VISIBLE_PRIOR_DAMAGE"
+        ],
+        "actualLaborMinutes": 146
+      },
+      "manuallyReviewed": false
+    },
+    {
+      "id": "35e860f1-63ff-5cd0-87a3-2c4ecc2f224a",
+      "category": "DOCUMENT_SUPPORTED",
+      "documentType": "REPAIR_COMPLETION_REPORT",
+      "document": "BMW 3 Series F30, model year 2019, 74447 km. The rear left control arm was replaced. The mounting seat needed attention before the new component could be installed. Actual labor time: 147 minutes.",
+      "expected": {
+        "manufacturer": "BMW",
+        "model": "3 Series F30",
+        "modelYear": 2019,
+        "mileageKm": 74447,
+        "repairCode": "CONTROL_ARM_REAR_LEFT_REPLACE",
+        "complicationCodes": [
+          "DAMAGED_BUSHING_SEAT"
+        ],
+        "knownBeforeRepairCodes": [],
+        "actualLaborMinutes": 147
+      },
+      "manuallyReviewed": false
+    },
+    {
+      "id": "3693b25f-071b-5da9-8e60-12a8fdaec4b9",
+      "category": "DOCUMENT_SUPPORTED",
+      "documentType": "REPAIR_COMPLETION_REPORT",
+      "document": "Mercedes-Benz C-Class W205, model year 2020, 39382 km. The rear left control arm was replaced. One or more fasteners resisted removal and needed careful release. Actual labor time: 166 minutes.",
+      "expected": {
+        "manufacturer": "Mercedes-Benz",
+        "model": "C-Class W205",
+        "modelYear": 2020,
+        "mileageKm": 39382,
+        "repairCode": "CONTROL_ARM_REAR_LEFT_REPLACE",
+        "complicationCodes": [
+          "SEIZED_FASTENER"
+        ],
+        "knownBeforeRepairCodes": [],
+        "actualLaborMinutes": 166
+      },
+      "manuallyReviewed": false
+    },
+    {
+      "id": "383de7f7-7c18-5be0-a255-3def06f60989",
+      "category": "DOCUMENT_SUPPORTED",
+      "documentType": "REPAIR_COMPLETION_REPORT",
+      "document": "Volkswagen Golf VII, model year 2016, 46135 km. The front right control arm was replaced. Visible corrosion was documented during pre-inspection. Dismantling took longer because mounting hardware was seized. Actual labor time: 145 minutes.",
+      "expected": {
+        "manufacturer": "Volkswagen",
+        "model": "Golf VII",
+        "modelYear": 2016,
+        "mileageKm": 46135,
+        "repairCode": "CONTROL_ARM_FRONT_RIGHT_REPLACE",
+        "complicationCodes": [
+          "SEIZED_FASTENER"
+        ],
+        "knownBeforeRepairCodes": [
+          "VISIBLE_CORROSION"
+        ],
+        "actualLaborMinutes": 145
+      },
+      "manuallyReviewed": false
+    },
+    {
+      "id": "387d6a89-2cb9-5490-8d3c-6462c722526c",
+      "category": "DOCUMENT_SUPPORTED",
+      "documentType": "REPAIR_COMPLETION_REPORT",
+      "document": "Mercedes-Benz C-Class W205, model year 2016, 118408 km. The front right control arm was replaced. Corroded mounting hardware required additional extraction work. Actual labor time: 142 minutes.",
+      "expected": {
+        "manufacturer": "Mercedes-Benz",
+        "model": "C-Class W205",
+        "modelYear": 2016,
+        "mileageKm": 118408,
+        "repairCode": "CONTROL_ARM_FRONT_RIGHT_REPLACE",
+        "complicationCodes": [
+          "SEIZED_FASTENER"
+        ],
+        "knownBeforeRepairCodes": [],
+        "actualLaborMinutes": 142
+      },
+      "manuallyReviewed": true
+    },
+    {
+      "id": "38933062-be32-5970-9694-6e5226b150d0",
+      "category": "DOCUMENT_SUPPORTED",
+      "documentType": "REPAIR_COMPLETION_REPORT",
+      "document": "\u0160koda Octavia III, model year 2016, 86168 km. The front left control arm was replaced. Final alignment required an additional correction. Actual labor time: 142 minutes.",
+      "expected": {
+        "manufacturer": "\u0160koda",
+        "model": "Octavia III",
+        "modelYear": 2016,
+        "mileageKm": 86168,
+        "repairCode": "CONTROL_ARM_FRONT_LEFT_REPLACE",
+        "complicationCodes": [
+          "ALIGNMENT_CORRECTION"
+        ],
+        "knownBeforeRepairCodes": [],
+        "actualLaborMinutes": 142
+      },
+      "manuallyReviewed": false
+    },
+    {
+      "id": "392b1fb9-24d6-556a-be19-000a27949da8",
+      "category": "DOCUMENT_SUPPORTED",
+      "documentType": "REPAIR_COMPLETION_REPORT",
+      "document": "Ford Focus Mk3, model year 2013, 219008 km. The front right control arm was replaced. Visible corrosion was documented during pre-inspection. Visible prior damage was documented during pre-inspection. Corroded mounting hardware required additional extraction work. Actual labor time: 115 minutes.",
+      "expected": {
+        "manufacturer": "Ford",
+        "model": "Focus Mk3",
+        "modelYear": 2013,
+        "mileageKm": 219008,
+        "repairCode": "CONTROL_ARM_FRONT_RIGHT_REPLACE",
+        "complicationCodes": [
+          "SEIZED_FASTENER"
+        ],
+        "knownBeforeRepairCodes": [
+          "VISIBLE_CORROSION",
+          "VISIBLE_PRIOR_DAMAGE"
+        ],
+        "actualLaborMinutes": 115
+      },
+      "manuallyReviewed": false
+    },
+    {
+      "id": "3987974e-f0b5-517b-be8b-b925c90d6daf",
+      "category": "DOCUMENT_SUPPORTED",
+      "documentType": "REPAIR_COMPLETION_REPORT",
+      "document": "Volkswagen Passat B8, model year 2014, 197482 km. The rear left control arm was replaced. Corroded mounting hardware required additional extraction work. Actual labor time: 167 minutes.",
+      "expected": {
+        "manufacturer": "Volkswagen",
+        "model": "Passat B8",
+        "modelYear": 2014,
+        "mileageKm": 197482,
+        "repairCode": "CONTROL_ARM_REAR_LEFT_REPLACE",
+        "complicationCodes": [
+          "SEIZED_FASTENER"
+        ],
+        "knownBeforeRepairCodes": [],
+        "actualLaborMinutes": 167
+      },
+      "manuallyReviewed": false
+    },
+    {
+      "id": "3a007ad1-a29d-5781-a2c5-e7f623d88eff",
+      "category": "DOCUMENT_SUPPORTED",
+      "documentType": "REPAIR_COMPLETION_REPORT",
+      "document": "Opel Astra K, model year 2020, 96024 km. The front right control arm was replaced. The bushing seat required cleaning and corrective preparation. Actual labor time: 117 minutes.",
+      "expected": {
+        "manufacturer": "Opel",
+        "model": "Astra K",
+        "modelYear": 2020,
+        "mileageKm": 96024,
+        "repairCode": "CONTROL_ARM_FRONT_RIGHT_REPLACE",
+        "complicationCodes": [
+          "DAMAGED_BUSHING_SEAT"
+        ],
+        "knownBeforeRepairCodes": [],
+        "actualLaborMinutes": 117
+      },
+      "manuallyReviewed": false
+    },
+    {
+      "id": "3a36deb7-6db0-525c-92d2-5eda22a1a144",
+      "category": "DOCUMENT_SUPPORTED",
+      "documentType": "REPAIR_COMPLETION_REPORT",
+      "document": "Volkswagen Golf VII, model year 2015, 146813 km. The front right control arm was replaced. Visible corrosion was documented during pre-inspection. Visible prior damage was documented during pre-inspection. Corroded mounting hardware required additional extraction work. Actual labor time: 119 minutes.",
+      "expected": {
+        "manufacturer": "Volkswagen",
+        "model": "Golf VII",
+        "modelYear": 2015,
+        "mileageKm": 146813,
+        "repairCode": "CONTROL_ARM_FRONT_RIGHT_REPLACE",
+        "complicationCodes": [
+          "SEIZED_FASTENER"
+        ],
+        "knownBeforeRepairCodes": [
+          "VISIBLE_CORROSION",
+          "VISIBLE_PRIOR_DAMAGE"
+        ],
+        "actualLaborMinutes": 119
+      },
+      "manuallyReviewed": false
+    },
+    {
+      "id": "3a72bf99-d960-5de3-b557-408e822c360c",
+      "category": "DOCUMENT_SUPPORTED",
+      "documentType": "REPAIR_COMPLETION_REPORT",
+      "document": "BMW 3 Series F30, model year 2013, 125503 km. The front left control arm was replaced. Visible corrosion was documented during pre-inspection. Visible prior damage was documented during pre-inspection. One or more fasteners resisted removal and needed careful release. Actual labor time: 116 minutes.",
+      "expected": {
+        "manufacturer": "BMW",
+        "model": "3 Series F30",
+        "modelYear": 2013,
+        "mileageKm": 125503,
+        "repairCode": "CONTROL_ARM_FRONT_LEFT_REPLACE",
+        "complicationCodes": [
+          "SEIZED_FASTENER"
+        ],
+        "knownBeforeRepairCodes": [
+          "VISIBLE_CORROSION",
+          "VISIBLE_PRIOR_DAMAGE"
+        ],
+        "actualLaborMinutes": 116
+      },
+      "manuallyReviewed": true
+    },
+    {
+      "id": "3ae3b1dc-1a60-5318-93bc-21604c78469e",
+      "category": "DOCUMENT_SUPPORTED",
+      "documentType": "REPAIR_COMPLETION_REPORT",
+      "document": "Opel Astra K, model year 2016, 82853 km. The front left control arm was replaced. Dismantling took longer because mounting hardware was seized. Actual labor time: 147 minutes.",
+      "expected": {
+        "manufacturer": "Opel",
+        "model": "Astra K",
+        "modelYear": 2016,
+        "mileageKm": 82853,
+        "repairCode": "CONTROL_ARM_FRONT_LEFT_REPLACE",
+        "complicationCodes": [
+          "SEIZED_FASTENER"
+        ],
+        "knownBeforeRepairCodes": [],
+        "actualLaborMinutes": 147
+      },
+      "manuallyReviewed": false
+    },
+    {
+      "id": "3b028d64-4d23-5b8e-ad2a-e9c2a308eaa2",
+      "category": "DOCUMENT_SUPPORTED",
+      "documentType": "REPAIR_COMPLETION_REPORT",
+      "document": "Mercedes-Benz C-Class W205, model year 2019, 54853 km. The front left control arm was replaced. Additional work was carried out around the worn bushing mounting area. Actual labor time: 123 minutes.",
+      "expected": {
+        "manufacturer": "Mercedes-Benz",
+        "model": "C-Class W205",
+        "modelYear": 2019,
+        "mileageKm": 54853,
+        "repairCode": "CONTROL_ARM_FRONT_LEFT_REPLACE",
+        "complicationCodes": [
+          "DAMAGED_BUSHING_SEAT"
+        ],
+        "knownBeforeRepairCodes": [],
+        "actualLaborMinutes": 123
+      },
+      "manuallyReviewed": false
+    },
+    {
+      "id": "3c21e6ee-b49f-5d9c-a9a2-0e0ab755d745",
+      "category": "DOCUMENT_SUPPORTED",
+      "documentType": "REPAIR_COMPLETION_REPORT",
+      "document": "Volkswagen Golf VII, model year 2013, 163688 km. The rear right control arm was replaced. Visible corrosion was documented during pre-inspection. One or more fasteners resisted removal and needed careful release. Actual labor time: 155 minutes.",
+      "expected": {
+        "manufacturer": "Volkswagen",
+        "model": "Golf VII",
+        "modelYear": 2013,
+        "mileageKm": 163688,
+        "repairCode": "CONTROL_ARM_REAR_RIGHT_REPLACE",
+        "complicationCodes": [
+          "SEIZED_FASTENER"
+        ],
+        "knownBeforeRepairCodes": [
+          "VISIBLE_CORROSION"
+        ],
+        "actualLaborMinutes": 155
+      },
+      "manuallyReviewed": false
+    },
+    {
+      "id": "3c3b0efd-e313-5d11-8d24-4017e21079a8",
+      "category": "DOCUMENT_SUPPORTED",
+      "documentType": "REPAIR_COMPLETION_REPORT",
+      "document": "Mercedes-Benz C-Class W205, model year 2019, 57999 km. Both front control arms were replaced. The mounting seat needed attention before the new component could be installed. Actual labor time: 204 minutes.",
+      "expected": {
+        "manufacturer": "Mercedes-Benz",
+        "model": "C-Class W205",
+        "modelYear": 2019,
+        "mileageKm": 57999,
+        "repairCode": "CONTROL_ARM_FRONT_PAIR_REPLACE",
+        "complicationCodes": [
+          "DAMAGED_BUSHING_SEAT"
+        ],
+        "knownBeforeRepairCodes": [],
+        "actualLaborMinutes": 204
+      },
+      "manuallyReviewed": false
+    },
+    {
+      "id": "3d4ac22a-b304-5d05-9d24-e7d3c27ca4f5",
+      "category": "DOCUMENT_SUPPORTED",
+      "documentType": "REPAIR_COMPLETION_REPORT",
+      "document": "Mercedes-Benz C-Class W205, model year 2015, 149425 km. The front left control arm was replaced. Visible corrosion was documented during pre-inspection. One or more fasteners resisted removal and needed careful release. Actual labor time: 155 minutes.",
+      "expected": {
+        "manufacturer": "Mercedes-Benz",
+        "model": "C-Class W205",
+        "modelYear": 2015,
+        "mileageKm": 149425,
+        "repairCode": "CONTROL_ARM_FRONT_LEFT_REPLACE",
+        "complicationCodes": [
+          "SEIZED_FASTENER"
+        ],
+        "knownBeforeRepairCodes": [
+          "VISIBLE_CORROSION"
+        ],
+        "actualLaborMinutes": 155
+      },
+      "manuallyReviewed": false
+    },
+    {
+      "id": "3d9e0290-164f-5972-82dc-35381ea43904",
+      "category": "DOCUMENT_SUPPORTED",
+      "documentType": "REPAIR_COMPLETION_REPORT",
+      "document": "Opel Astra K, model year 2021, 43802 km. The rear right control arm was replaced. Final alignment required an additional correction. Actual labor time: 146 minutes.",
+      "expected": {
+        "manufacturer": "Opel",
+        "model": "Astra K",
+        "modelYear": 2021,
+        "mileageKm": 43802,
+        "repairCode": "CONTROL_ARM_REAR_RIGHT_REPLACE",
+        "complicationCodes": [
+          "ALIGNMENT_CORRECTION"
+        ],
+        "knownBeforeRepairCodes": [],
+        "actualLaborMinutes": 146
+      },
+      "manuallyReviewed": true
+    },
+    {
+      "id": "3e5513a4-835a-532d-8d37-4992c1c6718d",
+      "category": "DOCUMENT_SUPPORTED",
+      "documentType": "REPAIR_COMPLETION_REPORT",
+      "document": "Audi A3 8V, model year 2012, 171631 km. The rear left control arm was replaced. A follow-up adjustment was made during the geometry check. Actual labor time: 148 minutes.",
+      "expected": {
+        "manufacturer": "Audi",
+        "model": "A3 8V",
+        "modelYear": 2012,
+        "mileageKm": 171631,
+        "repairCode": "CONTROL_ARM_REAR_LEFT_REPLACE",
+        "complicationCodes": [
+          "ALIGNMENT_CORRECTION"
+        ],
+        "knownBeforeRepairCodes": [],
+        "actualLaborMinutes": 148
+      },
+      "manuallyReviewed": false
+    },
+    {
+      "id": "3f6a5a93-9f86-5d0e-a1ad-6931abf56b0f",
+      "category": "DOCUMENT_SUPPORTED",
+      "documentType": "REPAIR_COMPLETION_REPORT",
+      "document": "BMW 3 Series F30, model year 2017, 107503 km. Both front control arms were replaced. Visible corrosion was documented during pre-inspection. Final alignment required an additional correction. Actual labor time: 223 minutes.",
+      "expected": {
+        "manufacturer": "BMW",
+        "model": "3 Series F30",
+        "modelYear": 2017,
+        "mileageKm": 107503,
+        "repairCode": "CONTROL_ARM_FRONT_PAIR_REPLACE",
+        "complicationCodes": [
+          "ALIGNMENT_CORRECTION"
+        ],
+        "knownBeforeRepairCodes": [
+          "VISIBLE_CORROSION"
+        ],
+        "actualLaborMinutes": 223
+      },
+      "manuallyReviewed": false
+    },
+    {
+      "id": "3f71b81a-436c-5f5f-afd7-8f1947fceb5a",
+      "category": "DOCUMENT_SUPPORTED",
+      "documentType": "REPAIR_COMPLETION_REPORT",
+      "document": "Volkswagen Golf VII, model year 2013, 243188 km. The rear right control arm was replaced. Visible prior damage was documented during pre-inspection. Corroded mounting hardware required additional extraction work. Actual labor time: 143 minutes.",
+      "expected": {
+        "manufacturer": "Volkswagen",
+        "model": "Golf VII",
+        "modelYear": 2013,
+        "mileageKm": 243188,
+        "repairCode": "CONTROL_ARM_REAR_RIGHT_REPLACE",
+        "complicationCodes": [
+          "SEIZED_FASTENER"
+        ],
+        "knownBeforeRepairCodes": [
+          "VISIBLE_PRIOR_DAMAGE"
+        ],
+        "actualLaborMinutes": 143
+      },
+      "manuallyReviewed": false
+    },
+    {
+      "id": "3f829501-796b-5c2c-a737-7c59e499a434",
+      "category": "DOCUMENT_SUPPORTED",
+      "documentType": "REPAIR_COMPLETION_REPORT",
+      "document": "Volkswagen Passat B8, model year 2014, 223500 km. The front right control arm was replaced. Visible corrosion was documented during pre-inspection. One or more fasteners resisted removal and needed careful release. Actual labor time: 135 minutes.",
+      "expected": {
+        "manufacturer": "Volkswagen",
+        "model": "Passat B8",
+        "modelYear": 2014,
+        "mileageKm": 223500,
+        "repairCode": "CONTROL_ARM_FRONT_RIGHT_REPLACE",
+        "complicationCodes": [
+          "SEIZED_FASTENER"
+        ],
+        "knownBeforeRepairCodes": [
+          "VISIBLE_CORROSION"
+        ],
+        "actualLaborMinutes": 135
+      },
+      "manuallyReviewed": false
+    },
+    {
+      "id": "40d885e9-0a1e-5d09-a5d9-1b1dbef5edaf",
+      "category": "DOCUMENT_SUPPORTED",
+      "documentType": "REPAIR_COMPLETION_REPORT",
+      "document": "BMW 3 Series F30, model year 2014, 233949 km. The rear left control arm was replaced. Visible corrosion was documented during pre-inspection. Corroded mounting hardware required additional extraction work. Actual labor time: 189 minutes.",
+      "expected": {
+        "manufacturer": "BMW",
+        "model": "3 Series F30",
+        "modelYear": 2014,
+        "mileageKm": 233949,
+        "repairCode": "CONTROL_ARM_REAR_LEFT_REPLACE",
+        "complicationCodes": [
+          "SEIZED_FASTENER"
+        ],
+        "knownBeforeRepairCodes": [
+          "VISIBLE_CORROSION"
+        ],
+        "actualLaborMinutes": 189
+      },
+      "manuallyReviewed": false
+    },
+    {
+      "id": "4101fbef-e8c5-5672-b6c2-c1126d1bac0c",
+      "category": "DOCUMENT_SUPPORTED",
+      "documentType": "REPAIR_COMPLETION_REPORT",
+      "document": "Volkswagen Passat B8, model year 2017, 77342 km. The rear right control arm was replaced. Dismantling took longer because mounting hardware was seized. Actual labor time: 190 minutes.",
+      "expected": {
+        "manufacturer": "Volkswagen",
+        "model": "Passat B8",
+        "modelYear": 2017,
+        "mileageKm": 77342,
+        "repairCode": "CONTROL_ARM_REAR_RIGHT_REPLACE",
+        "complicationCodes": [
+          "SEIZED_FASTENER"
+        ],
+        "knownBeforeRepairCodes": [],
+        "actualLaborMinutes": 190
+      },
+      "manuallyReviewed": true
+    },
+    {
+      "id": "410245e4-209d-578d-8931-b108d2183408",
+      "category": "DOCUMENT_SUPPORTED",
+      "documentType": "REPAIR_COMPLETION_REPORT",
+      "document": "Volkswagen Golf VII, model year 2015, 75784 km. Both front control arms were replaced. The mounting seat needed attention before the new component could be installed. Actual labor time: 214 minutes.",
+      "expected": {
+        "manufacturer": "Volkswagen",
+        "model": "Golf VII",
+        "modelYear": 2015,
+        "mileageKm": 75784,
+        "repairCode": "CONTROL_ARM_FRONT_PAIR_REPLACE",
+        "complicationCodes": [
+          "DAMAGED_BUSHING_SEAT"
+        ],
+        "knownBeforeRepairCodes": [],
+        "actualLaborMinutes": 214
+      },
+      "manuallyReviewed": false
+    },
+    {
+      "id": "419f0022-c42e-521c-bc18-307e06aff7f7",
+      "category": "DOCUMENT_SUPPORTED",
+      "documentType": "REPAIR_COMPLETION_REPORT",
+      "document": "Opel Astra K, model year 2016, 64596 km. The rear left control arm was replaced. The mounting seat needed attention before the new component could be installed. Actual labor time: 177 minutes.",
+      "expected": {
+        "manufacturer": "Opel",
+        "model": "Astra K",
+        "modelYear": 2016,
+        "mileageKm": 64596,
+        "repairCode": "CONTROL_ARM_REAR_LEFT_REPLACE",
+        "complicationCodes": [
+          "DAMAGED_BUSHING_SEAT"
+        ],
+        "knownBeforeRepairCodes": [],
+        "actualLaborMinutes": 177
+      },
+      "manuallyReviewed": false
+    },
+    {
+      "id": "4f6cc284-5d1f-59af-b838-431452057dc2",
+      "category": "DOCUMENT_SUPPORTED",
+      "documentType": "REPAIR_COMPLETION_REPORT",
+      "document": "BMW 3 Series F30, model year 2012, 161802 km. The rear right control arm was replaced. Visible corrosion was documented during pre-inspection. Corroded mounting hardware required additional extraction work. A follow-up adjustment was made during the geometry check. Actual labor time: 185 minutes.",
+      "expected": {
+        "manufacturer": "BMW",
+        "model": "3 Series F30",
+        "modelYear": 2012,
+        "mileageKm": 161802,
+        "repairCode": "CONTROL_ARM_REAR_RIGHT_REPLACE",
+        "complicationCodes": [
+          "ALIGNMENT_CORRECTION",
+          "SEIZED_FASTENER"
+        ],
+        "knownBeforeRepairCodes": [
+          "VISIBLE_CORROSION"
+        ],
+        "actualLaborMinutes": 185
+      },
+      "manuallyReviewed": false
+    },
+    {
+      "id": "4f6d49fe-526c-508b-828f-e1c4d1adcf0c",
+      "category": "DOCUMENT_SUPPORTED",
+      "documentType": "REPAIR_COMPLETION_REPORT",
+      "document": "Volkswagen Passat B8, model year 2017, 110692 km. The front left control arm was replaced. Dismantling took longer because mounting hardware was seized. Bolt extraction and replacement were necessary during dismantling. Actual labor time: 210 minutes.",
+      "expected": {
+        "manufacturer": "Volkswagen",
+        "model": "Passat B8",
+        "modelYear": 2017,
+        "mileageKm": 110692,
+        "repairCode": "CONTROL_ARM_FRONT_LEFT_REPLACE",
+        "complicationCodes": [
+          "BROKEN_BOLT",
+          "SEIZED_FASTENER"
+        ],
+        "knownBeforeRepairCodes": [],
+        "actualLaborMinutes": 210
+      },
+      "manuallyReviewed": false
+    },
+    {
+      "id": "5474bb9c-72b4-50f1-8440-6b6ce3c9e3cc",
+      "category": "DOCUMENT_SUPPORTED",
+      "documentType": "REPAIR_COMPLETION_REPORT",
+      "document": "Audi A3 8V, model year 2013, 175966 km. Both front control arms were replaced. Visible corrosion was documented during pre-inspection. One or more fasteners resisted removal and needed careful release. Additional work was carried out around the worn bushing mounting area. Actual labor time: 233 minutes.",
+      "expected": {
+        "manufacturer": "Audi",
+        "model": "A3 8V",
+        "modelYear": 2013,
+        "mileageKm": 175966,
+        "repairCode": "CONTROL_ARM_FRONT_PAIR_REPLACE",
+        "complicationCodes": [
+          "DAMAGED_BUSHING_SEAT",
+          "SEIZED_FASTENER"
+        ],
+        "knownBeforeRepairCodes": [
+          "VISIBLE_CORROSION"
+        ],
+        "actualLaborMinutes": 233
+      },
+      "manuallyReviewed": false
+    },
+    {
+      "id": "5518a8ec-b0ef-5f0c-bfd8-737c901e5c24",
+      "category": "DOCUMENT_SUPPORTED",
+      "documentType": "REPAIR_COMPLETION_REPORT",
+      "document": "Volkswagen Passat B8, model year 2014, 201201 km. The rear right control arm was replaced. Visible corrosion was documented during pre-inspection. Visible prior damage was documented during pre-inspection. The mounting seat needed attention before the new component could be installed. Final alignment required an additional correction. Actual labor time: 181 minutes.",
+      "expected": {
+        "manufacturer": "Volkswagen",
+        "model": "Passat B8",
+        "modelYear": 2014,
+        "mileageKm": 201201,
+        "repairCode": "CONTROL_ARM_REAR_RIGHT_REPLACE",
+        "complicationCodes": [
+          "ALIGNMENT_CORRECTION",
+          "DAMAGED_BUSHING_SEAT"
+        ],
+        "knownBeforeRepairCodes": [
+          "VISIBLE_CORROSION",
+          "VISIBLE_PRIOR_DAMAGE"
+        ],
+        "actualLaborMinutes": 181
+      },
+      "manuallyReviewed": true
+    },
+    {
+      "id": "5a5c43b7-c2c1-5669-bae8-2a14cff7d33b",
+      "category": "DOCUMENT_SUPPORTED",
+      "documentType": "REPAIR_COMPLETION_REPORT",
+      "document": "Opel Astra K, model year 2016, 228180 km. The rear left control arm was replaced. Visible corrosion was documented during pre-inspection. One or more fasteners resisted removal and needed careful release. Additional work was carried out around the worn bushing mounting area. Actual labor time: 199 minutes.",
+      "expected": {
+        "manufacturer": "Opel",
+        "model": "Astra K",
+        "modelYear": 2016,
+        "mileageKm": 228180,
+        "repairCode": "CONTROL_ARM_REAR_LEFT_REPLACE",
+        "complicationCodes": [
+          "DAMAGED_BUSHING_SEAT",
+          "SEIZED_FASTENER"
+        ],
+        "knownBeforeRepairCodes": [
+          "VISIBLE_CORROSION"
+        ],
+        "actualLaborMinutes": 199
+      },
+      "manuallyReviewed": false
+    },
+    {
+      "id": "5e62dfcb-d9a3-5028-aaf4-064e3d7222e7",
+      "category": "DOCUMENT_SUPPORTED",
+      "documentType": "REPAIR_COMPLETION_REPORT",
+      "document": "Mercedes-Benz C-Class W205, model year 2021, 84896 km. The rear left control arm was replaced. Dismantling took longer because mounting hardware was seized. A failed fastener added an unplanned removal step. Additional work was carried out around the worn bushing mounting area. Actual labor time: 264 minutes.",
+      "expected": {
+        "manufacturer": "Mercedes-Benz",
+        "model": "C-Class W205",
+        "modelYear": 2021,
+        "mileageKm": 84896,
+        "repairCode": "CONTROL_ARM_REAR_LEFT_REPLACE",
+        "complicationCodes": [
+          "BROKEN_BOLT",
+          "DAMAGED_BUSHING_SEAT",
+          "SEIZED_FASTENER"
+        ],
+        "knownBeforeRepairCodes": [],
+        "actualLaborMinutes": 264
+      },
+      "manuallyReviewed": false
+    },
+    {
+      "id": "5f8df717-97af-5aad-9f40-b5658143bc2c",
+      "category": "DOCUMENT_SUPPORTED",
+      "documentType": "REPAIR_COMPLETION_REPORT",
+      "document": "Volkswagen Golf VII, model year 2012, 213760 km. The rear left control arm was replaced. Visible corrosion was documented during pre-inspection. Bolt extraction and replacement were necessary during dismantling. The mounting seat needed attention before the new component could be installed. Actual labor time: 219 minutes.",
+      "expected": {
+        "manufacturer": "Volkswagen",
+        "model": "Golf VII",
+        "modelYear": 2012,
+        "mileageKm": 213760,
+        "repairCode": "CONTROL_ARM_REAR_LEFT_REPLACE",
+        "complicationCodes": [
+          "BROKEN_BOLT",
+          "DAMAGED_BUSHING_SEAT"
+        ],
+        "knownBeforeRepairCodes": [
+          "VISIBLE_CORROSION"
+        ],
+        "actualLaborMinutes": 219
+      },
+      "manuallyReviewed": false
+    },
+    {
+      "id": "5fc70771-96b0-5247-bfa0-70f8df9fb2dc",
+      "category": "DOCUMENT_SUPPORTED",
+      "documentType": "REPAIR_COMPLETION_REPORT",
+      "document": "\u0160koda Octavia III, model year 2016, 101285 km. The rear right control arm was replaced. Dismantling took longer because mounting hardware was seized. Additional work was carried out around the worn bushing mounting area. Actual labor time: 177 minutes.",
+      "expected": {
+        "manufacturer": "\u0160koda",
+        "model": "Octavia III",
+        "modelYear": 2016,
+        "mileageKm": 101285,
+        "repairCode": "CONTROL_ARM_REAR_RIGHT_REPLACE",
+        "complicationCodes": [
+          "DAMAGED_BUSHING_SEAT",
+          "SEIZED_FASTENER"
+        ],
+        "knownBeforeRepairCodes": [],
+        "actualLaborMinutes": 177
+      },
+      "manuallyReviewed": false
+    },
+    {
+      "id": "61cb3f4e-c817-5a60-a505-ac2b63c80801",
+      "category": "DOCUMENT_SUPPORTED",
+      "documentType": "REPAIR_COMPLETION_REPORT",
+      "document": "Opel Astra K, model year 2020, 94848 km. Both front control arms were replaced. Dismantling took longer because mounting hardware was seized. A mounting bolt broke during removal and was replaced. Actual labor time: 237 minutes.",
+      "expected": {
+        "manufacturer": "Opel",
+        "model": "Astra K",
+        "modelYear": 2020,
+        "mileageKm": 94848,
+        "repairCode": "CONTROL_ARM_FRONT_PAIR_REPLACE",
+        "complicationCodes": [
+          "BROKEN_BOLT",
+          "SEIZED_FASTENER"
+        ],
+        "knownBeforeRepairCodes": [],
+        "actualLaborMinutes": 237
+      },
+      "manuallyReviewed": false
+    },
+    {
+      "id": "642d91c0-f111-5af8-84cb-d182eb3378ef",
+      "category": "DOCUMENT_SUPPORTED",
+      "documentType": "REPAIR_COMPLETION_REPORT",
+      "document": "Volkswagen Passat B8, model year 2016, 143475 km. The front left control arm was replaced. Visible corrosion was documented during pre-inspection. Corroded mounting hardware required additional extraction work. A mounting bolt broke during removal and was replaced. Actual labor time: 193 minutes.",
+      "expected": {
+        "manufacturer": "Volkswagen",
+        "model": "Passat B8",
+        "modelYear": 2016,
+        "mileageKm": 143475,
+        "repairCode": "CONTROL_ARM_FRONT_LEFT_REPLACE",
+        "complicationCodes": [
+          "BROKEN_BOLT",
+          "SEIZED_FASTENER"
+        ],
+        "knownBeforeRepairCodes": [
+          "VISIBLE_CORROSION"
+        ],
+        "actualLaborMinutes": 193
+      },
+      "manuallyReviewed": true
+    },
+    {
+      "id": "650fe541-80c8-5176-9b56-8dbdc00af5cf",
+      "category": "DOCUMENT_SUPPORTED",
+      "documentType": "REPAIR_COMPLETION_REPORT",
+      "document": "Volkswagen Passat B8, model year 2017, 70108 km. The rear right control arm was replaced. Visible corrosion was documented during pre-inspection. One or more fasteners resisted removal and needed careful release. A follow-up adjustment was made during the geometry check. Actual labor time: 182 minutes.",
+      "expected": {
+        "manufacturer": "Volkswagen",
+        "model": "Passat B8",
+        "modelYear": 2017,
+        "mileageKm": 70108,
+        "repairCode": "CONTROL_ARM_REAR_RIGHT_REPLACE",
+        "complicationCodes": [
+          "ALIGNMENT_CORRECTION",
+          "SEIZED_FASTENER"
+        ],
+        "knownBeforeRepairCodes": [
+          "VISIBLE_CORROSION"
+        ],
+        "actualLaborMinutes": 182
+      },
+      "manuallyReviewed": false
+    },
+    {
+      "id": "68652350-7c19-5fb9-9af7-f29b82cc0381",
+      "category": "DOCUMENT_SUPPORTED",
+      "documentType": "REPAIR_COMPLETION_REPORT",
+      "document": "Mercedes-Benz C-Class W205, model year 2019, 67682 km. The rear right control arm was replaced. Visible corrosion was documented during pre-inspection. Corroded mounting hardware required additional extraction work. The mounting seat needed attention before the new component could be installed. Actual labor time: 152 minutes.",
+      "expected": {
+        "manufacturer": "Mercedes-Benz",
+        "model": "C-Class W205",
+        "modelYear": 2019,
+        "mileageKm": 67682,
+        "repairCode": "CONTROL_ARM_REAR_RIGHT_REPLACE",
+        "complicationCodes": [
+          "DAMAGED_BUSHING_SEAT",
+          "SEIZED_FASTENER"
+        ],
+        "knownBeforeRepairCodes": [
+          "VISIBLE_CORROSION"
+        ],
+        "actualLaborMinutes": 152
+      },
+      "manuallyReviewed": false
+    },
+    {
+      "id": "6bc1a54f-964d-55fa-9a6a-ae5a5552b98c",
+      "category": "DOCUMENT_SUPPORTED",
+      "documentType": "REPAIR_COMPLETION_REPORT",
+      "document": "Mercedes-Benz C-Class W205, model year 2016, 176255 km. The front left control arm was replaced. Dismantling took longer because mounting hardware was seized. A mounting bolt broke during removal and was replaced. Actual labor time: 193 minutes.",
+      "expected": {
+        "manufacturer": "Mercedes-Benz",
+        "model": "C-Class W205",
+        "modelYear": 2016,
+        "mileageKm": 176255,
+        "repairCode": "CONTROL_ARM_FRONT_LEFT_REPLACE",
+        "complicationCodes": [
+          "BROKEN_BOLT",
+          "SEIZED_FASTENER"
+        ],
+        "knownBeforeRepairCodes": [],
+        "actualLaborMinutes": 193
+      },
+      "manuallyReviewed": false
+    },
+    {
+      "id": "6fa651f6-f731-56ca-ac5c-4ac98b15401b",
+      "category": "DOCUMENT_SUPPORTED",
+      "documentType": "REPAIR_COMPLETION_REPORT",
+      "document": "Opel Astra K, model year 2018, 44694 km. The front right control arm was replaced. Visible corrosion was documented during pre-inspection. Dismantling took longer because mounting hardware was seized. A failed fastener added an unplanned removal step. The mounting seat needed attention before the new component could be installed. Actual labor time: 205 minutes.",
+      "expected": {
+        "manufacturer": "Opel",
+        "model": "Astra K",
+        "modelYear": 2018,
+        "mileageKm": 44694,
+        "repairCode": "CONTROL_ARM_FRONT_RIGHT_REPLACE",
+        "complicationCodes": [
+          "BROKEN_BOLT",
+          "DAMAGED_BUSHING_SEAT",
+          "SEIZED_FASTENER"
+        ],
+        "knownBeforeRepairCodes": [
+          "VISIBLE_CORROSION"
+        ],
+        "actualLaborMinutes": 205
+      },
+      "manuallyReviewed": false
+    },
+    {
+      "id": "7178bbfb-c32f-5e77-8895-0d46bd37a710",
+      "category": "DOCUMENT_SUPPORTED",
+      "documentType": "REPAIR_COMPLETION_REPORT",
+      "document": "Ford Focus Mk3, model year 2017, 109551 km. The rear right control arm was replaced. Corroded mounting hardware required additional extraction work. A failed fastener added an unplanned removal step. Actual labor time: 219 minutes.",
+      "expected": {
+        "manufacturer": "Ford",
+        "model": "Focus Mk3",
+        "modelYear": 2017,
+        "mileageKm": 109551,
+        "repairCode": "CONTROL_ARM_REAR_RIGHT_REPLACE",
+        "complicationCodes": [
+          "BROKEN_BOLT",
+          "SEIZED_FASTENER"
+        ],
+        "knownBeforeRepairCodes": [],
+        "actualLaborMinutes": 219
+      },
+      "manuallyReviewed": false
+    }
+  ]
+}

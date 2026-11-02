@@ -1,0 +1,5249 @@
+{
+  "reportVersion": "ari-llm-quality-report-v2",
+  "datasetId": "llm-quality-dev-v2",
+  "datasetChecksum": "dd6557dfb840bdb27c1e32633af587357bc471b314a47eb34e595f1e510cc800",
+  "evaluatedAtUtc": "2026-10-28T07:11:00.740626+00:00",
+  "experiments": [
+    {
+      "promptVersion": "repair-extraction-v1",
+      "modelId": "gpt-6-luna",
+      "metrics": {
+        "caseCount": 50,
+        "schemaValidityRate": 1,
+        "vehicleExactMatchAccuracy": 1,
+        "repairCodeExactMatchAccuracy": 1,
+        "complicationPrecision": 1,
+        "complicationRecall": 0.5,
+        "complicationF1": 0.6666666666666666666666666667,
+        "complicationMacroF1": 0.5476744186046511627906976744,
+        "complicationSamplesF1": 0.6626666666666666666666666667,
+        "acceptedCoverageRate": 1,
+        "perClass": {
+          "ALIGNMENT_CORRECTION": {
+            "truePositives": 6,
+            "falsePositives": 0,
+            "falseNegatives": 0,
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "BROKEN_BOLT": {
+            "truePositives": 1,
+            "falsePositives": 0,
+            "falseNegatives": 3,
+            "precision": 1,
+            "recall": 0.25,
+            "f1": 0.4
+          },
+          "DAMAGED_BUSHING_SEAT": {
+            "truePositives": 0,
+            "falsePositives": 0,
+            "falseNegatives": 12,
+            "precision": 1,
+            "recall": 0,
+            "f1": 0
+          },
+          "SEIZED_FASTENER": {
+            "truePositives": 17,
+            "falsePositives": 0,
+            "falseNegatives": 9,
+            "precision": 1,
+            "recall": 0.6538461538461538461538461538,
+            "f1": 0.7906976744186046511627906976
+          }
+        },
+        "unsupportedClaimCount": 0,
+        "temporalLeakageViolationCount": 0,
+        "totalLatencyMilliseconds": 144364,
+        "totalInputTokens": 24803,
+        "totalOutputTokens": 10946
+      },
+      "errorTypes": {},
+      "outcomes": [
+        {
+          "caseId": "118a5db9-4204-58eb-9024-cdbb9734314e",
+          "accepted": true,
+          "result": {
+            "documentType": "REPAIR_COMPLETION_REPORT",
+            "vehicle": {
+              "manufacturer": "Mercedes-Benz",
+              "model": "C-Class W205",
+              "modelYear": 2016,
+              "mileageKm": 117234
+            },
+            "repairCode": "CONTROL_ARM_REAR_LEFT_REPLACE",
+            "observedComplications": [],
+            "knownBeforeRepair": [],
+            "actualLaborMinutes": 125,
+            "status": "ACCEPTED",
+            "telemetry": {
+              "promptVersion": "repair-extraction-v1",
+              "modelId": "gpt-6-luna",
+              "latencyMilliseconds": 3222,
+              "inputTokens": 491,
+              "outputTokens": 127,
+              "providerRequestId": "req_4af7d0f065a24ac9a5a8af0ad16139dc"
+            }
+          },
+          "errors": []
+        },
+        {
+          "caseId": "11ac25de-72fa-5a5c-8189-c07378edec79",
+          "accepted": true,
+          "result": {
+            "documentType": "REPAIR_COMPLETION_REPORT",
+            "vehicle": {
+              "manufacturer": "Volkswagen",
+              "model": "Golf VII",
+              "modelYear": 2012,
+              "mileageKm": 147704
+            },
+            "repairCode": "CONTROL_ARM_REAR_RIGHT_REPLACE",
+            "observedComplications": [],
+            "knownBeforeRepair": [
+              {
+                "code": "VISIBLE_CORROSION",
+                "informationTime": "BEFORE_REPAIR",
+                "evidence": "Visible corrosion was documented during pre-inspection."
+              }
+            ],
+            "actualLaborMinutes": 156,
+            "status": "ACCEPTED",
+            "telemetry": {
+              "promptVersion": "repair-extraction-v1",
+              "modelId": "gpt-6-luna",
+              "latencyMilliseconds": 3847,
+              "inputTokens": 495,
+              "outputTokens": 168,
+              "providerRequestId": "req_a1677c36f7bd462cbb445f66f18b3488"
+            }
+          },
+          "errors": []
+        },
+        {
+          "caseId": "120cd33d-ac9c-5b7f-8c4b-e71cdd6dc6a0",
+          "accepted": true,
+          "result": {
+            "documentType": "REPAIR_COMPLETION_REPORT",
+            "vehicle": {
+              "manufacturer": "Opel",
+              "model": "Astra K",
+              "modelYear": 2021,
+              "mileageKm": 62479
+            },
+            "repairCode": "CONTROL_ARM_REAR_RIGHT_REPLACE",
+            "observedComplications": [],
+            "knownBeforeRepair": [],
+            "actualLaborMinutes": 107,
+            "status": "ACCEPTED",
+            "telemetry": {
+              "promptVersion": "repair-extraction-v1",
+              "modelId": "gpt-6-luna",
+              "latencyMilliseconds": 3515,
+              "inputTokens": 489,
+              "outputTokens": 121,
+              "providerRequestId": "req_628ad0987ecf4c348f19fc5e88557213"
+            }
+          },
+          "errors": []
+        },
+        {
+          "caseId": "13204d5b-7ba1-5542-b7fa-e94dc7050ee1",
+          "accepted": true,
+          "result": {
+            "documentType": "REPAIR_COMPLETION_REPORT",
+            "vehicle": {
+              "manufacturer": "Audi",
+              "model": "A3 8V",
+              "modelYear": 2012,
+              "mileageKm": 215861
+            },
+            "repairCode": "CONTROL_ARM_FRONT_LEFT_REPLACE",
+            "observedComplications": [],
+            "knownBeforeRepair": [],
+            "actualLaborMinutes": 107,
+            "status": "ACCEPTED",
+            "telemetry": {
+              "promptVersion": "repair-extraction-v1",
+              "modelId": "gpt-6-luna",
+              "latencyMilliseconds": 3438,
+              "inputTokens": 491,
+              "outputTokens": 127,
+              "providerRequestId": "req_32c9471b48af4e43acdfa3ecae890601"
+            }
+          },
+          "errors": []
+        },
+        {
+          "caseId": "132b25bf-c22d-5758-971a-e5b582cd5df5",
+          "accepted": true,
+          "result": {
+            "documentType": "REPAIR_COMPLETION_REPORT",
+            "vehicle": {
+              "manufacturer": "Volkswagen",
+              "model": "Golf VII",
+              "modelYear": 2014,
+              "mileageKm": 95492
+            },
+            "repairCode": "CONTROL_ARM_FRONT_RIGHT_REPLACE",
+            "observedComplications": [],
+            "knownBeforeRepair": [],
+            "actualLaborMinutes": 87,
+            "status": "ACCEPTED",
+            "telemetry": {
+              "promptVersion": "repair-extraction-v1",
+              "modelId": "gpt-6-luna",
+              "latencyMilliseconds": 2597,
+              "inputTokens": 489,
+              "outputTokens": 117,
+              "providerRequestId": "req_e188c8cb22964144b7d4ec693a2fba70"
+            }
+          },
+          "errors": []
+        },
+        {
+          "caseId": "140eaf3b-8432-5d2d-8499-8cdaaa4a45bb",
+          "accepted": true,
+          "result": {
+            "documentType": "REPAIR_COMPLETION_REPORT",
+            "vehicle": {
+              "manufacturer": "Mercedes-Benz",
+              "model": "C-Class W205",
+              "modelYear": 2020,
+              "mileageKm": 39580
+            },
+            "repairCode": "CONTROL_ARM_REAR_RIGHT_REPLACE",
+            "observedComplications": [],
+            "knownBeforeRepair": [],
+            "actualLaborMinutes": 117,
+            "status": "ACCEPTED",
+            "telemetry": {
+              "promptVersion": "repair-extraction-v1",
+              "modelId": "gpt-6-luna",
+              "latencyMilliseconds": 2498,
+              "inputTokens": 491,
+              "outputTokens": 122,
+              "providerRequestId": "req_b248b75b11c047298409b6f6b722ed3b"
+            }
+          },
+          "errors": []
+        },
+        {
+          "caseId": "14f17e67-c22d-526c-8b3b-9cc8de50ae56",
+          "accepted": true,
+          "result": {
+            "documentType": "REPAIR_COMPLETION_REPORT",
+            "vehicle": {
+              "manufacturer": "Mercedes-Benz",
+              "model": "C-Class W205",
+              "modelYear": 2017,
+              "mileageKm": 43310
+            },
+            "repairCode": "CONTROL_ARM_FRONT_LEFT_REPLACE",
+            "observedComplications": [],
+            "knownBeforeRepair": [],
+            "actualLaborMinutes": 98,
+            "status": "ACCEPTED",
+            "telemetry": {
+              "promptVersion": "repair-extraction-v1",
+              "modelId": "gpt-6-luna",
+              "latencyMilliseconds": 2625,
+              "inputTokens": 491,
+              "outputTokens": 134,
+              "providerRequestId": "req_13e74bab14e542ddae3a392d0eeeb28e"
+            }
+          },
+          "errors": []
+        },
+        {
+          "caseId": "165c0781-a7b0-5353-9451-cf7de3a72aa8",
+          "accepted": true,
+          "result": {
+            "documentType": "REPAIR_COMPLETION_REPORT",
+            "vehicle": {
+              "manufacturer": "Ford",
+              "model": "Focus Mk3",
+              "modelYear": 2016,
+              "mileageKm": 75802
+            },
+            "repairCode": "CONTROL_ARM_FRONT_PAIR_REPLACE",
+            "observedComplications": [],
+            "knownBeforeRepair": [],
+            "actualLaborMinutes": 147,
+            "status": "ACCEPTED",
+            "telemetry": {
+              "promptVersion": "repair-extraction-v1",
+              "modelId": "gpt-6-luna",
+              "latencyMilliseconds": 2561,
+              "inputTokens": 488,
+              "outputTokens": 121,
+              "providerRequestId": "req_4f49de3896c24689a2076e5c9fa22f46"
+            }
+          },
+          "errors": []
+        },
+        {
+          "caseId": "1685f356-2748-5d2a-9b47-ddd5ee196b90",
+          "accepted": true,
+          "result": {
+            "documentType": "REPAIR_COMPLETION_REPORT",
+            "vehicle": {
+              "manufacturer": "Ford",
+              "model": "Focus Mk3",
+              "modelYear": 2018,
+              "mileageKm": 120882
+            },
+            "repairCode": "CONTROL_ARM_FRONT_PAIR_REPLACE",
+            "observedComplications": [],
+            "knownBeforeRepair": [],
+            "actualLaborMinutes": 184,
+            "status": "ACCEPTED",
+            "telemetry": {
+              "promptVersion": "repair-extraction-v1",
+              "modelId": "gpt-6-luna",
+              "latencyMilliseconds": 1969,
+              "inputTokens": 488,
+              "outputTokens": 125,
+              "providerRequestId": "req_f3d322241e42412096083b790c886e29"
+            }
+          },
+          "errors": []
+        },
+        {
+          "caseId": "16c42d55-ff32-50f0-afd0-b832a5ffa2b0",
+          "accepted": true,
+          "result": {
+            "documentType": "REPAIR_COMPLETION_REPORT",
+            "vehicle": {
+              "manufacturer": "Audi",
+              "model": "A3 8V",
+              "modelYear": 2015,
+              "mileageKm": 127985
+            },
+            "repairCode": "CONTROL_ARM_FRONT_LEFT_REPLACE",
+            "observedComplications": [],
+            "knownBeforeRepair": [],
+            "actualLaborMinutes": 101,
+            "status": "ACCEPTED",
+            "telemetry": {
+              "promptVersion": "repair-extraction-v1",
+              "modelId": "gpt-6-luna",
+              "latencyMilliseconds": 2020,
+              "inputTokens": 491,
+              "outputTokens": 141,
+              "providerRequestId": "req_d6d6d510cc5f423997e4f50475c4c5fc"
+            }
+          },
+          "errors": []
+        },
+        {
+          "caseId": "1741bfaa-cb38-5fcc-8622-4e5a8fed8be7",
+          "accepted": true,
+          "result": {
+            "documentType": "REPAIR_COMPLETION_REPORT",
+            "vehicle": {
+              "manufacturer": "BMW",
+              "model": "3 Series F30",
+              "modelYear": 2019,
+              "mileageKm": 88258
+            },
+            "repairCode": "CONTROL_ARM_REAR_LEFT_REPLACE",
+            "observedComplications": [],
+            "knownBeforeRepair": [
+              {
+                "code": "VISIBLE_CORROSION",
+                "informationTime": "BEFORE_REPAIR",
+                "evidence": "Visible corrosion was documented during pre-inspection."
+              }
+            ],
+            "actualLaborMinutes": 118,
+            "status": "ACCEPTED",
+            "telemetry": {
+              "promptVersion": "repair-extraction-v1",
+              "modelId": "gpt-6-luna",
+              "latencyMilliseconds": 2116,
+              "inputTokens": 500,
+              "outputTokens": 171,
+              "providerRequestId": "req_7c6cc4a80f974393913aa5b0f3814f67"
+            }
+          },
+          "errors": []
+        },
+        {
+          "caseId": "1a72c498-4fe2-5931-bd37-43979ade20a2",
+          "accepted": true,
+          "result": {
+            "documentType": "REPAIR_COMPLETION_REPORT",
+            "vehicle": {
+              "manufacturer": "Audi",
+              "model": "A3 8V",
+              "modelYear": 2019,
+              "mileageKm": 109572
+            },
+            "repairCode": "CONTROL_ARM_FRONT_LEFT_REPLACE",
+            "observedComplications": [],
+            "knownBeforeRepair": [],
+            "actualLaborMinutes": 92,
+            "status": "ACCEPTED",
+            "telemetry": {
+              "promptVersion": "repair-extraction-v1",
+              "modelId": "gpt-6-luna",
+              "latencyMilliseconds": 1913,
+              "inputTokens": 491,
+              "outputTokens": 159,
+              "providerRequestId": "req_c88c887a1b304238b47f38c5f3ac1a79"
+            }
+          },
+          "errors": []
+        },
+        {
+          "caseId": "1aaca54e-fd28-51bf-bde6-7dce48c9ff70",
+          "accepted": true,
+          "result": {
+            "documentType": "REPAIR_COMPLETION_REPORT",
+            "vehicle": {
+              "manufacturer": "Volkswagen",
+              "model": "Golf VII",
+              "modelYear": 2016,
+              "mileageKm": 137046
+            },
+            "repairCode": "CONTROL_ARM_REAR_LEFT_REPLACE",
+            "observedComplications": [],
+            "knownBeforeRepair": [],
+            "actualLaborMinutes": 134,
+            "status": "ACCEPTED",
+            "telemetry": {
+              "promptVersion": "repair-extraction-v1",
+              "modelId": "gpt-6-luna",
+              "latencyMilliseconds": 2104,
+              "inputTokens": 489,
+              "outputTokens": 127,
+              "providerRequestId": "req_fd8c24d3530445f4a31bfa06a4f55403"
+            }
+          },
+          "errors": []
+        },
+        {
+          "caseId": "1aad61f0-7cdf-5108-a2c0-b6bd64baadad",
+          "accepted": true,
+          "result": {
+            "documentType": "REPAIR_COMPLETION_REPORT",
+            "vehicle": {
+              "manufacturer": "Volkswagen",
+              "model": "Passat B8",
+              "modelYear": 2018,
+              "mileageKm": 51294
+            },
+            "repairCode": "CONTROL_ARM_FRONT_RIGHT_REPLACE",
+            "observedComplications": [],
+            "knownBeforeRepair": [],
+            "actualLaborMinutes": 119,
+            "status": "ACCEPTED",
+            "telemetry": {
+              "promptVersion": "repair-extraction-v1",
+              "modelId": "gpt-6-luna",
+              "latencyMilliseconds": 1987,
+              "inputTokens": 491,
+              "outputTokens": 118,
+              "providerRequestId": "req_aa66c3101d754dd1a73256401642257e"
+            }
+          },
+          "errors": []
+        },
+        {
+          "caseId": "1b6fd56d-674d-5aec-9c4d-0b307d847549",
+          "accepted": true,
+          "result": {
+            "documentType": "REPAIR_COMPLETION_REPORT",
+            "vehicle": {
+              "manufacturer": "Mercedes-Benz",
+              "model": "C-Class W205",
+              "modelYear": 2021,
+              "mileageKm": 56038
+            },
+            "repairCode": "CONTROL_ARM_FRONT_PAIR_REPLACE",
+            "observedComplications": [],
+            "knownBeforeRepair": [],
+            "actualLaborMinutes": 171,
+            "status": "ACCEPTED",
+            "telemetry": {
+              "promptVersion": "repair-extraction-v1",
+              "modelId": "gpt-6-luna",
+              "latencyMilliseconds": 2513,
+              "inputTokens": 490,
+              "outputTokens": 131,
+              "providerRequestId": "req_5b3d4586f76f4ede8c5adc5065795065"
+            }
+          },
+          "errors": []
+        },
+        {
+          "caseId": "20ab6cb7-648d-5aa3-ba4c-83538d716017",
+          "accepted": true,
+          "result": {
+            "documentType": "REPAIR_COMPLETION_REPORT",
+            "vehicle": {
+              "manufacturer": "Volkswagen",
+              "model": "Passat B8",
+              "modelYear": 2019,
+              "mileageKm": 123228
+            },
+            "repairCode": "CONTROL_ARM_FRONT_RIGHT_REPLACE",
+            "observedComplications": [
+              {
+                "code": "SEIZED_FASTENER",
+                "informationTime": "DURING_REPAIR",
+                "evidence": "One or more fasteners resisted removal and needed careful release."
+              }
+            ],
+            "knownBeforeRepair": [],
+            "actualLaborMinutes": 122,
+            "status": "ACCEPTED",
+            "telemetry": {
+              "promptVersion": "repair-extraction-v1",
+              "modelId": "gpt-6-luna",
+              "latencyMilliseconds": 2821,
+              "inputTokens": 490,
+              "outputTokens": 169,
+              "providerRequestId": "req_68a7ab2e58c64ed5ae946e91b1e9f6f8"
+            }
+          },
+          "errors": []
+        },
+        {
+          "caseId": "21207c88-85c1-5255-a99c-2b0f3b2d17a3",
+          "accepted": true,
+          "result": {
+            "documentType": "REPAIR_COMPLETION_REPORT",
+            "vehicle": {
+              "manufacturer": "Audi",
+              "model": "A3 8V",
+              "modelYear": 2014,
+              "mileageKm": 165474
+            },
+            "repairCode": "CONTROL_ARM_FRONT_PAIR_REPLACE",
+            "observedComplications": [],
+            "knownBeforeRepair": [
+              {
+                "code": "VISIBLE_CORROSION",
+                "informationTime": "BEFORE_REPAIR",
+                "evidence": "Visible corrosion was documented during pre-inspection."
+              }
+            ],
+            "actualLaborMinutes": 198,
+            "status": "ACCEPTED",
+            "telemetry": {
+              "promptVersion": "repair-extraction-v1",
+              "modelId": "gpt-6-luna",
+              "latencyMilliseconds": 3333,
+              "inputTokens": 496,
+              "outputTokens": 239,
+              "providerRequestId": "req_668de3f34bab46d1b91b85a9b8b1c000"
+            }
+          },
+          "errors": []
+        },
+        {
+          "caseId": "233a2e11-0fe7-5074-b26d-320d379a66cd",
+          "accepted": true,
+          "result": {
+            "documentType": "REPAIR_COMPLETION_REPORT",
+            "vehicle": {
+              "manufacturer": "Volkswagen",
+              "model": "Golf VII",
+              "modelYear": 2017,
+              "mileageKm": 82150
+            },
+            "repairCode": "CONTROL_ARM_FRONT_PAIR_REPLACE",
+            "observedComplications": [
+              {
+                "code": "ALIGNMENT_CORRECTION",
+                "informationTime": "AFTER_REPAIR",
+                "evidence": "Wheel geometry needed further correction after assembly."
+              }
+            ],
+            "knownBeforeRepair": [
+              {
+                "code": "VISIBLE_CORROSION",
+                "informationTime": "BEFORE_REPAIR",
+                "evidence": "Visible corrosion was documented during pre-inspection."
+              }
+            ],
+            "actualLaborMinutes": 224,
+            "status": "ACCEPTED",
+            "telemetry": {
+              "promptVersion": "repair-extraction-v1",
+              "modelId": "gpt-6-luna",
+              "latencyMilliseconds": 2364,
+              "inputTokens": 492,
+              "outputTokens": 193,
+              "providerRequestId": "req_95f97ef6bef74064ba1c8d50a37a5399"
+            }
+          },
+          "errors": []
+        },
+        {
+          "caseId": "235c531a-09c4-565c-b702-6f4f5f67b5fe",
+          "accepted": true,
+          "result": {
+            "documentType": "REPAIR_COMPLETION_REPORT",
+            "vehicle": {
+              "manufacturer": "Mercedes-Benz",
+              "model": "C-Class W205",
+              "modelYear": 2015,
+              "mileageKm": 96401
+            },
+            "repairCode": "CONTROL_ARM_FRONT_RIGHT_REPLACE",
+            "observedComplications": [],
+            "knownBeforeRepair": [],
+            "actualLaborMinutes": 122,
+            "status": "ACCEPTED",
+            "telemetry": {
+              "promptVersion": "repair-extraction-v1",
+              "modelId": "gpt-6-luna",
+              "latencyMilliseconds": 2845,
+              "inputTokens": 491,
+              "outputTokens": 236,
+              "providerRequestId": "req_43f6b9608b044148b7bb0b33a4e07be9"
+            }
+          },
+          "errors": []
+        },
+        {
+          "caseId": "2419c6ef-51e8-54ca-89f4-f7257be68c67",
+          "accepted": true,
+          "result": {
+            "documentType": "REPAIR_COMPLETION_REPORT",
+            "vehicle": {
+              "manufacturer": "Volkswagen",
+              "model": "Golf VII",
+              "modelYear": 2016,
+              "mileageKm": 99616
+            },
+            "repairCode": "CONTROL_ARM_REAR_LEFT_REPLACE",
+            "observedComplications": [],
+            "knownBeforeRepair": [
+              {
+                "code": "VISIBLE_CORROSION",
+                "informationTime": "BEFORE_REPAIR",
+                "evidence": "Visible corrosion was documented during pre-inspection."
+              }
+            ],
+            "actualLaborMinutes": 149,
+            "status": "ACCEPTED",
+            "telemetry": {
+              "promptVersion": "repair-extraction-v1",
+              "modelId": "gpt-6-luna",
+              "latencyMilliseconds": 2899,
+              "inputTokens": 495,
+              "outputTokens": 233,
+              "providerRequestId": "req_cfd8dcd2a2604aae8ee43b65c2e118d9"
+            }
+          },
+          "errors": []
+        },
+        {
+          "caseId": "24598ed2-7b25-539e-8c9b-bb09317a1a1c",
+          "accepted": true,
+          "result": {
+            "documentType": "REPAIR_COMPLETION_REPORT",
+            "vehicle": {
+              "manufacturer": "Volkswagen",
+              "model": "Passat B8",
+              "modelYear": 2014,
+              "mileageKm": 104974
+            },
+            "repairCode": "CONTROL_ARM_FRONT_LEFT_REPLACE",
+            "observedComplications": [
+              {
+                "code": "SEIZED_FASTENER",
+                "informationTime": "DURING_REPAIR",
+                "evidence": "Corroded mounting hardware required additional extraction work."
+              }
+            ],
+            "knownBeforeRepair": [],
+            "actualLaborMinutes": 149,
+            "status": "ACCEPTED",
+            "telemetry": {
+              "promptVersion": "repair-extraction-v1",
+              "modelId": "gpt-6-luna",
+              "latencyMilliseconds": 4401,
+              "inputTokens": 488,
+              "outputTokens": 416,
+              "providerRequestId": "req_35d2e161bf3647818d9d0bb2d9b12c0e"
+            }
+          },
+          "errors": []
+        },
+        {
+          "caseId": "251f683b-f7f7-55b1-9fe1-813b428bea60",
+          "accepted": true,
+          "result": {
+            "documentType": "REPAIR_COMPLETION_REPORT",
+            "vehicle": {
+              "manufacturer": "Volkswagen",
+              "model": "Golf VII",
+              "modelYear": 2012,
+              "mileageKm": 233142
+            },
+            "repairCode": "CONTROL_ARM_FRONT_PAIR_REPLACE",
+            "observedComplications": [],
+            "knownBeforeRepair": [
+              {
+                "code": "VISIBLE_CORROSION",
+                "informationTime": "BEFORE_REPAIR",
+                "evidence": "Visible corrosion was documented during pre-inspection."
+              }
+            ],
+            "actualLaborMinutes": 211,
+            "status": "ACCEPTED",
+            "telemetry": {
+              "promptVersion": "repair-extraction-v1",
+              "modelId": "gpt-6-luna",
+              "latencyMilliseconds": 3142,
+              "inputTokens": 494,
+              "outputTokens": 271,
+              "providerRequestId": "req_ffb544474267418486a7a28c3a639014"
+            }
+          },
+          "errors": []
+        },
+        {
+          "caseId": "276be77a-71ba-5b66-a131-fa80e0815d55",
+          "accepted": true,
+          "result": {
+            "documentType": "REPAIR_COMPLETION_REPORT",
+            "vehicle": {
+              "manufacturer": "Ford",
+              "model": "Focus Mk3",
+              "modelYear": 2015,
+              "mileageKm": 200896
+            },
+            "repairCode": "CONTROL_ARM_FRONT_LEFT_REPLACE",
+            "observedComplications": [
+              {
+                "code": "SEIZED_FASTENER",
+                "informationTime": "DURING_REPAIR",
+                "evidence": "One or more fasteners resisted removal and needed careful release."
+              }
+            ],
+            "knownBeforeRepair": [],
+            "actualLaborMinutes": 131,
+            "status": "ACCEPTED",
+            "telemetry": {
+              "promptVersion": "repair-extraction-v1",
+              "modelId": "gpt-6-luna",
+              "latencyMilliseconds": 2335,
+              "inputTokens": 488,
+              "outputTokens": 170,
+              "providerRequestId": "req_ec2e4b5f80124b0eb6f8b8ae1deaf7eb"
+            }
+          },
+          "errors": []
+        },
+        {
+          "caseId": "289d0220-05c9-5d93-97df-027567936195",
+          "accepted": true,
+          "result": {
+            "documentType": "REPAIR_COMPLETION_REPORT",
+            "vehicle": {
+              "manufacturer": "\u0160koda",
+              "model": "Octavia III",
+              "modelYear": 2016,
+              "mileageKm": 100578
+            },
+            "repairCode": "CONTROL_ARM_FRONT_PAIR_REPLACE",
+            "observedComplications": [],
+            "knownBeforeRepair": [
+              {
+                "code": "VISIBLE_PRIOR_DAMAGE",
+                "informationTime": "BEFORE_REPAIR",
+                "evidence": "Visible prior damage was documented during pre-inspection."
+              }
+            ],
+            "actualLaborMinutes": 214,
+            "status": "ACCEPTED",
+            "telemetry": {
+              "promptVersion": "repair-extraction-v1",
+              "modelId": "gpt-6-luna",
+              "latencyMilliseconds": 4535,
+              "inputTokens": 497,
+              "outputTokens": 452,
+              "providerRequestId": "req_81fcb515bdef4defa2c8fad43fb35d68"
+            }
+          },
+          "errors": []
+        },
+        {
+          "caseId": "28e90548-7daa-57db-b4af-6752be9b46d5",
+          "accepted": true,
+          "result": {
+            "documentType": "REPAIR_COMPLETION_REPORT",
+            "vehicle": {
+              "manufacturer": "Mercedes-Benz",
+              "model": "C-Class W205",
+              "modelYear": 2017,
+              "mileageKm": 123792
+            },
+            "repairCode": "CONTROL_ARM_FRONT_RIGHT_REPLACE",
+            "observedComplications": [
+              {
+                "code": "SEIZED_FASTENER",
+                "informationTime": "DURING_REPAIR",
+                "evidence": "One or more fasteners resisted removal and needed careful release."
+              }
+            ],
+            "knownBeforeRepair": [
+              {
+                "code": "VISIBLE_CORROSION",
+                "informationTime": "BEFORE_REPAIR",
+                "evidence": "Visible corrosion was documented during pre-inspection."
+              }
+            ],
+            "actualLaborMinutes": 134,
+            "status": "ACCEPTED",
+            "telemetry": {
+              "promptVersion": "repair-extraction-v1",
+              "modelId": "gpt-6-luna",
+              "latencyMilliseconds": 2479,
+              "inputTokens": 499,
+              "outputTokens": 224,
+              "providerRequestId": "req_b01e7bf33e1f47efa005e23acf8d3304"
+            }
+          },
+          "errors": []
+        },
+        {
+          "caseId": "2abecc51-2393-5bac-998a-d9f3170fe691",
+          "accepted": true,
+          "result": {
+            "documentType": "REPAIR_COMPLETION_REPORT",
+            "vehicle": {
+              "manufacturer": "BMW",
+              "model": "3 Series F30",
+              "modelYear": 2014,
+              "mileageKm": 169129
+            },
+            "repairCode": "CONTROL_ARM_FRONT_LEFT_REPLACE",
+            "observedComplications": [],
+            "knownBeforeRepair": [
+              {
+                "code": "VISIBLE_CORROSION",
+                "informationTime": "BEFORE_REPAIR",
+                "evidence": "Visible corrosion was documented during pre-inspection."
+              }
+            ],
+            "actualLaborMinutes": 124,
+            "status": "ACCEPTED",
+            "telemetry": {
+              "promptVersion": "repair-extraction-v1",
+              "modelId": "gpt-6-luna",
+              "latencyMilliseconds": 3039,
+              "inputTokens": 497,
+              "outputTokens": 246,
+              "providerRequestId": "req_bde61006350f4c79bd2312f413cafdbc"
+            }
+          },
+          "errors": []
+        },
+        {
+          "caseId": "2bb2448b-5890-52e7-8f87-c3f85537dccd",
+          "accepted": true,
+          "result": {
+            "documentType": "REPAIR_COMPLETION_REPORT",
+            "vehicle": {
+              "manufacturer": "Volkswagen",
+              "model": "Golf VII",
+              "modelYear": 2017,
+              "mileageKm": 156413
+            },
+            "repairCode": "CONTROL_ARM_FRONT_RIGHT_REPLACE",
+            "observedComplications": [],
+            "knownBeforeRepair": [
+              {
+                "code": "VISIBLE_CORROSION",
+                "informationTime": "BEFORE_REPAIR",
+                "evidence": "Visible corrosion was documented during pre-inspection."
+              }
+            ],
+            "actualLaborMinutes": 127,
+            "status": "ACCEPTED",
+            "telemetry": {
+              "promptVersion": "repair-extraction-v1",
+              "modelId": "gpt-6-luna",
+              "latencyMilliseconds": 3070,
+              "inputTokens": 495,
+              "outputTokens": 234,
+              "providerRequestId": "req_1b3a9e9a83f54b7d938b017c59e51cfd"
+            }
+          },
+          "errors": []
+        },
+        {
+          "caseId": "2bd71364-d808-5965-ad42-dfeeb91c4d28",
+          "accepted": true,
+          "result": {
+            "documentType": "REPAIR_COMPLETION_REPORT",
+            "vehicle": {
+              "manufacturer": "Mercedes-Benz",
+              "model": "C-Class W205",
+              "modelYear": 2016,
+              "mileageKm": 208992
+            },
+            "repairCode": "CONTROL_ARM_FRONT_PAIR_REPLACE",
+            "observedComplications": [
+              {
+                "code": "SEIZED_FASTENER",
+                "informationTime": "DURING_REPAIR",
+                "evidence": "One or more fasteners resisted removal and needed careful release."
+              }
+            ],
+            "knownBeforeRepair": [],
+            "actualLaborMinutes": 232,
+            "status": "ACCEPTED",
+            "telemetry": {
+              "promptVersion": "repair-extraction-v1",
+              "modelId": "gpt-6-luna",
+              "latencyMilliseconds": 2418,
+              "inputTokens": 489,
+              "outputTokens": 192,
+              "providerRequestId": "req_645e9fdf0bf64687b18f64913e62ff26"
+            }
+          },
+          "errors": []
+        },
+        {
+          "caseId": "2c7fe189-fee6-52fc-939b-6ecd28519a6d",
+          "accepted": true,
+          "result": {
+            "documentType": "REPAIR_COMPLETION_REPORT",
+            "vehicle": {
+              "manufacturer": "Ford",
+              "model": "Focus Mk3",
+              "modelYear": 2011,
+              "mileageKm": 147070
+            },
+            "repairCode": "CONTROL_ARM_REAR_RIGHT_REPLACE",
+            "observedComplications": [
+              {
+                "code": "SEIZED_FASTENER",
+                "informationTime": "DURING_REPAIR",
+                "evidence": "Corroded mounting hardware required additional extraction work."
+              }
+            ],
+            "knownBeforeRepair": [
+              {
+                "code": "VISIBLE_CORROSION",
+                "informationTime": "BEFORE_REPAIR",
+                "evidence": "Visible corrosion was documented during pre-inspection."
+              }
+            ],
+            "actualLaborMinutes": 148,
+            "status": "ACCEPTED",
+            "telemetry": {
+              "promptVersion": "repair-extraction-v1",
+              "modelId": "gpt-6-luna",
+              "latencyMilliseconds": 3682,
+              "inputTokens": 495,
+              "outputTokens": 371,
+              "providerRequestId": "req_220c3c2b28ec493a85c24607e311c1c6"
+            }
+          },
+          "errors": []
+        },
+        {
+          "caseId": "2d58ae3c-aef4-5814-adfd-62cc5ee7796a",
+          "accepted": true,
+          "result": {
+            "documentType": "REPAIR_COMPLETION_REPORT",
+            "vehicle": {
+              "manufacturer": "Ford",
+              "model": "Focus Mk3",
+              "modelYear": 2013,
+              "mileageKm": 192335
+            },
+            "repairCode": "CONTROL_ARM_FRONT_PAIR_REPLACE",
+            "observedComplications": [],
+            "knownBeforeRepair": [
+              {
+                "code": "VISIBLE_CORROSION",
+                "informationTime": "BEFORE_REPAIR",
+                "evidence": "Visible corrosion was documented during pre-inspection."
+              }
+            ],
+            "actualLaborMinutes": 201,
+            "status": "ACCEPTED",
+            "telemetry": {
+              "promptVersion": "repair-extraction-v1",
+              "modelId": "gpt-6-luna",
+              "latencyMilliseconds": 2801,
+              "inputTokens": 494,
+              "outputTokens": 195,
+              "providerRequestId": "req_0517f3efd1344e92801403e4201e0e47"
+            }
+          },
+          "errors": []
+        },
+        {
+          "caseId": "2dc86c51-7d2c-50d5-89f1-623c48490e04",
+          "accepted": true,
+          "result": {
+            "documentType": "REPAIR_COMPLETION_REPORT",
+            "vehicle": {
+              "manufacturer": "Opel",
+              "model": "Astra K",
+              "modelYear": 2017,
+              "mileageKm": 73805
+            },
+            "repairCode": "CONTROL_ARM_FRONT_LEFT_REPLACE",
+            "observedComplications": [],
+            "knownBeforeRepair": [],
+            "actualLaborMinutes": 141,
+            "status": "ACCEPTED",
+            "telemetry": {
+              "promptVersion": "repair-extraction-v1",
+              "modelId": "gpt-6-luna",
+              "latencyMilliseconds": 2951,
+              "inputTokens": 486,
+              "outputTokens": 229,
+              "providerRequestId": "req_5cb239ce22c341bd88938bc0ca89be2d"
+            }
+          },
+          "errors": []
+        },
+        {
+          "caseId": "2e255c61-5826-5d14-80de-bc95538d06f9",
+          "accepted": true,
+          "result": {
+            "documentType": "REPAIR_COMPLETION_REPORT",
+            "vehicle": {
+              "manufacturer": "Mercedes-Benz",
+              "model": "C-Class W205",
+              "modelYear": 2015,
+              "mileageKm": 162346
+            },
+            "repairCode": "CONTROL_ARM_REAR_RIGHT_REPLACE",
+            "observedComplications": [],
+            "knownBeforeRepair": [],
+            "actualLaborMinutes": 185,
+            "status": "ACCEPTED",
+            "telemetry": {
+              "promptVersion": "repair-extraction-v1",
+              "modelId": "gpt-6-luna",
+              "latencyMilliseconds": 2348,
+              "inputTokens": 491,
+              "outputTokens": 165,
+              "providerRequestId": "req_68c596902d404173aceaf58ae084bd8e"
+            }
+          },
+          "errors": []
+        },
+        {
+          "caseId": "2e993068-4ac0-5b5f-97f3-523452e4840c",
+          "accepted": true,
+          "result": {
+            "documentType": "REPAIR_COMPLETION_REPORT",
+            "vehicle": {
+              "manufacturer": "Audi",
+              "model": "A3 8V",
+              "modelYear": 2016,
+              "mileageKm": 165466
+            },
+            "repairCode": "CONTROL_ARM_FRONT_LEFT_REPLACE",
+            "observedComplications": [],
+            "knownBeforeRepair": [
+              {
+                "code": "VISIBLE_CORROSION",
+                "informationTime": "BEFORE_REPAIR",
+                "evidence": "Visible corrosion was documented during pre-inspection."
+              }
+            ],
+            "actualLaborMinutes": 142,
+            "status": "ACCEPTED",
+            "telemetry": {
+              "promptVersion": "repair-extraction-v1",
+              "modelId": "gpt-6-luna",
+              "latencyMilliseconds": 3043,
+              "inputTokens": 500,
+              "outputTokens": 251,
+              "providerRequestId": "req_ccd93211705345a3a60f3cd52c571f65"
+            }
+          },
+          "errors": []
+        },
+        {
+          "caseId": "2fa226b2-346e-5f48-ae24-54659c9de4d1",
+          "accepted": true,
+          "result": {
+            "documentType": "REPAIR_COMPLETION_REPORT",
+            "vehicle": {
+              "manufacturer": "Opel",
+              "model": "Astra K",
+              "modelYear": 2017,
+              "mileageKm": 52651
+            },
+            "repairCode": "CONTROL_ARM_FRONT_PAIR_REPLACE",
+            "observedComplications": [
+              {
+                "code": "SEIZED_FASTENER",
+                "informationTime": "DURING_REPAIR",
+                "evidence": "fasteners resisted removal and needed careful release"
+              }
+            ],
+            "knownBeforeRepair": [],
+            "actualLaborMinutes": 209,
+            "status": "ACCEPTED",
+            "telemetry": {
+              "promptVersion": "repair-extraction-v1",
+              "modelId": "gpt-6-luna",
+              "latencyMilliseconds": 1999,
+              "inputTokens": 487,
+              "outputTokens": 156,
+              "providerRequestId": "req_affe49d8ab2e45058783272e396324c8"
+            }
+          },
+          "errors": []
+        },
+        {
+          "caseId": "2fc9ba57-38dc-5f4f-94d5-1a52c5e170fc",
+          "accepted": true,
+          "result": {
+            "documentType": "REPAIR_COMPLETION_REPORT",
+            "vehicle": {
+              "manufacturer": "Ford",
+              "model": "Focus Mk3",
+              "modelYear": 2013,
+              "mileageKm": 148399
+            },
+            "repairCode": "CONTROL_ARM_REAR_RIGHT_REPLACE",
+            "observedComplications": [
+              {
+                "code": "SEIZED_FASTENER",
+                "informationTime": "DURING_REPAIR",
+                "evidence": "One or more fasteners resisted removal and needed careful release."
+              }
+            ],
+            "knownBeforeRepair": [
+              {
+                "code": "VISIBLE_CORROSION",
+                "informationTime": "BEFORE_REPAIR",
+                "evidence": "Visible corrosion was documented during pre-inspection."
+              }
+            ],
+            "actualLaborMinutes": 135,
+            "status": "ACCEPTED",
+            "telemetry": {
+              "promptVersion": "repair-extraction-v1",
+              "modelId": "gpt-6-luna",
+              "latencyMilliseconds": 2395,
+              "inputTokens": 497,
+              "outputTokens": 198,
+              "providerRequestId": "req_cc358e484cac48f99bccac79c787863e"
+            }
+          },
+          "errors": []
+        },
+        {
+          "caseId": "313a0658-7069-5bb3-87c5-e75816551f91",
+          "accepted": true,
+          "result": {
+            "documentType": "REPAIR_COMPLETION_REPORT",
+            "vehicle": {
+              "manufacturer": "Ford",
+              "model": "Focus Mk3",
+              "modelYear": 2017,
+              "mileageKm": 143533
+            },
+            "repairCode": "CONTROL_ARM_FRONT_PAIR_REPLACE",
+            "observedComplications": [],
+            "knownBeforeRepair": [
+              {
+                "code": "VISIBLE_CORROSION",
+                "informationTime": "BEFORE_REPAIR",
+                "evidence": "Visible corrosion was documented during pre-inspection."
+              }
+            ],
+            "actualLaborMinutes": 197,
+            "status": "ACCEPTED",
+            "telemetry": {
+              "promptVersion": "repair-extraction-v1",
+              "modelId": "gpt-6-luna",
+              "latencyMilliseconds": 2617,
+              "inputTokens": 494,
+              "outputTokens": 203,
+              "providerRequestId": "req_69fc87b6d7004f37a7fc7b315b9a38c1"
+            }
+          },
+          "errors": []
+        },
+        {
+          "caseId": "31a9be0f-57d5-59ce-9f81-f72543f69546",
+          "accepted": true,
+          "result": {
+            "documentType": "REPAIR_COMPLETION_REPORT",
+            "vehicle": {
+              "manufacturer": "Volkswagen",
+              "model": "Golf VII",
+              "modelYear": 2015,
+              "mileageKm": 203239
+            },
+            "repairCode": "CONTROL_ARM_REAR_LEFT_REPLACE",
+            "observedComplications": [],
+            "knownBeforeRepair": [
+              {
+                "code": "VISIBLE_CORROSION",
+                "informationTime": "BEFORE_REPAIR",
+                "evidence": "Visible corrosion was documented during pre-inspection."
+              }
+            ],
+            "actualLaborMinutes": 179,
+            "status": "ACCEPTED",
+            "telemetry": {
+              "promptVersion": "repair-extraction-v1",
+              "modelId": "gpt-6-luna",
+              "latencyMilliseconds": 2723,
+              "inputTokens": 495,
+              "outputTokens": 241,
+              "providerRequestId": "req_645fe0ff12a549e89e6d45353d03a534"
+            }
+          },
+          "errors": []
+        },
+        {
+          "caseId": "3324215e-a8ed-5d4b-b7d4-cb1fb68a08dd",
+          "accepted": true,
+          "result": {
+            "documentType": "REPAIR_COMPLETION_REPORT",
+            "vehicle": {
+              "manufacturer": "Volkswagen",
+              "model": "Golf VII",
+              "modelYear": 2013,
+              "mileageKm": 121058
+            },
+            "repairCode": "CONTROL_ARM_FRONT_LEFT_REPLACE",
+            "observedComplications": [],
+            "knownBeforeRepair": [
+              {
+                "code": "VISIBLE_PRIOR_DAMAGE",
+                "informationTime": "BEFORE_REPAIR",
+                "evidence": "Visible prior damage was documented during pre-inspection."
+              }
+            ],
+            "actualLaborMinutes": 131,
+            "status": "ACCEPTED",
+            "telemetry": {
+              "promptVersion": "repair-extraction-v1",
+              "modelId": "gpt-6-luna",
+              "latencyMilliseconds": 3032,
+              "inputTokens": 496,
+              "outputTokens": 220,
+              "providerRequestId": "req_f0f2324d9b9849c1b02e2ae4c8e61c66"
+            }
+          },
+          "errors": []
+        },
+        {
+          "caseId": "33ac75e5-43a6-52db-b0e4-e6e6d20b728f",
+          "accepted": true,
+          "result": {
+            "documentType": "REPAIR_COMPLETION_REPORT",
+            "vehicle": {
+              "manufacturer": "Audi",
+              "model": "A3 8V",
+              "modelYear": 2012,
+              "mileageKm": 257401
+            },
+            "repairCode": "CONTROL_ARM_FRONT_LEFT_REPLACE",
+            "observedComplications": [
+              {
+                "code": "SEIZED_FASTENER",
+                "informationTime": "DURING_REPAIR",
+                "evidence": "fasteners resisted removal"
+              }
+            ],
+            "knownBeforeRepair": [
+              {
+                "code": "VISIBLE_CORROSION",
+                "informationTime": "BEFORE_REPAIR",
+                "evidence": "Visible corrosion was documented during pre-inspection."
+              }
+            ],
+            "actualLaborMinutes": 131,
+            "status": "ACCEPTED",
+            "telemetry": {
+              "promptVersion": "repair-extraction-v1",
+              "modelId": "gpt-6-luna",
+              "latencyMilliseconds": 2875,
+              "inputTokens": 499,
+              "outputTokens": 201,
+              "providerRequestId": "req_f8468e298986473cb8c19b855d131278"
+            }
+          },
+          "errors": []
+        },
+        {
+          "caseId": "33c2d629-29e7-5f58-9154-5012ec94455b",
+          "accepted": true,
+          "result": {
+            "documentType": "REPAIR_COMPLETION_REPORT",
+            "vehicle": {
+              "manufacturer": "Ford",
+              "model": "Focus Mk3",
+              "modelYear": 2014,
+              "mileageKm": 171585
+            },
+            "repairCode": "CONTROL_ARM_FRONT_PAIR_REPLACE",
+            "observedComplications": [
+              {
+                "code": "SEIZED_FASTENER",
+                "informationTime": "DURING_REPAIR",
+                "evidence": "One or more fasteners resisted removal and needed careful release."
+              }
+            ],
+            "knownBeforeRepair": [
+              {
+                "code": "VISIBLE_CORROSION",
+                "informationTime": "BEFORE_REPAIR",
+                "evidence": "Visible corrosion was documented during pre-inspection."
+              },
+              {
+                "code": "VISIBLE_PRIOR_DAMAGE",
+                "informationTime": "BEFORE_REPAIR",
+                "evidence": "Visible prior damage was documented during pre-inspection."
+              }
+            ],
+            "actualLaborMinutes": 197,
+            "status": "ACCEPTED",
+            "telemetry": {
+              "promptVersion": "repair-extraction-v1",
+              "modelId": "gpt-6-luna",
+              "latencyMilliseconds": 3624,
+              "inputTokens": 506,
+              "outputTokens": 357,
+              "providerRequestId": "req_e1dfa02781c2455cb26b205be39a8550"
+            }
+          },
+          "errors": []
+        },
+        {
+          "caseId": "3154a499-0e25-5a72-a56b-d7e07aea8b72",
+          "accepted": true,
+          "result": {
+            "documentType": "REPAIR_COMPLETION_REPORT",
+            "vehicle": {
+              "manufacturer": "Volkswagen",
+              "model": "Golf VII",
+              "modelYear": 2017,
+              "mileageKm": 160171
+            },
+            "repairCode": "CONTROL_ARM_REAR_LEFT_REPLACE",
+            "observedComplications": [
+              {
+                "code": "SEIZED_FASTENER",
+                "informationTime": "DURING_REPAIR",
+                "evidence": "mounting hardware was seized"
+              }
+            ],
+            "knownBeforeRepair": [],
+            "actualLaborMinutes": 240,
+            "status": "ACCEPTED",
+            "telemetry": {
+              "promptVersion": "repair-extraction-v1",
+              "modelId": "gpt-6-luna",
+              "latencyMilliseconds": 3115,
+              "inputTokens": 511,
+              "outputTokens": 273,
+              "providerRequestId": "req_b9077df16cdc4be6a3eb40efb86aad66"
+            }
+          },
+          "errors": []
+        },
+        {
+          "caseId": "3246893d-9302-568c-9673-85b86a8b2706",
+          "accepted": true,
+          "result": {
+            "documentType": "REPAIR_COMPLETION_REPORT",
+            "vehicle": {
+              "manufacturer": "Volkswagen",
+              "model": "Golf VII",
+              "modelYear": 2013,
+              "mileageKm": 181725
+            },
+            "repairCode": "CONTROL_ARM_REAR_LEFT_REPLACE",
+            "observedComplications": [
+              {
+                "code": "ALIGNMENT_CORRECTION",
+                "informationTime": "DURING_REPAIR",
+                "evidence": "A follow-up adjustment was made during the geometry check."
+              }
+            ],
+            "knownBeforeRepair": [
+              {
+                "code": "VISIBLE_CORROSION",
+                "informationTime": "BEFORE_REPAIR",
+                "evidence": "Visible corrosion was documented during pre-inspection."
+              }
+            ],
+            "actualLaborMinutes": 189,
+            "status": "ACCEPTED",
+            "telemetry": {
+              "promptVersion": "repair-extraction-v1",
+              "modelId": "gpt-6-luna",
+              "latencyMilliseconds": 3049,
+              "inputTokens": 516,
+              "outputTokens": 285,
+              "providerRequestId": "req_54d2295e57434bd0adc879c6f2ca74c6"
+            }
+          },
+          "errors": []
+        },
+        {
+          "caseId": "347159c4-e57a-561b-81a4-f2020c8805f1",
+          "accepted": true,
+          "result": {
+            "documentType": "REPAIR_COMPLETION_REPORT",
+            "vehicle": {
+              "manufacturer": "BMW",
+              "model": "3 Series F30",
+              "modelYear": 2011,
+              "mileageKm": 102184
+            },
+            "repairCode": "CONTROL_ARM_REAR_LEFT_REPLACE",
+            "observedComplications": [
+              {
+                "code": "SEIZED_FASTENER",
+                "informationTime": "DURING_REPAIR",
+                "evidence": "One or more fasteners resisted removal and needed careful release."
+              },
+              {
+                "code": "ALIGNMENT_CORRECTION",
+                "informationTime": "AFTER_REPAIR",
+                "evidence": "Wheel geometry needed further correction after assembly."
+              }
+            ],
+            "knownBeforeRepair": [
+              {
+                "code": "VISIBLE_CORROSION",
+                "informationTime": "BEFORE_REPAIR",
+                "evidence": "Visible corrosion was documented during pre-inspection."
+              }
+            ],
+            "actualLaborMinutes": 166,
+            "status": "ACCEPTED",
+            "telemetry": {
+              "promptVersion": "repair-extraction-v1",
+              "modelId": "gpt-6-luna",
+              "latencyMilliseconds": 3287,
+              "inputTokens": 507,
+              "outputTokens": 259,
+              "providerRequestId": "req_78a32bd8728240f3a31ad985459a1176"
+            }
+          },
+          "errors": []
+        },
+        {
+          "caseId": "355609a2-1ca2-5f78-961f-6b66a5a37ff1",
+          "accepted": true,
+          "result": {
+            "documentType": "REPAIR_COMPLETION_REPORT",
+            "vehicle": {
+              "manufacturer": "Mercedes-Benz",
+              "model": "C-Class W205",
+              "modelYear": 2015,
+              "mileageKm": 188814
+            },
+            "repairCode": "CONTROL_ARM_REAR_RIGHT_REPLACE",
+            "observedComplications": [
+              {
+                "code": "SEIZED_FASTENER",
+                "informationTime": "DURING_REPAIR",
+                "evidence": "fasteners resisted removal and needed careful release"
+              },
+              {
+                "code": "ALIGNMENT_CORRECTION",
+                "informationTime": "DURING_REPAIR",
+                "evidence": "A follow-up adjustment was made during the geometry check."
+              }
+            ],
+            "knownBeforeRepair": [
+              {
+                "code": "VISIBLE_CORROSION",
+                "informationTime": "BEFORE_REPAIR",
+                "evidence": "Visible corrosion was documented during pre-inspection."
+              }
+            ],
+            "actualLaborMinutes": 231,
+            "status": "ACCEPTED",
+            "telemetry": {
+              "promptVersion": "repair-extraction-v1",
+              "modelId": "gpt-6-luna",
+              "latencyMilliseconds": 4010,
+              "inputTokens": 523,
+              "outputTokens": 386,
+              "providerRequestId": "req_f83bae49011a4eff9e01b7a60eb4a607"
+            }
+          },
+          "errors": []
+        },
+        {
+          "caseId": "39605c13-8412-5ee9-9b15-33c928131dc8",
+          "accepted": true,
+          "result": {
+            "documentType": "REPAIR_COMPLETION_REPORT",
+            "vehicle": {
+              "manufacturer": "Audi",
+              "model": "A3 8V",
+              "modelYear": 2013,
+              "mileageKm": 261903
+            },
+            "repairCode": "CONTROL_ARM_REAR_LEFT_REPLACE",
+            "observedComplications": [
+              {
+                "code": "BROKEN_BOLT",
+                "informationTime": "DURING_REPAIR",
+                "evidence": "A mounting bolt broke during removal and was replaced."
+              }
+            ],
+            "knownBeforeRepair": [],
+            "actualLaborMinutes": 233,
+            "status": "ACCEPTED",
+            "telemetry": {
+              "promptVersion": "repair-extraction-v1",
+              "modelId": "gpt-6-luna",
+              "latencyMilliseconds": 2952,
+              "inputTokens": 498,
+              "outputTokens": 286,
+              "providerRequestId": "req_03ee90f61d8244bea17f245a9d80fcfa"
+            }
+          },
+          "errors": []
+        },
+        {
+          "caseId": "3cdb7273-9dbf-5413-8067-e2c3b26137ad",
+          "accepted": true,
+          "result": {
+            "documentType": "REPAIR_COMPLETION_REPORT",
+            "vehicle": {
+              "manufacturer": "BMW",
+              "model": "3 Series F30",
+              "modelYear": 2012,
+              "mileageKm": 272731
+            },
+            "repairCode": "CONTROL_ARM_FRONT_LEFT_REPLACE",
+            "observedComplications": [
+              {
+                "code": "SEIZED_FASTENER",
+                "informationTime": "DURING_REPAIR",
+                "evidence": "mounting hardware was seized"
+              }
+            ],
+            "knownBeforeRepair": [
+              {
+                "code": "VISIBLE_CORROSION",
+                "informationTime": "BEFORE_REPAIR",
+                "evidence": "Visible corrosion was documented during pre-inspection."
+              }
+            ],
+            "actualLaborMinutes": 182,
+            "status": "ACCEPTED",
+            "telemetry": {
+              "promptVersion": "repair-extraction-v1",
+              "modelId": "gpt-6-luna",
+              "latencyMilliseconds": 2719,
+              "inputTokens": 509,
+              "outputTokens": 204,
+              "providerRequestId": "req_1bc5cad14ef84f25804560c6fd9a96b2"
+            }
+          },
+          "errors": []
+        },
+        {
+          "caseId": "3d74699c-3cf8-59e0-9dcd-3325cb51c4a6",
+          "accepted": true,
+          "result": {
+            "documentType": "REPAIR_COMPLETION_REPORT",
+            "vehicle": {
+              "manufacturer": "Volkswagen",
+              "model": "Golf VII",
+              "modelYear": 2013,
+              "mileageKm": 141229
+            },
+            "repairCode": "CONTROL_ARM_REAR_RIGHT_REPLACE",
+            "observedComplications": [
+              {
+                "code": "SEIZED_FASTENER",
+                "informationTime": "DURING_REPAIR",
+                "evidence": "One or more fasteners resisted removal and needed careful release."
+              }
+            ],
+            "knownBeforeRepair": [],
+            "actualLaborMinutes": 199,
+            "status": "ACCEPTED",
+            "telemetry": {
+              "promptVersion": "repair-extraction-v1",
+              "modelId": "gpt-6-luna",
+              "latencyMilliseconds": 2630,
+              "inputTokens": 498,
+              "outputTokens": 210,
+              "providerRequestId": "req_8aeafbc185684083b22d1aba298e8ba5"
+            }
+          },
+          "errors": []
+        },
+        {
+          "caseId": "3f2d35ba-7d06-5709-a135-5720c0720817",
+          "accepted": true,
+          "result": {
+            "documentType": "REPAIR_COMPLETION_REPORT",
+            "vehicle": {
+              "manufacturer": "Mercedes-Benz",
+              "model": "C-Class W205",
+              "modelYear": 2014,
+              "mileageKm": 68801
+            },
+            "repairCode": "CONTROL_ARM_FRONT_LEFT_REPLACE",
+            "observedComplications": [
+              {
+                "code": "SEIZED_FASTENER",
+                "informationTime": "DURING_REPAIR",
+                "evidence": "Corroded mounting hardware required additional extraction work."
+              },
+              {
+                "code": "ALIGNMENT_CORRECTION",
+                "informationTime": "DURING_REPAIR",
+                "evidence": "Final alignment required an additional correction."
+              }
+            ],
+            "knownBeforeRepair": [
+              {
+                "code": "VISIBLE_CORROSION",
+                "informationTime": "BEFORE_REPAIR",
+                "evidence": "Visible corrosion was documented during pre-inspection."
+              }
+            ],
+            "actualLaborMinutes": 162,
+            "status": "ACCEPTED",
+            "telemetry": {
+              "promptVersion": "repair-extraction-v1",
+              "modelId": "gpt-6-luna",
+              "latencyMilliseconds": 3468,
+              "inputTokens": 504,
+              "outputTokens": 353,
+              "providerRequestId": "req_d58563fb21d344018f73af76cf9fbb7c"
+            }
+          },
+          "errors": []
+        },
+        {
+          "caseId": "46d0ab16-42e1-5f08-ba53-c31e2da98704",
+          "accepted": true,
+          "result": {
+            "documentType": "REPAIR_COMPLETION_REPORT",
+            "vehicle": {
+              "manufacturer": "BMW",
+              "model": "3 Series F30",
+              "modelYear": 2011,
+              "mileageKm": 186267
+            },
+            "repairCode": "CONTROL_ARM_FRONT_RIGHT_REPLACE",
+            "observedComplications": [
+              {
+                "code": "SEIZED_FASTENER",
+                "informationTime": "DURING_REPAIR",
+                "evidence": "One or more fasteners resisted removal and needed careful release."
+              }
+            ],
+            "knownBeforeRepair": [
+              {
+                "code": "VISIBLE_CORROSION",
+                "informationTime": "BEFORE_REPAIR",
+                "evidence": "Visible corrosion was documented during pre-inspection."
+              }
+            ],
+            "actualLaborMinutes": 147,
+            "status": "ACCEPTED",
+            "telemetry": {
+              "promptVersion": "repair-extraction-v1",
+              "modelId": "gpt-6-luna",
+              "latencyMilliseconds": 3163,
+              "inputTokens": 512,
+              "outputTokens": 284,
+              "providerRequestId": "req_28266dc19b1746858cb0e43b0820531e"
+            }
+          },
+          "errors": []
+        },
+        {
+          "caseId": "4d4e6f3c-8465-558c-a9ae-22fc7066ff45",
+          "accepted": true,
+          "result": {
+            "documentType": "REPAIR_COMPLETION_REPORT",
+            "vehicle": {
+              "manufacturer": "Ford",
+              "model": "Focus Mk3",
+              "modelYear": 2011,
+              "mileageKm": 145267
+            },
+            "repairCode": "CONTROL_ARM_REAR_RIGHT_REPLACE",
+            "observedComplications": [
+              {
+                "code": "ALIGNMENT_CORRECTION",
+                "informationTime": "DURING_REPAIR",
+                "evidence": "A follow-up adjustment was made during the geometry check."
+              }
+            ],
+            "knownBeforeRepair": [
+              {
+                "code": "VISIBLE_CORROSION",
+                "informationTime": "BEFORE_REPAIR",
+                "evidence": "Visible corrosion was documented during pre-inspection."
+              }
+            ],
+            "actualLaborMinutes": 191,
+            "status": "ACCEPTED",
+            "telemetry": {
+              "promptVersion": "repair-extraction-v1",
+              "modelId": "gpt-6-luna",
+              "latencyMilliseconds": 3275,
+              "inputTokens": 509,
+              "outputTokens": 335,
+              "providerRequestId": "req_3c9dfeb69909453a90240b9fa3b89c9a"
+            }
+          },
+          "errors": []
+        }
+      ]
+    },
+    {
+      "promptVersion": "repair-extraction-v2",
+      "modelId": "gpt-6-luna",
+      "metrics": {
+        "caseCount": 50,
+        "schemaValidityRate": 1,
+        "vehicleExactMatchAccuracy": 1,
+        "repairCodeExactMatchAccuracy": 1,
+        "complicationPrecision": 1,
+        "complicationRecall": 0.4166666666666666666666666667,
+        "complicationF1": 0.5882352941176470588235294118,
+        "complicationMacroF1": 0.5166666666666666666666666667,
+        "complicationSamplesF1": 0.596,
+        "acceptedCoverageRate": 1,
+        "perClass": {
+          "ALIGNMENT_CORRECTION": {
+            "truePositives": 6,
+            "falsePositives": 0,
+            "falseNegatives": 0,
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "BROKEN_BOLT": {
+            "truePositives": 1,
+            "falsePositives": 0,
+            "falseNegatives": 3,
+            "precision": 1,
+            "recall": 0.25,
+            "f1": 0.4
+          },
+          "DAMAGED_BUSHING_SEAT": {
+            "truePositives": 0,
+            "falsePositives": 0,
+            "falseNegatives": 12,
+            "precision": 1,
+            "recall": 0,
+            "f1": 0
+          },
+          "SEIZED_FASTENER": {
+            "truePositives": 13,
+            "falsePositives": 0,
+            "falseNegatives": 13,
+            "precision": 1,
+            "recall": 0.5,
+            "f1": 0.6666666666666666666666666667
+          }
+        },
+        "unsupportedClaimCount": 0,
+        "temporalLeakageViolationCount": 0,
+        "totalLatencyMilliseconds": 179869,
+        "totalInputTokens": 38603,
+        "totalOutputTokens": 13706
+      },
+      "errorTypes": {},
+      "outcomes": [
+        {
+          "caseId": "118a5db9-4204-58eb-9024-cdbb9734314e",
+          "accepted": true,
+          "result": {
+            "documentType": "REPAIR_COMPLETION_REPORT",
+            "vehicle": {
+              "manufacturer": "Mercedes-Benz",
+              "model": "C-Class W205",
+              "modelYear": 2016,
+              "mileageKm": 117234
+            },
+            "repairCode": "CONTROL_ARM_REAR_LEFT_REPLACE",
+            "observedComplications": [],
+            "knownBeforeRepair": [],
+            "actualLaborMinutes": 125,
+            "status": "ACCEPTED",
+            "telemetry": {
+              "promptVersion": "repair-extraction-v2",
+              "modelId": "gpt-6-luna",
+              "latencyMilliseconds": 1815,
+              "inputTokens": 767,
+              "outputTokens": 131,
+              "providerRequestId": "req_44fa8da8141f46b895575308fdd945dd"
+            }
+          },
+          "errors": []
+        },
+        {
+          "caseId": "11ac25de-72fa-5a5c-8189-c07378edec79",
+          "accepted": true,
+          "result": {
+            "documentType": "REPAIR_COMPLETION_REPORT",
+            "vehicle": {
+              "manufacturer": "Volkswagen",
+              "model": "Golf VII",
+              "modelYear": 2012,
+              "mileageKm": 147704
+            },
+            "repairCode": "CONTROL_ARM_REAR_RIGHT_REPLACE",
+            "observedComplications": [],
+            "knownBeforeRepair": [
+              {
+                "code": "VISIBLE_CORROSION",
+                "informationTime": "BEFORE_REPAIR",
+                "evidence": "Visible corrosion was documented during pre-inspection."
+              }
+            ],
+            "actualLaborMinutes": 156,
+            "status": "ACCEPTED",
+            "telemetry": {
+              "promptVersion": "repair-extraction-v2",
+              "modelId": "gpt-6-luna",
+              "latencyMilliseconds": 2874,
+              "inputTokens": 771,
+              "outputTokens": 168,
+              "providerRequestId": "req_7fadf663ba7d4ca4831841d9543225b9"
+            }
+          },
+          "errors": []
+        },
+        {
+          "caseId": "120cd33d-ac9c-5b7f-8c4b-e71cdd6dc6a0",
+          "accepted": true,
+          "result": {
+            "documentType": "REPAIR_COMPLETION_REPORT",
+            "vehicle": {
+              "manufacturer": "Opel",
+              "model": "Astra K",
+              "modelYear": 2021,
+              "mileageKm": 62479
+            },
+            "repairCode": "CONTROL_ARM_REAR_RIGHT_REPLACE",
+            "observedComplications": [],
+            "knownBeforeRepair": [],
+            "actualLaborMinutes": 107,
+            "status": "ACCEPTED",
+            "telemetry": {
+              "promptVersion": "repair-extraction-v2",
+              "modelId": "gpt-6-luna",
+              "latencyMilliseconds": 2560,
+              "inputTokens": 765,
+              "outputTokens": 138,
+              "providerRequestId": "req_2ac72828cf734679b1c0a264580074ce"
+            }
+          },
+          "errors": []
+        },
+        {
+          "caseId": "13204d5b-7ba1-5542-b7fa-e94dc7050ee1",
+          "accepted": true,
+          "result": {
+            "documentType": "REPAIR_COMPLETION_REPORT",
+            "vehicle": {
+              "manufacturer": "Audi",
+              "model": "A3 8V",
+              "modelYear": 2012,
+              "mileageKm": 215861
+            },
+            "repairCode": "CONTROL_ARM_FRONT_LEFT_REPLACE",
+            "observedComplications": [],
+            "knownBeforeRepair": [],
+            "actualLaborMinutes": 107,
+            "status": "ACCEPTED",
+            "telemetry": {
+              "promptVersion": "repair-extraction-v2",
+              "modelId": "gpt-6-luna",
+              "latencyMilliseconds": 2208,
+              "inputTokens": 767,
+              "outputTokens": 155,
+              "providerRequestId": "req_eacacb360a6a475d855dcfe7ed1b1260"
+            }
+          },
+          "errors": []
+        },
+        {
+          "caseId": "132b25bf-c22d-5758-971a-e5b582cd5df5",
+          "accepted": true,
+          "result": {
+            "documentType": "REPAIR_COMPLETION_REPORT",
+            "vehicle": {
+              "manufacturer": "Volkswagen",
+              "model": "Golf VII",
+              "modelYear": 2014,
+              "mileageKm": 95492
+            },
+            "repairCode": "CONTROL_ARM_FRONT_RIGHT_REPLACE",
+            "observedComplications": [],
+            "knownBeforeRepair": [],
+            "actualLaborMinutes": 87,
+            "status": "ACCEPTED",
+            "telemetry": {
+              "promptVersion": "repair-extraction-v2",
+              "modelId": "gpt-6-luna",
+              "latencyMilliseconds": 2274,
+              "inputTokens": 765,
+              "outputTokens": 127,
+              "providerRequestId": "req_b3f99398acd6482ca5a209eab94173f1"
+            }
+          },
+          "errors": []
+        },
+        {
+          "caseId": "140eaf3b-8432-5d2d-8499-8cdaaa4a45bb",
+          "accepted": true,
+          "result": {
+            "documentType": "REPAIR_COMPLETION_REPORT",
+            "vehicle": {
+              "manufacturer": "Mercedes-Benz",
+              "model": "C-Class W205",
+              "modelYear": 2020,
+              "mileageKm": 39580
+            },
+            "repairCode": "CONTROL_ARM_REAR_RIGHT_REPLACE",
+            "observedComplications": [],
+            "knownBeforeRepair": [],
+            "actualLaborMinutes": 117,
+            "status": "ACCEPTED",
+            "telemetry": {
+              "promptVersion": "repair-extraction-v2",
+              "modelId": "gpt-6-luna",
+              "latencyMilliseconds": 2207,
+              "inputTokens": 767,
+              "outputTokens": 158,
+              "providerRequestId": "req_6527c0f4b2854547a8701631beb55309"
+            }
+          },
+          "errors": []
+        },
+        {
+          "caseId": "14f17e67-c22d-526c-8b3b-9cc8de50ae56",
+          "accepted": true,
+          "result": {
+            "documentType": "REPAIR_COMPLETION_REPORT",
+            "vehicle": {
+              "manufacturer": "Mercedes-Benz",
+              "model": "C-Class W205",
+              "modelYear": 2017,
+              "mileageKm": 43310
+            },
+            "repairCode": "CONTROL_ARM_FRONT_LEFT_REPLACE",
+            "observedComplications": [],
+            "knownBeforeRepair": [],
+            "actualLaborMinutes": 98,
+            "status": "ACCEPTED",
+            "telemetry": {
+              "promptVersion": "repair-extraction-v2",
+              "modelId": "gpt-6-luna",
+              "latencyMilliseconds": 2176,
+              "inputTokens": 767,
+              "outputTokens": 125,
+              "providerRequestId": "req_4dada023ac704ae1bd0f06b14304620b"
+            }
+          },
+          "errors": []
+        },
+        {
+          "caseId": "165c0781-a7b0-5353-9451-cf7de3a72aa8",
+          "accepted": true,
+          "result": {
+            "documentType": "REPAIR_COMPLETION_REPORT",
+            "vehicle": {
+              "manufacturer": "Ford",
+              "model": "Focus Mk3",
+              "modelYear": 2016,
+              "mileageKm": 75802
+            },
+            "repairCode": "CONTROL_ARM_FRONT_PAIR_REPLACE",
+            "observedComplications": [],
+            "knownBeforeRepair": [],
+            "actualLaborMinutes": 147,
+            "status": "ACCEPTED",
+            "telemetry": {
+              "promptVersion": "repair-extraction-v2",
+              "modelId": "gpt-6-luna",
+              "latencyMilliseconds": 1948,
+              "inputTokens": 764,
+              "outputTokens": 119,
+              "providerRequestId": "req_7c03db151ad840e0a50c6dfa0568e9b8"
+            }
+          },
+          "errors": []
+        },
+        {
+          "caseId": "1685f356-2748-5d2a-9b47-ddd5ee196b90",
+          "accepted": true,
+          "result": {
+            "documentType": "REPAIR_COMPLETION_REPORT",
+            "vehicle": {
+              "manufacturer": "Ford",
+              "model": "Focus Mk3",
+              "modelYear": 2018,
+              "mileageKm": 120882
+            },
+            "repairCode": "CONTROL_ARM_FRONT_PAIR_REPLACE",
+            "observedComplications": [],
+            "knownBeforeRepair": [],
+            "actualLaborMinutes": 184,
+            "status": "ACCEPTED",
+            "telemetry": {
+              "promptVersion": "repair-extraction-v2",
+              "modelId": "gpt-6-luna",
+              "latencyMilliseconds": 2103,
+              "inputTokens": 764,
+              "outputTokens": 133,
+              "providerRequestId": "req_b49cb36ac7ab42b08090d2b5d5397184"
+            }
+          },
+          "errors": []
+        },
+        {
+          "caseId": "16c42d55-ff32-50f0-afd0-b832a5ffa2b0",
+          "accepted": true,
+          "result": {
+            "documentType": "REPAIR_COMPLETION_REPORT",
+            "vehicle": {
+              "manufacturer": "Audi",
+              "model": "A3 8V",
+              "modelYear": 2015,
+              "mileageKm": 127985
+            },
+            "repairCode": "CONTROL_ARM_FRONT_LEFT_REPLACE",
+            "observedComplications": [],
+            "knownBeforeRepair": [],
+            "actualLaborMinutes": 101,
+            "status": "ACCEPTED",
+            "telemetry": {
+              "promptVersion": "repair-extraction-v2",
+              "modelId": "gpt-6-luna",
+              "latencyMilliseconds": 1895,
+              "inputTokens": 767,
+              "outputTokens": 130,
+              "providerRequestId": "req_f784b09099de4b1480d9b4179efc4d66"
+            }
+          },
+          "errors": []
+        },
+        {
+          "caseId": "1741bfaa-cb38-5fcc-8622-4e5a8fed8be7",
+          "accepted": true,
+          "result": {
+            "documentType": "REPAIR_COMPLETION_REPORT",
+            "vehicle": {
+              "manufacturer": "BMW",
+              "model": "3 Series F30",
+              "modelYear": 2019,
+              "mileageKm": 88258
+            },
+            "repairCode": "CONTROL_ARM_REAR_LEFT_REPLACE",
+            "observedComplications": [],
+            "knownBeforeRepair": [
+              {
+                "code": "VISIBLE_CORROSION",
+                "informationTime": "BEFORE_REPAIR",
+                "evidence": "Visible corrosion was documented during pre-inspection."
+              }
+            ],
+            "actualLaborMinutes": 118,
+            "status": "ACCEPTED",
+            "telemetry": {
+              "promptVersion": "repair-extraction-v2",
+              "modelId": "gpt-6-luna",
+              "latencyMilliseconds": 2698,
+              "inputTokens": 776,
+              "outputTokens": 190,
+              "providerRequestId": "req_455cb0c1a4964d7ea995c5209d2eb2b9"
+            }
+          },
+          "errors": []
+        },
+        {
+          "caseId": "1a72c498-4fe2-5931-bd37-43979ade20a2",
+          "accepted": true,
+          "result": {
+            "documentType": "REPAIR_COMPLETION_REPORT",
+            "vehicle": {
+              "manufacturer": "Audi",
+              "model": "A3 8V",
+              "modelYear": 2019,
+              "mileageKm": 109572
+            },
+            "repairCode": "CONTROL_ARM_FRONT_LEFT_REPLACE",
+            "observedComplications": [],
+            "knownBeforeRepair": [],
+            "actualLaborMinutes": 92,
+            "status": "ACCEPTED",
+            "telemetry": {
+              "promptVersion": "repair-extraction-v2",
+              "modelId": "gpt-6-luna",
+              "latencyMilliseconds": 2162,
+              "inputTokens": 767,
+              "outputTokens": 132,
+              "providerRequestId": "req_50d66482c4aa4e86890bf6b6cf5a8bdf"
+            }
+          },
+          "errors": []
+        },
+        {
+          "caseId": "1aaca54e-fd28-51bf-bde6-7dce48c9ff70",
+          "accepted": true,
+          "result": {
+            "documentType": "REPAIR_COMPLETION_REPORT",
+            "vehicle": {
+              "manufacturer": "Volkswagen",
+              "model": "Golf VII",
+              "modelYear": 2016,
+              "mileageKm": 137046
+            },
+            "repairCode": "CONTROL_ARM_REAR_LEFT_REPLACE",
+            "observedComplications": [],
+            "knownBeforeRepair": [],
+            "actualLaborMinutes": 134,
+            "status": "ACCEPTED",
+            "telemetry": {
+              "promptVersion": "repair-extraction-v2",
+              "modelId": "gpt-6-luna",
+              "latencyMilliseconds": 2214,
+              "inputTokens": 765,
+              "outputTokens": 145,
+              "providerRequestId": "req_27996c0a0c7243dbaf0fa56f9fc644f8"
+            }
+          },
+          "errors": []
+        },
+        {
+          "caseId": "1aad61f0-7cdf-5108-a2c0-b6bd64baadad",
+          "accepted": true,
+          "result": {
+            "documentType": "REPAIR_COMPLETION_REPORT",
+            "vehicle": {
+              "manufacturer": "Volkswagen",
+              "model": "Passat B8",
+              "modelYear": 2018,
+              "mileageKm": 51294
+            },
+            "repairCode": "CONTROL_ARM_FRONT_RIGHT_REPLACE",
+            "observedComplications": [],
+            "knownBeforeRepair": [],
+            "actualLaborMinutes": 119,
+            "status": "ACCEPTED",
+            "telemetry": {
+              "promptVersion": "repair-extraction-v2",
+              "modelId": "gpt-6-luna",
+              "latencyMilliseconds": 2060,
+              "inputTokens": 767,
+              "outputTokens": 125,
+              "providerRequestId": "req_5f7c1e47ac7d4d45a4d59b7e8852f2af"
+            }
+          },
+          "errors": []
+        },
+        {
+          "caseId": "1b6fd56d-674d-5aec-9c4d-0b307d847549",
+          "accepted": true,
+          "result": {
+            "documentType": "REPAIR_COMPLETION_REPORT",
+            "vehicle": {
+              "manufacturer": "Mercedes-Benz",
+              "model": "C-Class W205",
+              "modelYear": 2021,
+              "mileageKm": 56038
+            },
+            "repairCode": "CONTROL_ARM_FRONT_PAIR_REPLACE",
+            "observedComplications": [],
+            "knownBeforeRepair": [],
+            "actualLaborMinutes": 171,
+            "status": "ACCEPTED",
+            "telemetry": {
+              "promptVersion": "repair-extraction-v2",
+              "modelId": "gpt-6-luna",
+              "latencyMilliseconds": 2076,
+              "inputTokens": 766,
+              "outputTokens": 134,
+              "providerRequestId": "req_a6976713db9b4a3ba025871a5080b0a6"
+            }
+          },
+          "errors": []
+        },
+        {
+          "caseId": "20ab6cb7-648d-5aa3-ba4c-83538d716017",
+          "accepted": true,
+          "result": {
+            "documentType": "REPAIR_COMPLETION_REPORT",
+            "vehicle": {
+              "manufacturer": "Volkswagen",
+              "model": "Passat B8",
+              "modelYear": 2019,
+              "mileageKm": 123228
+            },
+            "repairCode": "CONTROL_ARM_FRONT_RIGHT_REPLACE",
+            "observedComplications": [
+              {
+                "code": "SEIZED_FASTENER",
+                "informationTime": "DURING_REPAIR",
+                "evidence": "fasteners resisted removal"
+              }
+            ],
+            "knownBeforeRepair": [],
+            "actualLaborMinutes": 122,
+            "status": "ACCEPTED",
+            "telemetry": {
+              "promptVersion": "repair-extraction-v2",
+              "modelId": "gpt-6-luna",
+              "latencyMilliseconds": 2997,
+              "inputTokens": 766,
+              "outputTokens": 227,
+              "providerRequestId": "req_98d6e151b5094ccea61e898f38f98fbb"
+            }
+          },
+          "errors": []
+        },
+        {
+          "caseId": "21207c88-85c1-5255-a99c-2b0f3b2d17a3",
+          "accepted": true,
+          "result": {
+            "documentType": "REPAIR_COMPLETION_REPORT",
+            "vehicle": {
+              "manufacturer": "Audi",
+              "model": "A3 8V",
+              "modelYear": 2014,
+              "mileageKm": 165474
+            },
+            "repairCode": "CONTROL_ARM_FRONT_PAIR_REPLACE",
+            "observedComplications": [],
+            "knownBeforeRepair": [
+              {
+                "code": "VISIBLE_CORROSION",
+                "informationTime": "BEFORE_REPAIR",
+                "evidence": "Visible corrosion was documented during pre-inspection."
+              }
+            ],
+            "actualLaborMinutes": 198,
+            "status": "ACCEPTED",
+            "telemetry": {
+              "promptVersion": "repair-extraction-v2",
+              "modelId": "gpt-6-luna",
+              "latencyMilliseconds": 4870,
+              "inputTokens": 772,
+              "outputTokens": 300,
+              "providerRequestId": "req_258ccb7d54504506b1158dbd00a5f242"
+            }
+          },
+          "errors": []
+        },
+        {
+          "caseId": "233a2e11-0fe7-5074-b26d-320d379a66cd",
+          "accepted": true,
+          "result": {
+            "documentType": "REPAIR_COMPLETION_REPORT",
+            "vehicle": {
+              "manufacturer": "Volkswagen",
+              "model": "Golf VII",
+              "modelYear": 2017,
+              "mileageKm": 82150
+            },
+            "repairCode": "CONTROL_ARM_FRONT_PAIR_REPLACE",
+            "observedComplications": [
+              {
+                "code": "ALIGNMENT_CORRECTION",
+                "informationTime": "AFTER_REPAIR",
+                "evidence": "Wheel geometry needed further correction after assembly."
+              }
+            ],
+            "knownBeforeRepair": [
+              {
+                "code": "VISIBLE_CORROSION",
+                "informationTime": "BEFORE_REPAIR",
+                "evidence": "Visible corrosion was documented during pre-inspection."
+              }
+            ],
+            "actualLaborMinutes": 224,
+            "status": "ACCEPTED",
+            "telemetry": {
+              "promptVersion": "repair-extraction-v2",
+              "modelId": "gpt-6-luna",
+              "latencyMilliseconds": 2883,
+              "inputTokens": 768,
+              "outputTokens": 241,
+              "providerRequestId": "req_97ad5507ec0f4e9da062c022fb274594"
+            }
+          },
+          "errors": []
+        },
+        {
+          "caseId": "235c531a-09c4-565c-b702-6f4f5f67b5fe",
+          "accepted": true,
+          "result": {
+            "documentType": "REPAIR_COMPLETION_REPORT",
+            "vehicle": {
+              "manufacturer": "Mercedes-Benz",
+              "model": "C-Class W205",
+              "modelYear": 2015,
+              "mileageKm": 96401
+            },
+            "repairCode": "CONTROL_ARM_FRONT_RIGHT_REPLACE",
+            "observedComplications": [],
+            "knownBeforeRepair": [],
+            "actualLaborMinutes": 122,
+            "status": "ACCEPTED",
+            "telemetry": {
+              "promptVersion": "repair-extraction-v2",
+              "modelId": "gpt-6-luna",
+              "latencyMilliseconds": 2427,
+              "inputTokens": 767,
+              "outputTokens": 187,
+              "providerRequestId": "req_8e0d3aad35e44a6f83761721465f38b0"
+            }
+          },
+          "errors": []
+        },
+        {
+          "caseId": "2419c6ef-51e8-54ca-89f4-f7257be68c67",
+          "accepted": true,
+          "result": {
+            "documentType": "REPAIR_COMPLETION_REPORT",
+            "vehicle": {
+              "manufacturer": "Volkswagen",
+              "model": "Golf VII",
+              "modelYear": 2016,
+              "mileageKm": 99616
+            },
+            "repairCode": "CONTROL_ARM_REAR_LEFT_REPLACE",
+            "observedComplications": [],
+            "knownBeforeRepair": [
+              {
+                "code": "VISIBLE_CORROSION",
+                "informationTime": "BEFORE_REPAIR",
+                "evidence": "Visible corrosion was documented during pre-inspection."
+              }
+            ],
+            "actualLaborMinutes": 149,
+            "status": "ACCEPTED",
+            "telemetry": {
+              "promptVersion": "repair-extraction-v2",
+              "modelId": "gpt-6-luna",
+              "latencyMilliseconds": 3850,
+              "inputTokens": 771,
+              "outputTokens": 310,
+              "providerRequestId": "req_df5ed36dada5407ba766ab6b742ebffc"
+            }
+          },
+          "errors": []
+        },
+        {
+          "caseId": "24598ed2-7b25-539e-8c9b-bb09317a1a1c",
+          "accepted": true,
+          "result": {
+            "documentType": "REPAIR_COMPLETION_REPORT",
+            "vehicle": {
+              "manufacturer": "Volkswagen",
+              "model": "Passat B8",
+              "modelYear": 2014,
+              "mileageKm": 104974
+            },
+            "repairCode": "CONTROL_ARM_FRONT_LEFT_REPLACE",
+            "observedComplications": [],
+            "knownBeforeRepair": [],
+            "actualLaborMinutes": 149,
+            "status": "ACCEPTED",
+            "telemetry": {
+              "promptVersion": "repair-extraction-v2",
+              "modelId": "gpt-6-luna",
+              "latencyMilliseconds": 3603,
+              "inputTokens": 764,
+              "outputTokens": 251,
+              "providerRequestId": "req_e8061aebb0b74472bc1c41e3b3a79c7d"
+            }
+          },
+          "errors": []
+        },
+        {
+          "caseId": "251f683b-f7f7-55b1-9fe1-813b428bea60",
+          "accepted": true,
+          "result": {
+            "documentType": "REPAIR_COMPLETION_REPORT",
+            "vehicle": {
+              "manufacturer": "Volkswagen",
+              "model": "Golf VII",
+              "modelYear": 2012,
+              "mileageKm": 233142
+            },
+            "repairCode": "CONTROL_ARM_FRONT_PAIR_REPLACE",
+            "observedComplications": [],
+            "knownBeforeRepair": [
+              {
+                "code": "VISIBLE_CORROSION",
+                "informationTime": "BEFORE_REPAIR",
+                "evidence": "Visible corrosion was documented during pre-inspection."
+              }
+            ],
+            "actualLaborMinutes": 211,
+            "status": "ACCEPTED",
+            "telemetry": {
+              "promptVersion": "repair-extraction-v2",
+              "modelId": "gpt-6-luna",
+              "latencyMilliseconds": 3278,
+              "inputTokens": 770,
+              "outputTokens": 248,
+              "providerRequestId": "req_aede6597d5964685bb20af6f271b0873"
+            }
+          },
+          "errors": []
+        },
+        {
+          "caseId": "276be77a-71ba-5b66-a131-fa80e0815d55",
+          "accepted": true,
+          "result": {
+            "documentType": "REPAIR_COMPLETION_REPORT",
+            "vehicle": {
+              "manufacturer": "Ford",
+              "model": "Focus Mk3",
+              "modelYear": 2015,
+              "mileageKm": 200896
+            },
+            "repairCode": "CONTROL_ARM_FRONT_LEFT_REPLACE",
+            "observedComplications": [
+              {
+                "code": "SEIZED_FASTENER",
+                "informationTime": "DURING_REPAIR",
+                "evidence": "fasteners resisted removal"
+              }
+            ],
+            "knownBeforeRepair": [],
+            "actualLaborMinutes": 131,
+            "status": "ACCEPTED",
+            "telemetry": {
+              "promptVersion": "repair-extraction-v2",
+              "modelId": "gpt-6-luna",
+              "latencyMilliseconds": 3018,
+              "inputTokens": 764,
+              "outputTokens": 231,
+              "providerRequestId": "req_3e9a2b264ff1480a95bb7a84aaeee031"
+            }
+          },
+          "errors": []
+        },
+        {
+          "caseId": "289d0220-05c9-5d93-97df-027567936195",
+          "accepted": true,
+          "result": {
+            "documentType": "REPAIR_COMPLETION_REPORT",
+            "vehicle": {
+              "manufacturer": "\u0160koda",
+              "model": "Octavia III",
+              "modelYear": 2016,
+              "mileageKm": 100578
+            },
+            "repairCode": "CONTROL_ARM_FRONT_PAIR_REPLACE",
+            "observedComplications": [],
+            "knownBeforeRepair": [
+              {
+                "code": "VISIBLE_PRIOR_DAMAGE",
+                "informationTime": "BEFORE_REPAIR",
+                "evidence": "Visible prior damage"
+              }
+            ],
+            "actualLaborMinutes": 214,
+            "status": "ACCEPTED",
+            "telemetry": {
+              "promptVersion": "repair-extraction-v2",
+              "modelId": "gpt-6-luna",
+              "latencyMilliseconds": 4611,
+              "inputTokens": 773,
+              "outputTokens": 389,
+              "providerRequestId": "req_5404ddd37dfc4e5db086f9718230c5b9"
+            }
+          },
+          "errors": []
+        },
+        {
+          "caseId": "28e90548-7daa-57db-b4af-6752be9b46d5",
+          "accepted": true,
+          "result": {
+            "documentType": "REPAIR_COMPLETION_REPORT",
+            "vehicle": {
+              "manufacturer": "Mercedes-Benz",
+              "model": "C-Class W205",
+              "modelYear": 2017,
+              "mileageKm": 123792
+            },
+            "repairCode": "CONTROL_ARM_FRONT_RIGHT_REPLACE",
+            "observedComplications": [
+              {
+                "code": "SEIZED_FASTENER",
+                "informationTime": "DURING_REPAIR",
+                "evidence": "fasteners resisted removal and needed careful release"
+              }
+            ],
+            "knownBeforeRepair": [
+              {
+                "code": "VISIBLE_CORROSION",
+                "informationTime": "BEFORE_REPAIR",
+                "evidence": "Visible corrosion was documented during pre-inspection"
+              }
+            ],
+            "actualLaborMinutes": 134,
+            "status": "ACCEPTED",
+            "telemetry": {
+              "promptVersion": "repair-extraction-v2",
+              "modelId": "gpt-6-luna",
+              "latencyMilliseconds": 3962,
+              "inputTokens": 775,
+              "outputTokens": 372,
+              "providerRequestId": "req_8f8196bd1b5444709ae4fc534aa1c424"
+            }
+          },
+          "errors": []
+        },
+        {
+          "caseId": "2abecc51-2393-5bac-998a-d9f3170fe691",
+          "accepted": true,
+          "result": {
+            "documentType": "REPAIR_COMPLETION_REPORT",
+            "vehicle": {
+              "manufacturer": "BMW",
+              "model": "3 Series F30",
+              "modelYear": 2014,
+              "mileageKm": 169129
+            },
+            "repairCode": "CONTROL_ARM_FRONT_LEFT_REPLACE",
+            "observedComplications": [],
+            "knownBeforeRepair": [
+              {
+                "code": "VISIBLE_CORROSION",
+                "informationTime": "BEFORE_REPAIR",
+                "evidence": "Visible corrosion was documented during pre-inspection."
+              }
+            ],
+            "actualLaborMinutes": 124,
+            "status": "ACCEPTED",
+            "telemetry": {
+              "promptVersion": "repair-extraction-v2",
+              "modelId": "gpt-6-luna",
+              "latencyMilliseconds": 3177,
+              "inputTokens": 773,
+              "outputTokens": 291,
+              "providerRequestId": "req_8f01d1bf95a94804bed40bc003ff24c1"
+            }
+          },
+          "errors": []
+        },
+        {
+          "caseId": "2bb2448b-5890-52e7-8f87-c3f85537dccd",
+          "accepted": true,
+          "result": {
+            "documentType": "REPAIR_COMPLETION_REPORT",
+            "vehicle": {
+              "manufacturer": "Volkswagen",
+              "model": "Golf VII",
+              "modelYear": 2017,
+              "mileageKm": 156413
+            },
+            "repairCode": "CONTROL_ARM_FRONT_RIGHT_REPLACE",
+            "observedComplications": [],
+            "knownBeforeRepair": [
+              {
+                "code": "VISIBLE_CORROSION",
+                "informationTime": "BEFORE_REPAIR",
+                "evidence": "Visible corrosion was documented during pre-inspection."
+              }
+            ],
+            "actualLaborMinutes": 127,
+            "status": "ACCEPTED",
+            "telemetry": {
+              "promptVersion": "repair-extraction-v2",
+              "modelId": "gpt-6-luna",
+              "latencyMilliseconds": 3869,
+              "inputTokens": 771,
+              "outputTokens": 306,
+              "providerRequestId": "req_3ffce01c62084cc480a6115f9f55f11e"
+            }
+          },
+          "errors": []
+        },
+        {
+          "caseId": "2bd71364-d808-5965-ad42-dfeeb91c4d28",
+          "accepted": true,
+          "result": {
+            "documentType": "REPAIR_COMPLETION_REPORT",
+            "vehicle": {
+              "manufacturer": "Mercedes-Benz",
+              "model": "C-Class W205",
+              "modelYear": 2016,
+              "mileageKm": 208992
+            },
+            "repairCode": "CONTROL_ARM_FRONT_PAIR_REPLACE",
+            "observedComplications": [],
+            "knownBeforeRepair": [],
+            "actualLaborMinutes": 232,
+            "status": "ACCEPTED",
+            "telemetry": {
+              "promptVersion": "repair-extraction-v2",
+              "modelId": "gpt-6-luna",
+              "latencyMilliseconds": 4335,
+              "inputTokens": 765,
+              "outputTokens": 338,
+              "providerRequestId": "req_662be1ede3a04a92ac5514d11894c1e8"
+            }
+          },
+          "errors": []
+        },
+        {
+          "caseId": "2c7fe189-fee6-52fc-939b-6ecd28519a6d",
+          "accepted": true,
+          "result": {
+            "documentType": "REPAIR_COMPLETION_REPORT",
+            "vehicle": {
+              "manufacturer": "Ford",
+              "model": "Focus Mk3",
+              "modelYear": 2011,
+              "mileageKm": 147070
+            },
+            "repairCode": "CONTROL_ARM_REAR_RIGHT_REPLACE",
+            "observedComplications": [],
+            "knownBeforeRepair": [
+              {
+                "code": "VISIBLE_CORROSION",
+                "informationTime": "BEFORE_REPAIR",
+                "evidence": "Visible corrosion was documented during pre-inspection."
+              }
+            ],
+            "actualLaborMinutes": 148,
+            "status": "ACCEPTED",
+            "telemetry": {
+              "promptVersion": "repair-extraction-v2",
+              "modelId": "gpt-6-luna",
+              "latencyMilliseconds": 3437,
+              "inputTokens": 771,
+              "outputTokens": 290,
+              "providerRequestId": "req_70df39eb795445bd8e9c9ab27b28ef1b"
+            }
+          },
+          "errors": []
+        },
+        {
+          "caseId": "2d58ae3c-aef4-5814-adfd-62cc5ee7796a",
+          "accepted": true,
+          "result": {
+            "documentType": "REPAIR_COMPLETION_REPORT",
+            "vehicle": {
+              "manufacturer": "Ford",
+              "model": "Focus Mk3",
+              "modelYear": 2013,
+              "mileageKm": 192335
+            },
+            "repairCode": "CONTROL_ARM_FRONT_PAIR_REPLACE",
+            "observedComplications": [],
+            "knownBeforeRepair": [
+              {
+                "code": "VISIBLE_CORROSION",
+                "informationTime": "BEFORE_REPAIR",
+                "evidence": "Visible corrosion was documented during pre-inspection."
+              }
+            ],
+            "actualLaborMinutes": 201,
+            "status": "ACCEPTED",
+            "telemetry": {
+              "promptVersion": "repair-extraction-v2",
+              "modelId": "gpt-6-luna",
+              "latencyMilliseconds": 4465,
+              "inputTokens": 770,
+              "outputTokens": 374,
+              "providerRequestId": "req_36d459256da7428781e20f34b351e7d4"
+            }
+          },
+          "errors": []
+        },
+        {
+          "caseId": "2dc86c51-7d2c-50d5-89f1-623c48490e04",
+          "accepted": true,
+          "result": {
+            "documentType": "REPAIR_COMPLETION_REPORT",
+            "vehicle": {
+              "manufacturer": "Opel",
+              "model": "Astra K",
+              "modelYear": 2017,
+              "mileageKm": 73805
+            },
+            "repairCode": "CONTROL_ARM_FRONT_LEFT_REPLACE",
+            "observedComplications": [],
+            "knownBeforeRepair": [],
+            "actualLaborMinutes": 141,
+            "status": "ACCEPTED",
+            "telemetry": {
+              "promptVersion": "repair-extraction-v2",
+              "modelId": "gpt-6-luna",
+              "latencyMilliseconds": 4526,
+              "inputTokens": 762,
+              "outputTokens": 309,
+              "providerRequestId": "req_399e23a697e142dc893f897754133174"
+            }
+          },
+          "errors": []
+        },
+        {
+          "caseId": "2e255c61-5826-5d14-80de-bc95538d06f9",
+          "accepted": true,
+          "result": {
+            "documentType": "REPAIR_COMPLETION_REPORT",
+            "vehicle": {
+              "manufacturer": "Mercedes-Benz",
+              "model": "C-Class W205",
+              "modelYear": 2015,
+              "mileageKm": 162346
+            },
+            "repairCode": "CONTROL_ARM_REAR_RIGHT_REPLACE",
+            "observedComplications": [],
+            "knownBeforeRepair": [],
+            "actualLaborMinutes": 185,
+            "status": "ACCEPTED",
+            "telemetry": {
+              "promptVersion": "repair-extraction-v2",
+              "modelId": "gpt-6-luna",
+              "latencyMilliseconds": 3642,
+              "inputTokens": 767,
+              "outputTokens": 211,
+              "providerRequestId": "req_cb5c9575fdf84131b868f71692dac6cd"
+            }
+          },
+          "errors": []
+        },
+        {
+          "caseId": "2e993068-4ac0-5b5f-97f3-523452e4840c",
+          "accepted": true,
+          "result": {
+            "documentType": "REPAIR_COMPLETION_REPORT",
+            "vehicle": {
+              "manufacturer": "Audi",
+              "model": "A3 8V",
+              "modelYear": 2016,
+              "mileageKm": 165466
+            },
+            "repairCode": "CONTROL_ARM_FRONT_LEFT_REPLACE",
+            "observedComplications": [],
+            "knownBeforeRepair": [
+              {
+                "code": "VISIBLE_CORROSION",
+                "informationTime": "BEFORE_REPAIR",
+                "evidence": "Visible corrosion was documented during pre-inspection."
+              }
+            ],
+            "actualLaborMinutes": 142,
+            "status": "ACCEPTED",
+            "telemetry": {
+              "promptVersion": "repair-extraction-v2",
+              "modelId": "gpt-6-luna",
+              "latencyMilliseconds": 6497,
+              "inputTokens": 776,
+              "outputTokens": 295,
+              "providerRequestId": "req_ff683e6e4a7d4256ada83498087ea26a"
+            }
+          },
+          "errors": []
+        },
+        {
+          "caseId": "2fa226b2-346e-5f48-ae24-54659c9de4d1",
+          "accepted": true,
+          "result": {
+            "documentType": "REPAIR_COMPLETION_REPORT",
+            "vehicle": {
+              "manufacturer": "Opel",
+              "model": "Astra K",
+              "modelYear": 2017,
+              "mileageKm": 52651
+            },
+            "repairCode": "CONTROL_ARM_FRONT_PAIR_REPLACE",
+            "observedComplications": [
+              {
+                "code": "SEIZED_FASTENER",
+                "informationTime": "DURING_REPAIR",
+                "evidence": "fasteners resisted removal"
+              }
+            ],
+            "knownBeforeRepair": [],
+            "actualLaborMinutes": 209,
+            "status": "ACCEPTED",
+            "telemetry": {
+              "promptVersion": "repair-extraction-v2",
+              "modelId": "gpt-6-luna",
+              "latencyMilliseconds": 3271,
+              "inputTokens": 763,
+              "outputTokens": 251,
+              "providerRequestId": "req_0c943b9ae55042819a86bcd08865e7a4"
+            }
+          },
+          "errors": []
+        },
+        {
+          "caseId": "2fc9ba57-38dc-5f4f-94d5-1a52c5e170fc",
+          "accepted": true,
+          "result": {
+            "documentType": "REPAIR_COMPLETION_REPORT",
+            "vehicle": {
+              "manufacturer": "Ford",
+              "model": "Focus Mk3",
+              "modelYear": 2013,
+              "mileageKm": 148399
+            },
+            "repairCode": "CONTROL_ARM_REAR_RIGHT_REPLACE",
+            "observedComplications": [
+              {
+                "code": "SEIZED_FASTENER",
+                "informationTime": "DURING_REPAIR",
+                "evidence": "fasteners resisted removal"
+              }
+            ],
+            "knownBeforeRepair": [
+              {
+                "code": "VISIBLE_CORROSION",
+                "informationTime": "BEFORE_REPAIR",
+                "evidence": "Visible corrosion was documented during pre-inspection."
+              }
+            ],
+            "actualLaborMinutes": 135,
+            "status": "ACCEPTED",
+            "telemetry": {
+              "promptVersion": "repair-extraction-v2",
+              "modelId": "gpt-6-luna",
+              "latencyMilliseconds": 3592,
+              "inputTokens": 773,
+              "outputTokens": 289,
+              "providerRequestId": "req_fde27e26fbc8496c80553f21a42e34ab"
+            }
+          },
+          "errors": []
+        },
+        {
+          "caseId": "313a0658-7069-5bb3-87c5-e75816551f91",
+          "accepted": true,
+          "result": {
+            "documentType": "REPAIR_COMPLETION_REPORT",
+            "vehicle": {
+              "manufacturer": "Ford",
+              "model": "Focus Mk3",
+              "modelYear": 2017,
+              "mileageKm": 143533
+            },
+            "repairCode": "CONTROL_ARM_FRONT_PAIR_REPLACE",
+            "observedComplications": [],
+            "knownBeforeRepair": [
+              {
+                "code": "VISIBLE_CORROSION",
+                "informationTime": "BEFORE_REPAIR",
+                "evidence": "Visible corrosion was documented during pre-inspection."
+              }
+            ],
+            "actualLaborMinutes": 197,
+            "status": "ACCEPTED",
+            "telemetry": {
+              "promptVersion": "repair-extraction-v2",
+              "modelId": "gpt-6-luna",
+              "latencyMilliseconds": 3871,
+              "inputTokens": 770,
+              "outputTokens": 366,
+              "providerRequestId": "req_107ceb232cc641e6bd0277dc4a690d77"
+            }
+          },
+          "errors": []
+        },
+        {
+          "caseId": "31a9be0f-57d5-59ce-9f81-f72543f69546",
+          "accepted": true,
+          "result": {
+            "documentType": "REPAIR_COMPLETION_REPORT",
+            "vehicle": {
+              "manufacturer": "Volkswagen",
+              "model": "Golf VII",
+              "modelYear": 2015,
+              "mileageKm": 203239
+            },
+            "repairCode": "CONTROL_ARM_REAR_LEFT_REPLACE",
+            "observedComplications": [],
+            "knownBeforeRepair": [
+              {
+                "code": "VISIBLE_CORROSION",
+                "informationTime": "BEFORE_REPAIR",
+                "evidence": "Visible corrosion was documented during pre-inspection."
+              }
+            ],
+            "actualLaborMinutes": 179,
+            "status": "ACCEPTED",
+            "telemetry": {
+              "promptVersion": "repair-extraction-v2",
+              "modelId": "gpt-6-luna",
+              "latencyMilliseconds": 4860,
+              "inputTokens": 771,
+              "outputTokens": 390,
+              "providerRequestId": "req_22d5e26531e1412c9a7090855547dfc5"
+            }
+          },
+          "errors": []
+        },
+        {
+          "caseId": "3324215e-a8ed-5d4b-b7d4-cb1fb68a08dd",
+          "accepted": true,
+          "result": {
+            "documentType": "REPAIR_COMPLETION_REPORT",
+            "vehicle": {
+              "manufacturer": "Volkswagen",
+              "model": "Golf VII",
+              "modelYear": 2013,
+              "mileageKm": 121058
+            },
+            "repairCode": "CONTROL_ARM_FRONT_LEFT_REPLACE",
+            "observedComplications": [],
+            "knownBeforeRepair": [
+              {
+                "code": "VISIBLE_PRIOR_DAMAGE",
+                "informationTime": "BEFORE_REPAIR",
+                "evidence": "Visible prior damage was documented during pre-inspection."
+              }
+            ],
+            "actualLaborMinutes": 131,
+            "status": "ACCEPTED",
+            "telemetry": {
+              "promptVersion": "repair-extraction-v2",
+              "modelId": "gpt-6-luna",
+              "latencyMilliseconds": 3830,
+              "inputTokens": 772,
+              "outputTokens": 324,
+              "providerRequestId": "req_1ea4cebd4c9c45ffb461001d13c093d6"
+            }
+          },
+          "errors": []
+        },
+        {
+          "caseId": "33ac75e5-43a6-52db-b0e4-e6e6d20b728f",
+          "accepted": true,
+          "result": {
+            "documentType": "REPAIR_COMPLETION_REPORT",
+            "vehicle": {
+              "manufacturer": "Audi",
+              "model": "A3 8V",
+              "modelYear": 2012,
+              "mileageKm": 257401
+            },
+            "repairCode": "CONTROL_ARM_FRONT_LEFT_REPLACE",
+            "observedComplications": [
+              {
+                "code": "SEIZED_FASTENER",
+                "informationTime": "DURING_REPAIR",
+                "evidence": "fasteners resisted removal"
+              }
+            ],
+            "knownBeforeRepair": [
+              {
+                "code": "VISIBLE_CORROSION",
+                "informationTime": "BEFORE_REPAIR",
+                "evidence": "Visible corrosion was documented during pre-inspection"
+              }
+            ],
+            "actualLaborMinutes": 131,
+            "status": "ACCEPTED",
+            "telemetry": {
+              "promptVersion": "repair-extraction-v2",
+              "modelId": "gpt-6-luna",
+              "latencyMilliseconds": 3811,
+              "inputTokens": 775,
+              "outputTokens": 314,
+              "providerRequestId": "req_55b2bd8f509945b9906dbb8d68a9d893"
+            }
+          },
+          "errors": []
+        },
+        {
+          "caseId": "33c2d629-29e7-5f58-9154-5012ec94455b",
+          "accepted": true,
+          "result": {
+            "documentType": "REPAIR_COMPLETION_REPORT",
+            "vehicle": {
+              "manufacturer": "Ford",
+              "model": "Focus Mk3",
+              "modelYear": 2014,
+              "mileageKm": 171585
+            },
+            "repairCode": "CONTROL_ARM_FRONT_PAIR_REPLACE",
+            "observedComplications": [
+              {
+                "code": "SEIZED_FASTENER",
+                "informationTime": "DURING_REPAIR",
+                "evidence": "fasteners resisted removal"
+              }
+            ],
+            "knownBeforeRepair": [
+              {
+                "code": "VISIBLE_CORROSION",
+                "informationTime": "BEFORE_REPAIR",
+                "evidence": "Visible corrosion was documented during pre-inspection."
+              },
+              {
+                "code": "VISIBLE_PRIOR_DAMAGE",
+                "informationTime": "BEFORE_REPAIR",
+                "evidence": "Visible prior damage was documented during pre-inspection."
+              }
+            ],
+            "actualLaborMinutes": 197,
+            "status": "ACCEPTED",
+            "telemetry": {
+              "promptVersion": "repair-extraction-v2",
+              "modelId": "gpt-6-luna",
+              "latencyMilliseconds": 3704,
+              "inputTokens": 782,
+              "outputTokens": 297,
+              "providerRequestId": "req_8573c258cb1947e691c7b2f2923ef9db"
+            }
+          },
+          "errors": []
+        },
+        {
+          "caseId": "3154a499-0e25-5a72-a56b-d7e07aea8b72",
+          "accepted": true,
+          "result": {
+            "documentType": "REPAIR_COMPLETION_REPORT",
+            "vehicle": {
+              "manufacturer": "Volkswagen",
+              "model": "Golf VII",
+              "modelYear": 2017,
+              "mileageKm": 160171
+            },
+            "repairCode": "CONTROL_ARM_REAR_LEFT_REPLACE",
+            "observedComplications": [
+              {
+                "code": "SEIZED_FASTENER",
+                "informationTime": "DURING_REPAIR",
+                "evidence": "mounting hardware was seized"
+              }
+            ],
+            "knownBeforeRepair": [],
+            "actualLaborMinutes": 240,
+            "status": "ACCEPTED",
+            "telemetry": {
+              "promptVersion": "repair-extraction-v2",
+              "modelId": "gpt-6-luna",
+              "latencyMilliseconds": 3925,
+              "inputTokens": 787,
+              "outputTokens": 319,
+              "providerRequestId": "req_87b6e24083a44434a6e83ae38395a930"
+            }
+          },
+          "errors": []
+        },
+        {
+          "caseId": "3246893d-9302-568c-9673-85b86a8b2706",
+          "accepted": true,
+          "result": {
+            "documentType": "REPAIR_COMPLETION_REPORT",
+            "vehicle": {
+              "manufacturer": "Volkswagen",
+              "model": "Golf VII",
+              "modelYear": 2013,
+              "mileageKm": 181725
+            },
+            "repairCode": "CONTROL_ARM_REAR_LEFT_REPLACE",
+            "observedComplications": [
+              {
+                "code": "ALIGNMENT_CORRECTION",
+                "informationTime": "DURING_REPAIR",
+                "evidence": "A follow-up adjustment was made during the geometry check."
+              }
+            ],
+            "knownBeforeRepair": [
+              {
+                "code": "VISIBLE_CORROSION",
+                "informationTime": "BEFORE_REPAIR",
+                "evidence": "Visible corrosion was documented during pre-inspection."
+              }
+            ],
+            "actualLaborMinutes": 189,
+            "status": "ACCEPTED",
+            "telemetry": {
+              "promptVersion": "repair-extraction-v2",
+              "modelId": "gpt-6-luna",
+              "latencyMilliseconds": 6005,
+              "inputTokens": 792,
+              "outputTokens": 503,
+              "providerRequestId": "req_5a59b54ca4f246b2992c8a566001b98a"
+            }
+          },
+          "errors": []
+        },
+        {
+          "caseId": "347159c4-e57a-561b-81a4-f2020c8805f1",
+          "accepted": true,
+          "result": {
+            "documentType": "REPAIR_COMPLETION_REPORT",
+            "vehicle": {
+              "manufacturer": "BMW",
+              "model": "3 Series F30",
+              "modelYear": 2011,
+              "mileageKm": 102184
+            },
+            "repairCode": "CONTROL_ARM_REAR_LEFT_REPLACE",
+            "observedComplications": [
+              {
+                "code": "SEIZED_FASTENER",
+                "informationTime": "DURING_REPAIR",
+                "evidence": "fasteners resisted removal and needed careful release"
+              },
+              {
+                "code": "ALIGNMENT_CORRECTION",
+                "informationTime": "AFTER_REPAIR",
+                "evidence": "Wheel geometry needed further correction after assembly"
+              }
+            ],
+            "knownBeforeRepair": [
+              {
+                "code": "VISIBLE_CORROSION",
+                "informationTime": "BEFORE_REPAIR",
+                "evidence": "Visible corrosion was documented during pre-inspection"
+              }
+            ],
+            "actualLaborMinutes": 166,
+            "status": "ACCEPTED",
+            "telemetry": {
+              "promptVersion": "repair-extraction-v2",
+              "modelId": "gpt-6-luna",
+              "latencyMilliseconds": 4777,
+              "inputTokens": 783,
+              "outputTokens": 430,
+              "providerRequestId": "req_5cd5cc610d514bcd9e8e0ef1197e8e4e"
+            }
+          },
+          "errors": []
+        },
+        {
+          "caseId": "355609a2-1ca2-5f78-961f-6b66a5a37ff1",
+          "accepted": true,
+          "result": {
+            "documentType": "REPAIR_COMPLETION_REPORT",
+            "vehicle": {
+              "manufacturer": "Mercedes-Benz",
+              "model": "C-Class W205",
+              "modelYear": 2015,
+              "mileageKm": 188814
+            },
+            "repairCode": "CONTROL_ARM_REAR_RIGHT_REPLACE",
+            "observedComplications": [
+              {
+                "code": "SEIZED_FASTENER",
+                "informationTime": "DURING_REPAIR",
+                "evidence": "fasteners resisted removal"
+              },
+              {
+                "code": "ALIGNMENT_CORRECTION",
+                "informationTime": "AFTER_REPAIR",
+                "evidence": "A follow-up adjustment was made during the geometry check"
+              }
+            ],
+            "knownBeforeRepair": [
+              {
+                "code": "VISIBLE_CORROSION",
+                "informationTime": "BEFORE_REPAIR",
+                "evidence": "Visible corrosion was documented during pre-inspection"
+              }
+            ],
+            "actualLaborMinutes": 231,
+            "status": "ACCEPTED",
+            "telemetry": {
+              "promptVersion": "repair-extraction-v2",
+              "modelId": "gpt-6-luna",
+              "latencyMilliseconds": 6536,
+              "inputTokens": 799,
+              "outputTokens": 547,
+              "providerRequestId": "req_97991cc560304d11a47f6b10dd0d728a"
+            }
+          },
+          "errors": []
+        },
+        {
+          "caseId": "39605c13-8412-5ee9-9b15-33c928131dc8",
+          "accepted": true,
+          "result": {
+            "documentType": "REPAIR_COMPLETION_REPORT",
+            "vehicle": {
+              "manufacturer": "Audi",
+              "model": "A3 8V",
+              "modelYear": 2013,
+              "mileageKm": 261903
+            },
+            "repairCode": "CONTROL_ARM_REAR_LEFT_REPLACE",
+            "observedComplications": [
+              {
+                "code": "BROKEN_BOLT",
+                "informationTime": "DURING_REPAIR",
+                "evidence": "A mounting bolt broke during removal"
+              }
+            ],
+            "knownBeforeRepair": [],
+            "actualLaborMinutes": 233,
+            "status": "ACCEPTED",
+            "telemetry": {
+              "promptVersion": "repair-extraction-v2",
+              "modelId": "gpt-6-luna",
+              "latencyMilliseconds": 5125,
+              "inputTokens": 774,
+              "outputTokens": 439,
+              "providerRequestId": "req_19983c99ae8c4eb9924fa66eeb3368aa"
+            }
+          },
+          "errors": []
+        },
+        {
+          "caseId": "3cdb7273-9dbf-5413-8067-e2c3b26137ad",
+          "accepted": true,
+          "result": {
+            "documentType": "REPAIR_COMPLETION_REPORT",
+            "vehicle": {
+              "manufacturer": "BMW",
+              "model": "3 Series F30",
+              "modelYear": 2012,
+              "mileageKm": 272731
+            },
+            "repairCode": "CONTROL_ARM_FRONT_LEFT_REPLACE",
+            "observedComplications": [
+              {
+                "code": "SEIZED_FASTENER",
+                "informationTime": "DURING_REPAIR",
+                "evidence": "mounting hardware was seized"
+              }
+            ],
+            "knownBeforeRepair": [
+              {
+                "code": "VISIBLE_CORROSION",
+                "informationTime": "BEFORE_REPAIR",
+                "evidence": "Visible corrosion was documented during pre-inspection."
+              }
+            ],
+            "actualLaborMinutes": 182,
+            "status": "ACCEPTED",
+            "telemetry": {
+              "promptVersion": "repair-extraction-v2",
+              "modelId": "gpt-6-luna",
+              "latencyMilliseconds": 3442,
+              "inputTokens": 785,
+              "outputTokens": 225,
+              "providerRequestId": "req_8363779c4e4245c68f080e16da771d4c"
+            }
+          },
+          "errors": []
+        },
+        {
+          "caseId": "3d74699c-3cf8-59e0-9dcd-3325cb51c4a6",
+          "accepted": true,
+          "result": {
+            "documentType": "REPAIR_COMPLETION_REPORT",
+            "vehicle": {
+              "manufacturer": "Volkswagen",
+              "model": "Golf VII",
+              "modelYear": 2013,
+              "mileageKm": 141229
+            },
+            "repairCode": "CONTROL_ARM_REAR_RIGHT_REPLACE",
+            "observedComplications": [
+              {
+                "code": "SEIZED_FASTENER",
+                "informationTime": "DURING_REPAIR",
+                "evidence": "fasteners resisted removal and needed careful release"
+              }
+            ],
+            "knownBeforeRepair": [],
+            "actualLaborMinutes": 199,
+            "status": "ACCEPTED",
+            "telemetry": {
+              "promptVersion": "repair-extraction-v2",
+              "modelId": "gpt-6-luna",
+              "latencyMilliseconds": 5643,
+              "inputTokens": 774,
+              "outputTokens": 447,
+              "providerRequestId": "req_fa2907b9ced84e50b572b9cf4ab1e6b6"
+            }
+          },
+          "errors": []
+        },
+        {
+          "caseId": "3f2d35ba-7d06-5709-a135-5720c0720817",
+          "accepted": true,
+          "result": {
+            "documentType": "REPAIR_COMPLETION_REPORT",
+            "vehicle": {
+              "manufacturer": "Mercedes-Benz",
+              "model": "C-Class W205",
+              "modelYear": 2014,
+              "mileageKm": 68801
+            },
+            "repairCode": "CONTROL_ARM_FRONT_LEFT_REPLACE",
+            "observedComplications": [
+              {
+                "code": "ALIGNMENT_CORRECTION",
+                "informationTime": "AFTER_REPAIR",
+                "evidence": "Final alignment required an additional correction."
+              }
+            ],
+            "knownBeforeRepair": [
+              {
+                "code": "VISIBLE_CORROSION",
+                "informationTime": "BEFORE_REPAIR",
+                "evidence": "Visible corrosion was documented during pre-inspection."
+              }
+            ],
+            "actualLaborMinutes": 162,
+            "status": "ACCEPTED",
+            "telemetry": {
+              "promptVersion": "repair-extraction-v2",
+              "modelId": "gpt-6-luna",
+              "latencyMilliseconds": 3782,
+              "inputTokens": 780,
+              "outputTokens": 295,
+              "providerRequestId": "req_7426a421185940f493e2243e7cbaf594"
+            }
+          },
+          "errors": []
+        },
+        {
+          "caseId": "46d0ab16-42e1-5f08-ba53-c31e2da98704",
+          "accepted": true,
+          "result": {
+            "documentType": "REPAIR_COMPLETION_REPORT",
+            "vehicle": {
+              "manufacturer": "BMW",
+              "model": "3 Series F30",
+              "modelYear": 2011,
+              "mileageKm": 186267
+            },
+            "repairCode": "CONTROL_ARM_FRONT_RIGHT_REPLACE",
+            "observedComplications": [
+              {
+                "code": "SEIZED_FASTENER",
+                "informationTime": "DURING_REPAIR",
+                "evidence": "One or more fasteners resisted removal and needed careful release."
+              }
+            ],
+            "knownBeforeRepair": [
+              {
+                "code": "VISIBLE_CORROSION",
+                "informationTime": "BEFORE_REPAIR",
+                "evidence": "Visible corrosion was documented during pre-inspection."
+              }
+            ],
+            "actualLaborMinutes": 147,
+            "status": "ACCEPTED",
+            "telemetry": {
+              "promptVersion": "repair-extraction-v2",
+              "modelId": "gpt-6-luna",
+              "latencyMilliseconds": 6248,
+              "inputTokens": 788,
+              "outputTokens": 577,
+              "providerRequestId": "req_daa930a1c8ca4a51a4d2e93d2a685e24"
+            }
+          },
+          "errors": []
+        },
+        {
+          "caseId": "4d4e6f3c-8465-558c-a9ae-22fc7066ff45",
+          "accepted": true,
+          "result": {
+            "documentType": "REPAIR_COMPLETION_REPORT",
+            "vehicle": {
+              "manufacturer": "Ford",
+              "model": "Focus Mk3",
+              "modelYear": 2011,
+              "mileageKm": 145267
+            },
+            "repairCode": "CONTROL_ARM_REAR_RIGHT_REPLACE",
+            "observedComplications": [
+              {
+                "code": "ALIGNMENT_CORRECTION",
+                "informationTime": "AFTER_REPAIR",
+                "evidence": "A follow-up adjustment was made during the geometry check."
+              }
+            ],
+            "knownBeforeRepair": [
+              {
+                "code": "VISIBLE_CORROSION",
+                "informationTime": "BEFORE_REPAIR",
+                "evidence": "Visible corrosion was documented during pre-inspection."
+              }
+            ],
+            "actualLaborMinutes": 191,
+            "status": "ACCEPTED",
+            "telemetry": {
+              "promptVersion": "repair-extraction-v2",
+              "modelId": "gpt-6-luna",
+              "latencyMilliseconds": 4730,
+              "inputTokens": 785,
+              "outputTokens": 413,
+              "providerRequestId": "req_3fd1aadb95324d659df5275cf47c61ef"
+            }
+          },
+          "errors": []
+        }
+      ]
+    },
+    {
+      "promptVersion": "repair-extraction-v3",
+      "modelId": "gpt-6-luna",
+      "metrics": {
+        "caseCount": 50,
+        "schemaValidityRate": 1,
+        "vehicleExactMatchAccuracy": 1,
+        "repairCodeExactMatchAccuracy": 1,
+        "complicationPrecision": 1,
+        "complicationRecall": 1,
+        "complicationF1": 1,
+        "complicationMacroF1": 1,
+        "complicationSamplesF1": 1,
+        "acceptedCoverageRate": 1,
+        "perClass": {
+          "ALIGNMENT_CORRECTION": {
+            "truePositives": 6,
+            "falsePositives": 0,
+            "falseNegatives": 0,
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "BROKEN_BOLT": {
+            "truePositives": 4,
+            "falsePositives": 0,
+            "falseNegatives": 0,
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "DAMAGED_BUSHING_SEAT": {
+            "truePositives": 12,
+            "falsePositives": 0,
+            "falseNegatives": 0,
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "SEIZED_FASTENER": {
+            "truePositives": 26,
+            "falsePositives": 0,
+            "falseNegatives": 0,
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "unsupportedClaimCount": 0,
+        "temporalLeakageViolationCount": 0,
+        "totalLatencyMilliseconds": 176331,
+        "totalInputTokens": 40803,
+        "totalOutputTokens": 12955
+      },
+      "errorTypes": {},
+      "outcomes": [
+        {
+          "caseId": "118a5db9-4204-58eb-9024-cdbb9734314e",
+          "accepted": true,
+          "result": {
+            "documentType": "REPAIR_COMPLETION_REPORT",
+            "vehicle": {
+              "manufacturer": "Mercedes-Benz",
+              "model": "C-Class W205",
+              "modelYear": 2016,
+              "mileageKm": 117234
+            },
+            "repairCode": "CONTROL_ARM_REAR_LEFT_REPLACE",
+            "observedComplications": [],
+            "knownBeforeRepair": [],
+            "actualLaborMinutes": 125,
+            "status": "ACCEPTED",
+            "telemetry": {
+              "promptVersion": "repair-extraction-v3",
+              "modelId": "gpt-6-luna",
+              "latencyMilliseconds": 2193,
+              "inputTokens": 811,
+              "outputTokens": 121,
+              "providerRequestId": "req_11c16152385b4fe79da7adc06af0a8c2"
+            }
+          },
+          "errors": []
+        },
+        {
+          "caseId": "11ac25de-72fa-5a5c-8189-c07378edec79",
+          "accepted": true,
+          "result": {
+            "documentType": "REPAIR_COMPLETION_REPORT",
+            "vehicle": {
+              "manufacturer": "Volkswagen",
+              "model": "Golf VII",
+              "modelYear": 2012,
+              "mileageKm": 147704
+            },
+            "repairCode": "CONTROL_ARM_REAR_RIGHT_REPLACE",
+            "observedComplications": [],
+            "knownBeforeRepair": [
+              {
+                "code": "VISIBLE_CORROSION",
+                "informationTime": "BEFORE_REPAIR",
+                "evidence": "Visible corrosion was documented during pre-inspection."
+              }
+            ],
+            "actualLaborMinutes": 156,
+            "status": "ACCEPTED",
+            "telemetry": {
+              "promptVersion": "repair-extraction-v3",
+              "modelId": "gpt-6-luna",
+              "latencyMilliseconds": 2950,
+              "inputTokens": 815,
+              "outputTokens": 241,
+              "providerRequestId": "req_8ba4a8bc4c284f3b99e6bb7bc0bfc904"
+            }
+          },
+          "errors": []
+        },
+        {
+          "caseId": "120cd33d-ac9c-5b7f-8c4b-e71cdd6dc6a0",
+          "accepted": true,
+          "result": {
+            "documentType": "REPAIR_COMPLETION_REPORT",
+            "vehicle": {
+              "manufacturer": "Opel",
+              "model": "Astra K",
+              "modelYear": 2021,
+              "mileageKm": 62479
+            },
+            "repairCode": "CONTROL_ARM_REAR_RIGHT_REPLACE",
+            "observedComplications": [],
+            "knownBeforeRepair": [],
+            "actualLaborMinutes": 107,
+            "status": "ACCEPTED",
+            "telemetry": {
+              "promptVersion": "repair-extraction-v3",
+              "modelId": "gpt-6-luna",
+              "latencyMilliseconds": 2465,
+              "inputTokens": 809,
+              "outputTokens": 145,
+              "providerRequestId": "req_ace7da15fc4e42b284a3c2578b886578"
+            }
+          },
+          "errors": []
+        },
+        {
+          "caseId": "13204d5b-7ba1-5542-b7fa-e94dc7050ee1",
+          "accepted": true,
+          "result": {
+            "documentType": "REPAIR_COMPLETION_REPORT",
+            "vehicle": {
+              "manufacturer": "Audi",
+              "model": "A3 8V",
+              "modelYear": 2012,
+              "mileageKm": 215861
+            },
+            "repairCode": "CONTROL_ARM_FRONT_LEFT_REPLACE",
+            "observedComplications": [],
+            "knownBeforeRepair": [],
+            "actualLaborMinutes": 107,
+            "status": "ACCEPTED",
+            "telemetry": {
+              "promptVersion": "repair-extraction-v3",
+              "modelId": "gpt-6-luna",
+              "latencyMilliseconds": 2820,
+              "inputTokens": 811,
+              "outputTokens": 158,
+              "providerRequestId": "req_d03b77baf35d4cc4b37d1e8d38199314"
+            }
+          },
+          "errors": []
+        },
+        {
+          "caseId": "132b25bf-c22d-5758-971a-e5b582cd5df5",
+          "accepted": true,
+          "result": {
+            "documentType": "REPAIR_COMPLETION_REPORT",
+            "vehicle": {
+              "manufacturer": "Volkswagen",
+              "model": "Golf VII",
+              "modelYear": 2014,
+              "mileageKm": 95492
+            },
+            "repairCode": "CONTROL_ARM_FRONT_RIGHT_REPLACE",
+            "observedComplications": [],
+            "knownBeforeRepair": [],
+            "actualLaborMinutes": 87,
+            "status": "ACCEPTED",
+            "telemetry": {
+              "promptVersion": "repair-extraction-v3",
+              "modelId": "gpt-6-luna",
+              "latencyMilliseconds": 2290,
+              "inputTokens": 809,
+              "outputTokens": 156,
+              "providerRequestId": "req_5f5334b6b3dc47289f22c1c7f31ebf17"
+            }
+          },
+          "errors": []
+        },
+        {
+          "caseId": "140eaf3b-8432-5d2d-8499-8cdaaa4a45bb",
+          "accepted": true,
+          "result": {
+            "documentType": "REPAIR_COMPLETION_REPORT",
+            "vehicle": {
+              "manufacturer": "Mercedes-Benz",
+              "model": "C-Class W205",
+              "modelYear": 2020,
+              "mileageKm": 39580
+            },
+            "repairCode": "CONTROL_ARM_REAR_RIGHT_REPLACE",
+            "observedComplications": [],
+            "knownBeforeRepair": [],
+            "actualLaborMinutes": 117,
+            "status": "ACCEPTED",
+            "telemetry": {
+              "promptVersion": "repair-extraction-v3",
+              "modelId": "gpt-6-luna",
+              "latencyMilliseconds": 2087,
+              "inputTokens": 811,
+              "outputTokens": 139,
+              "providerRequestId": "req_75852bb329d9471e9322554d9645a1ca"
+            }
+          },
+          "errors": []
+        },
+        {
+          "caseId": "14f17e67-c22d-526c-8b3b-9cc8de50ae56",
+          "accepted": true,
+          "result": {
+            "documentType": "REPAIR_COMPLETION_REPORT",
+            "vehicle": {
+              "manufacturer": "Mercedes-Benz",
+              "model": "C-Class W205",
+              "modelYear": 2017,
+              "mileageKm": 43310
+            },
+            "repairCode": "CONTROL_ARM_FRONT_LEFT_REPLACE",
+            "observedComplications": [],
+            "knownBeforeRepair": [],
+            "actualLaborMinutes": 98,
+            "status": "ACCEPTED",
+            "telemetry": {
+              "promptVersion": "repair-extraction-v3",
+              "modelId": "gpt-6-luna",
+              "latencyMilliseconds": 2387,
+              "inputTokens": 811,
+              "outputTokens": 162,
+              "providerRequestId": "req_289122aa1b9c4f36935fde5f9cf9c05c"
+            }
+          },
+          "errors": []
+        },
+        {
+          "caseId": "165c0781-a7b0-5353-9451-cf7de3a72aa8",
+          "accepted": true,
+          "result": {
+            "documentType": "REPAIR_COMPLETION_REPORT",
+            "vehicle": {
+              "manufacturer": "Ford",
+              "model": "Focus Mk3",
+              "modelYear": 2016,
+              "mileageKm": 75802
+            },
+            "repairCode": "CONTROL_ARM_FRONT_PAIR_REPLACE",
+            "observedComplications": [],
+            "knownBeforeRepair": [],
+            "actualLaborMinutes": 147,
+            "status": "ACCEPTED",
+            "telemetry": {
+              "promptVersion": "repair-extraction-v3",
+              "modelId": "gpt-6-luna",
+              "latencyMilliseconds": 2871,
+              "inputTokens": 808,
+              "outputTokens": 177,
+              "providerRequestId": "req_9a152353348543378991a3f93e70be1c"
+            }
+          },
+          "errors": []
+        },
+        {
+          "caseId": "1685f356-2748-5d2a-9b47-ddd5ee196b90",
+          "accepted": true,
+          "result": {
+            "documentType": "REPAIR_COMPLETION_REPORT",
+            "vehicle": {
+              "manufacturer": "Ford",
+              "model": "Focus Mk3",
+              "modelYear": 2018,
+              "mileageKm": 120882
+            },
+            "repairCode": "CONTROL_ARM_FRONT_PAIR_REPLACE",
+            "observedComplications": [],
+            "knownBeforeRepair": [],
+            "actualLaborMinutes": 184,
+            "status": "ACCEPTED",
+            "telemetry": {
+              "promptVersion": "repair-extraction-v3",
+              "modelId": "gpt-6-luna",
+              "latencyMilliseconds": 5363,
+              "inputTokens": 808,
+              "outputTokens": 156,
+              "providerRequestId": "req_c8d2af54a7644067b3609029007c5e96"
+            }
+          },
+          "errors": []
+        },
+        {
+          "caseId": "16c42d55-ff32-50f0-afd0-b832a5ffa2b0",
+          "accepted": true,
+          "result": {
+            "documentType": "REPAIR_COMPLETION_REPORT",
+            "vehicle": {
+              "manufacturer": "Audi",
+              "model": "A3 8V",
+              "modelYear": 2015,
+              "mileageKm": 127985
+            },
+            "repairCode": "CONTROL_ARM_FRONT_LEFT_REPLACE",
+            "observedComplications": [],
+            "knownBeforeRepair": [],
+            "actualLaborMinutes": 101,
+            "status": "ACCEPTED",
+            "telemetry": {
+              "promptVersion": "repair-extraction-v3",
+              "modelId": "gpt-6-luna",
+              "latencyMilliseconds": 2908,
+              "inputTokens": 811,
+              "outputTokens": 166,
+              "providerRequestId": "req_91a97a98767f47bdbdb768bc2c8f5218"
+            }
+          },
+          "errors": []
+        },
+        {
+          "caseId": "1741bfaa-cb38-5fcc-8622-4e5a8fed8be7",
+          "accepted": true,
+          "result": {
+            "documentType": "REPAIR_COMPLETION_REPORT",
+            "vehicle": {
+              "manufacturer": "BMW",
+              "model": "3 Series F30",
+              "modelYear": 2019,
+              "mileageKm": 88258
+            },
+            "repairCode": "CONTROL_ARM_REAR_LEFT_REPLACE",
+            "observedComplications": [],
+            "knownBeforeRepair": [
+              {
+                "code": "VISIBLE_CORROSION",
+                "informationTime": "BEFORE_REPAIR",
+                "evidence": "Visible corrosion was documented during pre-inspection."
+              }
+            ],
+            "actualLaborMinutes": 118,
+            "status": "ACCEPTED",
+            "telemetry": {
+              "promptVersion": "repair-extraction-v3",
+              "modelId": "gpt-6-luna",
+              "latencyMilliseconds": 3639,
+              "inputTokens": 820,
+              "outputTokens": 267,
+              "providerRequestId": "req_940c84a6ffb94761848b9585b1d60766"
+            }
+          },
+          "errors": []
+        },
+        {
+          "caseId": "1a72c498-4fe2-5931-bd37-43979ade20a2",
+          "accepted": true,
+          "result": {
+            "documentType": "REPAIR_COMPLETION_REPORT",
+            "vehicle": {
+              "manufacturer": "Audi",
+              "model": "A3 8V",
+              "modelYear": 2019,
+              "mileageKm": 109572
+            },
+            "repairCode": "CONTROL_ARM_FRONT_LEFT_REPLACE",
+            "observedComplications": [],
+            "knownBeforeRepair": [],
+            "actualLaborMinutes": 92,
+            "status": "ACCEPTED",
+            "telemetry": {
+              "promptVersion": "repair-extraction-v3",
+              "modelId": "gpt-6-luna",
+              "latencyMilliseconds": 2568,
+              "inputTokens": 811,
+              "outputTokens": 149,
+              "providerRequestId": "req_b38164e8d2dd4cff828c77110fd30a7e"
+            }
+          },
+          "errors": []
+        },
+        {
+          "caseId": "1aaca54e-fd28-51bf-bde6-7dce48c9ff70",
+          "accepted": true,
+          "result": {
+            "documentType": "REPAIR_COMPLETION_REPORT",
+            "vehicle": {
+              "manufacturer": "Volkswagen",
+              "model": "Golf VII",
+              "modelYear": 2016,
+              "mileageKm": 137046
+            },
+            "repairCode": "CONTROL_ARM_REAR_LEFT_REPLACE",
+            "observedComplications": [],
+            "knownBeforeRepair": [],
+            "actualLaborMinutes": 134,
+            "status": "ACCEPTED",
+            "telemetry": {
+              "promptVersion": "repair-extraction-v3",
+              "modelId": "gpt-6-luna",
+              "latencyMilliseconds": 2287,
+              "inputTokens": 809,
+              "outputTokens": 129,
+              "providerRequestId": "req_804223a881e64c22b1c59185e7dd5686"
+            }
+          },
+          "errors": []
+        },
+        {
+          "caseId": "1aad61f0-7cdf-5108-a2c0-b6bd64baadad",
+          "accepted": true,
+          "result": {
+            "documentType": "REPAIR_COMPLETION_REPORT",
+            "vehicle": {
+              "manufacturer": "Volkswagen",
+              "model": "Passat B8",
+              "modelYear": 2018,
+              "mileageKm": 51294
+            },
+            "repairCode": "CONTROL_ARM_FRONT_RIGHT_REPLACE",
+            "observedComplications": [],
+            "knownBeforeRepair": [],
+            "actualLaborMinutes": 119,
+            "status": "ACCEPTED",
+            "telemetry": {
+              "promptVersion": "repair-extraction-v3",
+              "modelId": "gpt-6-luna",
+              "latencyMilliseconds": 3024,
+              "inputTokens": 811,
+              "outputTokens": 211,
+              "providerRequestId": "req_58c131a5c28c493188149a817b3f0371"
+            }
+          },
+          "errors": []
+        },
+        {
+          "caseId": "1b6fd56d-674d-5aec-9c4d-0b307d847549",
+          "accepted": true,
+          "result": {
+            "documentType": "REPAIR_COMPLETION_REPORT",
+            "vehicle": {
+              "manufacturer": "Mercedes-Benz",
+              "model": "C-Class W205",
+              "modelYear": 2021,
+              "mileageKm": 56038
+            },
+            "repairCode": "CONTROL_ARM_FRONT_PAIR_REPLACE",
+            "observedComplications": [],
+            "knownBeforeRepair": [],
+            "actualLaborMinutes": 171,
+            "status": "ACCEPTED",
+            "telemetry": {
+              "promptVersion": "repair-extraction-v3",
+              "modelId": "gpt-6-luna",
+              "latencyMilliseconds": 3123,
+              "inputTokens": 810,
+              "outputTokens": 204,
+              "providerRequestId": "req_546f4db3283945cb99013405fe52640f"
+            }
+          },
+          "errors": []
+        },
+        {
+          "caseId": "20ab6cb7-648d-5aa3-ba4c-83538d716017",
+          "accepted": true,
+          "result": {
+            "documentType": "REPAIR_COMPLETION_REPORT",
+            "vehicle": {
+              "manufacturer": "Volkswagen",
+              "model": "Passat B8",
+              "modelYear": 2019,
+              "mileageKm": 123228
+            },
+            "repairCode": "CONTROL_ARM_FRONT_RIGHT_REPLACE",
+            "observedComplications": [
+              {
+                "code": "SEIZED_FASTENER",
+                "informationTime": "DURING_REPAIR",
+                "evidence": "One or more fasteners resisted removal and needed careful release."
+              }
+            ],
+            "knownBeforeRepair": [],
+            "actualLaborMinutes": 122,
+            "status": "ACCEPTED",
+            "telemetry": {
+              "promptVersion": "repair-extraction-v3",
+              "modelId": "gpt-6-luna",
+              "latencyMilliseconds": 2922,
+              "inputTokens": 810,
+              "outputTokens": 215,
+              "providerRequestId": "req_1a3ed8ba62d144a9a798cb1c5b9cf728"
+            }
+          },
+          "errors": []
+        },
+        {
+          "caseId": "21207c88-85c1-5255-a99c-2b0f3b2d17a3",
+          "accepted": true,
+          "result": {
+            "documentType": "REPAIR_COMPLETION_REPORT",
+            "vehicle": {
+              "manufacturer": "Audi",
+              "model": "A3 8V",
+              "modelYear": 2014,
+              "mileageKm": 165474
+            },
+            "repairCode": "CONTROL_ARM_FRONT_PAIR_REPLACE",
+            "observedComplications": [
+              {
+                "code": "SEIZED_FASTENER",
+                "informationTime": "DURING_REPAIR",
+                "evidence": "Corroded mounting hardware required additional extraction work."
+              }
+            ],
+            "knownBeforeRepair": [
+              {
+                "code": "VISIBLE_CORROSION",
+                "informationTime": "BEFORE_REPAIR",
+                "evidence": "Visible corrosion was documented during pre-inspection."
+              }
+            ],
+            "actualLaborMinutes": 198,
+            "status": "ACCEPTED",
+            "telemetry": {
+              "promptVersion": "repair-extraction-v3",
+              "modelId": "gpt-6-luna",
+              "latencyMilliseconds": 3893,
+              "inputTokens": 816,
+              "outputTokens": 302,
+              "providerRequestId": "req_3988ba66098141e3884fc83ef6fddbc9"
+            }
+          },
+          "errors": []
+        },
+        {
+          "caseId": "233a2e11-0fe7-5074-b26d-320d379a66cd",
+          "accepted": true,
+          "result": {
+            "documentType": "REPAIR_COMPLETION_REPORT",
+            "vehicle": {
+              "manufacturer": "Volkswagen",
+              "model": "Golf VII",
+              "modelYear": 2017,
+              "mileageKm": 82150
+            },
+            "repairCode": "CONTROL_ARM_FRONT_PAIR_REPLACE",
+            "observedComplications": [
+              {
+                "code": "ALIGNMENT_CORRECTION",
+                "informationTime": "AFTER_REPAIR",
+                "evidence": "Wheel geometry needed further correction after assembly."
+              }
+            ],
+            "knownBeforeRepair": [
+              {
+                "code": "VISIBLE_CORROSION",
+                "informationTime": "BEFORE_REPAIR",
+                "evidence": "Visible corrosion was documented during pre-inspection."
+              }
+            ],
+            "actualLaborMinutes": 224,
+            "status": "ACCEPTED",
+            "telemetry": {
+              "promptVersion": "repair-extraction-v3",
+              "modelId": "gpt-6-luna",
+              "latencyMilliseconds": 4235,
+              "inputTokens": 812,
+              "outputTokens": 298,
+              "providerRequestId": "req_98de31b57a714801be87a79079b89981"
+            }
+          },
+          "errors": []
+        },
+        {
+          "caseId": "235c531a-09c4-565c-b702-6f4f5f67b5fe",
+          "accepted": true,
+          "result": {
+            "documentType": "REPAIR_COMPLETION_REPORT",
+            "vehicle": {
+              "manufacturer": "Mercedes-Benz",
+              "model": "C-Class W205",
+              "modelYear": 2015,
+              "mileageKm": 96401
+            },
+            "repairCode": "CONTROL_ARM_FRONT_RIGHT_REPLACE",
+            "observedComplications": [
+              {
+                "code": "DAMAGED_BUSHING_SEAT",
+                "informationTime": "DURING_REPAIR",
+                "evidence": "Additional work was carried out around the worn bushing mounting area."
+              }
+            ],
+            "knownBeforeRepair": [],
+            "actualLaborMinutes": 122,
+            "status": "ACCEPTED",
+            "telemetry": {
+              "promptVersion": "repair-extraction-v3",
+              "modelId": "gpt-6-luna",
+              "latencyMilliseconds": 3514,
+              "inputTokens": 811,
+              "outputTokens": 290,
+              "providerRequestId": "req_3596747db8cb409e878fc339a607aa62"
+            }
+          },
+          "errors": []
+        },
+        {
+          "caseId": "2419c6ef-51e8-54ca-89f4-f7257be68c67",
+          "accepted": true,
+          "result": {
+            "documentType": "REPAIR_COMPLETION_REPORT",
+            "vehicle": {
+              "manufacturer": "Volkswagen",
+              "model": "Golf VII",
+              "modelYear": 2016,
+              "mileageKm": 99616
+            },
+            "repairCode": "CONTROL_ARM_REAR_LEFT_REPLACE",
+            "observedComplications": [
+              {
+                "code": "SEIZED_FASTENER",
+                "informationTime": "DURING_REPAIR",
+                "evidence": "Corroded mounting hardware required additional extraction work."
+              }
+            ],
+            "knownBeforeRepair": [
+              {
+                "code": "VISIBLE_CORROSION",
+                "informationTime": "BEFORE_REPAIR",
+                "evidence": "Visible corrosion was documented during pre-inspection."
+              }
+            ],
+            "actualLaborMinutes": 149,
+            "status": "ACCEPTED",
+            "telemetry": {
+              "promptVersion": "repair-extraction-v3",
+              "modelId": "gpt-6-luna",
+              "latencyMilliseconds": 4033,
+              "inputTokens": 815,
+              "outputTokens": 300,
+              "providerRequestId": "req_bab678df7e7348e0a7e825c9a175787e"
+            }
+          },
+          "errors": []
+        },
+        {
+          "caseId": "24598ed2-7b25-539e-8c9b-bb09317a1a1c",
+          "accepted": true,
+          "result": {
+            "documentType": "REPAIR_COMPLETION_REPORT",
+            "vehicle": {
+              "manufacturer": "Volkswagen",
+              "model": "Passat B8",
+              "modelYear": 2014,
+              "mileageKm": 104974
+            },
+            "repairCode": "CONTROL_ARM_FRONT_LEFT_REPLACE",
+            "observedComplications": [
+              {
+                "code": "SEIZED_FASTENER",
+                "informationTime": "DURING_REPAIR",
+                "evidence": "Corroded mounting hardware required additional extraction work."
+              }
+            ],
+            "knownBeforeRepair": [],
+            "actualLaborMinutes": 149,
+            "status": "ACCEPTED",
+            "telemetry": {
+              "promptVersion": "repair-extraction-v3",
+              "modelId": "gpt-6-luna",
+              "latencyMilliseconds": 4427,
+              "inputTokens": 808,
+              "outputTokens": 295,
+              "providerRequestId": "req_b9f93772cde14645af840f77857752ce"
+            }
+          },
+          "errors": []
+        },
+        {
+          "caseId": "251f683b-f7f7-55b1-9fe1-813b428bea60",
+          "accepted": true,
+          "result": {
+            "documentType": "REPAIR_COMPLETION_REPORT",
+            "vehicle": {
+              "manufacturer": "Volkswagen",
+              "model": "Golf VII",
+              "modelYear": 2012,
+              "mileageKm": 233142
+            },
+            "repairCode": "CONTROL_ARM_FRONT_PAIR_REPLACE",
+            "observedComplications": [
+              {
+                "code": "DAMAGED_BUSHING_SEAT",
+                "informationTime": "DURING_REPAIR",
+                "evidence": "The bushing seat required cleaning and corrective preparation."
+              }
+            ],
+            "knownBeforeRepair": [
+              {
+                "code": "VISIBLE_CORROSION",
+                "informationTime": "BEFORE_REPAIR",
+                "evidence": "Visible corrosion was documented during pre-inspection."
+              }
+            ],
+            "actualLaborMinutes": 211,
+            "status": "ACCEPTED",
+            "telemetry": {
+              "promptVersion": "repair-extraction-v3",
+              "modelId": "gpt-6-luna",
+              "latencyMilliseconds": 3907,
+              "inputTokens": 814,
+              "outputTokens": 296,
+              "providerRequestId": "req_6bebd2db4eff4ea6b1403095bf0b9933"
+            }
+          },
+          "errors": []
+        },
+        {
+          "caseId": "276be77a-71ba-5b66-a131-fa80e0815d55",
+          "accepted": true,
+          "result": {
+            "documentType": "REPAIR_COMPLETION_REPORT",
+            "vehicle": {
+              "manufacturer": "Ford",
+              "model": "Focus Mk3",
+              "modelYear": 2015,
+              "mileageKm": 200896
+            },
+            "repairCode": "CONTROL_ARM_FRONT_LEFT_REPLACE",
+            "observedComplications": [
+              {
+                "code": "SEIZED_FASTENER",
+                "informationTime": "DURING_REPAIR",
+                "evidence": "One or more fasteners resisted removal and needed careful release."
+              }
+            ],
+            "knownBeforeRepair": [],
+            "actualLaborMinutes": 131,
+            "status": "ACCEPTED",
+            "telemetry": {
+              "promptVersion": "repair-extraction-v3",
+              "modelId": "gpt-6-luna",
+              "latencyMilliseconds": 3546,
+              "inputTokens": 808,
+              "outputTokens": 244,
+              "providerRequestId": "req_b020753adfae4d8392d2af3acf41aa84"
+            }
+          },
+          "errors": []
+        },
+        {
+          "caseId": "289d0220-05c9-5d93-97df-027567936195",
+          "accepted": true,
+          "result": {
+            "documentType": "REPAIR_COMPLETION_REPORT",
+            "vehicle": {
+              "manufacturer": "\u0160koda",
+              "model": "Octavia III",
+              "modelYear": 2016,
+              "mileageKm": 100578
+            },
+            "repairCode": "CONTROL_ARM_FRONT_PAIR_REPLACE",
+            "observedComplications": [
+              {
+                "code": "DAMAGED_BUSHING_SEAT",
+                "informationTime": "DURING_REPAIR",
+                "evidence": "The bushing seat required cleaning and corrective preparation."
+              }
+            ],
+            "knownBeforeRepair": [
+              {
+                "code": "VISIBLE_PRIOR_DAMAGE",
+                "informationTime": "BEFORE_REPAIR",
+                "evidence": "Visible prior damage was documented during pre-inspection."
+              }
+            ],
+            "actualLaborMinutes": 214,
+            "status": "ACCEPTED",
+            "telemetry": {
+              "promptVersion": "repair-extraction-v3",
+              "modelId": "gpt-6-luna",
+              "latencyMilliseconds": 3844,
+              "inputTokens": 817,
+              "outputTokens": 279,
+              "providerRequestId": "req_1af02aa3a10d4195895195d589c5a0d6"
+            }
+          },
+          "errors": []
+        },
+        {
+          "caseId": "28e90548-7daa-57db-b4af-6752be9b46d5",
+          "accepted": true,
+          "result": {
+            "documentType": "REPAIR_COMPLETION_REPORT",
+            "vehicle": {
+              "manufacturer": "Mercedes-Benz",
+              "model": "C-Class W205",
+              "modelYear": 2017,
+              "mileageKm": 123792
+            },
+            "repairCode": "CONTROL_ARM_FRONT_RIGHT_REPLACE",
+            "observedComplications": [
+              {
+                "code": "SEIZED_FASTENER",
+                "informationTime": "DURING_REPAIR",
+                "evidence": "One or more fasteners resisted removal and needed careful release."
+              }
+            ],
+            "knownBeforeRepair": [
+              {
+                "code": "VISIBLE_CORROSION",
+                "informationTime": "BEFORE_REPAIR",
+                "evidence": "Visible corrosion was documented during pre-inspection."
+              }
+            ],
+            "actualLaborMinutes": 134,
+            "status": "ACCEPTED",
+            "telemetry": {
+              "promptVersion": "repair-extraction-v3",
+              "modelId": "gpt-6-luna",
+              "latencyMilliseconds": 3240,
+              "inputTokens": 819,
+              "outputTokens": 236,
+              "providerRequestId": "req_fa4969c16cbb4f4eb85f0fd0f04c64f7"
+            }
+          },
+          "errors": []
+        },
+        {
+          "caseId": "2abecc51-2393-5bac-998a-d9f3170fe691",
+          "accepted": true,
+          "result": {
+            "documentType": "REPAIR_COMPLETION_REPORT",
+            "vehicle": {
+              "manufacturer": "BMW",
+              "model": "3 Series F30",
+              "modelYear": 2014,
+              "mileageKm": 169129
+            },
+            "repairCode": "CONTROL_ARM_FRONT_LEFT_REPLACE",
+            "observedComplications": [
+              {
+                "code": "SEIZED_FASTENER",
+                "informationTime": "DURING_REPAIR",
+                "evidence": "Corroded mounting hardware required additional extraction work."
+              }
+            ],
+            "knownBeforeRepair": [
+              {
+                "code": "VISIBLE_CORROSION",
+                "informationTime": "BEFORE_REPAIR",
+                "evidence": "Visible corrosion was documented during pre-inspection."
+              }
+            ],
+            "actualLaborMinutes": 124,
+            "status": "ACCEPTED",
+            "telemetry": {
+              "promptVersion": "repair-extraction-v3",
+              "modelId": "gpt-6-luna",
+              "latencyMilliseconds": 3408,
+              "inputTokens": 817,
+              "outputTokens": 241,
+              "providerRequestId": "req_e5edc448ddf2406c88c13ed1335907fe"
+            }
+          },
+          "errors": []
+        },
+        {
+          "caseId": "2bb2448b-5890-52e7-8f87-c3f85537dccd",
+          "accepted": true,
+          "result": {
+            "documentType": "REPAIR_COMPLETION_REPORT",
+            "vehicle": {
+              "manufacturer": "Volkswagen",
+              "model": "Golf VII",
+              "modelYear": 2017,
+              "mileageKm": 156413
+            },
+            "repairCode": "CONTROL_ARM_FRONT_RIGHT_REPLACE",
+            "observedComplications": [
+              {
+                "code": "SEIZED_FASTENER",
+                "informationTime": "DURING_REPAIR",
+                "evidence": "Corroded mounting hardware required additional extraction work."
+              }
+            ],
+            "knownBeforeRepair": [
+              {
+                "code": "VISIBLE_CORROSION",
+                "informationTime": "BEFORE_REPAIR",
+                "evidence": "Visible corrosion was documented during pre-inspection."
+              }
+            ],
+            "actualLaborMinutes": 127,
+            "status": "ACCEPTED",
+            "telemetry": {
+              "promptVersion": "repair-extraction-v3",
+              "modelId": "gpt-6-luna",
+              "latencyMilliseconds": 3002,
+              "inputTokens": 815,
+              "outputTokens": 228,
+              "providerRequestId": "req_2a79a4b5ed2e413ab08f54ed203f99cd"
+            }
+          },
+          "errors": []
+        },
+        {
+          "caseId": "2bd71364-d808-5965-ad42-dfeeb91c4d28",
+          "accepted": true,
+          "result": {
+            "documentType": "REPAIR_COMPLETION_REPORT",
+            "vehicle": {
+              "manufacturer": "Mercedes-Benz",
+              "model": "C-Class W205",
+              "modelYear": 2016,
+              "mileageKm": 208992
+            },
+            "repairCode": "CONTROL_ARM_FRONT_PAIR_REPLACE",
+            "observedComplications": [
+              {
+                "code": "SEIZED_FASTENER",
+                "informationTime": "DURING_REPAIR",
+                "evidence": "One or more fasteners resisted removal and needed careful release."
+              }
+            ],
+            "knownBeforeRepair": [],
+            "actualLaborMinutes": 232,
+            "status": "ACCEPTED",
+            "telemetry": {
+              "promptVersion": "repair-extraction-v3",
+              "modelId": "gpt-6-luna",
+              "latencyMilliseconds": 3554,
+              "inputTokens": 809,
+              "outputTokens": 251,
+              "providerRequestId": "req_9eb9d1a3f5c6469aa31f130614ecdd49"
+            }
+          },
+          "errors": []
+        },
+        {
+          "caseId": "2c7fe189-fee6-52fc-939b-6ecd28519a6d",
+          "accepted": true,
+          "result": {
+            "documentType": "REPAIR_COMPLETION_REPORT",
+            "vehicle": {
+              "manufacturer": "Ford",
+              "model": "Focus Mk3",
+              "modelYear": 2011,
+              "mileageKm": 147070
+            },
+            "repairCode": "CONTROL_ARM_REAR_RIGHT_REPLACE",
+            "observedComplications": [
+              {
+                "code": "SEIZED_FASTENER",
+                "informationTime": "DURING_REPAIR",
+                "evidence": "Corroded mounting hardware required additional extraction work."
+              }
+            ],
+            "knownBeforeRepair": [
+              {
+                "code": "VISIBLE_CORROSION",
+                "informationTime": "BEFORE_REPAIR",
+                "evidence": "Visible corrosion was documented during pre-inspection."
+              }
+            ],
+            "actualLaborMinutes": 148,
+            "status": "ACCEPTED",
+            "telemetry": {
+              "promptVersion": "repair-extraction-v3",
+              "modelId": "gpt-6-luna",
+              "latencyMilliseconds": 3966,
+              "inputTokens": 815,
+              "outputTokens": 277,
+              "providerRequestId": "req_504a0862a6054d57b1ffbd8409745101"
+            }
+          },
+          "errors": []
+        },
+        {
+          "caseId": "2d58ae3c-aef4-5814-adfd-62cc5ee7796a",
+          "accepted": true,
+          "result": {
+            "documentType": "REPAIR_COMPLETION_REPORT",
+            "vehicle": {
+              "manufacturer": "Ford",
+              "model": "Focus Mk3",
+              "modelYear": 2013,
+              "mileageKm": 192335
+            },
+            "repairCode": "CONTROL_ARM_FRONT_PAIR_REPLACE",
+            "observedComplications": [
+              {
+                "code": "SEIZED_FASTENER",
+                "informationTime": "DURING_REPAIR",
+                "evidence": "Corroded mounting hardware required additional extraction work."
+              }
+            ],
+            "knownBeforeRepair": [
+              {
+                "code": "VISIBLE_CORROSION",
+                "informationTime": "BEFORE_REPAIR",
+                "evidence": "Visible corrosion was documented during pre-inspection."
+              }
+            ],
+            "actualLaborMinutes": 201,
+            "status": "ACCEPTED",
+            "telemetry": {
+              "promptVersion": "repair-extraction-v3",
+              "modelId": "gpt-6-luna",
+              "latencyMilliseconds": 3938,
+              "inputTokens": 814,
+              "outputTokens": 329,
+              "providerRequestId": "req_db8d5ed699814df0bce79a4c855d678f"
+            }
+          },
+          "errors": []
+        },
+        {
+          "caseId": "2dc86c51-7d2c-50d5-89f1-623c48490e04",
+          "accepted": true,
+          "result": {
+            "documentType": "REPAIR_COMPLETION_REPORT",
+            "vehicle": {
+              "manufacturer": "Opel",
+              "model": "Astra K",
+              "modelYear": 2017,
+              "mileageKm": 73805
+            },
+            "repairCode": "CONTROL_ARM_FRONT_LEFT_REPLACE",
+            "observedComplications": [
+              {
+                "code": "SEIZED_FASTENER",
+                "informationTime": "DURING_REPAIR",
+                "evidence": "Corroded mounting hardware required additional extraction work."
+              }
+            ],
+            "knownBeforeRepair": [],
+            "actualLaborMinutes": 141,
+            "status": "ACCEPTED",
+            "telemetry": {
+              "promptVersion": "repair-extraction-v3",
+              "modelId": "gpt-6-luna",
+              "latencyMilliseconds": 3727,
+              "inputTokens": 806,
+              "outputTokens": 223,
+              "providerRequestId": "req_b1deb808a1ab4e25b87399b548ac2f7b"
+            }
+          },
+          "errors": []
+        },
+        {
+          "caseId": "2e255c61-5826-5d14-80de-bc95538d06f9",
+          "accepted": true,
+          "result": {
+            "documentType": "REPAIR_COMPLETION_REPORT",
+            "vehicle": {
+              "manufacturer": "Mercedes-Benz",
+              "model": "C-Class W205",
+              "modelYear": 2015,
+              "mileageKm": 162346
+            },
+            "repairCode": "CONTROL_ARM_REAR_RIGHT_REPLACE",
+            "observedComplications": [
+              {
+                "code": "DAMAGED_BUSHING_SEAT",
+                "informationTime": "DURING_REPAIR",
+                "evidence": "Additional work was carried out around the worn bushing mounting area."
+              }
+            ],
+            "knownBeforeRepair": [],
+            "actualLaborMinutes": 185,
+            "status": "ACCEPTED",
+            "telemetry": {
+              "promptVersion": "repair-extraction-v3",
+              "modelId": "gpt-6-luna",
+              "latencyMilliseconds": 3311,
+              "inputTokens": 811,
+              "outputTokens": 330,
+              "providerRequestId": "req_3968c1968a8b4e0eb37f1be71448794e"
+            }
+          },
+          "errors": []
+        },
+        {
+          "caseId": "2e993068-4ac0-5b5f-97f3-523452e4840c",
+          "accepted": true,
+          "result": {
+            "documentType": "REPAIR_COMPLETION_REPORT",
+            "vehicle": {
+              "manufacturer": "Audi",
+              "model": "A3 8V",
+              "modelYear": 2016,
+              "mileageKm": 165466
+            },
+            "repairCode": "CONTROL_ARM_FRONT_LEFT_REPLACE",
+            "observedComplications": [
+              {
+                "code": "DAMAGED_BUSHING_SEAT",
+                "informationTime": "DURING_REPAIR",
+                "evidence": "The mounting seat needed attention before the new component could be installed."
+              }
+            ],
+            "knownBeforeRepair": [
+              {
+                "code": "VISIBLE_CORROSION",
+                "informationTime": "BEFORE_REPAIR",
+                "evidence": "Visible corrosion was documented during pre-inspection."
+              }
+            ],
+            "actualLaborMinutes": 142,
+            "status": "ACCEPTED",
+            "telemetry": {
+              "promptVersion": "repair-extraction-v3",
+              "modelId": "gpt-6-luna",
+              "latencyMilliseconds": 5035,
+              "inputTokens": 820,
+              "outputTokens": 326,
+              "providerRequestId": "req_c7d7ff33c7ed4ecb9010cdd2daad9e86"
+            }
+          },
+          "errors": []
+        },
+        {
+          "caseId": "2fa226b2-346e-5f48-ae24-54659c9de4d1",
+          "accepted": true,
+          "result": {
+            "documentType": "REPAIR_COMPLETION_REPORT",
+            "vehicle": {
+              "manufacturer": "Opel",
+              "model": "Astra K",
+              "modelYear": 2017,
+              "mileageKm": 52651
+            },
+            "repairCode": "CONTROL_ARM_FRONT_PAIR_REPLACE",
+            "observedComplications": [
+              {
+                "code": "SEIZED_FASTENER",
+                "informationTime": "DURING_REPAIR",
+                "evidence": "One or more fasteners resisted removal and needed careful release."
+              }
+            ],
+            "knownBeforeRepair": [],
+            "actualLaborMinutes": 209,
+            "status": "ACCEPTED",
+            "telemetry": {
+              "promptVersion": "repair-extraction-v3",
+              "modelId": "gpt-6-luna",
+              "latencyMilliseconds": 2887,
+              "inputTokens": 807,
+              "outputTokens": 205,
+              "providerRequestId": "req_f610744b6bef42a98eeb21d83b40ca53"
+            }
+          },
+          "errors": []
+        },
+        {
+          "caseId": "2fc9ba57-38dc-5f4f-94d5-1a52c5e170fc",
+          "accepted": true,
+          "result": {
+            "documentType": "REPAIR_COMPLETION_REPORT",
+            "vehicle": {
+              "manufacturer": "Ford",
+              "model": "Focus Mk3",
+              "modelYear": 2013,
+              "mileageKm": 148399
+            },
+            "repairCode": "CONTROL_ARM_REAR_RIGHT_REPLACE",
+            "observedComplications": [
+              {
+                "code": "SEIZED_FASTENER",
+                "informationTime": "DURING_REPAIR",
+                "evidence": "One or more fasteners resisted removal and needed careful release."
+              }
+            ],
+            "knownBeforeRepair": [
+              {
+                "code": "VISIBLE_CORROSION",
+                "informationTime": "BEFORE_REPAIR",
+                "evidence": "Visible corrosion was documented during pre-inspection."
+              }
+            ],
+            "actualLaborMinutes": 135,
+            "status": "ACCEPTED",
+            "telemetry": {
+              "promptVersion": "repair-extraction-v3",
+              "modelId": "gpt-6-luna",
+              "latencyMilliseconds": 3822,
+              "inputTokens": 817,
+              "outputTokens": 208,
+              "providerRequestId": "req_4869debc28db4861afeeb2ea942b8e8b"
+            }
+          },
+          "errors": []
+        },
+        {
+          "caseId": "313a0658-7069-5bb3-87c5-e75816551f91",
+          "accepted": true,
+          "result": {
+            "documentType": "REPAIR_COMPLETION_REPORT",
+            "vehicle": {
+              "manufacturer": "Ford",
+              "model": "Focus Mk3",
+              "modelYear": 2017,
+              "mileageKm": 143533
+            },
+            "repairCode": "CONTROL_ARM_FRONT_PAIR_REPLACE",
+            "observedComplications": [
+              {
+                "code": "SEIZED_FASTENER",
+                "informationTime": "DURING_REPAIR",
+                "evidence": "Corroded mounting hardware required additional extraction work."
+              }
+            ],
+            "knownBeforeRepair": [
+              {
+                "code": "VISIBLE_CORROSION",
+                "informationTime": "BEFORE_REPAIR",
+                "evidence": "Visible corrosion was documented during pre-inspection."
+              }
+            ],
+            "actualLaborMinutes": 197,
+            "status": "ACCEPTED",
+            "telemetry": {
+              "promptVersion": "repair-extraction-v3",
+              "modelId": "gpt-6-luna",
+              "latencyMilliseconds": 3714,
+              "inputTokens": 814,
+              "outputTokens": 255,
+              "providerRequestId": "req_352f4299bab84290beb7f7b37970b7e4"
+            }
+          },
+          "errors": []
+        },
+        {
+          "caseId": "31a9be0f-57d5-59ce-9f81-f72543f69546",
+          "accepted": true,
+          "result": {
+            "documentType": "REPAIR_COMPLETION_REPORT",
+            "vehicle": {
+              "manufacturer": "Volkswagen",
+              "model": "Golf VII",
+              "modelYear": 2015,
+              "mileageKm": 203239
+            },
+            "repairCode": "CONTROL_ARM_REAR_LEFT_REPLACE",
+            "observedComplications": [
+              {
+                "code": "SEIZED_FASTENER",
+                "informationTime": "DURING_REPAIR",
+                "evidence": "Corroded mounting hardware required additional extraction work."
+              }
+            ],
+            "knownBeforeRepair": [
+              {
+                "code": "VISIBLE_CORROSION",
+                "informationTime": "BEFORE_REPAIR",
+                "evidence": "Visible corrosion was documented during pre-inspection."
+              }
+            ],
+            "actualLaborMinutes": 179,
+            "status": "ACCEPTED",
+            "telemetry": {
+              "promptVersion": "repair-extraction-v3",
+              "modelId": "gpt-6-luna",
+              "latencyMilliseconds": 4012,
+              "inputTokens": 815,
+              "outputTokens": 303,
+              "providerRequestId": "req_56b2590a1ad84c2fa59cd3df8c6905f9"
+            }
+          },
+          "errors": []
+        },
+        {
+          "caseId": "3324215e-a8ed-5d4b-b7d4-cb1fb68a08dd",
+          "accepted": true,
+          "result": {
+            "documentType": "REPAIR_COMPLETION_REPORT",
+            "vehicle": {
+              "manufacturer": "Volkswagen",
+              "model": "Golf VII",
+              "modelYear": 2013,
+              "mileageKm": 121058
+            },
+            "repairCode": "CONTROL_ARM_FRONT_LEFT_REPLACE",
+            "observedComplications": [
+              {
+                "code": "BROKEN_BOLT",
+                "informationTime": "DURING_REPAIR",
+                "evidence": "Bolt extraction and replacement were necessary during dismantling."
+              }
+            ],
+            "knownBeforeRepair": [
+              {
+                "code": "VISIBLE_PRIOR_DAMAGE",
+                "informationTime": "BEFORE_REPAIR",
+                "evidence": "Visible prior damage was documented during pre-inspection."
+              }
+            ],
+            "actualLaborMinutes": 131,
+            "status": "ACCEPTED",
+            "telemetry": {
+              "promptVersion": "repair-extraction-v3",
+              "modelId": "gpt-6-luna",
+              "latencyMilliseconds": 3611,
+              "inputTokens": 816,
+              "outputTokens": 340,
+              "providerRequestId": "req_fe723c28ffa1442e99ecb0e286effd5d"
+            }
+          },
+          "errors": []
+        },
+        {
+          "caseId": "33ac75e5-43a6-52db-b0e4-e6e6d20b728f",
+          "accepted": true,
+          "result": {
+            "documentType": "REPAIR_COMPLETION_REPORT",
+            "vehicle": {
+              "manufacturer": "Audi",
+              "model": "A3 8V",
+              "modelYear": 2012,
+              "mileageKm": 257401
+            },
+            "repairCode": "CONTROL_ARM_FRONT_LEFT_REPLACE",
+            "observedComplications": [
+              {
+                "code": "SEIZED_FASTENER",
+                "informationTime": "DURING_REPAIR",
+                "evidence": "One or more fasteners resisted removal and needed careful release."
+              }
+            ],
+            "knownBeforeRepair": [
+              {
+                "code": "VISIBLE_CORROSION",
+                "informationTime": "BEFORE_REPAIR",
+                "evidence": "Visible corrosion was documented during pre-inspection."
+              }
+            ],
+            "actualLaborMinutes": 131,
+            "status": "ACCEPTED",
+            "telemetry": {
+              "promptVersion": "repair-extraction-v3",
+              "modelId": "gpt-6-luna",
+              "latencyMilliseconds": 2992,
+              "inputTokens": 819,
+              "outputTokens": 260,
+              "providerRequestId": "req_cc20f6f30f48430abb10212ebe074cb6"
+            }
+          },
+          "errors": []
+        },
+        {
+          "caseId": "33c2d629-29e7-5f58-9154-5012ec94455b",
+          "accepted": true,
+          "result": {
+            "documentType": "REPAIR_COMPLETION_REPORT",
+            "vehicle": {
+              "manufacturer": "Ford",
+              "model": "Focus Mk3",
+              "modelYear": 2014,
+              "mileageKm": 171585
+            },
+            "repairCode": "CONTROL_ARM_FRONT_PAIR_REPLACE",
+            "observedComplications": [
+              {
+                "code": "SEIZED_FASTENER",
+                "informationTime": "DURING_REPAIR",
+                "evidence": "One or more fasteners resisted removal and needed careful release."
+              }
+            ],
+            "knownBeforeRepair": [
+              {
+                "code": "VISIBLE_CORROSION",
+                "informationTime": "BEFORE_REPAIR",
+                "evidence": "Visible corrosion was documented during pre-inspection."
+              },
+              {
+                "code": "VISIBLE_PRIOR_DAMAGE",
+                "informationTime": "BEFORE_REPAIR",
+                "evidence": "Visible prior damage was documented during pre-inspection."
+              }
+            ],
+            "actualLaborMinutes": 197,
+            "status": "ACCEPTED",
+            "telemetry": {
+              "promptVersion": "repair-extraction-v3",
+              "modelId": "gpt-6-luna",
+              "latencyMilliseconds": 3097,
+              "inputTokens": 826,
+              "outputTokens": 249,
+              "providerRequestId": "req_5c362153def9476dad1ebd19ea7d213f"
+            }
+          },
+          "errors": []
+        },
+        {
+          "caseId": "3154a499-0e25-5a72-a56b-d7e07aea8b72",
+          "accepted": true,
+          "result": {
+            "documentType": "REPAIR_COMPLETION_REPORT",
+            "vehicle": {
+              "manufacturer": "Volkswagen",
+              "model": "Golf VII",
+              "modelYear": 2017,
+              "mileageKm": 160171
+            },
+            "repairCode": "CONTROL_ARM_REAR_LEFT_REPLACE",
+            "observedComplications": [
+              {
+                "code": "BROKEN_BOLT",
+                "informationTime": "DURING_REPAIR",
+                "evidence": "Bolt extraction and replacement were necessary during dismantling."
+              },
+              {
+                "code": "DAMAGED_BUSHING_SEAT",
+                "informationTime": "DURING_REPAIR",
+                "evidence": "Additional work was carried out around the worn bushing mounting area."
+              },
+              {
+                "code": "SEIZED_FASTENER",
+                "informationTime": "DURING_REPAIR",
+                "evidence": "Dismantling took longer because mounting hardware was seized."
+              }
+            ],
+            "knownBeforeRepair": [],
+            "actualLaborMinutes": 240,
+            "status": "ACCEPTED",
+            "telemetry": {
+              "promptVersion": "repair-extraction-v3",
+              "modelId": "gpt-6-luna",
+              "latencyMilliseconds": 4336,
+              "inputTokens": 831,
+              "outputTokens": 429,
+              "providerRequestId": "req_907b635ed0f842c1b6de8f86228b9b6f"
+            }
+          },
+          "errors": []
+        },
+        {
+          "caseId": "3246893d-9302-568c-9673-85b86a8b2706",
+          "accepted": true,
+          "result": {
+            "documentType": "REPAIR_COMPLETION_REPORT",
+            "vehicle": {
+              "manufacturer": "Volkswagen",
+              "model": "Golf VII",
+              "modelYear": 2013,
+              "mileageKm": 181725
+            },
+            "repairCode": "CONTROL_ARM_REAR_LEFT_REPLACE",
+            "observedComplications": [
+              {
+                "code": "ALIGNMENT_CORRECTION",
+                "informationTime": "AFTER_REPAIR",
+                "evidence": "A follow-up adjustment was made during the geometry check."
+              },
+              {
+                "code": "DAMAGED_BUSHING_SEAT",
+                "informationTime": "DURING_REPAIR",
+                "evidence": "The bushing seat required cleaning and corrective preparation."
+              },
+              {
+                "code": "SEIZED_FASTENER",
+                "informationTime": "DURING_REPAIR",
+                "evidence": "Corroded mounting hardware required additional extraction work."
+              }
+            ],
+            "knownBeforeRepair": [
+              {
+                "code": "VISIBLE_CORROSION",
+                "informationTime": "BEFORE_REPAIR",
+                "evidence": "Visible corrosion was documented during pre-inspection."
+              }
+            ],
+            "actualLaborMinutes": 189,
+            "status": "ACCEPTED",
+            "telemetry": {
+              "promptVersion": "repair-extraction-v3",
+              "modelId": "gpt-6-luna",
+              "latencyMilliseconds": 5226,
+              "inputTokens": 836,
+              "outputTokens": 486,
+              "providerRequestId": "req_48a09efc72e14ef98458ecc6cbb1f288"
+            }
+          },
+          "errors": []
+        },
+        {
+          "caseId": "347159c4-e57a-561b-81a4-f2020c8805f1",
+          "accepted": true,
+          "result": {
+            "documentType": "REPAIR_COMPLETION_REPORT",
+            "vehicle": {
+              "manufacturer": "BMW",
+              "model": "3 Series F30",
+              "modelYear": 2011,
+              "mileageKm": 102184
+            },
+            "repairCode": "CONTROL_ARM_REAR_LEFT_REPLACE",
+            "observedComplications": [
+              {
+                "code": "ALIGNMENT_CORRECTION",
+                "informationTime": "AFTER_REPAIR",
+                "evidence": "Wheel geometry needed further correction after assembly."
+              },
+              {
+                "code": "SEIZED_FASTENER",
+                "informationTime": "DURING_REPAIR",
+                "evidence": "One or more fasteners resisted removal and needed careful release."
+              }
+            ],
+            "knownBeforeRepair": [
+              {
+                "code": "VISIBLE_CORROSION",
+                "informationTime": "BEFORE_REPAIR",
+                "evidence": "Visible corrosion was documented during pre-inspection."
+              }
+            ],
+            "actualLaborMinutes": 166,
+            "status": "ACCEPTED",
+            "telemetry": {
+              "promptVersion": "repair-extraction-v3",
+              "modelId": "gpt-6-luna",
+              "latencyMilliseconds": 4000,
+              "inputTokens": 827,
+              "outputTokens": 344,
+              "providerRequestId": "req_dc307615e92e40e6acba57a5c85e549e"
+            }
+          },
+          "errors": []
+        },
+        {
+          "caseId": "355609a2-1ca2-5f78-961f-6b66a5a37ff1",
+          "accepted": true,
+          "result": {
+            "documentType": "REPAIR_COMPLETION_REPORT",
+            "vehicle": {
+              "manufacturer": "Mercedes-Benz",
+              "model": "C-Class W205",
+              "modelYear": 2015,
+              "mileageKm": 188814
+            },
+            "repairCode": "CONTROL_ARM_REAR_RIGHT_REPLACE",
+            "observedComplications": [
+              {
+                "code": "ALIGNMENT_CORRECTION",
+                "informationTime": "AFTER_REPAIR",
+                "evidence": "A follow-up adjustment was made during the geometry check."
+              },
+              {
+                "code": "DAMAGED_BUSHING_SEAT",
+                "informationTime": "DURING_REPAIR",
+                "evidence": "The mounting seat needed attention before the new component could be installed."
+              },
+              {
+                "code": "SEIZED_FASTENER",
+                "informationTime": "DURING_REPAIR",
+                "evidence": "One or more fasteners resisted removal and needed careful release."
+              }
+            ],
+            "knownBeforeRepair": [
+              {
+                "code": "VISIBLE_CORROSION",
+                "informationTime": "BEFORE_REPAIR",
+                "evidence": "Visible corrosion was documented during pre-inspection."
+              }
+            ],
+            "actualLaborMinutes": 231,
+            "status": "ACCEPTED",
+            "telemetry": {
+              "promptVersion": "repair-extraction-v3",
+              "modelId": "gpt-6-luna",
+              "latencyMilliseconds": 4967,
+              "inputTokens": 843,
+              "outputTokens": 389,
+              "providerRequestId": "req_ec8b78d2a9214d3a88d5a54ca2b984cd"
+            }
+          },
+          "errors": []
+        },
+        {
+          "caseId": "39605c13-8412-5ee9-9b15-33c928131dc8",
+          "accepted": true,
+          "result": {
+            "documentType": "REPAIR_COMPLETION_REPORT",
+            "vehicle": {
+              "manufacturer": "Audi",
+              "model": "A3 8V",
+              "modelYear": 2013,
+              "mileageKm": 261903
+            },
+            "repairCode": "CONTROL_ARM_REAR_LEFT_REPLACE",
+            "observedComplications": [
+              {
+                "code": "BROKEN_BOLT",
+                "informationTime": "DURING_REPAIR",
+                "evidence": "A mounting bolt broke during removal and was replaced."
+              },
+              {
+                "code": "DAMAGED_BUSHING_SEAT",
+                "informationTime": "DURING_REPAIR",
+                "evidence": "The bushing seat required cleaning and corrective preparation."
+              }
+            ],
+            "knownBeforeRepair": [],
+            "actualLaborMinutes": 233,
+            "status": "ACCEPTED",
+            "telemetry": {
+              "promptVersion": "repair-extraction-v3",
+              "modelId": "gpt-6-luna",
+              "latencyMilliseconds": 2838,
+              "inputTokens": 818,
+              "outputTokens": 227,
+              "providerRequestId": "req_4b2ef1d320c64a56891b0fefd9c774bc"
+            }
+          },
+          "errors": []
+        },
+        {
+          "caseId": "3cdb7273-9dbf-5413-8067-e2c3b26137ad",
+          "accepted": true,
+          "result": {
+            "documentType": "REPAIR_COMPLETION_REPORT",
+            "vehicle": {
+              "manufacturer": "BMW",
+              "model": "3 Series F30",
+              "modelYear": 2012,
+              "mileageKm": 272731
+            },
+            "repairCode": "CONTROL_ARM_FRONT_LEFT_REPLACE",
+            "observedComplications": [
+              {
+                "code": "BROKEN_BOLT",
+                "informationTime": "DURING_REPAIR",
+                "evidence": "Bolt extraction and replacement were necessary during dismantling."
+              },
+              {
+                "code": "SEIZED_FASTENER",
+                "informationTime": "DURING_REPAIR",
+                "evidence": "Dismantling took longer because mounting hardware was seized."
+              }
+            ],
+            "knownBeforeRepair": [
+              {
+                "code": "VISIBLE_CORROSION",
+                "informationTime": "BEFORE_REPAIR",
+                "evidence": "Visible corrosion was documented during pre-inspection."
+              }
+            ],
+            "actualLaborMinutes": 182,
+            "status": "ACCEPTED",
+            "telemetry": {
+              "promptVersion": "repair-extraction-v3",
+              "modelId": "gpt-6-luna",
+              "latencyMilliseconds": 4341,
+              "inputTokens": 829,
+              "outputTokens": 358,
+              "providerRequestId": "req_4f1967e62de347229d0f8b9b15e8a21f"
+            }
+          },
+          "errors": []
+        },
+        {
+          "caseId": "3d74699c-3cf8-59e0-9dcd-3325cb51c4a6",
+          "accepted": true,
+          "result": {
+            "documentType": "REPAIR_COMPLETION_REPORT",
+            "vehicle": {
+              "manufacturer": "Volkswagen",
+              "model": "Golf VII",
+              "modelYear": 2013,
+              "mileageKm": 141229
+            },
+            "repairCode": "CONTROL_ARM_REAR_RIGHT_REPLACE",
+            "observedComplications": [
+              {
+                "code": "DAMAGED_BUSHING_SEAT",
+                "informationTime": "DURING_REPAIR",
+                "evidence": "The bushing seat required cleaning and corrective preparation."
+              },
+              {
+                "code": "SEIZED_FASTENER",
+                "informationTime": "DURING_REPAIR",
+                "evidence": "One or more fasteners resisted removal and needed careful release."
+              }
+            ],
+            "knownBeforeRepair": [],
+            "actualLaborMinutes": 199,
+            "status": "ACCEPTED",
+            "telemetry": {
+              "promptVersion": "repair-extraction-v3",
+              "modelId": "gpt-6-luna",
+              "latencyMilliseconds": 3833,
+              "inputTokens": 818,
+              "outputTokens": 291,
+              "providerRequestId": "req_18fd9d3bb305470d8da0a51b00959389"
+            }
+          },
+          "errors": []
+        },
+        {
+          "caseId": "3f2d35ba-7d06-5709-a135-5720c0720817",
+          "accepted": true,
+          "result": {
+            "documentType": "REPAIR_COMPLETION_REPORT",
+            "vehicle": {
+              "manufacturer": "Mercedes-Benz",
+              "model": "C-Class W205",
+              "modelYear": 2014,
+              "mileageKm": 68801
+            },
+            "repairCode": "CONTROL_ARM_FRONT_LEFT_REPLACE",
+            "observedComplications": [
+              {
+                "code": "ALIGNMENT_CORRECTION",
+                "informationTime": "AFTER_REPAIR",
+                "evidence": "Final alignment required an additional correction."
+              },
+              {
+                "code": "SEIZED_FASTENER",
+                "informationTime": "DURING_REPAIR",
+                "evidence": "Corroded mounting hardware required additional extraction work."
+              }
+            ],
+            "knownBeforeRepair": [
+              {
+                "code": "VISIBLE_CORROSION",
+                "informationTime": "BEFORE_REPAIR",
+                "evidence": "Visible corrosion was documented during pre-inspection."
+              }
+            ],
+            "actualLaborMinutes": 162,
+            "status": "ACCEPTED",
+            "telemetry": {
+              "promptVersion": "repair-extraction-v3",
+              "modelId": "gpt-6-luna",
+              "latencyMilliseconds": 3111,
+              "inputTokens": 824,
+              "outputTokens": 264,
+              "providerRequestId": "req_6410b56121bb4f4e8c49299308b9693f"
+            }
+          },
+          "errors": []
+        },
+        {
+          "caseId": "46d0ab16-42e1-5f08-ba53-c31e2da98704",
+          "accepted": true,
+          "result": {
+            "documentType": "REPAIR_COMPLETION_REPORT",
+            "vehicle": {
+              "manufacturer": "BMW",
+              "model": "3 Series F30",
+              "modelYear": 2011,
+              "mileageKm": 186267
+            },
+            "repairCode": "CONTROL_ARM_FRONT_RIGHT_REPLACE",
+            "observedComplications": [
+              {
+                "code": "DAMAGED_BUSHING_SEAT",
+                "informationTime": "DURING_REPAIR",
+                "evidence": "Additional work was carried out around the worn bushing mounting area."
+              },
+              {
+                "code": "SEIZED_FASTENER",
+                "informationTime": "DURING_REPAIR",
+                "evidence": "One or more fasteners resisted removal and needed careful release."
+              }
+            ],
+            "knownBeforeRepair": [
+              {
+                "code": "VISIBLE_CORROSION",
+                "informationTime": "BEFORE_REPAIR",
+                "evidence": "Visible corrosion was documented during pre-inspection."
+              }
+            ],
+            "actualLaborMinutes": 147,
+            "status": "ACCEPTED",
+            "telemetry": {
+              "promptVersion": "repair-extraction-v3",
+              "modelId": "gpt-6-luna",
+              "latencyMilliseconds": 3928,
+              "inputTokens": 832,
+              "outputTokens": 352,
+              "providerRequestId": "req_2b646f959d414ef480555ad75755fd65"
+            }
+          },
+          "errors": []
+        },
+        {
+          "caseId": "4d4e6f3c-8465-558c-a9ae-22fc7066ff45",
+          "accepted": true,
+          "result": {
+            "documentType": "REPAIR_COMPLETION_REPORT",
+            "vehicle": {
+              "manufacturer": "Ford",
+              "model": "Focus Mk3",
+              "modelYear": 2011,
+              "mileageKm": 145267
+            },
+            "repairCode": "CONTROL_ARM_REAR_RIGHT_REPLACE",
+            "observedComplications": [
+              {
+                "code": "ALIGNMENT_CORRECTION",
+                "informationTime": "AFTER_REPAIR",
+                "evidence": "A follow-up adjustment was made during the geometry check."
+              },
+              {
+                "code": "DAMAGED_BUSHING_SEAT",
+                "informationTime": "DURING_REPAIR",
+                "evidence": "Additional work was carried out around the worn bushing mounting area."
+              }
+            ],
+            "knownBeforeRepair": [
+              {
+                "code": "VISIBLE_CORROSION",
+                "informationTime": "BEFORE_REPAIR",
+                "evidence": "Visible corrosion was documented during pre-inspection."
+              }
+            ],
+            "actualLaborMinutes": 191,
+            "status": "ACCEPTED",
+            "telemetry": {
+              "promptVersion": "repair-extraction-v3",
+              "modelId": "gpt-6-luna",
+              "latencyMilliseconds": 5139,
+              "inputTokens": 829,
+              "outputTokens": 454,
+              "providerRequestId": "req_fe11751fd69047819c5068c0202d64cf"
+            }
+          },
+          "errors": []
+        }
+      ]
+    }
+  ]
+}

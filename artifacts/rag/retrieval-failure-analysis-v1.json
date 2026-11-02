@@ -1,0 +1,3814 @@
+{
+  "analysisVersion": "ari-rag-v1-failure-analysis-v2",
+  "frozenDatasetChecksum": "2b1e3e8a878b77618c9bda027f15f0e83cb21e58b1493b553d76227e79368f3c",
+  "frozenMetricsUnchanged": true,
+  "positiveCases": 35,
+  "noResultCases": 5,
+  "frozenMetrics": {
+    "STRUCTURED": {
+      "recallAt5": 0.6114285714285715,
+      "precisionAt5": 0.6114285714285715,
+      "mrr": 0.9428571428571428,
+      "ndcgAt5": 0.7935482005364151,
+      "noResultAccuracy": 1,
+      "p50LatencyMilliseconds": 217,
+      "p95LatencyMilliseconds": 229,
+      "queryCount": 40
+    },
+    "SEMANTIC": {
+      "recallAt5": 0.017142857142857144,
+      "precisionAt5": 0.017142857142857144,
+      "mrr": 0.05,
+      "ndcgAt5": 0.03019459183300474,
+      "noResultAccuracy": 1,
+      "p50LatencyMilliseconds": 415,
+      "p95LatencyMilliseconds": 514,
+      "queryCount": 40
+    },
+    "HYBRID": {
+      "recallAt5": 0.16000000000000006,
+      "precisionAt5": 0.16000000000000006,
+      "mrr": 0.5380952380952382,
+      "ndcgAt5": 0.17198881320371537,
+      "noResultAccuracy": 1,
+      "p50LatencyMilliseconds": 430,
+      "p95LatencyMilliseconds": 538,
+      "queryCount": 40
+    }
+  },
+  "errorCategoryCounts": {
+    "RANKING_ERROR": 35,
+    "REPRESENTATION_MISMATCH": 35,
+    "QUERY_DOCUMENT_MISMATCH": 35,
+    "SCORE_FUSION_ERROR": 35,
+    "LABEL_RANKING_ALIGNMENT": 35
+  },
+  "cases": [
+    {
+      "caseId": "query-01454ea3-9c0a-504e-a1a4-e4c5075b3144",
+      "expected": [
+        "01454ea3-9c0a-504e-a1a4-e4c5075b3144",
+        "ed750964-a574-5f0a-9651-372a49714d59",
+        "7fa7e09f-7446-58d1-bcb4-4345732ab11b",
+        "642d91c0-f111-5af8-84cb-d182eb3378ef",
+        "9716d3a1-8edf-59b3-ab3e-71865ce98112"
+      ],
+      "top5": {
+        "STRUCTURED": [
+          "01454ea3-9c0a-504e-a1a4-e4c5075b3144",
+          "4bd9660b-29a1-5860-a027-d3951189a677",
+          "642d91c0-f111-5af8-84cb-d182eb3378ef",
+          "7fa7e09f-7446-58d1-bcb4-4345732ab11b",
+          "9716d3a1-8edf-59b3-ab3e-71865ce98112"
+        ],
+        "SEMANTIC": [
+          "009f4062-3f47-54d8-a4dd-d8b112359b67",
+          "03f07375-956c-5869-a0ad-013681626ace",
+          "06295ec2-1009-52ba-bc52-86595bd19074",
+          "0ea782a4-d553-5a6e-89c0-5ec232b7a63b",
+          "0f73d1d8-2985-5fbc-9b62-dbd4275922f3"
+        ],
+        "HYBRID": [
+          "ed750964-a574-5f0a-9651-372a49714d59",
+          "41360fc9-5b57-51fa-b927-fb5b1add0e89",
+          "66c4ed4e-4b53-5b71-8f1f-fca04866e60f",
+          "b27083d5-971e-50d2-b03f-e2996cc89e94",
+          "4a8b2ebf-e792-53d3-8a9b-098c93405e25"
+        ]
+      },
+      "missing": {
+        "STRUCTURED": [
+          "ed750964-a574-5f0a-9651-372a49714d59"
+        ],
+        "SEMANTIC": [
+          "01454ea3-9c0a-504e-a1a4-e4c5075b3144",
+          "ed750964-a574-5f0a-9651-372a49714d59",
+          "7fa7e09f-7446-58d1-bcb4-4345732ab11b",
+          "642d91c0-f111-5af8-84cb-d182eb3378ef",
+          "9716d3a1-8edf-59b3-ab3e-71865ce98112"
+        ],
+        "HYBRID": [
+          "01454ea3-9c0a-504e-a1a4-e4c5075b3144",
+          "7fa7e09f-7446-58d1-bcb4-4345732ab11b",
+          "642d91c0-f111-5af8-84cb-d182eb3378ef",
+          "9716d3a1-8edf-59b3-ab3e-71865ce98112"
+        ]
+      },
+      "scores": {
+        "STRUCTURED": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "SEMANTIC": [
+          0.5555172843259653,
+          0.5555172843259653,
+          0.5555172843259653,
+          0.5555172843259653,
+          0.5555172843259653
+        ],
+        "HYBRID": [
+          0.6888620990281757,
+          0.5788620990281756,
+          0.5788620990281756,
+          0.577791452343549,
+          0.5688620990281756
+        ]
+      },
+      "vectorSimilarities": {
+        "STRUCTURED": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "SEMANTIC": [
+          0.5555172843259653,
+          0.5555172843259653,
+          0.5555172843259653,
+          0.5555172843259653,
+          0.5555172843259653
+        ],
+        "HYBRID": [
+          0.5555172843259653,
+          0.5555172843259653,
+          0.5555172843259653,
+          0.553987789062213,
+          0.5555172843259653
+        ]
+      },
+      "errorCategories": [
+        "RANKING_ERROR",
+        "REPRESENTATION_MISMATCH",
+        "QUERY_DOCUMENT_MISMATCH",
+        "SCORE_FUSION_ERROR",
+        "LABEL_RANKING_ALIGNMENT"
+      ]
+    },
+    {
+      "caseId": "query-02bd05dd-84e4-59de-93ef-890c2981f6be",
+      "expected": [
+        "02bd05dd-84e4-59de-93ef-890c2981f6be",
+        "4bd9660b-29a1-5860-a027-d3951189a677",
+        "0e70b7bf-7be2-53e6-afb4-52ce58277b99",
+        "9716d3a1-8edf-59b3-ab3e-71865ce98112",
+        "4f6d49fe-526c-508b-828f-e1c4d1adcf0c"
+      ],
+      "top5": {
+        "STRUCTURED": [
+          "01454ea3-9c0a-504e-a1a4-e4c5075b3144",
+          "02bd05dd-84e4-59de-93ef-890c2981f6be",
+          "0e70b7bf-7be2-53e6-afb4-52ce58277b99",
+          "24598ed2-7b25-539e-8c9b-bb09317a1a1c",
+          "41360fc9-5b57-51fa-b927-fb5b1add0e89"
+        ],
+        "SEMANTIC": [
+          "009f4062-3f47-54d8-a4dd-d8b112359b67",
+          "03f07375-956c-5869-a0ad-013681626ace",
+          "06295ec2-1009-52ba-bc52-86595bd19074",
+          "0ea782a4-d553-5a6e-89c0-5ec232b7a63b",
+          "0f73d1d8-2985-5fbc-9b62-dbd4275922f3"
+        ],
+        "HYBRID": [
+          "41360fc9-5b57-51fa-b927-fb5b1add0e89",
+          "64f410f0-0d6b-569f-a242-391e2a4eb3a2",
+          "66c4ed4e-4b53-5b71-8f1f-fca04866e60f",
+          "ed750964-a574-5f0a-9651-372a49714d59",
+          "b27083d5-971e-50d2-b03f-e2996cc89e94"
+        ]
+      },
+      "missing": {
+        "STRUCTURED": [
+          "4bd9660b-29a1-5860-a027-d3951189a677",
+          "9716d3a1-8edf-59b3-ab3e-71865ce98112",
+          "4f6d49fe-526c-508b-828f-e1c4d1adcf0c"
+        ],
+        "SEMANTIC": [
+          "02bd05dd-84e4-59de-93ef-890c2981f6be",
+          "4bd9660b-29a1-5860-a027-d3951189a677",
+          "0e70b7bf-7be2-53e6-afb4-52ce58277b99",
+          "9716d3a1-8edf-59b3-ab3e-71865ce98112",
+          "4f6d49fe-526c-508b-828f-e1c4d1adcf0c"
+        ],
+        "HYBRID": [
+          "02bd05dd-84e4-59de-93ef-890c2981f6be",
+          "4bd9660b-29a1-5860-a027-d3951189a677",
+          "0e70b7bf-7be2-53e6-afb4-52ce58277b99",
+          "9716d3a1-8edf-59b3-ab3e-71865ce98112",
+          "4f6d49fe-526c-508b-828f-e1c4d1adcf0c"
+        ]
+      },
+      "scores": {
+        "STRUCTURED": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "SEMANTIC": [
+          0.560144991451149,
+          0.560144991451149,
+          0.560144991451149,
+          0.560144991451149,
+          0.560144991451149
+        ],
+        "HYBRID": [
+          0.6421014940158043,
+          0.6421014940158043,
+          0.6421014940158043,
+          0.6421014940158043,
+          0.6407818437284536
+        ]
+      },
+      "vectorSimilarities": {
+        "STRUCTURED": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "SEMANTIC": [
+          0.560144991451149,
+          0.560144991451149,
+          0.560144991451149,
+          0.560144991451149,
+          0.560144991451149
+        ],
+        "HYBRID": [
+          0.560144991451149,
+          0.560144991451149,
+          0.560144991451149,
+          0.560144991451149,
+          0.5582597767549338
+        ]
+      },
+      "errorCategories": [
+        "RANKING_ERROR",
+        "REPRESENTATION_MISMATCH",
+        "QUERY_DOCUMENT_MISMATCH",
+        "SCORE_FUSION_ERROR",
+        "LABEL_RANKING_ALIGNMENT"
+      ]
+    },
+    {
+      "caseId": "query-03608e3e-6216-5f50-b44a-31e462c08546",
+      "expected": [
+        "03608e3e-6216-5f50-b44a-31e462c08546",
+        "379351c6-305f-5fc0-99e4-ce8772df9257",
+        "a571f685-edf5-504a-8f6a-705f22b03b7e",
+        "10955dbe-25ff-5f5d-a626-6d4c97c307fc",
+        "9b73e440-9f2e-5741-af4d-557596868ad1"
+      ],
+      "top5": {
+        "STRUCTURED": [
+          "03608e3e-6216-5f50-b44a-31e462c08546",
+          "10955dbe-25ff-5f5d-a626-6d4c97c307fc",
+          "379351c6-305f-5fc0-99e4-ce8772df9257",
+          "994f81f6-2ce1-5b34-baf3-58d011ce4416",
+          "9b73e440-9f2e-5741-af4d-557596868ad1"
+        ],
+        "SEMANTIC": [
+          "009f4062-3f47-54d8-a4dd-d8b112359b67",
+          "03f07375-956c-5869-a0ad-013681626ace",
+          "06295ec2-1009-52ba-bc52-86595bd19074",
+          "0ea782a4-d553-5a6e-89c0-5ec232b7a63b",
+          "0f73d1d8-2985-5fbc-9b62-dbd4275922f3"
+        ],
+        "HYBRID": [
+          "379351c6-305f-5fc0-99e4-ce8772df9257",
+          "e2b675d2-d7c9-5e0d-9d2e-5cd7a0e36a8e",
+          "b99fd99a-7f7e-5c37-8693-c8872102b0ee",
+          "e46e0c7a-8c4a-543f-8ec5-a739d96f863a",
+          "2bb33612-1ee1-57a3-8f06-847427ebc092"
+        ]
+      },
+      "missing": {
+        "STRUCTURED": [
+          "a571f685-edf5-504a-8f6a-705f22b03b7e"
+        ],
+        "SEMANTIC": [
+          "03608e3e-6216-5f50-b44a-31e462c08546",
+          "379351c6-305f-5fc0-99e4-ce8772df9257",
+          "a571f685-edf5-504a-8f6a-705f22b03b7e",
+          "10955dbe-25ff-5f5d-a626-6d4c97c307fc",
+          "9b73e440-9f2e-5741-af4d-557596868ad1"
+        ],
+        "HYBRID": [
+          "03608e3e-6216-5f50-b44a-31e462c08546",
+          "a571f685-edf5-504a-8f6a-705f22b03b7e",
+          "10955dbe-25ff-5f5d-a626-6d4c97c307fc",
+          "9b73e440-9f2e-5741-af4d-557596868ad1"
+        ]
+      },
+      "scores": {
+        "STRUCTURED": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "SEMANTIC": [
+          0.5779262823923139,
+          0.5779262823923139,
+          0.5779262823923139,
+          0.5779262823923139,
+          0.5779262823923139
+        ],
+        "HYBRID": [
+          0.653384048465462,
+          0.653384048465462,
+          0.5945483976746198,
+          0.5945483976746198,
+          0.593384048465462
+        ]
+      },
+      "vectorSimilarities": {
+        "STRUCTURED": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "SEMANTIC": [
+          0.5779262823923139,
+          0.5779262823923139,
+          0.5779262823923139,
+          0.5779262823923139,
+          0.5779262823923139
+        ],
+        "HYBRID": [
+          0.5762629263792315,
+          0.5762629263792315,
+          0.5779262823923139,
+          0.5779262823923139,
+          0.5762629263792315
+        ]
+      },
+      "errorCategories": [
+        "RANKING_ERROR",
+        "REPRESENTATION_MISMATCH",
+        "QUERY_DOCUMENT_MISMATCH",
+        "SCORE_FUSION_ERROR",
+        "LABEL_RANKING_ALIGNMENT"
+      ]
+    },
+    {
+      "caseId": "query-03f07375-956c-5869-a0ad-013681626ace",
+      "expected": [
+        "03f07375-956c-5869-a0ad-013681626ace",
+        "a0681636-4f70-5a79-b759-9807bf5355e5",
+        "1c20f7c3-84b8-5a02-9cfc-fe8eb43445fa",
+        "34da8f77-0360-5a40-81f0-6bfe8bc17c20",
+        "886c02b3-21bb-5873-870f-a10e98a56dfb"
+      ],
+      "top5": {
+        "STRUCTURED": [
+          "03f07375-956c-5869-a0ad-013681626ace",
+          "1c20f7c3-84b8-5a02-9cfc-fe8eb43445fa",
+          "886c02b3-21bb-5873-870f-a10e98a56dfb",
+          "c88682d2-e875-5d0c-a5c8-71d452be9cde",
+          "e8bdb92d-5ee5-5316-b39b-b5ac1cdf018f"
+        ],
+        "SEMANTIC": [
+          "009f4062-3f47-54d8-a4dd-d8b112359b67",
+          "03f07375-956c-5869-a0ad-013681626ace",
+          "06295ec2-1009-52ba-bc52-86595bd19074",
+          "0ea782a4-d553-5a6e-89c0-5ec232b7a63b",
+          "0f73d1d8-2985-5fbc-9b62-dbd4275922f3"
+        ],
+        "HYBRID": [
+          "03f07375-956c-5869-a0ad-013681626ace",
+          "886c02b3-21bb-5873-870f-a10e98a56dfb",
+          "d0bbc08f-1f02-53f0-a840-33fdc7401a6b",
+          "ed750964-a574-5f0a-9651-372a49714d59",
+          "f5ce89b9-f535-50f0-a3a7-98686be67b44"
+        ]
+      },
+      "missing": {
+        "STRUCTURED": [
+          "a0681636-4f70-5a79-b759-9807bf5355e5",
+          "34da8f77-0360-5a40-81f0-6bfe8bc17c20"
+        ],
+        "SEMANTIC": [
+          "a0681636-4f70-5a79-b759-9807bf5355e5",
+          "1c20f7c3-84b8-5a02-9cfc-fe8eb43445fa",
+          "34da8f77-0360-5a40-81f0-6bfe8bc17c20",
+          "886c02b3-21bb-5873-870f-a10e98a56dfb"
+        ],
+        "HYBRID": [
+          "a0681636-4f70-5a79-b759-9807bf5355e5",
+          "1c20f7c3-84b8-5a02-9cfc-fe8eb43445fa",
+          "34da8f77-0360-5a40-81f0-6bfe8bc17c20"
+        ]
+      },
+      "scores": {
+        "STRUCTURED": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "SEMANTIC": [
+          0.5625359041125069,
+          0.5625359041125069,
+          0.5625359041125069,
+          0.5625359041125069,
+          0.5625359041125069
+        ],
+        "HYBRID": [
+          0.6937751328787549,
+          0.642883881703358,
+          0.5829113118981237,
+          0.5637751328787548,
+          0.5629113118981239
+        ]
+      },
+      "vectorSimilarities": {
+        "STRUCTURED": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "SEMANTIC": [
+          0.5625359041125069,
+          0.5625359041125069,
+          0.5625359041125069,
+          0.5625359041125069,
+          0.5625359041125069
+        ],
+        "HYBRID": [
+          0.5625359041125069,
+          0.5612626881476541,
+          0.561301874140177,
+          0.5625359041125069,
+          0.561301874140177
+        ]
+      },
+      "errorCategories": [
+        "RANKING_ERROR",
+        "REPRESENTATION_MISMATCH",
+        "QUERY_DOCUMENT_MISMATCH",
+        "SCORE_FUSION_ERROR",
+        "LABEL_RANKING_ALIGNMENT"
+      ]
+    },
+    {
+      "caseId": "query-043bc4cf-9482-5484-b8fa-5f49e6bb2891",
+      "expected": [
+        "043bc4cf-9482-5484-b8fa-5f49e6bb2891",
+        "d8aa9284-4e22-536b-afa3-fd52b89f6052",
+        "5a19437a-c88c-5d0f-994c-d61d6644cfcc",
+        "4738b475-8767-5a89-af69-c075aae861f9",
+        "64f410f0-0d6b-569f-a242-391e2a4eb3a2"
+      ],
+      "top5": {
+        "STRUCTURED": [
+          "043bc4cf-9482-5484-b8fa-5f49e6bb2891",
+          "0e70b7bf-7be2-53e6-afb4-52ce58277b99",
+          "41360fc9-5b57-51fa-b927-fb5b1add0e89",
+          "4738b475-8767-5a89-af69-c075aae861f9",
+          "4a8b2ebf-e792-53d3-8a9b-098c93405e25"
+        ],
+        "SEMANTIC": [
+          "009f4062-3f47-54d8-a4dd-d8b112359b67",
+          "03f07375-956c-5869-a0ad-013681626ace",
+          "06295ec2-1009-52ba-bc52-86595bd19074",
+          "0ea782a4-d553-5a6e-89c0-5ec232b7a63b",
+          "0f73d1d8-2985-5fbc-9b62-dbd4275922f3"
+        ],
+        "HYBRID": [
+          "41360fc9-5b57-51fa-b927-fb5b1add0e89",
+          "4a8b2ebf-e792-53d3-8a9b-098c93405e25",
+          "64f410f0-0d6b-569f-a242-391e2a4eb3a2",
+          "66c4ed4e-4b53-5b71-8f1f-fca04866e60f",
+          "b58d5e8e-a60b-51b7-96f4-93ecf0979d36"
+        ]
+      },
+      "missing": {
+        "STRUCTURED": [
+          "d8aa9284-4e22-536b-afa3-fd52b89f6052",
+          "5a19437a-c88c-5d0f-994c-d61d6644cfcc",
+          "64f410f0-0d6b-569f-a242-391e2a4eb3a2"
+        ],
+        "SEMANTIC": [
+          "043bc4cf-9482-5484-b8fa-5f49e6bb2891",
+          "d8aa9284-4e22-536b-afa3-fd52b89f6052",
+          "5a19437a-c88c-5d0f-994c-d61d6644cfcc",
+          "4738b475-8767-5a89-af69-c075aae861f9",
+          "64f410f0-0d6b-569f-a242-391e2a4eb3a2"
+        ],
+        "HYBRID": [
+          "043bc4cf-9482-5484-b8fa-5f49e6bb2891",
+          "d8aa9284-4e22-536b-afa3-fd52b89f6052",
+          "5a19437a-c88c-5d0f-994c-d61d6644cfcc",
+          "4738b475-8767-5a89-af69-c075aae861f9"
+        ]
+      },
+      "scores": {
+        "STRUCTURED": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "SEMANTIC": [
+          0.5566445813640791,
+          0.5566445813640791,
+          0.5566445813640791,
+          0.5566445813640791,
+          0.5566445813640791
+        ],
+        "HYBRID": [
+          0.6396512069548554,
+          0.6396512069548554,
+          0.6396512069548554,
+          0.6396512069548554,
+          0.6384647798726775
+        ]
+      },
+      "vectorSimilarities": {
+        "STRUCTURED": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "SEMANTIC": [
+          0.5566445813640791,
+          0.5566445813640791,
+          0.5566445813640791,
+          0.5566445813640791,
+          0.5566445813640791
+        ],
+        "HYBRID": [
+          0.5566445813640791,
+          0.5566445813640791,
+          0.5566445813640791,
+          0.5566445813640791,
+          0.5549496855323963
+        ]
+      },
+      "errorCategories": [
+        "RANKING_ERROR",
+        "REPRESENTATION_MISMATCH",
+        "QUERY_DOCUMENT_MISMATCH",
+        "SCORE_FUSION_ERROR",
+        "LABEL_RANKING_ALIGNMENT"
+      ]
+    },
+    {
+      "caseId": "query-04ee8b41-5fe3-5820-b9fa-bf72c35fbb9a",
+      "expected": [
+        "04ee8b41-5fe3-5820-b9fa-bf72c35fbb9a",
+        "df1525f3-1f60-59ab-865e-e1cdfac15c36",
+        "63366728-4eff-5695-90f0-5353d4b9af17",
+        "92f321aa-2cb2-5b9f-a4f5-e878e1207fc6",
+        "637607c1-5e34-52bc-ab73-2791cdab27b3"
+      ],
+      "top5": {
+        "STRUCTURED": [
+          "04ee8b41-5fe3-5820-b9fa-bf72c35fbb9a",
+          "63366728-4eff-5695-90f0-5353d4b9af17",
+          "637607c1-5e34-52bc-ab73-2791cdab27b3",
+          "7ab6253a-e074-59fc-a14c-484a628d027e",
+          "92f321aa-2cb2-5b9f-a4f5-e878e1207fc6"
+        ],
+        "SEMANTIC": [
+          "009f4062-3f47-54d8-a4dd-d8b112359b67",
+          "03f07375-956c-5869-a0ad-013681626ace",
+          "06295ec2-1009-52ba-bc52-86595bd19074",
+          "0ea782a4-d553-5a6e-89c0-5ec232b7a63b",
+          "0f73d1d8-2985-5fbc-9b62-dbd4275922f3"
+        ],
+        "HYBRID": [
+          "63366728-4eff-5695-90f0-5353d4b9af17",
+          "445f74e1-0c6a-5a7c-821f-a529567b5a11",
+          "fc05fb0c-d184-53f8-93ca-81689ce326d4",
+          "b4676837-b234-5fdd-ada9-c4f9dffe5484",
+          "03f07375-956c-5869-a0ad-013681626ace"
+        ]
+      },
+      "missing": {
+        "STRUCTURED": [
+          "df1525f3-1f60-59ab-865e-e1cdfac15c36"
+        ],
+        "SEMANTIC": [
+          "04ee8b41-5fe3-5820-b9fa-bf72c35fbb9a",
+          "df1525f3-1f60-59ab-865e-e1cdfac15c36",
+          "63366728-4eff-5695-90f0-5353d4b9af17",
+          "92f321aa-2cb2-5b9f-a4f5-e878e1207fc6",
+          "637607c1-5e34-52bc-ab73-2791cdab27b3"
+        ],
+        "HYBRID": [
+          "04ee8b41-5fe3-5820-b9fa-bf72c35fbb9a",
+          "df1525f3-1f60-59ab-865e-e1cdfac15c36",
+          "92f321aa-2cb2-5b9f-a4f5-e878e1207fc6",
+          "637607c1-5e34-52bc-ab73-2791cdab27b3"
+        ]
+      },
+      "scores": {
+        "STRUCTURED": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "SEMANTIC": [
+          0.5816993379595136,
+          0.5816993379595136,
+          0.5816993379595136,
+          0.5816993379595136,
+          0.5816993379595136
+        ],
+        "HYBRID": [
+          0.6571895365716596,
+          0.5971895365716595,
+          0.5971895365716595,
+          0.5958808589258926,
+          0.5271895365716595
+        ]
+      },
+      "vectorSimilarities": {
+        "STRUCTURED": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "SEMANTIC": [
+          0.5816993379595136,
+          0.5816993379595136,
+          0.5816993379595136,
+          0.5816993379595136,
+          0.5816993379595136
+        ],
+        "HYBRID": [
+          0.5816993379595136,
+          0.5816993379595136,
+          0.5816993379595136,
+          0.5798297984655609,
+          0.5816993379595136
+        ]
+      },
+      "errorCategories": [
+        "RANKING_ERROR",
+        "REPRESENTATION_MISMATCH",
+        "QUERY_DOCUMENT_MISMATCH",
+        "SCORE_FUSION_ERROR",
+        "LABEL_RANKING_ALIGNMENT"
+      ]
+    },
+    {
+      "caseId": "query-08be10d4-10d4-5617-946a-5dad753622ff",
+      "expected": [
+        "08be10d4-10d4-5617-946a-5dad753622ff",
+        "269599cd-20bd-53ca-97d7-9d5e038b422f",
+        "f5ce89b9-f535-50f0-a3a7-98686be67b44",
+        "ad5cbb90-0ab8-50a6-bc99-7ff9e8326eb3",
+        "a1cb2212-48bc-54d4-bf56-cc1b2a03c37e"
+      ],
+      "top5": {
+        "STRUCTURED": [
+          "08be10d4-10d4-5617-946a-5dad753622ff",
+          "269599cd-20bd-53ca-97d7-9d5e038b422f",
+          "26f9cc41-1ad4-5ce0-809c-ab5fb73bfce7",
+          "a1cb2212-48bc-54d4-bf56-cc1b2a03c37e",
+          "ad5cbb90-0ab8-50a6-bc99-7ff9e8326eb3"
+        ],
+        "SEMANTIC": [
+          "009f4062-3f47-54d8-a4dd-d8b112359b67",
+          "03f07375-956c-5869-a0ad-013681626ace",
+          "06295ec2-1009-52ba-bc52-86595bd19074",
+          "0ea782a4-d553-5a6e-89c0-5ec232b7a63b",
+          "0f73d1d8-2985-5fbc-9b62-dbd4275922f3"
+        ],
+        "HYBRID": [
+          "a1cb2212-48bc-54d4-bf56-cc1b2a03c37e",
+          "f5ce89b9-f535-50f0-a3a7-98686be67b44",
+          "43d40c60-b388-5c17-bd83-b087f28c12e7",
+          "b7ad9759-66e8-5242-a4bc-608ba1b84515",
+          "03f07375-956c-5869-a0ad-013681626ace"
+        ]
+      },
+      "missing": {
+        "STRUCTURED": [
+          "f5ce89b9-f535-50f0-a3a7-98686be67b44"
+        ],
+        "SEMANTIC": [
+          "08be10d4-10d4-5617-946a-5dad753622ff",
+          "269599cd-20bd-53ca-97d7-9d5e038b422f",
+          "f5ce89b9-f535-50f0-a3a7-98686be67b44",
+          "ad5cbb90-0ab8-50a6-bc99-7ff9e8326eb3",
+          "a1cb2212-48bc-54d4-bf56-cc1b2a03c37e"
+        ],
+        "HYBRID": [
+          "08be10d4-10d4-5617-946a-5dad753622ff",
+          "269599cd-20bd-53ca-97d7-9d5e038b422f",
+          "ad5cbb90-0ab8-50a6-bc99-7ff9e8326eb3"
+        ]
+      },
+      "scores": {
+        "STRUCTURED": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "SEMANTIC": [
+          0.5711923881254414,
+          0.5711923881254414,
+          0.5711923881254414,
+          0.5711923881254414,
+          0.5711923881254414
+        ],
+        "HYBRID": [
+          0.699834671687809,
+          0.6982966600365321,
+          0.6482581630639832,
+          0.588296660036532,
+          0.569834671687809
+        ]
+      },
+      "vectorSimilarities": {
+        "STRUCTURED": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "SEMANTIC": [
+          0.5711923881254414,
+          0.5711923881254414,
+          0.5711923881254414,
+          0.5711923881254414,
+          0.5711923881254414
+        ],
+        "HYBRID": [
+          0.5711923881254414,
+          0.5689952286236174,
+          0.5689402329485473,
+          0.5689952286236174,
+          0.5711923881254414
+        ]
+      },
+      "errorCategories": [
+        "RANKING_ERROR",
+        "REPRESENTATION_MISMATCH",
+        "QUERY_DOCUMENT_MISMATCH",
+        "SCORE_FUSION_ERROR",
+        "LABEL_RANKING_ALIGNMENT"
+      ]
+    },
+    {
+      "caseId": "query-00950352-5f6e-5a3a-95d5-cb0663fe4c5c",
+      "expected": [
+        "00950352-5f6e-5a3a-95d5-cb0663fe4c5c",
+        "247d87af-01cb-50a7-a26c-5d923a1581f8",
+        "ad1b43b5-7201-5f88-92d7-e8c0b12664a2",
+        "f370bbb6-1d71-5c63-98c3-18e41aae4d9a",
+        "e4ffec30-1b8d-5ae8-a3e8-4f782b122c0f"
+      ],
+      "top5": {
+        "STRUCTURED": [
+          "00950352-5f6e-5a3a-95d5-cb0663fe4c5c",
+          "03410b55-8377-58a7-84f7-9f982da90f04",
+          "0cce0717-aebf-5686-86c7-1f2c1aaeb1b6",
+          "247d87af-01cb-50a7-a26c-5d923a1581f8",
+          "25519449-3a9f-5e83-84a0-dfd639c94b8a"
+        ],
+        "SEMANTIC": [
+          "009f4062-3f47-54d8-a4dd-d8b112359b67",
+          "03f07375-956c-5869-a0ad-013681626ace",
+          "06295ec2-1009-52ba-bc52-86595bd19074",
+          "0ea782a4-d553-5a6e-89c0-5ec232b7a63b",
+          "0f73d1d8-2985-5fbc-9b62-dbd4275922f3"
+        ],
+        "HYBRID": [
+          "b095d36a-bd16-5cc7-beef-6942e78b8576",
+          "ce05a639-f51d-5fd4-9934-1eca687fc27c",
+          "25519449-3a9f-5e83-84a0-dfd639c94b8a",
+          "e5448629-b5f7-5050-a30b-1bcc4633ec88",
+          "73880a86-17b1-55e3-837a-15736c88dd77"
+        ]
+      },
+      "missing": {
+        "STRUCTURED": [
+          "ad1b43b5-7201-5f88-92d7-e8c0b12664a2",
+          "f370bbb6-1d71-5c63-98c3-18e41aae4d9a",
+          "e4ffec30-1b8d-5ae8-a3e8-4f782b122c0f"
+        ],
+        "SEMANTIC": [
+          "00950352-5f6e-5a3a-95d5-cb0663fe4c5c",
+          "247d87af-01cb-50a7-a26c-5d923a1581f8",
+          "ad1b43b5-7201-5f88-92d7-e8c0b12664a2",
+          "f370bbb6-1d71-5c63-98c3-18e41aae4d9a",
+          "e4ffec30-1b8d-5ae8-a3e8-4f782b122c0f"
+        ],
+        "HYBRID": [
+          "00950352-5f6e-5a3a-95d5-cb0663fe4c5c",
+          "247d87af-01cb-50a7-a26c-5d923a1581f8",
+          "ad1b43b5-7201-5f88-92d7-e8c0b12664a2",
+          "f370bbb6-1d71-5c63-98c3-18e41aae4d9a",
+          "e4ffec30-1b8d-5ae8-a3e8-4f782b122c0f"
+        ]
+      },
+      "scores": {
+        "STRUCTURED": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "SEMANTIC": [
+          0.5534881804910119,
+          0.5534881804910119,
+          0.5534881804910119,
+          0.5534881804910119,
+          0.5534881804910119
+        ],
+        "HYBRID": [
+          0.6374417263437084,
+          0.6374417263437084,
+          0.6360869179799571,
+          0.5574417263437084,
+          0.556097543120583
+        ]
+      },
+      "vectorSimilarities": {
+        "STRUCTURED": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "SEMANTIC": [
+          0.5534881804910119,
+          0.5534881804910119,
+          0.5534881804910119,
+          0.5534881804910119,
+          0.5534881804910119
+        ],
+        "HYBRID": [
+          0.5534881804910119,
+          0.5534881804910119,
+          0.5515527399713673,
+          0.5534881804910119,
+          0.5515679187436902
+        ]
+      },
+      "errorCategories": [
+        "RANKING_ERROR",
+        "REPRESENTATION_MISMATCH",
+        "QUERY_DOCUMENT_MISMATCH",
+        "SCORE_FUSION_ERROR",
+        "LABEL_RANKING_ALIGNMENT"
+      ]
+    },
+    {
+      "caseId": "query-03410b55-8377-58a7-84f7-9f982da90f04",
+      "expected": [
+        "03410b55-8377-58a7-84f7-9f982da90f04",
+        "74c982bd-c5de-593f-a44a-fe0b72f0bf56",
+        "0cce0717-aebf-5686-86c7-1f2c1aaeb1b6",
+        "25519449-3a9f-5e83-84a0-dfd639c94b8a",
+        "ce05a639-f51d-5fd4-9934-1eca687fc27c"
+      ],
+      "top5": {
+        "STRUCTURED": [
+          "00950352-5f6e-5a3a-95d5-cb0663fe4c5c",
+          "03410b55-8377-58a7-84f7-9f982da90f04",
+          "0cce0717-aebf-5686-86c7-1f2c1aaeb1b6",
+          "247d87af-01cb-50a7-a26c-5d923a1581f8",
+          "25519449-3a9f-5e83-84a0-dfd639c94b8a"
+        ],
+        "SEMANTIC": [
+          "009f4062-3f47-54d8-a4dd-d8b112359b67",
+          "03f07375-956c-5869-a0ad-013681626ace",
+          "06295ec2-1009-52ba-bc52-86595bd19074",
+          "0ea782a4-d553-5a6e-89c0-5ec232b7a63b",
+          "0f73d1d8-2985-5fbc-9b62-dbd4275922f3"
+        ],
+        "HYBRID": [
+          "b095d36a-bd16-5cc7-beef-6942e78b8576",
+          "ce05a639-f51d-5fd4-9934-1eca687fc27c",
+          "25519449-3a9f-5e83-84a0-dfd639c94b8a",
+          "f539c6c3-7208-578c-9132-9409d6cd2bc8",
+          "73880a86-17b1-55e3-837a-15736c88dd77"
+        ]
+      },
+      "missing": {
+        "STRUCTURED": [
+          "74c982bd-c5de-593f-a44a-fe0b72f0bf56",
+          "ce05a639-f51d-5fd4-9934-1eca687fc27c"
+        ],
+        "SEMANTIC": [
+          "03410b55-8377-58a7-84f7-9f982da90f04",
+          "74c982bd-c5de-593f-a44a-fe0b72f0bf56",
+          "0cce0717-aebf-5686-86c7-1f2c1aaeb1b6",
+          "25519449-3a9f-5e83-84a0-dfd639c94b8a",
+          "ce05a639-f51d-5fd4-9934-1eca687fc27c"
+        ],
+        "HYBRID": [
+          "03410b55-8377-58a7-84f7-9f982da90f04",
+          "74c982bd-c5de-593f-a44a-fe0b72f0bf56",
+          "0cce0717-aebf-5686-86c7-1f2c1aaeb1b6"
+        ]
+      },
+      "scores": {
+        "STRUCTURED": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "SEMANTIC": [
+          0.5551458225461791,
+          0.5551458225461791,
+          0.5551458225461791,
+          0.5551458225461791,
+          0.5551458225461791
+        ],
+        "HYBRID": [
+          0.6386020757823254,
+          0.6386020757823254,
+          0.6372827925963673,
+          0.6372827925963673,
+          0.5572927632558008
+        ]
+      },
+      "vectorSimilarities": {
+        "STRUCTURED": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "SEMANTIC": [
+          0.5551458225461791,
+          0.5551458225461791,
+          0.5551458225461791,
+          0.5551458225461791,
+          0.5551458225461791
+        ],
+        "HYBRID": [
+          0.5551458225461791,
+          0.5551458225461791,
+          0.5532611322805246,
+          0.5532611322805246,
+          0.5532753760797154
+        ]
+      },
+      "errorCategories": [
+        "RANKING_ERROR",
+        "REPRESENTATION_MISMATCH",
+        "QUERY_DOCUMENT_MISMATCH",
+        "SCORE_FUSION_ERROR",
+        "LABEL_RANKING_ALIGNMENT"
+      ]
+    },
+    {
+      "caseId": "query-04ad0e42-3046-51c4-aced-34ed643e6b87",
+      "expected": [
+        "04ad0e42-3046-51c4-aced-34ed643e6b87",
+        "251f683b-f7f7-55b1-9fe1-813b428bea60",
+        "afdcadab-9761-5d78-bc55-91eea8f5f5c8",
+        "beedd31e-160e-5a73-a4f4-fc6f525cd06a",
+        "eea7937d-465e-54f7-89a4-887100a7ae6e"
+      ],
+      "top5": {
+        "STRUCTURED": [
+          "04ad0e42-3046-51c4-aced-34ed643e6b87",
+          "251f683b-f7f7-55b1-9fe1-813b428bea60",
+          "afdcadab-9761-5d78-bc55-91eea8f5f5c8",
+          "beedd31e-160e-5a73-a4f4-fc6f525cd06a",
+          "1ff39175-fd17-593c-9478-59c26c1ea1d5"
+        ],
+        "SEMANTIC": [],
+        "HYBRID": []
+      },
+      "missing": {
+        "STRUCTURED": [
+          "eea7937d-465e-54f7-89a4-887100a7ae6e"
+        ],
+        "SEMANTIC": [
+          "04ad0e42-3046-51c4-aced-34ed643e6b87",
+          "251f683b-f7f7-55b1-9fe1-813b428bea60",
+          "afdcadab-9761-5d78-bc55-91eea8f5f5c8",
+          "beedd31e-160e-5a73-a4f4-fc6f525cd06a",
+          "eea7937d-465e-54f7-89a4-887100a7ae6e"
+        ],
+        "HYBRID": [
+          "04ad0e42-3046-51c4-aced-34ed643e6b87",
+          "251f683b-f7f7-55b1-9fe1-813b428bea60",
+          "afdcadab-9761-5d78-bc55-91eea8f5f5c8",
+          "beedd31e-160e-5a73-a4f4-fc6f525cd06a",
+          "eea7937d-465e-54f7-89a4-887100a7ae6e"
+        ]
+      },
+      "scores": {
+        "STRUCTURED": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "SEMANTIC": [],
+        "HYBRID": []
+      },
+      "vectorSimilarities": {
+        "STRUCTURED": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "SEMANTIC": [],
+        "HYBRID": []
+      },
+      "errorCategories": [
+        "RANKING_ERROR",
+        "REPRESENTATION_MISMATCH",
+        "QUERY_DOCUMENT_MISMATCH",
+        "SCORE_FUSION_ERROR",
+        "LABEL_RANKING_ALIGNMENT"
+      ]
+    },
+    {
+      "caseId": "query-04e51055-d80b-5621-96dd-564098541300",
+      "expected": [
+        "04e51055-d80b-5621-96dd-564098541300",
+        "c312d5aa-081b-5e5e-9361-007b2e0ecfa8",
+        "e6abcb77-470b-5c90-aa4f-ff99ee749cb1",
+        "d6e119b6-3399-53a4-8182-f022b89064c6",
+        "5474bb9c-72b4-50f1-8440-6b6ce3c9e3cc"
+      ],
+      "top5": {
+        "STRUCTURED": [
+          "04e51055-d80b-5621-96dd-564098541300",
+          "c312d5aa-081b-5e5e-9361-007b2e0ecfa8",
+          "e6abcb77-470b-5c90-aa4f-ff99ee749cb1",
+          "9bc9dcc5-6cb9-569e-a70a-4ab0ec7ce5f4",
+          "c07cdd2b-20d1-56e4-b764-0cd85e5009f4"
+        ],
+        "SEMANTIC": [
+          "009f4062-3f47-54d8-a4dd-d8b112359b67",
+          "03f07375-956c-5869-a0ad-013681626ace",
+          "06295ec2-1009-52ba-bc52-86595bd19074",
+          "0ea782a4-d553-5a6e-89c0-5ec232b7a63b",
+          "0f73d1d8-2985-5fbc-9b62-dbd4275922f3"
+        ],
+        "HYBRID": [
+          "c312d5aa-081b-5e5e-9361-007b2e0ecfa8",
+          "c07cdd2b-20d1-56e4-b764-0cd85e5009f4",
+          "8553d32e-115b-5b29-807b-6b1e75341d63",
+          "1e19e601-8982-5983-917f-817968f2eadc",
+          "39432a71-4e1d-5680-956c-f3e78f8c9e66"
+        ]
+      },
+      "missing": {
+        "STRUCTURED": [
+          "d6e119b6-3399-53a4-8182-f022b89064c6",
+          "5474bb9c-72b4-50f1-8440-6b6ce3c9e3cc"
+        ],
+        "SEMANTIC": [
+          "04e51055-d80b-5621-96dd-564098541300",
+          "c312d5aa-081b-5e5e-9361-007b2e0ecfa8",
+          "e6abcb77-470b-5c90-aa4f-ff99ee749cb1",
+          "d6e119b6-3399-53a4-8182-f022b89064c6",
+          "5474bb9c-72b4-50f1-8440-6b6ce3c9e3cc"
+        ],
+        "HYBRID": [
+          "04e51055-d80b-5621-96dd-564098541300",
+          "e6abcb77-470b-5c90-aa4f-ff99ee749cb1",
+          "d6e119b6-3399-53a4-8182-f022b89064c6",
+          "5474bb9c-72b4-50f1-8440-6b6ce3c9e3cc"
+        ]
+      },
+      "scores": {
+        "STRUCTURED": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "SEMANTIC": [
+          0.5655256156582169,
+          0.5655256156582169,
+          0.5655256156582169,
+          0.5655256156582169,
+          0.5655256156582169
+        ],
+        "HYBRID": [
+          0.6948613614260417,
+          0.6458679309607518,
+          0.6358679309607518,
+          0.5858679309607517,
+          0.5848456690166088
+        ]
+      },
+      "vectorSimilarities": {
+        "STRUCTURED": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "SEMANTIC": [
+          0.5655256156582169,
+          0.5655256156582169,
+          0.5655256156582169,
+          0.5655256156582169,
+          0.5655256156582169
+        ],
+        "HYBRID": [
+          0.5640876591800597,
+          0.5655256156582169,
+          0.5655256156582169,
+          0.5655256156582169,
+          0.5640652414522985
+        ]
+      },
+      "errorCategories": [
+        "RANKING_ERROR",
+        "REPRESENTATION_MISMATCH",
+        "QUERY_DOCUMENT_MISMATCH",
+        "SCORE_FUSION_ERROR",
+        "LABEL_RANKING_ALIGNMENT"
+      ]
+    },
+    {
+      "caseId": "query-077bf18c-8500-55c4-b1f2-8e9a70e5fd36",
+      "expected": [
+        "077bf18c-8500-55c4-b1f2-8e9a70e5fd36",
+        "ab19f438-1a32-5abf-b6ff-0ac834498a89",
+        "2d58ae3c-aef4-5814-adfd-62cc5ee7796a",
+        "2dc229e6-5f62-545e-a30a-0134b13cb4d4",
+        "1d5f14c9-9c25-5964-8c78-34ea4937991b"
+      ],
+      "top5": {
+        "STRUCTURED": [
+          "077bf18c-8500-55c4-b1f2-8e9a70e5fd36",
+          "1d5f14c9-9c25-5964-8c78-34ea4937991b",
+          "2d58ae3c-aef4-5814-adfd-62cc5ee7796a",
+          "2dc229e6-5f62-545e-a30a-0134b13cb4d4",
+          "33c2d629-29e7-5f58-9154-5012ec94455b"
+        ],
+        "SEMANTIC": [
+          "009f4062-3f47-54d8-a4dd-d8b112359b67",
+          "03f07375-956c-5869-a0ad-013681626ace",
+          "06295ec2-1009-52ba-bc52-86595bd19074",
+          "0ea782a4-d553-5a6e-89c0-5ec232b7a63b",
+          "0f73d1d8-2985-5fbc-9b62-dbd4275922f3"
+        ],
+        "HYBRID": [
+          "64b2117e-4a7f-5141-a601-d23d19781d89",
+          "ed4cb1ca-8650-5753-8010-ab58eb902e53",
+          "1685f356-2748-5d2a-9b47-ddd5ee196b90",
+          "55d71203-61b2-5827-bcef-7815d199e359",
+          "da95bf72-f4aa-5e6a-ac6c-d4392c9e9a70"
+        ]
+      },
+      "missing": {
+        "STRUCTURED": [
+          "ab19f438-1a32-5abf-b6ff-0ac834498a89"
+        ],
+        "SEMANTIC": [
+          "077bf18c-8500-55c4-b1f2-8e9a70e5fd36",
+          "ab19f438-1a32-5abf-b6ff-0ac834498a89",
+          "2d58ae3c-aef4-5814-adfd-62cc5ee7796a",
+          "2dc229e6-5f62-545e-a30a-0134b13cb4d4",
+          "1d5f14c9-9c25-5964-8c78-34ea4937991b"
+        ],
+        "HYBRID": [
+          "077bf18c-8500-55c4-b1f2-8e9a70e5fd36",
+          "ab19f438-1a32-5abf-b6ff-0ac834498a89",
+          "2d58ae3c-aef4-5814-adfd-62cc5ee7796a",
+          "2dc229e6-5f62-545e-a30a-0134b13cb4d4",
+          "1d5f14c9-9c25-5964-8c78-34ea4937991b"
+        ]
+      },
+      "scores": {
+        "STRUCTURED": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "SEMANTIC": [
+          0.5775942569628665,
+          0.5775942569628665,
+          0.5775942569628665,
+          0.5775942569628665,
+          0.5775942569628665
+        ],
+        "HYBRID": [
+          0.5943159798740065,
+          0.5925936482368037,
+          0.5343159798740065,
+          0.5343159798740065,
+          0.5343159798740065
+        ]
+      },
+      "vectorSimilarities": {
+        "STRUCTURED": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "SEMANTIC": [
+          0.5775942569628665,
+          0.5775942569628665,
+          0.5775942569628665,
+          0.5775942569628665,
+          0.5775942569628665
+        ],
+        "HYBRID": [
+          0.5775942569628665,
+          0.575133783195434,
+          0.5775942569628665,
+          0.5775942569628665,
+          0.5775942569628665
+        ]
+      },
+      "errorCategories": [
+        "RANKING_ERROR",
+        "REPRESENTATION_MISMATCH",
+        "QUERY_DOCUMENT_MISMATCH",
+        "SCORE_FUSION_ERROR",
+        "LABEL_RANKING_ALIGNMENT"
+      ]
+    },
+    {
+      "caseId": "query-0b18be7f-c396-5236-b96c-0666fcf00f31",
+      "expected": [
+        "0b18be7f-c396-5236-b96c-0666fcf00f31",
+        "313a0658-7069-5bb3-87c5-e75816551f91",
+        "4452f212-41fd-584d-b8e7-69319b141505",
+        "4f35a95e-5e61-5127-99c3-106e7ce94e23",
+        "1a6036f3-ad41-539d-805d-4770c2d550fd"
+      ],
+      "top5": {
+        "STRUCTURED": [
+          "0b18be7f-c396-5236-b96c-0666fcf00f31",
+          "165c0781-a7b0-5353-9451-cf7de3a72aa8",
+          "2f8ee7f2-3bfe-5d18-9008-d990437353b1",
+          "3c10ec74-aa91-5cf7-b0ed-194f9ad3eb67",
+          "4bc0c3f4-8e4b-5cef-87c8-ca3faff5519f"
+        ],
+        "SEMANTIC": [
+          "009f4062-3f47-54d8-a4dd-d8b112359b67",
+          "03f07375-956c-5869-a0ad-013681626ace",
+          "06295ec2-1009-52ba-bc52-86595bd19074",
+          "0ea782a4-d553-5a6e-89c0-5ec232b7a63b",
+          "0f73d1d8-2985-5fbc-9b62-dbd4275922f3"
+        ],
+        "HYBRID": [
+          "0b18be7f-c396-5236-b96c-0666fcf00f31",
+          "55d71203-61b2-5827-bcef-7815d199e359",
+          "da95bf72-f4aa-5e6a-ac6c-d4392c9e9a70",
+          "1685f356-2748-5d2a-9b47-ddd5ee196b90",
+          "64b2117e-4a7f-5141-a601-d23d19781d89"
+        ]
+      },
+      "missing": {
+        "STRUCTURED": [
+          "313a0658-7069-5bb3-87c5-e75816551f91",
+          "4452f212-41fd-584d-b8e7-69319b141505",
+          "4f35a95e-5e61-5127-99c3-106e7ce94e23",
+          "1a6036f3-ad41-539d-805d-4770c2d550fd"
+        ],
+        "SEMANTIC": [
+          "0b18be7f-c396-5236-b96c-0666fcf00f31",
+          "313a0658-7069-5bb3-87c5-e75816551f91",
+          "4452f212-41fd-584d-b8e7-69319b141505",
+          "4f35a95e-5e61-5127-99c3-106e7ce94e23",
+          "1a6036f3-ad41-539d-805d-4770c2d550fd"
+        ],
+        "HYBRID": [
+          "313a0658-7069-5bb3-87c5-e75816551f91",
+          "4452f212-41fd-584d-b8e7-69319b141505",
+          "4f35a95e-5e61-5127-99c3-106e7ce94e23",
+          "1a6036f3-ad41-539d-805d-4770c2d550fd"
+        ]
+      },
+      "scores": {
+        "STRUCTURED": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "SEMANTIC": [
+          0.5688506255391997,
+          0.5688506255391997,
+          0.5688506255391997,
+          0.5688506255391997,
+          0.5688506255391997
+        ],
+        "HYBRID": [
+          0.6966478462464845,
+          0.6481954378774397,
+          0.6481954378774397,
+          0.5881954378774397,
+          0.5881954378774397
+        ]
+      },
+      "vectorSimilarities": {
+        "STRUCTURED": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "SEMANTIC": [
+          0.5688506255391997,
+          0.5688506255391997,
+          0.5688506255391997,
+          0.5688506255391997,
+          0.5688506255391997
+        ],
+        "HYBRID": [
+          0.5666397803521205,
+          0.5688506255391997,
+          0.5688506255391997,
+          0.5688506255391997,
+          0.5688506255391997
+        ]
+      },
+      "errorCategories": [
+        "RANKING_ERROR",
+        "REPRESENTATION_MISMATCH",
+        "QUERY_DOCUMENT_MISMATCH",
+        "SCORE_FUSION_ERROR",
+        "LABEL_RANKING_ALIGNMENT"
+      ]
+    },
+    {
+      "caseId": "query-0cce0717-aebf-5686-86c7-1f2c1aaeb1b6",
+      "expected": [
+        "0cce0717-aebf-5686-86c7-1f2c1aaeb1b6",
+        "25519449-3a9f-5e83-84a0-dfd639c94b8a",
+        "03410b55-8377-58a7-84f7-9f982da90f04",
+        "b095d36a-bd16-5cc7-beef-6942e78b8576",
+        "ef24aaae-b9de-5faf-9e96-632fd5d978df"
+      ],
+      "top5": {
+        "STRUCTURED": [
+          "00950352-5f6e-5a3a-95d5-cb0663fe4c5c",
+          "03410b55-8377-58a7-84f7-9f982da90f04",
+          "0cce0717-aebf-5686-86c7-1f2c1aaeb1b6",
+          "247d87af-01cb-50a7-a26c-5d923a1581f8",
+          "25519449-3a9f-5e83-84a0-dfd639c94b8a"
+        ],
+        "SEMANTIC": [
+          "009f4062-3f47-54d8-a4dd-d8b112359b67",
+          "03f07375-956c-5869-a0ad-013681626ace",
+          "06295ec2-1009-52ba-bc52-86595bd19074",
+          "0ea782a4-d553-5a6e-89c0-5ec232b7a63b",
+          "0f73d1d8-2985-5fbc-9b62-dbd4275922f3"
+        ],
+        "HYBRID": [
+          "b095d36a-bd16-5cc7-beef-6942e78b8576",
+          "ce05a639-f51d-5fd4-9934-1eca687fc27c",
+          "25519449-3a9f-5e83-84a0-dfd639c94b8a",
+          "f539c6c3-7208-578c-9132-9409d6cd2bc8",
+          "73880a86-17b1-55e3-837a-15736c88dd77"
+        ]
+      },
+      "missing": {
+        "STRUCTURED": [
+          "b095d36a-bd16-5cc7-beef-6942e78b8576",
+          "ef24aaae-b9de-5faf-9e96-632fd5d978df"
+        ],
+        "SEMANTIC": [
+          "0cce0717-aebf-5686-86c7-1f2c1aaeb1b6",
+          "25519449-3a9f-5e83-84a0-dfd639c94b8a",
+          "03410b55-8377-58a7-84f7-9f982da90f04",
+          "b095d36a-bd16-5cc7-beef-6942e78b8576",
+          "ef24aaae-b9de-5faf-9e96-632fd5d978df"
+        ],
+        "HYBRID": [
+          "0cce0717-aebf-5686-86c7-1f2c1aaeb1b6",
+          "03410b55-8377-58a7-84f7-9f982da90f04",
+          "ef24aaae-b9de-5faf-9e96-632fd5d978df"
+        ]
+      },
+      "scores": {
+        "STRUCTURED": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "SEMANTIC": [
+          0.5592406747079798,
+          0.5592406747079798,
+          0.5592406747079798,
+          0.5592406747079798,
+          0.5592406747079798
+        ],
+        "HYBRID": [
+          0.6414684722955859,
+          0.6414684722955859,
+          0.6403770860129425,
+          0.6403770860129425,
+          0.5603888877175949
+        ]
+      },
+      "vectorSimilarities": {
+        "STRUCTURED": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "SEMANTIC": [
+          0.5592406747079798,
+          0.5592406747079798,
+          0.5592406747079798,
+          0.5592406747079798,
+          0.5592406747079798
+        ],
+        "HYBRID": [
+          0.5592406747079798,
+          0.5592406747079798,
+          0.5576815514470607,
+          0.5576815514470607,
+          0.5576984110251354
+        ]
+      },
+      "errorCategories": [
+        "RANKING_ERROR",
+        "REPRESENTATION_MISMATCH",
+        "QUERY_DOCUMENT_MISMATCH",
+        "SCORE_FUSION_ERROR",
+        "LABEL_RANKING_ALIGNMENT"
+      ]
+    },
+    {
+      "caseId": "query-001b8898-4558-5c31-894e-bbb9d3a3f88c",
+      "expected": [
+        "001b8898-4558-5c31-894e-bbb9d3a3f88c",
+        "27ab934f-3152-51b7-bc44-5c0b353c20f7",
+        "c7eeb516-2f7b-5ce6-89e3-233102d30ec8",
+        "4f0646a3-a8ec-5694-8be1-fa1b9d5707d5",
+        "b6d10dea-e17e-5573-a22d-6203a2c99cd4"
+      ],
+      "top5": {
+        "STRUCTURED": [
+          "001b8898-4558-5c31-894e-bbb9d3a3f88c",
+          "27ab934f-3152-51b7-bc44-5c0b353c20f7",
+          "368b5685-a834-50b6-bb41-6b9aacb24c9a",
+          "4f0646a3-a8ec-5694-8be1-fa1b9d5707d5",
+          "51ce0c95-c9d8-5b8b-985b-2cd1ca483b61"
+        ],
+        "SEMANTIC": [
+          "009f4062-3f47-54d8-a4dd-d8b112359b67",
+          "03f07375-956c-5869-a0ad-013681626ace",
+          "06295ec2-1009-52ba-bc52-86595bd19074",
+          "0ea782a4-d553-5a6e-89c0-5ec232b7a63b",
+          "0f73d1d8-2985-5fbc-9b62-dbd4275922f3"
+        ],
+        "HYBRID": [
+          "99aa93a4-5da5-5089-bc08-389e7cb326a2",
+          "b6d10dea-e17e-5573-a22d-6203a2c99cd4",
+          "368b5685-a834-50b6-bb41-6b9aacb24c9a",
+          "76488ac4-3f7c-597e-b362-fe4c5d203b78",
+          "b0ffeea6-175e-5e7f-b01c-3030517e7b72"
+        ]
+      },
+      "missing": {
+        "STRUCTURED": [
+          "c7eeb516-2f7b-5ce6-89e3-233102d30ec8",
+          "b6d10dea-e17e-5573-a22d-6203a2c99cd4"
+        ],
+        "SEMANTIC": [
+          "001b8898-4558-5c31-894e-bbb9d3a3f88c",
+          "27ab934f-3152-51b7-bc44-5c0b353c20f7",
+          "c7eeb516-2f7b-5ce6-89e3-233102d30ec8",
+          "4f0646a3-a8ec-5694-8be1-fa1b9d5707d5",
+          "b6d10dea-e17e-5573-a22d-6203a2c99cd4"
+        ],
+        "HYBRID": [
+          "001b8898-4558-5c31-894e-bbb9d3a3f88c",
+          "27ab934f-3152-51b7-bc44-5c0b353c20f7",
+          "c7eeb516-2f7b-5ce6-89e3-233102d30ec8",
+          "4f0646a3-a8ec-5694-8be1-fa1b9d5707d5"
+        ]
+      },
+      "scores": {
+        "STRUCTURED": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "SEMANTIC": [
+          0.559828937974779,
+          0.559828937974779,
+          0.559828937974779,
+          0.559828937974779,
+          0.559828937974779
+        ],
+        "HYBRID": [
+          0.6418802565823454,
+          0.6410111836764956,
+          0.6409953112711073,
+          0.6409813025599618,
+          0.5818802565823453
+        ]
+      },
+      "vectorSimilarities": {
+        "STRUCTURED": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "SEMANTIC": [
+          0.559828937974779,
+          0.559828937974779,
+          0.559828937974779,
+          0.559828937974779,
+          0.559828937974779
+        ],
+        "HYBRID": [
+          0.559828937974779,
+          0.5585874052521366,
+          0.5585647303872961,
+          0.5585447179428026,
+          0.559828937974779
+        ]
+      },
+      "errorCategories": [
+        "RANKING_ERROR",
+        "REPRESENTATION_MISMATCH",
+        "QUERY_DOCUMENT_MISMATCH",
+        "SCORE_FUSION_ERROR",
+        "LABEL_RANKING_ALIGNMENT"
+      ]
+    },
+    {
+      "caseId": "query-03d02c5d-c9d2-5042-9ead-564cc2662691",
+      "expected": [
+        "03d02c5d-c9d2-5042-9ead-564cc2662691",
+        "06713dec-674c-52a1-8b39-cd796c909257",
+        "f5a75793-96d1-5aaf-a2a4-b4757df8aa4d",
+        "67966d9f-11e7-5361-b2e3-52096de447bf",
+        "838ed84f-2659-5e68-8d88-d36831915a83"
+      ],
+      "top5": {
+        "STRUCTURED": [
+          "03d02c5d-c9d2-5042-9ead-564cc2662691",
+          "06713dec-674c-52a1-8b39-cd796c909257",
+          "201f5b9b-7d4f-54da-b12d-bee555e89745",
+          "383de7f7-7c18-5be0-a255-3def06f60989",
+          "67966d9f-11e7-5361-b2e3-52096de447bf"
+        ],
+        "SEMANTIC": [
+          "009f4062-3f47-54d8-a4dd-d8b112359b67",
+          "03f07375-956c-5869-a0ad-013681626ace",
+          "06295ec2-1009-52ba-bc52-86595bd19074",
+          "0ea782a4-d553-5a6e-89c0-5ec232b7a63b",
+          "0f73d1d8-2985-5fbc-9b62-dbd4275922f3"
+        ],
+        "HYBRID": [
+          "201f5b9b-7d4f-54da-b12d-bee555e89745",
+          "75e7311c-d38a-5167-bc4b-1a0cb98e08ac",
+          "2b937980-d0f6-5500-a4d8-b1fdc2715e16",
+          "06295ec2-1009-52ba-bc52-86595bd19074",
+          "56282386-88bb-5d8a-b079-6e9086849ff3"
+        ]
+      },
+      "missing": {
+        "STRUCTURED": [
+          "f5a75793-96d1-5aaf-a2a4-b4757df8aa4d",
+          "838ed84f-2659-5e68-8d88-d36831915a83"
+        ],
+        "SEMANTIC": [
+          "03d02c5d-c9d2-5042-9ead-564cc2662691",
+          "06713dec-674c-52a1-8b39-cd796c909257",
+          "f5a75793-96d1-5aaf-a2a4-b4757df8aa4d",
+          "67966d9f-11e7-5361-b2e3-52096de447bf",
+          "838ed84f-2659-5e68-8d88-d36831915a83"
+        ],
+        "HYBRID": [
+          "03d02c5d-c9d2-5042-9ead-564cc2662691",
+          "06713dec-674c-52a1-8b39-cd796c909257",
+          "f5a75793-96d1-5aaf-a2a4-b4757df8aa4d",
+          "67966d9f-11e7-5361-b2e3-52096de447bf",
+          "838ed84f-2659-5e68-8d88-d36831915a83"
+        ]
+      },
+      "scores": {
+        "STRUCTURED": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "SEMANTIC": [
+          0.5573953010415581,
+          0.5573953010415581,
+          0.5573953010415581,
+          0.5573953010415581,
+          0.5573953010415581
+        ],
+        "HYBRID": [
+          0.6401767107290908,
+          0.5801767107290907,
+          0.5792452757818132,
+          0.5601767107290907,
+          0.5601767107290907
+        ]
+      },
+      "vectorSimilarities": {
+        "STRUCTURED": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "SEMANTIC": [
+          0.5573953010415581,
+          0.5573953010415581,
+          0.5573953010415581,
+          0.5573953010415581,
+          0.5573953010415581
+        ],
+        "HYBRID": [
+          0.5573953010415581,
+          0.5573953010415581,
+          0.5560646796883046,
+          0.5573953010415581,
+          0.5573953010415581
+        ]
+      },
+      "errorCategories": [
+        "RANKING_ERROR",
+        "REPRESENTATION_MISMATCH",
+        "QUERY_DOCUMENT_MISMATCH",
+        "SCORE_FUSION_ERROR",
+        "LABEL_RANKING_ALIGNMENT"
+      ]
+    },
+    {
+      "caseId": "query-03f90ece-5720-509f-95f2-4088ec7f5b22",
+      "expected": [
+        "03f90ece-5720-509f-95f2-4088ec7f5b22",
+        "cc460d12-8996-5fd5-9389-413ee9c34db2",
+        "5fa25c42-bea9-519f-b947-bb3ac473da47",
+        "9822f7e9-af36-5ace-8691-990385f7651d",
+        "cc8af1b0-6640-582a-b426-c18b81b3115f"
+      ],
+      "top5": {
+        "STRUCTURED": [
+          "03f90ece-5720-509f-95f2-4088ec7f5b22",
+          "5fa25c42-bea9-519f-b947-bb3ac473da47",
+          "cc460d12-8996-5fd5-9389-413ee9c34db2",
+          "09877bb9-cb2a-54c1-899b-38465c048bde",
+          "0ea782a4-d553-5a6e-89c0-5ec232b7a63b"
+        ],
+        "SEMANTIC": [
+          "009f4062-3f47-54d8-a4dd-d8b112359b67",
+          "03f07375-956c-5869-a0ad-013681626ace",
+          "06295ec2-1009-52ba-bc52-86595bd19074",
+          "0ea782a4-d553-5a6e-89c0-5ec232b7a63b",
+          "0f73d1d8-2985-5fbc-9b62-dbd4275922f3"
+        ],
+        "HYBRID": [
+          "0ea782a4-d553-5a6e-89c0-5ec232b7a63b",
+          "76400192-d7ae-5a77-b738-cab401a888fd",
+          "8954aacf-dcf8-530a-85ae-fbdaecbc45c4",
+          "20ee8eda-265d-5c93-8edd-963e2745dae4",
+          "9ddf6351-9bb8-5a05-9dc9-fca1e72268d2"
+        ]
+      },
+      "missing": {
+        "STRUCTURED": [
+          "9822f7e9-af36-5ace-8691-990385f7651d",
+          "cc8af1b0-6640-582a-b426-c18b81b3115f"
+        ],
+        "SEMANTIC": [
+          "03f90ece-5720-509f-95f2-4088ec7f5b22",
+          "cc460d12-8996-5fd5-9389-413ee9c34db2",
+          "5fa25c42-bea9-519f-b947-bb3ac473da47",
+          "9822f7e9-af36-5ace-8691-990385f7651d",
+          "cc8af1b0-6640-582a-b426-c18b81b3115f"
+        ],
+        "HYBRID": [
+          "03f90ece-5720-509f-95f2-4088ec7f5b22",
+          "cc460d12-8996-5fd5-9389-413ee9c34db2",
+          "5fa25c42-bea9-519f-b947-bb3ac473da47",
+          "9822f7e9-af36-5ace-8691-990385f7651d",
+          "cc8af1b0-6640-582a-b426-c18b81b3115f"
+        ]
+      },
+      "scores": {
+        "STRUCTURED": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "SEMANTIC": [
+          0.5717494510668635,
+          0.5717494510668635,
+          0.5717494510668635,
+          0.5717494510668635,
+          0.5717494510668635
+        ],
+        "HYBRID": [
+          0.5902246157468043,
+          0.5892174666358392,
+          0.5302246157468044,
+          0.5292326620980359,
+          0.5292174666358392
+        ]
+      },
+      "vectorSimilarities": {
+        "STRUCTURED": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "SEMANTIC": [
+          0.5717494510668635,
+          0.5717494510668635,
+          0.5717494510668635,
+          0.5717494510668635,
+          0.5717494510668635
+        ],
+        "HYBRID": [
+          0.5717494510668635,
+          0.5703106666226275,
+          0.5717494510668635,
+          0.5703323744257657,
+          0.5703106666226275
+        ]
+      },
+      "errorCategories": [
+        "RANKING_ERROR",
+        "REPRESENTATION_MISMATCH",
+        "QUERY_DOCUMENT_MISMATCH",
+        "SCORE_FUSION_ERROR",
+        "LABEL_RANKING_ALIGNMENT"
+      ]
+    },
+    {
+      "caseId": "query-03fb2653-dfe4-5420-a97a-80012cbb80e2",
+      "expected": [
+        "03fb2653-dfe4-5420-a97a-80012cbb80e2",
+        "6dba1344-bf18-58b2-a549-b1e815ed34cc",
+        "9e4349e1-7f8d-5e4c-94d6-f4f89ba50599",
+        "cb91f0d9-7978-5986-aeaa-c72f58ae4bce",
+        "16a2db9a-efbb-566e-87cf-9a0d275c23a0"
+      ],
+      "top5": {
+        "STRUCTURED": [
+          "03fb2653-dfe4-5420-a97a-80012cbb80e2",
+          "16a2db9a-efbb-566e-87cf-9a0d275c23a0",
+          "6dba1344-bf18-58b2-a549-b1e815ed34cc",
+          "9e4349e1-7f8d-5e4c-94d6-f4f89ba50599",
+          "c46cdbe0-2ead-5246-9c2e-9e726023ae33"
+        ],
+        "SEMANTIC": [
+          "009f4062-3f47-54d8-a4dd-d8b112359b67",
+          "03f07375-956c-5869-a0ad-013681626ace",
+          "06295ec2-1009-52ba-bc52-86595bd19074",
+          "0ea782a4-d553-5a6e-89c0-5ec232b7a63b",
+          "0f73d1d8-2985-5fbc-9b62-dbd4275922f3"
+        ],
+        "HYBRID": [
+          "9e4349e1-7f8d-5e4c-94d6-f4f89ba50599",
+          "1158d23b-75b8-5b58-ae85-bf5ccf80d69a",
+          "f5fac022-9594-5256-afea-a0f5dc3a4a1b",
+          "3056831a-7973-59bb-b3b0-4a5b87b2ca93",
+          "75e7311c-d38a-5167-bc4b-1a0cb98e08ac"
+        ]
+      },
+      "missing": {
+        "STRUCTURED": [
+          "cb91f0d9-7978-5986-aeaa-c72f58ae4bce"
+        ],
+        "SEMANTIC": [
+          "03fb2653-dfe4-5420-a97a-80012cbb80e2",
+          "6dba1344-bf18-58b2-a549-b1e815ed34cc",
+          "9e4349e1-7f8d-5e4c-94d6-f4f89ba50599",
+          "cb91f0d9-7978-5986-aeaa-c72f58ae4bce",
+          "16a2db9a-efbb-566e-87cf-9a0d275c23a0"
+        ],
+        "HYBRID": [
+          "03fb2653-dfe4-5420-a97a-80012cbb80e2",
+          "6dba1344-bf18-58b2-a549-b1e815ed34cc",
+          "cb91f0d9-7978-5986-aeaa-c72f58ae4bce",
+          "16a2db9a-efbb-566e-87cf-9a0d275c23a0"
+        ]
+      },
+      "scores": {
+        "STRUCTURED": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "SEMANTIC": [
+          0.5812309456781668,
+          0.5812309456781668,
+          0.5812309456781668,
+          0.5812309456781668,
+          0.5812309456781668
+        ],
+        "HYBRID": [
+          0.6560642234284675,
+          0.5968616619747167,
+          0.5368616619747167,
+          0.5268616619747167,
+          0.5268616619747167
+        ]
+      },
+      "vectorSimilarities": {
+        "STRUCTURED": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "SEMANTIC": [
+          0.5812309456781668,
+          0.5812309456781668,
+          0.5812309456781668,
+          0.5812309456781668,
+          0.5812309456781668
+        ],
+        "HYBRID": [
+          0.5800917477549534,
+          0.5812309456781668,
+          0.5812309456781668,
+          0.5812309456781668,
+          0.5812309456781668
+        ]
+      },
+      "errorCategories": [
+        "RANKING_ERROR",
+        "REPRESENTATION_MISMATCH",
+        "QUERY_DOCUMENT_MISMATCH",
+        "SCORE_FUSION_ERROR",
+        "LABEL_RANKING_ALIGNMENT"
+      ]
+    },
+    {
+      "caseId": "query-04886c06-1542-5290-b8da-48474561d2dc",
+      "expected": [
+        "04886c06-1542-5290-b8da-48474561d2dc",
+        "b0371c61-db70-5a0e-8e86-f348ae0fc6f3",
+        "dcf98e45-c632-59cf-8e5d-971027119701",
+        "6b797898-13f0-5988-b6ae-2a5ae93596c4",
+        "ccd428ef-e288-5322-831c-ee0835c11161"
+      ],
+      "top5": {
+        "STRUCTURED": [
+          "04886c06-1542-5290-b8da-48474561d2dc",
+          "6b797898-13f0-5988-b6ae-2a5ae93596c4",
+          "7cf1d37a-73c0-5306-85c7-ee8f58649535",
+          "b0371c61-db70-5a0e-8e86-f348ae0fc6f3",
+          "ccd428ef-e288-5322-831c-ee0835c11161"
+        ],
+        "SEMANTIC": [
+          "009f4062-3f47-54d8-a4dd-d8b112359b67",
+          "03f07375-956c-5869-a0ad-013681626ace",
+          "06295ec2-1009-52ba-bc52-86595bd19074",
+          "0ea782a4-d553-5a6e-89c0-5ec232b7a63b",
+          "0f73d1d8-2985-5fbc-9b62-dbd4275922f3"
+        ],
+        "HYBRID": [
+          "dcf98e45-c632-59cf-8e5d-971027119701",
+          "3056831a-7973-59bb-b3b0-4a5b87b2ca93",
+          "9683bef9-00b5-5e11-afe1-3befdbcf184c",
+          "2d276984-87b4-54f9-85f6-5cbd5adf2451",
+          "29c9c4a7-6d4a-57ee-ae35-964804e17148"
+        ]
+      },
+      "missing": {
+        "STRUCTURED": [
+          "dcf98e45-c632-59cf-8e5d-971027119701"
+        ],
+        "SEMANTIC": [
+          "04886c06-1542-5290-b8da-48474561d2dc",
+          "b0371c61-db70-5a0e-8e86-f348ae0fc6f3",
+          "dcf98e45-c632-59cf-8e5d-971027119701",
+          "6b797898-13f0-5988-b6ae-2a5ae93596c4",
+          "ccd428ef-e288-5322-831c-ee0835c11161"
+        ],
+        "HYBRID": [
+          "04886c06-1542-5290-b8da-48474561d2dc",
+          "b0371c61-db70-5a0e-8e86-f348ae0fc6f3",
+          "6b797898-13f0-5988-b6ae-2a5ae93596c4",
+          "ccd428ef-e288-5322-831c-ee0835c11161"
+        ]
+      },
+      "scores": {
+        "STRUCTURED": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "SEMANTIC": [
+          0.5604030967662581,
+          0.5604030967662581,
+          0.5604030967662581,
+          0.5604030967662581,
+          0.5604030967662581
+        ],
+        "HYBRID": [
+          0.6412706677193685,
+          0.5822821677363805,
+          0.5822821677363805,
+          0.5812945596761239,
+          0.5812706677193684
+        ]
+      },
+      "vectorSimilarities": {
+        "STRUCTURED": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "SEMANTIC": [
+          0.5604030967662581,
+          0.5604030967662581,
+          0.5604030967662581,
+          0.5604030967662581,
+          0.5604030967662581
+        ],
+        "HYBRID": [
+          0.5589580967419548,
+          0.5604030967662581,
+          0.5604030967662581,
+          0.5589922281087484,
+          0.5589580967419548
+        ]
+      },
+      "errorCategories": [
+        "RANKING_ERROR",
+        "REPRESENTATION_MISMATCH",
+        "QUERY_DOCUMENT_MISMATCH",
+        "SCORE_FUSION_ERROR",
+        "LABEL_RANKING_ALIGNMENT"
+      ]
+    },
+    {
+      "caseId": "query-04d60d07-65fe-5c9e-87de-7719f4f16256",
+      "expected": [
+        "04d60d07-65fe-5c9e-87de-7719f4f16256",
+        "8954aacf-dcf8-530a-85ae-fbdaecbc45c4",
+        "5d3a538f-f603-5180-aae8-d8cabd848a1f",
+        "0ea782a4-d553-5a6e-89c0-5ec232b7a63b",
+        "2f6b45d9-0e11-55fe-9a09-db32009034a4"
+      ],
+      "top5": {
+        "STRUCTURED": [
+          "04d60d07-65fe-5c9e-87de-7719f4f16256",
+          "0ea782a4-d553-5a6e-89c0-5ec232b7a63b",
+          "2f6b45d9-0e11-55fe-9a09-db32009034a4",
+          "5d3a538f-f603-5180-aae8-d8cabd848a1f",
+          "76400192-d7ae-5a77-b738-cab401a888fd"
+        ],
+        "SEMANTIC": [
+          "009f4062-3f47-54d8-a4dd-d8b112359b67",
+          "03f07375-956c-5869-a0ad-013681626ace",
+          "06295ec2-1009-52ba-bc52-86595bd19074",
+          "0ea782a4-d553-5a6e-89c0-5ec232b7a63b",
+          "0f73d1d8-2985-5fbc-9b62-dbd4275922f3"
+        ],
+        "HYBRID": [
+          "0ea782a4-d553-5a6e-89c0-5ec232b7a63b",
+          "8954aacf-dcf8-530a-85ae-fbdaecbc45c4",
+          "76400192-d7ae-5a77-b738-cab401a888fd",
+          "9ddf6351-9bb8-5a05-9dc9-fca1e72268d2",
+          "20ee8eda-265d-5c93-8edd-963e2745dae4"
+        ]
+      },
+      "missing": {
+        "STRUCTURED": [
+          "8954aacf-dcf8-530a-85ae-fbdaecbc45c4"
+        ],
+        "SEMANTIC": [
+          "04d60d07-65fe-5c9e-87de-7719f4f16256",
+          "8954aacf-dcf8-530a-85ae-fbdaecbc45c4",
+          "5d3a538f-f603-5180-aae8-d8cabd848a1f",
+          "2f6b45d9-0e11-55fe-9a09-db32009034a4"
+        ],
+        "HYBRID": [
+          "04d60d07-65fe-5c9e-87de-7719f4f16256",
+          "5d3a538f-f603-5180-aae8-d8cabd848a1f",
+          "2f6b45d9-0e11-55fe-9a09-db32009034a4"
+        ]
+      },
+      "scores": {
+        "STRUCTURED": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "SEMANTIC": [
+          0.5765798736749509,
+          0.5765798736749509,
+          0.5765798736749509,
+          0.5765798736749509,
+          0.5765798736749509
+        ],
+        "HYBRID": [
+          0.6536059115724657,
+          0.6536059115724657,
+          0.6526484156134147,
+          0.6526484156134147,
+          0.5926716748219603
+        ]
+      },
+      "vectorSimilarities": {
+        "STRUCTURED": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "SEMANTIC": [
+          0.5765798736749509,
+          0.5765798736749509,
+          0.5765798736749509,
+          0.5765798736749509,
+          0.5765798736749509
+        ],
+        "HYBRID": [
+          0.5765798736749509,
+          0.5765798736749509,
+          0.5752120223048781,
+          0.5752120223048781,
+          0.5752452497456577
+        ]
+      },
+      "errorCategories": [
+        "RANKING_ERROR",
+        "REPRESENTATION_MISMATCH",
+        "QUERY_DOCUMENT_MISMATCH",
+        "SCORE_FUSION_ERROR",
+        "LABEL_RANKING_ALIGNMENT"
+      ]
+    },
+    {
+      "caseId": "query-053b0ecd-226f-55af-90a3-faf0243e9017",
+      "expected": [
+        "053b0ecd-226f-55af-90a3-faf0243e9017",
+        "5fadf312-a071-52f4-8c2d-0678d529b22b",
+        "a26b2b25-2dc4-581a-8ba4-d3c6eb3fc6ff",
+        "ff50367c-1195-5e9c-8c2c-aaaa28490280",
+        "b803bcb1-a092-59b9-b8c0-53393c939685"
+      ],
+      "top5": {
+        "STRUCTURED": [
+          "053b0ecd-226f-55af-90a3-faf0243e9017",
+          "235c531a-09c4-565c-b702-6f4f5f67b5fe",
+          "368b5685-a834-50b6-bb41-6b9aacb24c9a",
+          "4a2f708d-79fc-5069-9582-0a680ee83207",
+          "55521c34-3ce1-52dd-af79-d40b187fde89"
+        ],
+        "SEMANTIC": [
+          "009f4062-3f47-54d8-a4dd-d8b112359b67",
+          "03f07375-956c-5869-a0ad-013681626ace",
+          "06295ec2-1009-52ba-bc52-86595bd19074",
+          "0ea782a4-d553-5a6e-89c0-5ec232b7a63b",
+          "0f73d1d8-2985-5fbc-9b62-dbd4275922f3"
+        ],
+        "HYBRID": [
+          "ff50367c-1195-5e9c-8c2c-aaaa28490280",
+          "b6d10dea-e17e-5573-a22d-6203a2c99cd4",
+          "368b5685-a834-50b6-bb41-6b9aacb24c9a",
+          "76488ac4-3f7c-597e-b362-fe4c5d203b78",
+          "99aa93a4-5da5-5089-bc08-389e7cb326a2"
+        ]
+      },
+      "missing": {
+        "STRUCTURED": [
+          "5fadf312-a071-52f4-8c2d-0678d529b22b",
+          "a26b2b25-2dc4-581a-8ba4-d3c6eb3fc6ff",
+          "ff50367c-1195-5e9c-8c2c-aaaa28490280",
+          "b803bcb1-a092-59b9-b8c0-53393c939685"
+        ],
+        "SEMANTIC": [
+          "053b0ecd-226f-55af-90a3-faf0243e9017",
+          "5fadf312-a071-52f4-8c2d-0678d529b22b",
+          "a26b2b25-2dc4-581a-8ba4-d3c6eb3fc6ff",
+          "ff50367c-1195-5e9c-8c2c-aaaa28490280",
+          "b803bcb1-a092-59b9-b8c0-53393c939685"
+        ],
+        "HYBRID": [
+          "053b0ecd-226f-55af-90a3-faf0243e9017",
+          "5fadf312-a071-52f4-8c2d-0678d529b22b",
+          "a26b2b25-2dc4-581a-8ba4-d3c6eb3fc6ff",
+          "b803bcb1-a092-59b9-b8c0-53393c939685"
+        ]
+      },
+      "scores": {
+        "STRUCTURED": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "SEMANTIC": [
+          0.556671637608435,
+          0.556671637608435,
+          0.556671637608435,
+          0.556671637608435,
+          0.556671637608435
+        ],
+        "HYBRID": [
+          0.6396701463259045,
+          0.6388306394605532,
+          0.6388138897472373,
+          0.6388080923363046,
+          0.5796701463259044
+        ]
+      },
+      "vectorSimilarities": {
+        "STRUCTURED": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "SEMANTIC": [
+          0.556671637608435,
+          0.556671637608435,
+          0.556671637608435,
+          0.556671637608435,
+          0.556671637608435
+        ],
+        "HYBRID": [
+          0.556671637608435,
+          0.5554723420865045,
+          0.5554484139246246,
+          0.5554401319090065,
+          0.556671637608435
+        ]
+      },
+      "errorCategories": [
+        "RANKING_ERROR",
+        "REPRESENTATION_MISMATCH",
+        "QUERY_DOCUMENT_MISMATCH",
+        "SCORE_FUSION_ERROR",
+        "LABEL_RANKING_ALIGNMENT"
+      ]
+    },
+    {
+      "caseId": "query-0068124b-578d-5189-b375-3bc898217e8b",
+      "expected": [
+        "0068124b-578d-5189-b375-3bc898217e8b",
+        "c30d0b17-976d-5668-b850-112e693424f3",
+        "9e35bfce-34b5-584a-adc7-af8d3715ea21",
+        "b116e8ba-6b2d-5bca-a204-cb8587be5110",
+        "943d0469-b443-523e-8826-9f482cd6a298"
+      ],
+      "top5": {
+        "STRUCTURED": [
+          "0068124b-578d-5189-b375-3bc898217e8b",
+          "23afd686-88d6-5ae8-b95d-0aa66a7c7698",
+          "843bb8c0-c96f-5188-9584-b14816f56196",
+          "943d0469-b443-523e-8826-9f482cd6a298",
+          "9e35bfce-34b5-584a-adc7-af8d3715ea21"
+        ],
+        "SEMANTIC": [
+          "009f4062-3f47-54d8-a4dd-d8b112359b67",
+          "03f07375-956c-5869-a0ad-013681626ace",
+          "06295ec2-1009-52ba-bc52-86595bd19074",
+          "0ea782a4-d553-5a6e-89c0-5ec232b7a63b",
+          "0f73d1d8-2985-5fbc-9b62-dbd4275922f3"
+        ],
+        "HYBRID": [
+          "a6c7618e-748e-5b26-8915-9c3f12376c03",
+          "f5758ec4-e9b3-5958-9876-b43eb93c5f3a",
+          "1aaca54e-fd28-51bf-bde6-7dce48c9ff70",
+          "f079a2c9-c61a-54e4-b4ca-f918800356f4",
+          "fcd383bc-3c45-5bbe-9c70-a129cb58dc39"
+        ]
+      },
+      "missing": {
+        "STRUCTURED": [
+          "c30d0b17-976d-5668-b850-112e693424f3",
+          "b116e8ba-6b2d-5bca-a204-cb8587be5110"
+        ],
+        "SEMANTIC": [
+          "0068124b-578d-5189-b375-3bc898217e8b",
+          "c30d0b17-976d-5668-b850-112e693424f3",
+          "9e35bfce-34b5-584a-adc7-af8d3715ea21",
+          "b116e8ba-6b2d-5bca-a204-cb8587be5110",
+          "943d0469-b443-523e-8826-9f482cd6a298"
+        ],
+        "HYBRID": [
+          "0068124b-578d-5189-b375-3bc898217e8b",
+          "c30d0b17-976d-5668-b850-112e693424f3",
+          "9e35bfce-34b5-584a-adc7-af8d3715ea21",
+          "b116e8ba-6b2d-5bca-a204-cb8587be5110",
+          "943d0469-b443-523e-8826-9f482cd6a298"
+        ]
+      },
+      "scores": {
+        "STRUCTURED": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "SEMANTIC": [
+          0.5651306261633098,
+          0.5651306261633098,
+          0.5651306261633098,
+          0.5651306261633098,
+          0.5651306261633098
+        ],
+        "HYBRID": [
+          0.5855914383143168,
+          0.5855914383143168,
+          0.5655914383143168,
+          0.5655914383143168,
+          0.5655914383143168
+        ]
+      },
+      "vectorSimilarities": {
+        "STRUCTURED": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "SEMANTIC": [
+          0.5651306261633098,
+          0.5651306261633098,
+          0.5651306261633098,
+          0.5651306261633098,
+          0.5651306261633098
+        ],
+        "HYBRID": [
+          0.5651306261633098,
+          0.5651306261633098,
+          0.5651306261633098,
+          0.5651306261633098,
+          0.5651306261633098
+        ]
+      },
+      "errorCategories": [
+        "RANKING_ERROR",
+        "REPRESENTATION_MISMATCH",
+        "QUERY_DOCUMENT_MISMATCH",
+        "SCORE_FUSION_ERROR",
+        "LABEL_RANKING_ALIGNMENT"
+      ]
+    },
+    {
+      "caseId": "query-009f4062-3f47-54d8-a4dd-d8b112359b67",
+      "expected": [
+        "009f4062-3f47-54d8-a4dd-d8b112359b67",
+        "397073db-4753-5b7c-9a1a-024c1238bc00",
+        "d9832591-e90b-59c5-9fe7-baba0d989c8b",
+        "1e44510d-a688-5553-8573-09d22c9a1f83",
+        "79d5b9bd-8bd7-57c7-bd9d-6e6b0d5685f5"
+      ],
+      "top5": {
+        "STRUCTURED": [
+          "009f4062-3f47-54d8-a4dd-d8b112359b67",
+          "397073db-4753-5b7c-9a1a-024c1238bc00",
+          "137e6c17-c68d-56d0-b077-2b9eb9f37d24",
+          "1a0292cd-aff8-5ea2-a540-07d21f94f749",
+          "1e44510d-a688-5553-8573-09d22c9a1f83"
+        ],
+        "SEMANTIC": [
+          "009f4062-3f47-54d8-a4dd-d8b112359b67",
+          "03f07375-956c-5869-a0ad-013681626ace",
+          "06295ec2-1009-52ba-bc52-86595bd19074",
+          "0ea782a4-d553-5a6e-89c0-5ec232b7a63b",
+          "0f73d1d8-2985-5fbc-9b62-dbd4275922f3"
+        ],
+        "HYBRID": [
+          "009f4062-3f47-54d8-a4dd-d8b112359b67",
+          "3a2193ec-4b4d-5679-a1e2-8716cbb7b94d",
+          "a5a5628c-dc71-55e2-88cd-030ff259fe51",
+          "b7fff8a8-ca1d-5405-bc8a-eebb010bb589",
+          "b3d02dce-e1af-5f25-9879-662076b4fbab"
+        ]
+      },
+      "missing": {
+        "STRUCTURED": [
+          "d9832591-e90b-59c5-9fe7-baba0d989c8b",
+          "79d5b9bd-8bd7-57c7-bd9d-6e6b0d5685f5"
+        ],
+        "SEMANTIC": [
+          "397073db-4753-5b7c-9a1a-024c1238bc00",
+          "d9832591-e90b-59c5-9fe7-baba0d989c8b",
+          "1e44510d-a688-5553-8573-09d22c9a1f83",
+          "79d5b9bd-8bd7-57c7-bd9d-6e6b0d5685f5"
+        ],
+        "HYBRID": [
+          "397073db-4753-5b7c-9a1a-024c1238bc00",
+          "d9832591-e90b-59c5-9fe7-baba0d989c8b",
+          "1e44510d-a688-5553-8573-09d22c9a1f83",
+          "79d5b9bd-8bd7-57c7-bd9d-6e6b0d5685f5"
+        ]
+      },
+      "scores": {
+        "STRUCTURED": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "SEMANTIC": [
+          0.5857341473179161,
+          0.5857341473179161,
+          0.5857341473179161,
+          0.5857341473179161,
+          0.5857341473179161
+        ],
+        "HYBRID": [
+          0.7100517551730186,
+          0.6000517551730185,
+          0.6000517551730185,
+          0.6000517551730185,
+          0.5988832297291735
+        ]
+      },
+      "vectorSimilarities": {
+        "STRUCTURED": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "SEMANTIC": [
+          0.5857341473179161,
+          0.5857341473179161,
+          0.5857341473179161,
+          0.5857341473179161,
+          0.5857341473179161
+        ],
+        "HYBRID": [
+          0.5857882216757406,
+          0.5857882216757406,
+          0.5857882216757406,
+          0.5857882216757406,
+          0.584118899613105
+        ]
+      },
+      "errorCategories": [
+        "RANKING_ERROR",
+        "REPRESENTATION_MISMATCH",
+        "QUERY_DOCUMENT_MISMATCH",
+        "SCORE_FUSION_ERROR",
+        "LABEL_RANKING_ALIGNMENT"
+      ]
+    },
+    {
+      "caseId": "query-027ce672-e4aa-5007-b3ea-18aeaba30601",
+      "expected": [
+        "027ce672-e4aa-5007-b3ea-18aeaba30601",
+        "af82a83f-72a2-5764-aadf-c1b51e49ecfe",
+        "af88882a-d1f7-5520-8961-0348d656348c",
+        "4c76fc96-7b67-5979-930b-448668e49d0b",
+        "978c85fa-ebd0-5ad2-adb3-461687d940bf"
+      ],
+      "top5": {
+        "STRUCTURED": [
+          "027ce672-e4aa-5007-b3ea-18aeaba30601",
+          "4c76fc96-7b67-5979-930b-448668e49d0b",
+          "af82a83f-72a2-5764-aadf-c1b51e49ecfe",
+          "419f0022-c42e-521c-bc18-307e06aff7f7",
+          "6cee3463-c88c-5ba3-be68-9a2055fadfe7"
+        ],
+        "SEMANTIC": [
+          "009f4062-3f47-54d8-a4dd-d8b112359b67",
+          "03f07375-956c-5869-a0ad-013681626ace",
+          "06295ec2-1009-52ba-bc52-86595bd19074",
+          "0ea782a4-d553-5a6e-89c0-5ec232b7a63b",
+          "0f73d1d8-2985-5fbc-9b62-dbd4275922f3"
+        ],
+        "HYBRID": [
+          "f9942fda-5e89-5643-af1b-a4b303df8c37",
+          "297102d3-1cc2-595d-9cc4-81c3578c1074",
+          "df7c48f1-a174-5356-984e-5d18d5d06159",
+          "ca03e1a1-cc18-5838-b71f-95b56c0d1920",
+          "3a2193ec-4b4d-5679-a1e2-8716cbb7b94d"
+        ]
+      },
+      "missing": {
+        "STRUCTURED": [
+          "af88882a-d1f7-5520-8961-0348d656348c",
+          "978c85fa-ebd0-5ad2-adb3-461687d940bf"
+        ],
+        "SEMANTIC": [
+          "027ce672-e4aa-5007-b3ea-18aeaba30601",
+          "af82a83f-72a2-5764-aadf-c1b51e49ecfe",
+          "af88882a-d1f7-5520-8961-0348d656348c",
+          "4c76fc96-7b67-5979-930b-448668e49d0b",
+          "978c85fa-ebd0-5ad2-adb3-461687d940bf"
+        ],
+        "HYBRID": [
+          "027ce672-e4aa-5007-b3ea-18aeaba30601",
+          "af82a83f-72a2-5764-aadf-c1b51e49ecfe",
+          "af88882a-d1f7-5520-8961-0348d656348c",
+          "4c76fc96-7b67-5979-930b-448668e49d0b",
+          "978c85fa-ebd0-5ad2-adb3-461687d940bf"
+        ]
+      },
+      "scores": {
+        "STRUCTURED": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "SEMANTIC": [
+          0.6019782184213401,
+          0.6019782184213401,
+          0.6019782184213401,
+          0.6019782184213401,
+          0.6019782184213401
+        ],
+        "HYBRID": [
+          0.6705560885765018,
+          0.6613847528949381,
+          0.5913847528949381,
+          0.5905733486719096,
+          0.541384752894938
+        ]
+      },
+      "vectorSimilarities": {
+        "STRUCTURED": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "SEMANTIC": [
+          0.6019782184213401,
+          0.6019782184213401,
+          0.6019782184213401,
+          0.6019782184213401,
+          0.6019782184213401
+        ],
+        "HYBRID": [
+          0.6007944122521456,
+          0.6019782184213401,
+          0.6019782184213401,
+          0.6008190695312994,
+          0.6019782184213401
+        ]
+      },
+      "errorCategories": [
+        "RANKING_ERROR",
+        "REPRESENTATION_MISMATCH",
+        "QUERY_DOCUMENT_MISMATCH",
+        "SCORE_FUSION_ERROR",
+        "LABEL_RANKING_ALIGNMENT"
+      ]
+    },
+    {
+      "caseId": "query-03c6ca7a-3d21-5c51-86fd-5b955cd8a2e2",
+      "expected": [
+        "03c6ca7a-3d21-5c51-86fd-5b955cd8a2e2",
+        "57e8ab8d-92f5-5588-a72a-627d9642bd29",
+        "87e42be0-5f6e-5a16-87f2-8b9f0e0d7ef4",
+        "2bfc66b5-c7c2-53b4-a987-698d3b4e55f7",
+        "4f3fc419-da76-595b-b153-283f4b81377d"
+      ],
+      "top5": {
+        "STRUCTURED": [
+          "03c6ca7a-3d21-5c51-86fd-5b955cd8a2e2",
+          "29c11abc-4d70-5f6a-9a51-66e8b101be99",
+          "2bfc66b5-c7c2-53b4-a987-698d3b4e55f7",
+          "347159c4-e57a-561b-81a4-f2020c8805f1",
+          "4f3fc419-da76-595b-b153-283f4b81377d"
+        ],
+        "SEMANTIC": [
+          "009f4062-3f47-54d8-a4dd-d8b112359b67",
+          "03f07375-956c-5869-a0ad-013681626ace",
+          "06295ec2-1009-52ba-bc52-86595bd19074",
+          "0ea782a4-d553-5a6e-89c0-5ec232b7a63b",
+          "0f73d1d8-2985-5fbc-9b62-dbd4275922f3"
+        ],
+        "HYBRID": [
+          "b398e9a4-1688-56ed-b954-9185894dbae7",
+          "45335a9a-f5bb-55b0-921f-912e5a6ee9ac",
+          "df7c48f1-a174-5356-984e-5d18d5d06159",
+          "1741bfaa-cb38-5fcc-8622-4e5a8fed8be7",
+          "4dfae262-3906-552c-8ba6-6f564fa68910"
+        ]
+      },
+      "missing": {
+        "STRUCTURED": [
+          "57e8ab8d-92f5-5588-a72a-627d9642bd29",
+          "87e42be0-5f6e-5a16-87f2-8b9f0e0d7ef4"
+        ],
+        "SEMANTIC": [
+          "03c6ca7a-3d21-5c51-86fd-5b955cd8a2e2",
+          "57e8ab8d-92f5-5588-a72a-627d9642bd29",
+          "87e42be0-5f6e-5a16-87f2-8b9f0e0d7ef4",
+          "2bfc66b5-c7c2-53b4-a987-698d3b4e55f7",
+          "4f3fc419-da76-595b-b153-283f4b81377d"
+        ],
+        "HYBRID": [
+          "03c6ca7a-3d21-5c51-86fd-5b955cd8a2e2",
+          "57e8ab8d-92f5-5588-a72a-627d9642bd29",
+          "87e42be0-5f6e-5a16-87f2-8b9f0e0d7ef4",
+          "2bfc66b5-c7c2-53b4-a987-698d3b4e55f7",
+          "4f3fc419-da76-595b-b153-283f4b81377d"
+        ]
+      },
+      "scores": {
+        "STRUCTURED": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "SEMANTIC": [
+          0.571036081284645,
+          0.571036081284645,
+          0.571036081284645,
+          0.571036081284645,
+          0.571036081284645
+        ],
+        "HYBRID": [
+          0.5897252568992515,
+          0.5297252568992514,
+          0.5297252568992514,
+          0.528414279831366,
+          0.528414279831366
+        ]
+      },
+      "vectorSimilarities": {
+        "STRUCTURED": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "SEMANTIC": [
+          0.571036081284645,
+          0.571036081284645,
+          0.571036081284645,
+          0.571036081284645,
+          0.571036081284645
+        ],
+        "HYBRID": [
+          0.571036081284645,
+          0.571036081284645,
+          0.571036081284645,
+          0.5691632569019515,
+          0.5691632569019515
+        ]
+      },
+      "errorCategories": [
+        "RANKING_ERROR",
+        "REPRESENTATION_MISMATCH",
+        "QUERY_DOCUMENT_MISMATCH",
+        "SCORE_FUSION_ERROR",
+        "LABEL_RANKING_ALIGNMENT"
+      ]
+    },
+    {
+      "caseId": "query-06770bbd-b562-5982-9292-02ed3a462f7f",
+      "expected": [
+        "06770bbd-b562-5982-9292-02ed3a462f7f",
+        "1ec436f0-f8be-54dc-b995-068e08bf5ebd",
+        "ccd7236f-0490-523e-8cff-12b8ebf56057",
+        "978c85fa-ebd0-5ad2-adb3-461687d940bf",
+        "5a5c43b7-c2c1-5669-bae8-2a14cff7d33b"
+      ],
+      "top5": {
+        "STRUCTURED": [
+          "06770bbd-b562-5982-9292-02ed3a462f7f",
+          "1ec436f0-f8be-54dc-b995-068e08bf5ebd",
+          "297102d3-1cc2-595d-9cc4-81c3578c1074",
+          "5a5c43b7-c2c1-5669-bae8-2a14cff7d33b",
+          "978c85fa-ebd0-5ad2-adb3-461687d940bf"
+        ],
+        "SEMANTIC": [
+          "009f4062-3f47-54d8-a4dd-d8b112359b67",
+          "03f07375-956c-5869-a0ad-013681626ace",
+          "06295ec2-1009-52ba-bc52-86595bd19074",
+          "0ea782a4-d553-5a6e-89c0-5ec232b7a63b",
+          "0f73d1d8-2985-5fbc-9b62-dbd4275922f3"
+        ],
+        "HYBRID": [
+          "297102d3-1cc2-595d-9cc4-81c3578c1074",
+          "f9942fda-5e89-5643-af1b-a4b303df8c37",
+          "1aaca54e-fd28-51bf-bde6-7dce48c9ff70",
+          "a5a5628c-dc71-55e2-88cd-030ff259fe51",
+          "b7fff8a8-ca1d-5405-bc8a-eebb010bb589"
+        ]
+      },
+      "missing": {
+        "STRUCTURED": [
+          "ccd7236f-0490-523e-8cff-12b8ebf56057"
+        ],
+        "SEMANTIC": [
+          "06770bbd-b562-5982-9292-02ed3a462f7f",
+          "1ec436f0-f8be-54dc-b995-068e08bf5ebd",
+          "ccd7236f-0490-523e-8cff-12b8ebf56057",
+          "978c85fa-ebd0-5ad2-adb3-461687d940bf",
+          "5a5c43b7-c2c1-5669-bae8-2a14cff7d33b"
+        ],
+        "HYBRID": [
+          "06770bbd-b562-5982-9292-02ed3a462f7f",
+          "1ec436f0-f8be-54dc-b995-068e08bf5ebd",
+          "ccd7236f-0490-523e-8cff-12b8ebf56057",
+          "978c85fa-ebd0-5ad2-adb3-461687d940bf",
+          "5a5c43b7-c2c1-5669-bae8-2a14cff7d33b"
+        ]
+      },
+      "scores": {
+        "STRUCTURED": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "SEMANTIC": [
+          0.5889391949357224,
+          0.5889391949357224,
+          0.5889391949357224,
+          0.5889391949357224,
+          0.5889391949357224
+        ],
+        "HYBRID": [
+          0.6622574364550058,
+          0.6011387878231742,
+          0.5322574364550057,
+          0.5322574364550057,
+          0.5322574364550057
+        ]
+      },
+      "vectorSimilarities": {
+        "STRUCTURED": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "SEMANTIC": [
+          0.5889391949357224,
+          0.5889391949357224,
+          0.5889391949357224,
+          0.5889391949357224,
+          0.5889391949357224
+        ],
+        "HYBRID": [
+          0.5889391949357224,
+          0.5873411254616775,
+          0.5889391949357224,
+          0.5889391949357224,
+          0.5889391949357224
+        ]
+      },
+      "errorCategories": [
+        "RANKING_ERROR",
+        "REPRESENTATION_MISMATCH",
+        "QUERY_DOCUMENT_MISMATCH",
+        "SCORE_FUSION_ERROR",
+        "LABEL_RANKING_ALIGNMENT"
+      ]
+    },
+    {
+      "caseId": "query-07b7d861-acad-59e7-9667-9a5cf7e702a4",
+      "expected": [
+        "07b7d861-acad-59e7-9667-9a5cf7e702a4",
+        "87160570-25c3-5512-8f01-2765fb96ae4d",
+        "55629997-f27f-5e76-9368-15970e4654a5",
+        "45f471e0-f87d-5e48-82d2-1859310ce4a8",
+        "f2a28a59-0e09-536c-8217-4b8c538d5dc1"
+      ],
+      "top5": {
+        "STRUCTURED": [
+          "07b7d861-acad-59e7-9667-9a5cf7e702a4",
+          "55629997-f27f-5e76-9368-15970e4654a5",
+          "45f471e0-f87d-5e48-82d2-1859310ce4a8",
+          "87160570-25c3-5512-8f01-2765fb96ae4d",
+          "db5e515d-5814-50d1-881b-45bbf52824fb"
+        ],
+        "SEMANTIC": [
+          "009f4062-3f47-54d8-a4dd-d8b112359b67",
+          "03f07375-956c-5869-a0ad-013681626ace",
+          "06295ec2-1009-52ba-bc52-86595bd19074",
+          "0ea782a4-d553-5a6e-89c0-5ec232b7a63b",
+          "0f73d1d8-2985-5fbc-9b62-dbd4275922f3"
+        ],
+        "HYBRID": [
+          "f7965dd0-a5cb-5dde-bbe6-58afe2b6ffad",
+          "39bf980d-490e-55ca-8876-09147ccbbaa1",
+          "cb9a2ed6-6978-58b5-b391-a00e564d622c",
+          "297102d3-1cc2-595d-9cc4-81c3578c1074",
+          "a5a5628c-dc71-55e2-88cd-030ff259fe51"
+        ]
+      },
+      "missing": {
+        "STRUCTURED": [
+          "f2a28a59-0e09-536c-8217-4b8c538d5dc1"
+        ],
+        "SEMANTIC": [
+          "07b7d861-acad-59e7-9667-9a5cf7e702a4",
+          "87160570-25c3-5512-8f01-2765fb96ae4d",
+          "55629997-f27f-5e76-9368-15970e4654a5",
+          "45f471e0-f87d-5e48-82d2-1859310ce4a8",
+          "f2a28a59-0e09-536c-8217-4b8c538d5dc1"
+        ],
+        "HYBRID": [
+          "07b7d861-acad-59e7-9667-9a5cf7e702a4",
+          "87160570-25c3-5512-8f01-2765fb96ae4d",
+          "55629997-f27f-5e76-9368-15970e4654a5",
+          "45f471e0-f87d-5e48-82d2-1859310ce4a8",
+          "f2a28a59-0e09-536c-8217-4b8c538d5dc1"
+        ]
+      },
+      "scores": {
+        "STRUCTURED": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "SEMANTIC": [
+          0.5665340091299595,
+          0.5665340091299595,
+          0.5665340091299595,
+          0.5665340091299595,
+          0.5665340091299595
+        ],
+        "HYBRID": [
+          0.6356563998209919,
+          0.5856863937476147,
+          0.5665738063909718,
+          0.5165738063909717,
+          0.5165738063909717
+        ]
+      },
+      "vectorSimilarities": {
+        "STRUCTURED": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "SEMANTIC": [
+          0.5665340091299595,
+          0.5665340091299595,
+          0.5665340091299595,
+          0.5665340091299595,
+          0.5665340091299595
+        ],
+        "HYBRID": [
+          0.5652234283157026,
+          0.5652662767823068,
+          0.5665340091299595,
+          0.5665340091299595,
+          0.5665340091299595
+        ]
+      },
+      "errorCategories": [
+        "RANKING_ERROR",
+        "REPRESENTATION_MISMATCH",
+        "QUERY_DOCUMENT_MISMATCH",
+        "SCORE_FUSION_ERROR",
+        "LABEL_RANKING_ALIGNMENT"
+      ]
+    },
+    {
+      "caseId": "query-083f290f-9280-52f8-af2c-be3f4c7cadf8",
+      "expected": [
+        "083f290f-9280-52f8-af2c-be3f4c7cadf8",
+        "9500c3f8-420d-5167-bab4-8d7a2f872883",
+        "1e44510d-a688-5553-8573-09d22c9a1f83",
+        "3905302f-23ae-550d-9363-ce09019db8e4",
+        "da4a0ac4-6831-58f1-bd21-79bd22c6951e"
+      ],
+      "top5": {
+        "STRUCTURED": [
+          "083f290f-9280-52f8-af2c-be3f4c7cadf8",
+          "1e44510d-a688-5553-8573-09d22c9a1f83",
+          "9500c3f8-420d-5167-bab4-8d7a2f872883",
+          "0e5d002a-d835-57a5-ad91-f0baeeffef84",
+          "137e6c17-c68d-56d0-b077-2b9eb9f37d24"
+        ],
+        "SEMANTIC": [
+          "009f4062-3f47-54d8-a4dd-d8b112359b67",
+          "03f07375-956c-5869-a0ad-013681626ace",
+          "06295ec2-1009-52ba-bc52-86595bd19074",
+          "0ea782a4-d553-5a6e-89c0-5ec232b7a63b",
+          "0f73d1d8-2985-5fbc-9b62-dbd4275922f3"
+        ],
+        "HYBRID": [
+          "b7fff8a8-ca1d-5405-bc8a-eebb010bb589",
+          "009f4062-3f47-54d8-a4dd-d8b112359b67",
+          "a5a5628c-dc71-55e2-88cd-030ff259fe51",
+          "b3d02dce-e1af-5f25-9879-662076b4fbab",
+          "fb774d74-a45c-56c6-83bc-7dc5f3305a5f"
+        ]
+      },
+      "missing": {
+        "STRUCTURED": [
+          "3905302f-23ae-550d-9363-ce09019db8e4",
+          "da4a0ac4-6831-58f1-bd21-79bd22c6951e"
+        ],
+        "SEMANTIC": [
+          "083f290f-9280-52f8-af2c-be3f4c7cadf8",
+          "9500c3f8-420d-5167-bab4-8d7a2f872883",
+          "1e44510d-a688-5553-8573-09d22c9a1f83",
+          "3905302f-23ae-550d-9363-ce09019db8e4",
+          "da4a0ac4-6831-58f1-bd21-79bd22c6951e"
+        ],
+        "HYBRID": [
+          "083f290f-9280-52f8-af2c-be3f4c7cadf8",
+          "9500c3f8-420d-5167-bab4-8d7a2f872883",
+          "1e44510d-a688-5553-8573-09d22c9a1f83",
+          "3905302f-23ae-550d-9363-ce09019db8e4",
+          "da4a0ac4-6831-58f1-bd21-79bd22c6951e"
+        ]
+      },
+      "scores": {
+        "STRUCTURED": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "SEMANTIC": [
+          0.59012266342136,
+          0.59012266342136,
+          0.59012266342136,
+          0.59012266342136,
+          0.59012266342136
+        ],
+        "HYBRID": [
+          0.6631572963312244,
+          0.6031572963312244,
+          0.6031572963312244,
+          0.6023902871523943,
+          0.6023902871523943
+        ]
+      },
+      "vectorSimilarities": {
+        "STRUCTURED": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "SEMANTIC": [
+          0.59012266342136,
+          0.59012266342136,
+          0.59012266342136,
+          0.59012266342136,
+          0.59012266342136
+        ],
+        "HYBRID": [
+          0.5902247090446064,
+          0.5902247090446064,
+          0.5902247090446064,
+          0.5891289816462777,
+          0.5891289816462777
+        ]
+      },
+      "errorCategories": [
+        "RANKING_ERROR",
+        "REPRESENTATION_MISMATCH",
+        "QUERY_DOCUMENT_MISMATCH",
+        "SCORE_FUSION_ERROR",
+        "LABEL_RANKING_ALIGNMENT"
+      ]
+    },
+    {
+      "caseId": "query-027520ac-83e5-5a98-9801-a8048be1dcb0",
+      "expected": [
+        "027520ac-83e5-5a98-9801-a8048be1dcb0",
+        "ec6646b3-4f23-5429-a19f-23041c290808",
+        "120cd33d-ac9c-5b7f-8c4b-e71cdd6dc6a0",
+        "d799e4df-7ed2-5bab-a948-2e1f51840e51",
+        "c5ef2251-f19e-556a-80b6-f7250d6ddb16"
+      ],
+      "top5": {
+        "STRUCTURED": [
+          "027520ac-83e5-5a98-9801-a8048be1dcb0",
+          "120cd33d-ac9c-5b7f-8c4b-e71cdd6dc6a0",
+          "22d4282c-3035-5b0e-9643-ca20bbb0d89f",
+          "35aed90b-85cb-57fd-9357-09dd9b8feb73",
+          "3d9e0290-164f-5972-82dc-35381ea43904"
+        ],
+        "SEMANTIC": [
+          "009f4062-3f47-54d8-a4dd-d8b112359b67",
+          "03f07375-956c-5869-a0ad-013681626ace",
+          "06295ec2-1009-52ba-bc52-86595bd19074",
+          "0ea782a4-d553-5a6e-89c0-5ec232b7a63b",
+          "0f73d1d8-2985-5fbc-9b62-dbd4275922f3"
+        ],
+        "HYBRID": [
+          "bc3b58bb-4bd3-5e7b-a086-a5f013729997",
+          "027520ac-83e5-5a98-9801-a8048be1dcb0",
+          "a349892b-6b10-54cb-ac5f-2f849f4016e6",
+          "b5771e17-d4be-5e71-9e46-1bd8b2eb15dd",
+          "c5ef2251-f19e-556a-80b6-f7250d6ddb16"
+        ]
+      },
+      "missing": {
+        "STRUCTURED": [
+          "ec6646b3-4f23-5429-a19f-23041c290808",
+          "d799e4df-7ed2-5bab-a948-2e1f51840e51",
+          "c5ef2251-f19e-556a-80b6-f7250d6ddb16"
+        ],
+        "SEMANTIC": [
+          "027520ac-83e5-5a98-9801-a8048be1dcb0",
+          "ec6646b3-4f23-5429-a19f-23041c290808",
+          "120cd33d-ac9c-5b7f-8c4b-e71cdd6dc6a0",
+          "d799e4df-7ed2-5bab-a948-2e1f51840e51",
+          "c5ef2251-f19e-556a-80b6-f7250d6ddb16"
+        ],
+        "HYBRID": [
+          "ec6646b3-4f23-5429-a19f-23041c290808",
+          "120cd33d-ac9c-5b7f-8c4b-e71cdd6dc6a0",
+          "d799e4df-7ed2-5bab-a948-2e1f51840e51"
+        ]
+      },
+      "scores": {
+        "STRUCTURED": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "SEMANTIC": [
+          0.5952724685012553,
+          0.5952724685012553,
+          0.5952724685012553,
+          0.5952724685012553,
+          0.5952724685012553
+        ],
+        "HYBRID": [
+          0.6666907279508787,
+          0.6656250731732216,
+          0.6656250731732216,
+          0.6656250731732216,
+          0.6656250731732216
+        ]
+      },
+      "vectorSimilarities": {
+        "STRUCTURED": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "SEMANTIC": [
+          0.5952724685012553,
+          0.5952724685012553,
+          0.5952724685012553,
+          0.5952724685012553,
+          0.5952724685012553
+        ],
+        "HYBRID": [
+          0.5952724685012553,
+          0.5937501045331738,
+          0.5937501045331738,
+          0.5937501045331738,
+          0.5937501045331738
+        ]
+      },
+      "errorCategories": [
+        "RANKING_ERROR",
+        "REPRESENTATION_MISMATCH",
+        "QUERY_DOCUMENT_MISMATCH",
+        "SCORE_FUSION_ERROR",
+        "LABEL_RANKING_ALIGNMENT"
+      ]
+    },
+    {
+      "caseId": "query-05652519-7315-54ee-8147-912a09ff80b3",
+      "expected": [
+        "05652519-7315-54ee-8147-912a09ff80b3",
+        "a9ba5a21-b271-5300-a436-69e629d8b134",
+        "239de577-a60b-5cbb-b637-274e1b31c91f",
+        "83cb8324-957f-598d-bfd7-36297d57a85e",
+        "453352ad-c671-5ab7-ac73-4504421cabf5"
+      ],
+      "top5": {
+        "STRUCTURED": [
+          "05652519-7315-54ee-8147-912a09ff80b3",
+          "239de577-a60b-5cbb-b637-274e1b31c91f",
+          "a9ba5a21-b271-5300-a436-69e629d8b134",
+          "1099d3a3-5d79-5675-bc09-50a48498e81f",
+          "26ed8e20-57e2-5c34-8fe5-2b32708984a8"
+        ],
+        "SEMANTIC": [
+          "009f4062-3f47-54d8-a4dd-d8b112359b67",
+          "03f07375-956c-5869-a0ad-013681626ace",
+          "06295ec2-1009-52ba-bc52-86595bd19074",
+          "0ea782a4-d553-5a6e-89c0-5ec232b7a63b",
+          "0f73d1d8-2985-5fbc-9b62-dbd4275922f3"
+        ],
+        "HYBRID": [
+          "239de577-a60b-5cbb-b637-274e1b31c91f",
+          "278a108d-4e41-5fd9-b5d3-e9f6e48f0572",
+          "140eaf3b-8432-5d2d-8499-8cdaaa4a45bb",
+          "514b9874-d22f-5367-a96b-0367e43805c1",
+          "76398304-1936-5847-8510-36a3dd7dad78"
+        ]
+      },
+      "missing": {
+        "STRUCTURED": [
+          "83cb8324-957f-598d-bfd7-36297d57a85e",
+          "453352ad-c671-5ab7-ac73-4504421cabf5"
+        ],
+        "SEMANTIC": [
+          "05652519-7315-54ee-8147-912a09ff80b3",
+          "a9ba5a21-b271-5300-a436-69e629d8b134",
+          "239de577-a60b-5cbb-b637-274e1b31c91f",
+          "83cb8324-957f-598d-bfd7-36297d57a85e",
+          "453352ad-c671-5ab7-ac73-4504421cabf5"
+        ],
+        "HYBRID": [
+          "05652519-7315-54ee-8147-912a09ff80b3",
+          "a9ba5a21-b271-5300-a436-69e629d8b134",
+          "83cb8324-957f-598d-bfd7-36297d57a85e",
+          "453352ad-c671-5ab7-ac73-4504421cabf5"
+        ]
+      },
+      "scores": {
+        "STRUCTURED": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "SEMANTIC": [
+          0.5578476786958093,
+          0.5578476786958093,
+          0.5578476786958093,
+          0.5578476786958093,
+          0.5578476786958093
+        ],
+        "HYBRID": [
+          0.6904933750870665,
+          0.6404933750870665,
+          0.5104933750870665,
+          0.5104933750870665,
+          0.5104933750870665
+        ]
+      },
+      "vectorSimilarities": {
+        "STRUCTURED": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "SEMANTIC": [
+          0.5578476786958093,
+          0.5578476786958093,
+          0.5578476786958093,
+          0.5578476786958093,
+          0.5578476786958093
+        ],
+        "HYBRID": [
+          0.5578476786958093,
+          0.5578476786958093,
+          0.5578476786958093,
+          0.5578476786958093,
+          0.5578476786958093
+        ]
+      },
+      "errorCategories": [
+        "RANKING_ERROR",
+        "REPRESENTATION_MISMATCH",
+        "QUERY_DOCUMENT_MISMATCH",
+        "SCORE_FUSION_ERROR",
+        "LABEL_RANKING_ALIGNMENT"
+      ]
+    },
+    {
+      "caseId": "query-0634ba21-3ad6-5951-85cd-398243df3249",
+      "expected": [
+        "0634ba21-3ad6-5951-85cd-398243df3249",
+        "90b1c019-0aa0-5ff7-a239-6fd7039a54d8",
+        "b7e6e15f-67da-53a3-887c-8144db36b750",
+        "ba4c7c71-fc91-57a4-b23a-7a9e1d694c19",
+        "8ab8f514-b10d-561e-aee9-a01f1285e1e7"
+      ],
+      "top5": {
+        "STRUCTURED": [
+          "0634ba21-3ad6-5951-85cd-398243df3249",
+          "90b1c019-0aa0-5ff7-a239-6fd7039a54d8",
+          "27f60b55-a1fa-5f86-b4c2-66d0315d50e8",
+          "6c05493f-6e5b-534b-b23e-0dbd9c1be43a",
+          "8ab8f514-b10d-561e-aee9-a01f1285e1e7"
+        ],
+        "SEMANTIC": [
+          "009f4062-3f47-54d8-a4dd-d8b112359b67",
+          "03f07375-956c-5869-a0ad-013681626ace",
+          "06295ec2-1009-52ba-bc52-86595bd19074",
+          "0ea782a4-d553-5a6e-89c0-5ec232b7a63b",
+          "0f73d1d8-2985-5fbc-9b62-dbd4275922f3"
+        ],
+        "HYBRID": [
+          "4cb24cf9-8022-58a0-8ef9-288265e81467",
+          "211c5f88-9224-5350-b1b5-d98f920d6d4a",
+          "6f085540-32b5-5214-a47b-63e9e745a7ca",
+          "c941ac27-e8a9-5b2d-b892-2a26b513be52",
+          "d72b1dcd-a7fe-5338-aec1-90e90d8aa7cf"
+        ]
+      },
+      "missing": {
+        "STRUCTURED": [
+          "b7e6e15f-67da-53a3-887c-8144db36b750",
+          "ba4c7c71-fc91-57a4-b23a-7a9e1d694c19"
+        ],
+        "SEMANTIC": [
+          "0634ba21-3ad6-5951-85cd-398243df3249",
+          "90b1c019-0aa0-5ff7-a239-6fd7039a54d8",
+          "b7e6e15f-67da-53a3-887c-8144db36b750",
+          "ba4c7c71-fc91-57a4-b23a-7a9e1d694c19",
+          "8ab8f514-b10d-561e-aee9-a01f1285e1e7"
+        ],
+        "HYBRID": [
+          "0634ba21-3ad6-5951-85cd-398243df3249",
+          "90b1c019-0aa0-5ff7-a239-6fd7039a54d8",
+          "b7e6e15f-67da-53a3-887c-8144db36b750",
+          "ba4c7c71-fc91-57a4-b23a-7a9e1d694c19",
+          "8ab8f514-b10d-561e-aee9-a01f1285e1e7"
+        ]
+      },
+      "scores": {
+        "STRUCTURED": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "SEMANTIC": [
+          0.5660674283606311,
+          0.5660674283606311,
+          0.5660674283606311,
+          0.5660674283606311,
+          0.5660674283606311
+        ],
+        "HYBRID": [
+          0.5252898475726193,
+          0.5062471998524417,
+          0.4562471998524417,
+          0.4562471998524417,
+          0.4562471998524417
+        ]
+      },
+      "vectorSimilarities": {
+        "STRUCTURED": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "SEMANTIC": [
+          0.5660674283606311,
+          0.5660674283606311,
+          0.5660674283606311,
+          0.5660674283606311,
+          0.5660674283606311
+        ],
+        "HYBRID": [
+          0.5646997822465991,
+          0.5660674283606311,
+          0.5660674283606311,
+          0.5660674283606311,
+          0.5660674283606311
+        ]
+      },
+      "errorCategories": [
+        "RANKING_ERROR",
+        "REPRESENTATION_MISMATCH",
+        "QUERY_DOCUMENT_MISMATCH",
+        "SCORE_FUSION_ERROR",
+        "LABEL_RANKING_ALIGNMENT"
+      ]
+    },
+    {
+      "caseId": "query-06524395-1ad2-5f5b-a6d4-7a8d3bed9f3b",
+      "expected": [
+        "06524395-1ad2-5f5b-a6d4-7a8d3bed9f3b",
+        "853648b4-aa87-500f-9784-c9d98ec9cdb8",
+        "126ad065-b84c-5291-89e3-b49c6571a916",
+        "b5c42fac-3e59-5df3-955b-5abb4be51afa",
+        "c4ea9de0-711d-5a56-8835-db8d41f05755"
+      ],
+      "top5": {
+        "STRUCTURED": [
+          "06524395-1ad2-5f5b-a6d4-7a8d3bed9f3b",
+          "126ad065-b84c-5291-89e3-b49c6571a916",
+          "a76efbd4-8f83-55d4-ac82-537b4128fea7",
+          "b2d2ffc0-cedf-5c3e-9aba-dc0ce6513e37",
+          "b5c42fac-3e59-5df3-955b-5abb4be51afa"
+        ],
+        "SEMANTIC": [
+          "009f4062-3f47-54d8-a4dd-d8b112359b67",
+          "03f07375-956c-5869-a0ad-013681626ace",
+          "06295ec2-1009-52ba-bc52-86595bd19074",
+          "0ea782a4-d553-5a6e-89c0-5ec232b7a63b",
+          "0f73d1d8-2985-5fbc-9b62-dbd4275922f3"
+        ],
+        "HYBRID": [
+          "853648b4-aa87-500f-9784-c9d98ec9cdb8",
+          "3db264a8-42c3-5ba0-87da-96d2666bc884",
+          "a349892b-6b10-54cb-ac5f-2f849f4016e6",
+          "af03fb33-61f3-5309-938e-1548b1cebe21",
+          "bc3b58bb-4bd3-5e7b-a086-a5f013729997"
+        ]
+      },
+      "missing": {
+        "STRUCTURED": [
+          "853648b4-aa87-500f-9784-c9d98ec9cdb8",
+          "c4ea9de0-711d-5a56-8835-db8d41f05755"
+        ],
+        "SEMANTIC": [
+          "06524395-1ad2-5f5b-a6d4-7a8d3bed9f3b",
+          "853648b4-aa87-500f-9784-c9d98ec9cdb8",
+          "126ad065-b84c-5291-89e3-b49c6571a916",
+          "b5c42fac-3e59-5df3-955b-5abb4be51afa",
+          "c4ea9de0-711d-5a56-8835-db8d41f05755"
+        ],
+        "HYBRID": [
+          "06524395-1ad2-5f5b-a6d4-7a8d3bed9f3b",
+          "126ad065-b84c-5291-89e3-b49c6571a916",
+          "b5c42fac-3e59-5df3-955b-5abb4be51afa",
+          "c4ea9de0-711d-5a56-8835-db8d41f05755"
+        ]
+      },
+      "scores": {
+        "STRUCTURED": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "SEMANTIC": [
+          0.5720646042985011,
+          0.5720646042985011,
+          0.5720646042985011,
+          0.5720646042985011,
+          0.5720646042985011
+        ],
+        "HYBRID": [
+          0.6504452230089508,
+          0.6494723607374959,
+          0.6494723607374959,
+          0.6494467095827872,
+          0.5904452230089507
+        ]
+      },
+      "vectorSimilarities": {
+        "STRUCTURED": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "SEMANTIC": [
+          0.5720646042985011,
+          0.5720646042985011,
+          0.5720646042985011,
+          0.5720646042985011,
+          0.5720646042985011
+        ],
+        "HYBRID": [
+          0.5720646042985011,
+          0.5706748010535656,
+          0.5706748010535656,
+          0.5706381565468389,
+          0.5720646042985011
+        ]
+      },
+      "errorCategories": [
+        "RANKING_ERROR",
+        "REPRESENTATION_MISMATCH",
+        "QUERY_DOCUMENT_MISMATCH",
+        "SCORE_FUSION_ERROR",
+        "LABEL_RANKING_ALIGNMENT"
+      ]
+    },
+    {
+      "caseId": "query-06d7fa14-a293-5fef-896f-b6cee9759013",
+      "expected": [
+        "06d7fa14-a293-5fef-896f-b6cee9759013",
+        "77045376-a9de-5fb3-a333-509ce15b9e17",
+        "de55e669-631a-580d-9a3f-30c36f201011",
+        "df8f3714-dbb3-5c62-be71-681b86bc2c2d",
+        "486e370e-a50b-54d5-960e-402921035be8"
+      ],
+      "top5": {
+        "STRUCTURED": [
+          "06d7fa14-a293-5fef-896f-b6cee9759013",
+          "3aa282f4-0a90-5976-b9f3-bb847c4b223b",
+          "44ccf0d1-696d-5568-a3d7-d613a010cbf9",
+          "486e370e-a50b-54d5-960e-402921035be8",
+          "77045376-a9de-5fb3-a333-509ce15b9e17"
+        ],
+        "SEMANTIC": [
+          "009f4062-3f47-54d8-a4dd-d8b112359b67",
+          "03f07375-956c-5869-a0ad-013681626ace",
+          "06295ec2-1009-52ba-bc52-86595bd19074",
+          "0ea782a4-d553-5a6e-89c0-5ec232b7a63b",
+          "0f73d1d8-2985-5fbc-9b62-dbd4275922f3"
+        ],
+        "HYBRID": [
+          "df8f3714-dbb3-5c62-be71-681b86bc2c2d",
+          "211c5f88-9224-5350-b1b5-d98f920d6d4a",
+          "140eaf3b-8432-5d2d-8499-8cdaaa4a45bb",
+          "514b9874-d22f-5367-a96b-0367e43805c1",
+          "bc3b58bb-4bd3-5e7b-a086-a5f013729997"
+        ]
+      },
+      "missing": {
+        "STRUCTURED": [
+          "de55e669-631a-580d-9a3f-30c36f201011",
+          "df8f3714-dbb3-5c62-be71-681b86bc2c2d"
+        ],
+        "SEMANTIC": [
+          "06d7fa14-a293-5fef-896f-b6cee9759013",
+          "77045376-a9de-5fb3-a333-509ce15b9e17",
+          "de55e669-631a-580d-9a3f-30c36f201011",
+          "df8f3714-dbb3-5c62-be71-681b86bc2c2d",
+          "486e370e-a50b-54d5-960e-402921035be8"
+        ],
+        "HYBRID": [
+          "06d7fa14-a293-5fef-896f-b6cee9759013",
+          "77045376-a9de-5fb3-a333-509ce15b9e17",
+          "de55e669-631a-580d-9a3f-30c36f201011",
+          "486e370e-a50b-54d5-960e-402921035be8"
+        ]
+      },
+      "scores": {
+        "STRUCTURED": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "SEMANTIC": [
+          0.578884843315069,
+          0.578884843315069,
+          0.578884843315069,
+          0.578884843315069,
+          0.578884843315069
+        ],
+        "HYBRID": [
+          0.6538023853155797,
+          0.5352193903205482,
+          0.5252193903205482,
+          0.5252193903205482,
+          0.5252193903205482
+        ]
+      },
+      "vectorSimilarities": {
+        "STRUCTURED": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "SEMANTIC": [
+          0.578884843315069,
+          0.578884843315069,
+          0.578884843315069,
+          0.578884843315069,
+          0.578884843315069
+        ],
+        "HYBRID": [
+          0.5768605504508281,
+          0.578884843315069,
+          0.578884843315069,
+          0.578884843315069,
+          0.578884843315069
+        ]
+      },
+      "errorCategories": [
+        "RANKING_ERROR",
+        "REPRESENTATION_MISMATCH",
+        "QUERY_DOCUMENT_MISMATCH",
+        "SCORE_FUSION_ERROR",
+        "LABEL_RANKING_ALIGNMENT"
+      ]
+    },
+    {
+      "caseId": "query-0aeb5f95-2cc2-5823-afb2-7113ea26ba74",
+      "expected": [
+        "0aeb5f95-2cc2-5823-afb2-7113ea26ba74",
+        "140eaf3b-8432-5d2d-8499-8cdaaa4a45bb",
+        "d79ce635-a05b-5c0d-9b2c-4f58a800ac48",
+        "68652350-7c19-5fb9-9af7-f29b82cc0381",
+        "95dfcf9e-55ac-57d6-a138-758b0d1c5a79"
+      ],
+      "top5": {
+        "STRUCTURED": [
+          "0aeb5f95-2cc2-5823-afb2-7113ea26ba74",
+          "140eaf3b-8432-5d2d-8499-8cdaaa4a45bb",
+          "5991a2f5-67cc-5ff1-9423-c7669d8ae3ed",
+          "68652350-7c19-5fb9-9af7-f29b82cc0381",
+          "76398304-1936-5847-8510-36a3dd7dad78"
+        ],
+        "SEMANTIC": [
+          "009f4062-3f47-54d8-a4dd-d8b112359b67",
+          "03f07375-956c-5869-a0ad-013681626ace",
+          "06295ec2-1009-52ba-bc52-86595bd19074",
+          "0ea782a4-d553-5a6e-89c0-5ec232b7a63b",
+          "0f73d1d8-2985-5fbc-9b62-dbd4275922f3"
+        ],
+        "HYBRID": [
+          "140eaf3b-8432-5d2d-8499-8cdaaa4a45bb",
+          "76398304-1936-5847-8510-36a3dd7dad78",
+          "d79ce635-a05b-5c0d-9b2c-4f58a800ac48",
+          "ea90d7a9-c8c8-5eea-8fe1-0bc4ff3a83bf",
+          "22034c0c-5749-50f7-a3a0-337d3cadd7e5"
+        ]
+      },
+      "missing": {
+        "STRUCTURED": [
+          "d79ce635-a05b-5c0d-9b2c-4f58a800ac48",
+          "95dfcf9e-55ac-57d6-a138-758b0d1c5a79"
+        ],
+        "SEMANTIC": [
+          "0aeb5f95-2cc2-5823-afb2-7113ea26ba74",
+          "140eaf3b-8432-5d2d-8499-8cdaaa4a45bb",
+          "d79ce635-a05b-5c0d-9b2c-4f58a800ac48",
+          "68652350-7c19-5fb9-9af7-f29b82cc0381",
+          "95dfcf9e-55ac-57d6-a138-758b0d1c5a79"
+        ],
+        "HYBRID": [
+          "0aeb5f95-2cc2-5823-afb2-7113ea26ba74",
+          "68652350-7c19-5fb9-9af7-f29b82cc0381",
+          "95dfcf9e-55ac-57d6-a138-758b0d1c5a79"
+        ]
+      },
+      "scores": {
+        "STRUCTURED": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "SEMANTIC": [
+          0.5650461861192994,
+          0.5650461861192994,
+          0.5650461861192994,
+          0.5650461861192994,
+          0.5650461861192994
+        ],
+        "HYBRID": [
+          0.6455323302835096,
+          0.6455323302835096,
+          0.6455323302835096,
+          0.5855323302835096,
+          0.5845684588056912
+        ]
+      },
+      "vectorSimilarities": {
+        "STRUCTURED": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "SEMANTIC": [
+          0.5650461861192994,
+          0.5650461861192994,
+          0.5650461861192994,
+          0.5650461861192994,
+          0.5650461861192994
+        ],
+        "HYBRID": [
+          0.5650461861192994,
+          0.5650461861192994,
+          0.5650461861192994,
+          0.5650461861192994,
+          0.5636692268652731
+        ]
+      },
+      "errorCategories": [
+        "RANKING_ERROR",
+        "REPRESENTATION_MISMATCH",
+        "QUERY_DOCUMENT_MISMATCH",
+        "SCORE_FUSION_ERROR",
+        "LABEL_RANKING_ALIGNMENT"
+      ]
+    },
+    {
+      "caseId": "query-0b82de76-3cfa-5441-acb0-ee3587f7ccbf",
+      "expected": [
+        "0b82de76-3cfa-5441-acb0-ee3587f7ccbf",
+        "c4ea9de0-711d-5a56-8835-db8d41f05755",
+        "43d26891-900c-55a8-9749-bac4a153ec99",
+        "126ad065-b84c-5291-89e3-b49c6571a916",
+        "a91d16cb-947c-5acd-8738-49a543dad79d"
+      ],
+      "top5": {
+        "STRUCTURED": [
+          "06524395-1ad2-5f5b-a6d4-7a8d3bed9f3b",
+          "0b82de76-3cfa-5441-acb0-ee3587f7ccbf",
+          "126ad065-b84c-5291-89e3-b49c6571a916",
+          "22d4282c-3035-5b0e-9643-ca20bbb0d89f",
+          "35aed90b-85cb-57fd-9357-09dd9b8feb73"
+        ],
+        "SEMANTIC": [
+          "009f4062-3f47-54d8-a4dd-d8b112359b67",
+          "03f07375-956c-5869-a0ad-013681626ace",
+          "06295ec2-1009-52ba-bc52-86595bd19074",
+          "0ea782a4-d553-5a6e-89c0-5ec232b7a63b",
+          "0f73d1d8-2985-5fbc-9b62-dbd4275922f3"
+        ],
+        "HYBRID": [
+          "853648b4-aa87-500f-9784-c9d98ec9cdb8",
+          "bc3b58bb-4bd3-5e7b-a086-a5f013729997",
+          "3db264a8-42c3-5ba0-87da-96d2666bc884",
+          "a349892b-6b10-54cb-ac5f-2f849f4016e6",
+          "c5ef2251-f19e-556a-80b6-f7250d6ddb16"
+        ]
+      },
+      "missing": {
+        "STRUCTURED": [
+          "c4ea9de0-711d-5a56-8835-db8d41f05755",
+          "43d26891-900c-55a8-9749-bac4a153ec99",
+          "a91d16cb-947c-5acd-8738-49a543dad79d"
+        ],
+        "SEMANTIC": [
+          "0b82de76-3cfa-5441-acb0-ee3587f7ccbf",
+          "c4ea9de0-711d-5a56-8835-db8d41f05755",
+          "43d26891-900c-55a8-9749-bac4a153ec99",
+          "126ad065-b84c-5291-89e3-b49c6571a916",
+          "a91d16cb-947c-5acd-8738-49a543dad79d"
+        ],
+        "HYBRID": [
+          "0b82de76-3cfa-5441-acb0-ee3587f7ccbf",
+          "c4ea9de0-711d-5a56-8835-db8d41f05755",
+          "43d26891-900c-55a8-9749-bac4a153ec99",
+          "126ad065-b84c-5291-89e3-b49c6571a916",
+          "a91d16cb-947c-5acd-8738-49a543dad79d"
+        ]
+      },
+      "scores": {
+        "STRUCTURED": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "SEMANTIC": [
+          0.5875419900838657,
+          0.5875419900838657,
+          0.5875419900838657,
+          0.5875419900838657,
+          0.5875419900838657
+        ],
+        "HYBRID": [
+          0.661279393058706,
+          0.661279393058706,
+          0.6602257996243301,
+          0.6602257996243301,
+          0.6602257996243301
+        ]
+      },
+      "vectorSimilarities": {
+        "STRUCTURED": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "SEMANTIC": [
+          0.5875419900838657,
+          0.5875419900838657,
+          0.5875419900838657,
+          0.5875419900838657,
+          0.5875419900838657
+        ],
+        "HYBRID": [
+          0.5875419900838657,
+          0.5875419900838657,
+          0.5860368566061859,
+          0.5860368566061859,
+          0.5860368566061859
+        ]
+      },
+      "errorCategories": [
+        "RANKING_ERROR",
+        "REPRESENTATION_MISMATCH",
+        "QUERY_DOCUMENT_MISMATCH",
+        "SCORE_FUSION_ERROR",
+        "LABEL_RANKING_ALIGNMENT"
+      ]
+    },
+    {
+      "caseId": "no-result-01",
+      "expected": [],
+      "top5": {
+        "STRUCTURED": [],
+        "SEMANTIC": [],
+        "HYBRID": []
+      },
+      "missing": {
+        "STRUCTURED": [],
+        "SEMANTIC": [],
+        "HYBRID": []
+      },
+      "scores": {
+        "STRUCTURED": [],
+        "SEMANTIC": [],
+        "HYBRID": []
+      },
+      "vectorSimilarities": {
+        "STRUCTURED": [],
+        "SEMANTIC": [],
+        "HYBRID": []
+      },
+      "errorCategories": []
+    },
+    {
+      "caseId": "no-result-02",
+      "expected": [],
+      "top5": {
+        "STRUCTURED": [],
+        "SEMANTIC": [],
+        "HYBRID": []
+      },
+      "missing": {
+        "STRUCTURED": [],
+        "SEMANTIC": [],
+        "HYBRID": []
+      },
+      "scores": {
+        "STRUCTURED": [],
+        "SEMANTIC": [],
+        "HYBRID": []
+      },
+      "vectorSimilarities": {
+        "STRUCTURED": [],
+        "SEMANTIC": [],
+        "HYBRID": []
+      },
+      "errorCategories": []
+    },
+    {
+      "caseId": "no-result-03",
+      "expected": [],
+      "top5": {
+        "STRUCTURED": [],
+        "SEMANTIC": [],
+        "HYBRID": []
+      },
+      "missing": {
+        "STRUCTURED": [],
+        "SEMANTIC": [],
+        "HYBRID": []
+      },
+      "scores": {
+        "STRUCTURED": [],
+        "SEMANTIC": [],
+        "HYBRID": []
+      },
+      "vectorSimilarities": {
+        "STRUCTURED": [],
+        "SEMANTIC": [],
+        "HYBRID": []
+      },
+      "errorCategories": []
+    },
+    {
+      "caseId": "no-result-04",
+      "expected": [],
+      "top5": {
+        "STRUCTURED": [],
+        "SEMANTIC": [],
+        "HYBRID": []
+      },
+      "missing": {
+        "STRUCTURED": [],
+        "SEMANTIC": [],
+        "HYBRID": []
+      },
+      "scores": {
+        "STRUCTURED": [],
+        "SEMANTIC": [],
+        "HYBRID": []
+      },
+      "vectorSimilarities": {
+        "STRUCTURED": [],
+        "SEMANTIC": [],
+        "HYBRID": []
+      },
+      "errorCategories": []
+    },
+    {
+      "caseId": "no-result-05",
+      "expected": [],
+      "top5": {
+        "STRUCTURED": [],
+        "SEMANTIC": [],
+        "HYBRID": []
+      },
+      "missing": {
+        "STRUCTURED": [],
+        "SEMANTIC": [],
+        "HYBRID": []
+      },
+      "scores": {
+        "STRUCTURED": [],
+        "SEMANTIC": [],
+        "HYBRID": []
+      },
+      "vectorSimilarities": {
+        "STRUCTURED": [],
+        "SEMANTIC": [],
+        "HYBRID": []
+      },
+      "errorCategories": []
+    }
+  ]
+}

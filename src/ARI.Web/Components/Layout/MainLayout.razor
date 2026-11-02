@@ -1,0 +1,17 @@
+@inherits LayoutComponentBase
+@inject IAriApiClient ApiClient
+
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<div class="app-shell">
+    <aside class="sidebar" aria-label="Primary navigation">
+        <div class="brand"><span class="brand-mark" aria-hidden="true">AR</span><div><strong>ARI</strong><small>Repair Intelligence</small></div></div>
+        <NavMenu />
+        <div class="sidebar-note"><span>Decision support</span><strong>Synthetic · Experimental</strong></div>
+    </aside>
+    <div class="shell-body">
+        <header class="topbar"><div><span class="eyebrow">Automotive Repair Intelligence</span><span class="topbar-title">Evidence-backed workshop planning</span></div><HealthBadge /></header>
+        @if (ApiClient.IsFixture) { <div class="fixture-banner" role="status">AUTOMATED TEST DATA — not a live backend result</div> }
+        <main id="main-content" tabindex="-1" class="page-content">@Body</main>
+    </div>
+</div>
+<div id="blazor-error-ui" data-nosnippet>An unhandled connection error occurred. <a href="." class="reload">Reload</a><span class="dismiss">🗙</span></div>

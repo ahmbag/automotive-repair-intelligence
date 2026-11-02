@@ -1,0 +1,183 @@
+{
+  "bestBaseline": "historical_median",
+  "experimentName": "ari-repair-duration-v1",
+  "modelVersion": "ari-repair-duration-v1",
+  "permutationImportance": [
+    {
+      "feature": "baseline_labor_minutes",
+      "mean_mae_increase_minutes": 9.777945107373792,
+      "standard_deviation": 1.5773097713247903
+    },
+    {
+      "feature": "known_corrosion",
+      "mean_mae_increase_minutes": 1.066885895401376,
+      "standard_deviation": 0.47794150185815437
+    },
+    {
+      "feature": "vehicle_age_years",
+      "mean_mae_increase_minutes": 0.8730789088245656,
+      "standard_deviation": 0.4207091636511279
+    },
+    {
+      "feature": "repair_code",
+      "mean_mae_increase_minutes": 0.6213287559873525,
+      "standard_deviation": 0.3394947517503976
+    },
+    {
+      "feature": "mileage_km",
+      "mean_mae_increase_minutes": 0.3488617532966812,
+      "standard_deviation": 0.1627960274730113
+    },
+    {
+      "feature": "model",
+      "mean_mae_increase_minutes": -0.10847944594263144,
+      "standard_deviation": 0.12674273617241155
+    },
+    {
+      "feature": "manufacturer",
+      "mean_mae_increase_minutes": -0.12838360943861532,
+      "standard_deviation": 0.15572476587652956
+    }
+  ],
+  "recommendedStrategy": "STATISTICAL_BASELINE",
+  "segmentedTestAnalysis": {
+    "high_actual_uplift_60_plus": {
+      "count": 24,
+      "metrics": {
+        "mae_minutes": 54.63183978448952,
+        "mean_error_bias_minutes": -54.63183978448952,
+        "median_absolute_error_minutes": 53.904295044428906,
+        "p90_absolute_error_minutes": 84.76665904291015,
+        "rmse_minutes": 59.08124311536307,
+        "underestimation_rate_percent": 100.0
+      }
+    },
+    "high_mileage_200k_plus": {
+      "count": 29,
+      "metrics": {
+        "mae_minutes": 27.287514761138283,
+        "mean_error_bias_minutes": -4.953751522957114,
+        "median_absolute_error_minutes": 19.59764668199574,
+        "p90_absolute_error_minutes": 62.44846507250045,
+        "rmse_minutes": 36.889052556975024,
+        "underestimation_rate_percent": 55.172413793103445
+      }
+    },
+    "known_corrosion": {
+      "count": 66,
+      "metrics": {
+        "mae_minutes": 30.999617685121855,
+        "mean_error_bias_minutes": -2.9667054072387793,
+        "median_absolute_error_minutes": 25.415559254445995,
+        "p90_absolute_error_minutes": 62.572252693873864,
+        "rmse_minutes": 39.3479397341669,
+        "underestimation_rate_percent": 46.96969696969697
+      }
+    },
+    "older_vehicles_age_12_plus": {
+      "count": 27,
+      "metrics": {
+        "mae_minutes": 28.00575684573546,
+        "mean_error_bias_minutes": -1.1472920929834018,
+        "median_absolute_error_minutes": 23.156393401036695,
+        "p90_absolute_error_minutes": 56.71687667298106,
+        "rmse_minutes": 34.67192814580015,
+        "underestimation_rate_percent": 55.55555555555556
+      }
+    }
+  },
+  "selectedMlModel": "ridge",
+  "split": {
+    "strategy": "chronological_by_completed_at_utc",
+    "testCount": 150,
+    "trainCount": 700,
+    "trainEndUtc": "2024-06-18T11:48:00+00:00",
+    "validationCount": 150,
+    "validationEndUtc": "2025-03-19T18:14:00+00:00"
+  },
+  "strategySelectionSource": "validation_mae",
+  "testMetrics": {
+    "historical_median": {
+      "mae_minutes": 27.5,
+      "mean_error_bias_minutes": -16.38,
+      "median_absolute_error_minutes": 19.0,
+      "p90_absolute_error_minutes": 60.49999999999997,
+      "rmse_minutes": 37.170149313662975,
+      "underestimation_rate_percent": 59.333333333333336
+    },
+    "median_uplift": {
+      "mae_minutes": 27.5,
+      "mean_error_bias_minutes": -16.38,
+      "median_absolute_error_minutes": 19.0,
+      "p90_absolute_error_minutes": 60.49999999999997,
+      "rmse_minutes": 37.170149313662975,
+      "underestimation_rate_percent": 59.333333333333336
+    },
+    "random_forest": {
+      "mae_minutes": 26.37641645865473,
+      "mean_error_bias_minutes": -1.966390854595188,
+      "median_absolute_error_minutes": 21.50679215074876,
+      "p90_absolute_error_minutes": 55.85475500697573,
+      "rmse_minutes": 33.95140517009493,
+      "underestimation_rate_percent": 44.666666666666664
+    },
+    "reference_labor": {
+      "mae_minutes": 31.926666666666666,
+      "mean_error_bias_minutes": -28.38,
+      "median_absolute_error_minutes": 24.0,
+      "p90_absolute_error_minutes": 72.49999999999997,
+      "rmse_minutes": 43.707436438208084,
+      "underestimation_rate_percent": 77.33333333333333
+    },
+    "ridge": {
+      "mae_minutes": 24.842032041166863,
+      "mean_error_bias_minutes": -1.6094117445773648,
+      "median_absolute_error_minutes": 18.628374402020484,
+      "p90_absolute_error_minutes": 52.95934632320526,
+      "rmse_minutes": 31.8729332908604,
+      "underestimation_rate_percent": 46.0
+    }
+  },
+  "validationMetrics": {
+    "historical_median": {
+      "mae_minutes": 26.493333333333332,
+      "mean_error_bias_minutes": -12.626666666666667,
+      "median_absolute_error_minutes": 18.5,
+      "p90_absolute_error_minutes": 60.29999999999998,
+      "rmse_minutes": 36.23681369362746,
+      "underestimation_rate_percent": 56.00000000000001
+    },
+    "median_uplift": {
+      "mae_minutes": 26.493333333333332,
+      "mean_error_bias_minutes": -12.626666666666667,
+      "median_absolute_error_minutes": 18.5,
+      "p90_absolute_error_minutes": 60.29999999999998,
+      "rmse_minutes": 36.23681369362746,
+      "underestimation_rate_percent": 56.00000000000001
+    },
+    "random_forest": {
+      "mae_minutes": 27.306836837579624,
+      "mean_error_bias_minutes": 1.5870141982839951,
+      "median_absolute_error_minutes": 22.723014606498495,
+      "p90_absolute_error_minutes": 51.65796805616744,
+      "rmse_minutes": 34.01978387150839,
+      "underestimation_rate_percent": 40.0
+    },
+    "reference_labor": {
+      "mae_minutes": 29.313333333333333,
+      "mean_error_bias_minutes": -23.46,
+      "median_absolute_error_minutes": 20.5,
+      "p90_absolute_error_minutes": 71.19999999999999,
+      "rmse_minutes": 41.24196891517184,
+      "underestimation_rate_percent": 68.66666666666667
+    },
+    "ridge": {
+      "mae_minutes": 26.51066147128021,
+      "mean_error_bias_minutes": 1.6558106296511277,
+      "median_absolute_error_minutes": 22.03577735083678,
+      "p90_absolute_error_minutes": 52.57658457047737,
+      "rmse_minutes": 33.24256947598423,
+      "underestimation_rate_percent": 40.0
+    }
+  }
+}

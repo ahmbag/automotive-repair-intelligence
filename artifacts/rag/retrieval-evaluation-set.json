@@ -1,0 +1,808 @@
+{
+  "datasetId": "ari-rag-retrieval-evaluation-v1",
+  "sourceDatasetId": "ari-suspension-synthetic-v1",
+  "selectionVersion": "ari-rag-eval-selection-v1",
+  "caseCount": 40,
+  "checksum": "2b1e3e8a878b77618c9bda027f15f0e83cb21e58b1493b553d76227e79368f3c",
+  "cases": [
+    {
+      "id": "query-01454ea3-9c0a-504e-a1a4-e4c5075b3144",
+      "description": "Find completed comparisons for planned control arm front left replace on a 11-year-old Volkswagen Passat B8 at 137072 km. Known before work: visible corrosion.",
+      "repairCode": "CONTROL_ARM_FRONT_LEFT_REPLACE",
+      "manufacturer": "Volkswagen",
+      "model": "Passat B8",
+      "vehicleAgeYears": 11,
+      "mileageKm": 137072,
+      "knownConditions": [
+        "VISIBLE_CORROSION"
+      ],
+      "asOfUtc": "2026-01-01T00:00:00+00:00",
+      "relevance": {
+        "01454ea3-9c0a-504e-a1a4-e4c5075b3144": 3,
+        "ed750964-a574-5f0a-9651-372a49714d59": 2,
+        "7fa7e09f-7446-58d1-bcb4-4345732ab11b": 2,
+        "642d91c0-f111-5af8-84cb-d182eb3378ef": 1,
+        "9716d3a1-8edf-59b3-ab3e-71865ce98112": 1
+      },
+      "expectsNoResult": false,
+      "manuallyReviewed": true
+    },
+    {
+      "id": "query-02bd05dd-84e4-59de-93ef-890c2981f6be",
+      "description": "Find completed comparisons for planned control arm front left replace on a 10-year-old Volkswagen Passat B8 at 96934 km. No pre-existing condition was recorded.",
+      "repairCode": "CONTROL_ARM_FRONT_LEFT_REPLACE",
+      "manufacturer": "Volkswagen",
+      "model": "Passat B8",
+      "vehicleAgeYears": 10,
+      "mileageKm": 96934,
+      "knownConditions": [],
+      "asOfUtc": "2026-01-01T00:00:00+00:00",
+      "relevance": {
+        "02bd05dd-84e4-59de-93ef-890c2981f6be": 3,
+        "4bd9660b-29a1-5860-a027-d3951189a677": 2,
+        "0e70b7bf-7be2-53e6-afb4-52ce58277b99": 2,
+        "9716d3a1-8edf-59b3-ab3e-71865ce98112": 1,
+        "4f6d49fe-526c-508b-828f-e1c4d1adcf0c": 1
+      },
+      "expectsNoResult": false,
+      "manuallyReviewed": true
+    },
+    {
+      "id": "query-03608e3e-6216-5f50-b44a-31e462c08546",
+      "description": "Find completed comparisons for planned control arm front left replace on a 7-year-old BMW 3 Series F30 at 72008 km. No pre-existing condition was recorded.",
+      "repairCode": "CONTROL_ARM_FRONT_LEFT_REPLACE",
+      "manufacturer": "BMW",
+      "model": "3 Series F30",
+      "vehicleAgeYears": 7,
+      "mileageKm": 72008,
+      "knownConditions": [],
+      "asOfUtc": "2026-01-01T00:00:00+00:00",
+      "relevance": {
+        "03608e3e-6216-5f50-b44a-31e462c08546": 3,
+        "379351c6-305f-5fc0-99e4-ce8772df9257": 2,
+        "a571f685-edf5-504a-8f6a-705f22b03b7e": 2,
+        "10955dbe-25ff-5f5d-a626-6d4c97c307fc": 1,
+        "9b73e440-9f2e-5741-af4d-557596868ad1": 1
+      },
+      "expectsNoResult": false,
+      "manuallyReviewed": true
+    },
+    {
+      "id": "query-03f07375-956c-5869-a0ad-013681626ace",
+      "description": "Find completed comparisons for planned control arm front left replace on a 9-year-old \u0160koda Octavia III at 148965 km. Known before work: visible corrosion.",
+      "repairCode": "CONTROL_ARM_FRONT_LEFT_REPLACE",
+      "manufacturer": "\u0160koda",
+      "model": "Octavia III",
+      "vehicleAgeYears": 9,
+      "mileageKm": 148965,
+      "knownConditions": [
+        "VISIBLE_CORROSION"
+      ],
+      "asOfUtc": "2026-01-01T00:00:00+00:00",
+      "relevance": {
+        "03f07375-956c-5869-a0ad-013681626ace": 3,
+        "a0681636-4f70-5a79-b759-9807bf5355e5": 2,
+        "1c20f7c3-84b8-5a02-9cfc-fe8eb43445fa": 2,
+        "34da8f77-0360-5a40-81f0-6bfe8bc17c20": 1,
+        "886c02b3-21bb-5873-870f-a10e98a56dfb": 1
+      },
+      "expectsNoResult": false,
+      "manuallyReviewed": true
+    },
+    {
+      "id": "query-043bc4cf-9482-5484-b8fa-5f49e6bb2891",
+      "description": "Find completed comparisons for planned control arm front left replace on a 7-year-old Volkswagen Passat B8 at 25778 km. No pre-existing condition was recorded.",
+      "repairCode": "CONTROL_ARM_FRONT_LEFT_REPLACE",
+      "manufacturer": "Volkswagen",
+      "model": "Passat B8",
+      "vehicleAgeYears": 7,
+      "mileageKm": 25778,
+      "knownConditions": [],
+      "asOfUtc": "2026-01-01T00:00:00+00:00",
+      "relevance": {
+        "043bc4cf-9482-5484-b8fa-5f49e6bb2891": 3,
+        "d8aa9284-4e22-536b-afa3-fd52b89f6052": 2,
+        "5a19437a-c88c-5d0f-994c-d61d6644cfcc": 2,
+        "4738b475-8767-5a89-af69-c075aae861f9": 1,
+        "64f410f0-0d6b-569f-a242-391e2a4eb3a2": 1
+      },
+      "expectsNoResult": false,
+      "manuallyReviewed": true
+    },
+    {
+      "id": "query-04ee8b41-5fe3-5820-b9fa-bf72c35fbb9a",
+      "description": "Find completed comparisons for planned control arm front left replace on a 8-year-old Opel Astra K at 144531 km. No pre-existing condition was recorded.",
+      "repairCode": "CONTROL_ARM_FRONT_LEFT_REPLACE",
+      "manufacturer": "Opel",
+      "model": "Astra K",
+      "vehicleAgeYears": 8,
+      "mileageKm": 144531,
+      "knownConditions": [],
+      "asOfUtc": "2026-01-01T00:00:00+00:00",
+      "relevance": {
+        "04ee8b41-5fe3-5820-b9fa-bf72c35fbb9a": 3,
+        "df1525f3-1f60-59ab-865e-e1cdfac15c36": 2,
+        "63366728-4eff-5695-90f0-5353d4b9af17": 2,
+        "92f321aa-2cb2-5b9f-a4f5-e878e1207fc6": 1,
+        "637607c1-5e34-52bc-ab73-2791cdab27b3": 1
+      },
+      "expectsNoResult": false,
+      "manuallyReviewed": true
+    },
+    {
+      "id": "query-08be10d4-10d4-5617-946a-5dad753622ff",
+      "description": "Find completed comparisons for planned control arm front left replace on a 12-year-old Ford Focus Mk3 at 151039 km. Known before work: visible corrosion.",
+      "repairCode": "CONTROL_ARM_FRONT_LEFT_REPLACE",
+      "manufacturer": "Ford",
+      "model": "Focus Mk3",
+      "vehicleAgeYears": 12,
+      "mileageKm": 151039,
+      "knownConditions": [
+        "VISIBLE_CORROSION"
+      ],
+      "asOfUtc": "2026-01-01T00:00:00+00:00",
+      "relevance": {
+        "08be10d4-10d4-5617-946a-5dad753622ff": 3,
+        "269599cd-20bd-53ca-97d7-9d5e038b422f": 2,
+        "f5ce89b9-f535-50f0-a3a7-98686be67b44": 2,
+        "ad5cbb90-0ab8-50a6-bc99-7ff9e8326eb3": 1,
+        "a1cb2212-48bc-54d4-bf56-cc1b2a03c37e": 1
+      },
+      "expectsNoResult": false,
+      "manuallyReviewed": true
+    },
+    {
+      "id": "query-00950352-5f6e-5a3a-95d5-cb0663fe4c5c",
+      "description": "Find completed comparisons for planned control arm front pair replace on a 8-year-old Volkswagen Passat B8 at 85573 km. No pre-existing condition was recorded.",
+      "repairCode": "CONTROL_ARM_FRONT_PAIR_REPLACE",
+      "manufacturer": "Volkswagen",
+      "model": "Passat B8",
+      "vehicleAgeYears": 8,
+      "mileageKm": 85573,
+      "knownConditions": [],
+      "asOfUtc": "2026-01-01T00:00:00+00:00",
+      "relevance": {
+        "00950352-5f6e-5a3a-95d5-cb0663fe4c5c": 3,
+        "247d87af-01cb-50a7-a26c-5d923a1581f8": 2,
+        "ad1b43b5-7201-5f88-92d7-e8c0b12664a2": 2,
+        "f370bbb6-1d71-5c63-98c3-18e41aae4d9a": 1,
+        "e4ffec30-1b8d-5ae8-a3e8-4f782b122c0f": 1
+      },
+      "expectsNoResult": false,
+      "manuallyReviewed": true
+    },
+    {
+      "id": "query-03410b55-8377-58a7-84f7-9f982da90f04",
+      "description": "Find completed comparisons for planned control arm front pair replace on a 7-year-old Volkswagen Passat B8 at 44014 km. No pre-existing condition was recorded.",
+      "repairCode": "CONTROL_ARM_FRONT_PAIR_REPLACE",
+      "manufacturer": "Volkswagen",
+      "model": "Passat B8",
+      "vehicleAgeYears": 7,
+      "mileageKm": 44014,
+      "knownConditions": [],
+      "asOfUtc": "2026-01-01T00:00:00+00:00",
+      "relevance": {
+        "03410b55-8377-58a7-84f7-9f982da90f04": 3,
+        "74c982bd-c5de-593f-a44a-fe0b72f0bf56": 2,
+        "0cce0717-aebf-5686-86c7-1f2c1aaeb1b6": 2,
+        "25519449-3a9f-5e83-84a0-dfd639c94b8a": 1,
+        "ce05a639-f51d-5fd4-9934-1eca687fc27c": 1
+      },
+      "expectsNoResult": false,
+      "manuallyReviewed": true
+    },
+    {
+      "id": "query-04ad0e42-3046-51c4-aced-34ed643e6b87",
+      "description": "Find completed comparisons for planned control arm front pair replace on a 14-year-old Volkswagen Golf VII at 253156 km. Known before work: visible corrosion, visible prior damage.",
+      "repairCode": "CONTROL_ARM_FRONT_PAIR_REPLACE",
+      "manufacturer": "Volkswagen",
+      "model": "Golf VII",
+      "vehicleAgeYears": 14,
+      "mileageKm": 253156,
+      "knownConditions": [
+        "VISIBLE_CORROSION",
+        "VISIBLE_PRIOR_DAMAGE"
+      ],
+      "asOfUtc": "2026-01-01T00:00:00+00:00",
+      "relevance": {
+        "04ad0e42-3046-51c4-aced-34ed643e6b87": 3,
+        "251f683b-f7f7-55b1-9fe1-813b428bea60": 2,
+        "afdcadab-9761-5d78-bc55-91eea8f5f5c8": 2,
+        "beedd31e-160e-5a73-a4f4-fc6f525cd06a": 1,
+        "eea7937d-465e-54f7-89a4-887100a7ae6e": 1
+      },
+      "expectsNoResult": false,
+      "manuallyReviewed": true
+    },
+    {
+      "id": "query-04e51055-d80b-5621-96dd-564098541300",
+      "description": "Find completed comparisons for planned control arm front pair replace on a 14-year-old Audi A3 8V at 108299 km. Known before work: visible corrosion, visible prior damage.",
+      "repairCode": "CONTROL_ARM_FRONT_PAIR_REPLACE",
+      "manufacturer": "Audi",
+      "model": "A3 8V",
+      "vehicleAgeYears": 14,
+      "mileageKm": 108299,
+      "knownConditions": [
+        "VISIBLE_CORROSION",
+        "VISIBLE_PRIOR_DAMAGE"
+      ],
+      "asOfUtc": "2026-01-01T00:00:00+00:00",
+      "relevance": {
+        "04e51055-d80b-5621-96dd-564098541300": 3,
+        "c312d5aa-081b-5e5e-9361-007b2e0ecfa8": 2,
+        "e6abcb77-470b-5c90-aa4f-ff99ee749cb1": 2,
+        "d6e119b6-3399-53a4-8182-f022b89064c6": 1,
+        "5474bb9c-72b4-50f1-8440-6b6ce3c9e3cc": 1
+      },
+      "expectsNoResult": false,
+      "manuallyReviewed": false
+    },
+    {
+      "id": "query-077bf18c-8500-55c4-b1f2-8e9a70e5fd36",
+      "description": "Find completed comparisons for planned control arm front pair replace on a 14-year-old Ford Focus Mk3 at 195697 km. No pre-existing condition was recorded.",
+      "repairCode": "CONTROL_ARM_FRONT_PAIR_REPLACE",
+      "manufacturer": "Ford",
+      "model": "Focus Mk3",
+      "vehicleAgeYears": 14,
+      "mileageKm": 195697,
+      "knownConditions": [],
+      "asOfUtc": "2026-01-01T00:00:00+00:00",
+      "relevance": {
+        "077bf18c-8500-55c4-b1f2-8e9a70e5fd36": 3,
+        "ab19f438-1a32-5abf-b6ff-0ac834498a89": 2,
+        "2d58ae3c-aef4-5814-adfd-62cc5ee7796a": 2,
+        "2dc229e6-5f62-545e-a30a-0134b13cb4d4": 1,
+        "1d5f14c9-9c25-5964-8c78-34ea4937991b": 1
+      },
+      "expectsNoResult": false,
+      "manuallyReviewed": false
+    },
+    {
+      "id": "query-0b18be7f-c396-5236-b96c-0666fcf00f31",
+      "description": "Find completed comparisons for planned control arm front pair replace on a 9-year-old Ford Focus Mk3 at 57875 km. Known before work: visible corrosion.",
+      "repairCode": "CONTROL_ARM_FRONT_PAIR_REPLACE",
+      "manufacturer": "Ford",
+      "model": "Focus Mk3",
+      "vehicleAgeYears": 9,
+      "mileageKm": 57875,
+      "knownConditions": [
+        "VISIBLE_CORROSION"
+      ],
+      "asOfUtc": "2026-01-01T00:00:00+00:00",
+      "relevance": {
+        "0b18be7f-c396-5236-b96c-0666fcf00f31": 3,
+        "313a0658-7069-5bb3-87c5-e75816551f91": 2,
+        "4452f212-41fd-584d-b8e7-69319b141505": 2,
+        "4f35a95e-5e61-5127-99c3-106e7ce94e23": 1,
+        "1a6036f3-ad41-539d-805d-4770c2d550fd": 1
+      },
+      "expectsNoResult": false,
+      "manuallyReviewed": false
+    },
+    {
+      "id": "query-0cce0717-aebf-5686-86c7-1f2c1aaeb1b6",
+      "description": "Find completed comparisons for planned control arm front pair replace on a 6-year-old Volkswagen Passat B8 at 43055 km. No pre-existing condition was recorded.",
+      "repairCode": "CONTROL_ARM_FRONT_PAIR_REPLACE",
+      "manufacturer": "Volkswagen",
+      "model": "Passat B8",
+      "vehicleAgeYears": 6,
+      "mileageKm": 43055,
+      "knownConditions": [],
+      "asOfUtc": "2026-01-01T00:00:00+00:00",
+      "relevance": {
+        "0cce0717-aebf-5686-86c7-1f2c1aaeb1b6": 3,
+        "25519449-3a9f-5e83-84a0-dfd639c94b8a": 2,
+        "03410b55-8377-58a7-84f7-9f982da90f04": 2,
+        "b095d36a-bd16-5cc7-beef-6942e78b8576": 1,
+        "ef24aaae-b9de-5faf-9e96-632fd5d978df": 1
+      },
+      "expectsNoResult": false,
+      "manuallyReviewed": false
+    },
+    {
+      "id": "query-001b8898-4558-5c31-894e-bbb9d3a3f88c",
+      "description": "Find completed comparisons for planned control arm front right replace on a 6-year-old Mercedes-Benz C-Class W205 at 37609 km. No pre-existing condition was recorded.",
+      "repairCode": "CONTROL_ARM_FRONT_RIGHT_REPLACE",
+      "manufacturer": "Mercedes-Benz",
+      "model": "C-Class W205",
+      "vehicleAgeYears": 6,
+      "mileageKm": 37609,
+      "knownConditions": [],
+      "asOfUtc": "2026-01-01T00:00:00+00:00",
+      "relevance": {
+        "001b8898-4558-5c31-894e-bbb9d3a3f88c": 3,
+        "27ab934f-3152-51b7-bc44-5c0b353c20f7": 2,
+        "c7eeb516-2f7b-5ce6-89e3-233102d30ec8": 2,
+        "4f0646a3-a8ec-5694-8be1-fa1b9d5707d5": 1,
+        "b6d10dea-e17e-5573-a22d-6203a2c99cd4": 1
+      },
+      "expectsNoResult": false,
+      "manuallyReviewed": false
+    },
+    {
+      "id": "query-03d02c5d-c9d2-5042-9ead-564cc2662691",
+      "description": "Find completed comparisons for planned control arm front right replace on a 7-year-old Volkswagen Golf VII at 42741 km. No pre-existing condition was recorded.",
+      "repairCode": "CONTROL_ARM_FRONT_RIGHT_REPLACE",
+      "manufacturer": "Volkswagen",
+      "model": "Golf VII",
+      "vehicleAgeYears": 7,
+      "mileageKm": 42741,
+      "knownConditions": [],
+      "asOfUtc": "2026-01-01T00:00:00+00:00",
+      "relevance": {
+        "03d02c5d-c9d2-5042-9ead-564cc2662691": 3,
+        "06713dec-674c-52a1-8b39-cd796c909257": 2,
+        "f5a75793-96d1-5aaf-a2a4-b4757df8aa4d": 2,
+        "67966d9f-11e7-5361-b2e3-52096de447bf": 1,
+        "838ed84f-2659-5e68-8d88-d36831915a83": 1
+      },
+      "expectsNoResult": false,
+      "manuallyReviewed": false
+    },
+    {
+      "id": "query-03f90ece-5720-509f-95f2-4088ec7f5b22",
+      "description": "Find completed comparisons for planned control arm front right replace on a 14-year-old \u0160koda Octavia III at 131353 km. No pre-existing condition was recorded.",
+      "repairCode": "CONTROL_ARM_FRONT_RIGHT_REPLACE",
+      "manufacturer": "\u0160koda",
+      "model": "Octavia III",
+      "vehicleAgeYears": 14,
+      "mileageKm": 131353,
+      "knownConditions": [],
+      "asOfUtc": "2026-01-01T00:00:00+00:00",
+      "relevance": {
+        "03f90ece-5720-509f-95f2-4088ec7f5b22": 3,
+        "cc460d12-8996-5fd5-9389-413ee9c34db2": 2,
+        "5fa25c42-bea9-519f-b947-bb3ac473da47": 2,
+        "9822f7e9-af36-5ace-8691-990385f7651d": 1,
+        "cc8af1b0-6640-582a-b426-c18b81b3115f": 1
+      },
+      "expectsNoResult": false,
+      "manuallyReviewed": false
+    },
+    {
+      "id": "query-03fb2653-dfe4-5420-a97a-80012cbb80e2",
+      "description": "Find completed comparisons for planned control arm front right replace on a 9-year-old Audi A3 8V at 153267 km. No pre-existing condition was recorded.",
+      "repairCode": "CONTROL_ARM_FRONT_RIGHT_REPLACE",
+      "manufacturer": "Audi",
+      "model": "A3 8V",
+      "vehicleAgeYears": 9,
+      "mileageKm": 153267,
+      "knownConditions": [],
+      "asOfUtc": "2026-01-01T00:00:00+00:00",
+      "relevance": {
+        "03fb2653-dfe4-5420-a97a-80012cbb80e2": 3,
+        "6dba1344-bf18-58b2-a549-b1e815ed34cc": 2,
+        "9e4349e1-7f8d-5e4c-94d6-f4f89ba50599": 2,
+        "cb91f0d9-7978-5986-aeaa-c72f58ae4bce": 1,
+        "16a2db9a-efbb-566e-87cf-9a0d275c23a0": 1
+      },
+      "expectsNoResult": false,
+      "manuallyReviewed": false
+    },
+    {
+      "id": "query-04886c06-1542-5290-b8da-48474561d2dc",
+      "description": "Find completed comparisons for planned control arm front right replace on a 7-year-old BMW 3 Series F30 at 143041 km. No pre-existing condition was recorded.",
+      "repairCode": "CONTROL_ARM_FRONT_RIGHT_REPLACE",
+      "manufacturer": "BMW",
+      "model": "3 Series F30",
+      "vehicleAgeYears": 7,
+      "mileageKm": 143041,
+      "knownConditions": [],
+      "asOfUtc": "2026-01-01T00:00:00+00:00",
+      "relevance": {
+        "04886c06-1542-5290-b8da-48474561d2dc": 3,
+        "b0371c61-db70-5a0e-8e86-f348ae0fc6f3": 2,
+        "dcf98e45-c632-59cf-8e5d-971027119701": 2,
+        "6b797898-13f0-5988-b6ae-2a5ae93596c4": 1,
+        "ccd428ef-e288-5322-831c-ee0835c11161": 1
+      },
+      "expectsNoResult": false,
+      "manuallyReviewed": false
+    },
+    {
+      "id": "query-04d60d07-65fe-5c9e-87de-7719f4f16256",
+      "description": "Find completed comparisons for planned control arm front right replace on a 8-year-old \u0160koda Octavia III at 53289 km. No pre-existing condition was recorded.",
+      "repairCode": "CONTROL_ARM_FRONT_RIGHT_REPLACE",
+      "manufacturer": "\u0160koda",
+      "model": "Octavia III",
+      "vehicleAgeYears": 8,
+      "mileageKm": 53289,
+      "knownConditions": [],
+      "asOfUtc": "2026-01-01T00:00:00+00:00",
+      "relevance": {
+        "04d60d07-65fe-5c9e-87de-7719f4f16256": 3,
+        "8954aacf-dcf8-530a-85ae-fbdaecbc45c4": 2,
+        "5d3a538f-f603-5180-aae8-d8cabd848a1f": 2,
+        "0ea782a4-d553-5a6e-89c0-5ec232b7a63b": 1,
+        "2f6b45d9-0e11-55fe-9a09-db32009034a4": 1
+      },
+      "expectsNoResult": false,
+      "manuallyReviewed": false
+    },
+    {
+      "id": "query-053b0ecd-226f-55af-90a3-faf0243e9017",
+      "description": "Find completed comparisons for planned control arm front right replace on a 10-year-old Mercedes-Benz C-Class W205 at 65016 km. No pre-existing condition was recorded.",
+      "repairCode": "CONTROL_ARM_FRONT_RIGHT_REPLACE",
+      "manufacturer": "Mercedes-Benz",
+      "model": "C-Class W205",
+      "vehicleAgeYears": 10,
+      "mileageKm": 65016,
+      "knownConditions": [],
+      "asOfUtc": "2026-01-01T00:00:00+00:00",
+      "relevance": {
+        "053b0ecd-226f-55af-90a3-faf0243e9017": 3,
+        "5fadf312-a071-52f4-8c2d-0678d529b22b": 2,
+        "a26b2b25-2dc4-581a-8ba4-d3c6eb3fc6ff": 2,
+        "ff50367c-1195-5e9c-8c2c-aaaa28490280": 1,
+        "b803bcb1-a092-59b9-b8c0-53393c939685": 1
+      },
+      "expectsNoResult": false,
+      "manuallyReviewed": false
+    },
+    {
+      "id": "query-0068124b-578d-5189-b375-3bc898217e8b",
+      "description": "Find completed comparisons for planned control arm rear left replace on a 11-year-old Volkswagen Passat B8 at 132815 km. No pre-existing condition was recorded.",
+      "repairCode": "CONTROL_ARM_REAR_LEFT_REPLACE",
+      "manufacturer": "Volkswagen",
+      "model": "Passat B8",
+      "vehicleAgeYears": 11,
+      "mileageKm": 132815,
+      "knownConditions": [],
+      "asOfUtc": "2026-01-01T00:00:00+00:00",
+      "relevance": {
+        "0068124b-578d-5189-b375-3bc898217e8b": 3,
+        "c30d0b17-976d-5668-b850-112e693424f3": 2,
+        "9e35bfce-34b5-584a-adc7-af8d3715ea21": 2,
+        "b116e8ba-6b2d-5bca-a204-cb8587be5110": 1,
+        "943d0469-b443-523e-8826-9f482cd6a298": 1
+      },
+      "expectsNoResult": false,
+      "manuallyReviewed": false
+    },
+    {
+      "id": "query-009f4062-3f47-54d8-a4dd-d8b112359b67",
+      "description": "Find completed comparisons for planned control arm rear left replace on a 14-year-old Audi A3 8V at 81818 km. Known before work: visible corrosion.",
+      "repairCode": "CONTROL_ARM_REAR_LEFT_REPLACE",
+      "manufacturer": "Audi",
+      "model": "A3 8V",
+      "vehicleAgeYears": 14,
+      "mileageKm": 81818,
+      "knownConditions": [
+        "VISIBLE_CORROSION"
+      ],
+      "asOfUtc": "2026-01-01T00:00:00+00:00",
+      "relevance": {
+        "009f4062-3f47-54d8-a4dd-d8b112359b67": 3,
+        "397073db-4753-5b7c-9a1a-024c1238bc00": 2,
+        "d9832591-e90b-59c5-9fe7-baba0d989c8b": 2,
+        "1e44510d-a688-5553-8573-09d22c9a1f83": 1,
+        "79d5b9bd-8bd7-57c7-bd9d-6e6b0d5685f5": 1
+      },
+      "expectsNoResult": false,
+      "manuallyReviewed": false
+    },
+    {
+      "id": "query-027ce672-e4aa-5007-b3ea-18aeaba30601",
+      "description": "Find completed comparisons for planned control arm rear left replace on a 9-year-old Opel Astra K at 66023 km. Known before work: visible prior damage.",
+      "repairCode": "CONTROL_ARM_REAR_LEFT_REPLACE",
+      "manufacturer": "Opel",
+      "model": "Astra K",
+      "vehicleAgeYears": 9,
+      "mileageKm": 66023,
+      "knownConditions": [
+        "VISIBLE_PRIOR_DAMAGE"
+      ],
+      "asOfUtc": "2026-01-01T00:00:00+00:00",
+      "relevance": {
+        "027ce672-e4aa-5007-b3ea-18aeaba30601": 3,
+        "af82a83f-72a2-5764-aadf-c1b51e49ecfe": 2,
+        "af88882a-d1f7-5520-8961-0348d656348c": 2,
+        "4c76fc96-7b67-5979-930b-448668e49d0b": 1,
+        "978c85fa-ebd0-5ad2-adb3-461687d940bf": 1
+      },
+      "expectsNoResult": false,
+      "manuallyReviewed": false
+    },
+    {
+      "id": "query-03c6ca7a-3d21-5c51-86fd-5b955cd8a2e2",
+      "description": "Find completed comparisons for planned control arm rear left replace on a 14-year-old BMW 3 Series F30 at 151884 km. No pre-existing condition was recorded.",
+      "repairCode": "CONTROL_ARM_REAR_LEFT_REPLACE",
+      "manufacturer": "BMW",
+      "model": "3 Series F30",
+      "vehicleAgeYears": 14,
+      "mileageKm": 151884,
+      "knownConditions": [],
+      "asOfUtc": "2026-01-01T00:00:00+00:00",
+      "relevance": {
+        "03c6ca7a-3d21-5c51-86fd-5b955cd8a2e2": 3,
+        "57e8ab8d-92f5-5588-a72a-627d9642bd29": 2,
+        "87e42be0-5f6e-5a16-87f2-8b9f0e0d7ef4": 2,
+        "2bfc66b5-c7c2-53b4-a987-698d3b4e55f7": 1,
+        "4f3fc419-da76-595b-b153-283f4b81377d": 1
+      },
+      "expectsNoResult": false,
+      "manuallyReviewed": false
+    },
+    {
+      "id": "query-06770bbd-b562-5982-9292-02ed3a462f7f",
+      "description": "Find completed comparisons for planned control arm rear left replace on a 9-year-old Opel Astra K at 184531 km. No pre-existing condition was recorded.",
+      "repairCode": "CONTROL_ARM_REAR_LEFT_REPLACE",
+      "manufacturer": "Opel",
+      "model": "Astra K",
+      "vehicleAgeYears": 9,
+      "mileageKm": 184531,
+      "knownConditions": [],
+      "asOfUtc": "2026-01-01T00:00:00+00:00",
+      "relevance": {
+        "06770bbd-b562-5982-9292-02ed3a462f7f": 3,
+        "1ec436f0-f8be-54dc-b995-068e08bf5ebd": 2,
+        "ccd7236f-0490-523e-8cff-12b8ebf56057": 2,
+        "978c85fa-ebd0-5ad2-adb3-461687d940bf": 1,
+        "5a5c43b7-c2c1-5669-bae8-2a14cff7d33b": 1
+      },
+      "expectsNoResult": false,
+      "manuallyReviewed": false
+    },
+    {
+      "id": "query-07b7d861-acad-59e7-9667-9a5cf7e702a4",
+      "description": "Find completed comparisons for planned control arm rear left replace on a 11-year-old Mercedes-Benz C-Class W205 at 225066 km. Known before work: visible corrosion.",
+      "repairCode": "CONTROL_ARM_REAR_LEFT_REPLACE",
+      "manufacturer": "Mercedes-Benz",
+      "model": "C-Class W205",
+      "vehicleAgeYears": 11,
+      "mileageKm": 225066,
+      "knownConditions": [
+        "VISIBLE_CORROSION"
+      ],
+      "asOfUtc": "2026-01-01T00:00:00+00:00",
+      "relevance": {
+        "07b7d861-acad-59e7-9667-9a5cf7e702a4": 3,
+        "87160570-25c3-5512-8f01-2765fb96ae4d": 2,
+        "55629997-f27f-5e76-9368-15970e4654a5": 2,
+        "45f471e0-f87d-5e48-82d2-1859310ce4a8": 1,
+        "f2a28a59-0e09-536c-8217-4b8c538d5dc1": 1
+      },
+      "expectsNoResult": false,
+      "manuallyReviewed": false
+    },
+    {
+      "id": "query-083f290f-9280-52f8-af2c-be3f4c7cadf8",
+      "description": "Find completed comparisons for planned control arm rear left replace on a 11-year-old Audi A3 8V at 144656 km. Known before work: visible prior damage.",
+      "repairCode": "CONTROL_ARM_REAR_LEFT_REPLACE",
+      "manufacturer": "Audi",
+      "model": "A3 8V",
+      "vehicleAgeYears": 11,
+      "mileageKm": 144656,
+      "knownConditions": [
+        "VISIBLE_PRIOR_DAMAGE"
+      ],
+      "asOfUtc": "2026-01-01T00:00:00+00:00",
+      "relevance": {
+        "083f290f-9280-52f8-af2c-be3f4c7cadf8": 3,
+        "9500c3f8-420d-5167-bab4-8d7a2f872883": 2,
+        "1e44510d-a688-5553-8573-09d22c9a1f83": 2,
+        "3905302f-23ae-550d-9363-ce09019db8e4": 1,
+        "da4a0ac4-6831-58f1-bd21-79bd22c6951e": 1
+      },
+      "expectsNoResult": false,
+      "manuallyReviewed": false
+    },
+    {
+      "id": "query-027520ac-83e5-5a98-9801-a8048be1dcb0",
+      "description": "Find completed comparisons for planned control arm rear right replace on a 6-year-old Opel Astra K at 61635 km. No pre-existing condition was recorded.",
+      "repairCode": "CONTROL_ARM_REAR_RIGHT_REPLACE",
+      "manufacturer": "Opel",
+      "model": "Astra K",
+      "vehicleAgeYears": 6,
+      "mileageKm": 61635,
+      "knownConditions": [],
+      "asOfUtc": "2026-01-01T00:00:00+00:00",
+      "relevance": {
+        "027520ac-83e5-5a98-9801-a8048be1dcb0": 3,
+        "ec6646b3-4f23-5429-a19f-23041c290808": 2,
+        "120cd33d-ac9c-5b7f-8c4b-e71cdd6dc6a0": 2,
+        "d799e4df-7ed2-5bab-a948-2e1f51840e51": 1,
+        "c5ef2251-f19e-556a-80b6-f7250d6ddb16": 1
+      },
+      "expectsNoResult": false,
+      "manuallyReviewed": false
+    },
+    {
+      "id": "query-05652519-7315-54ee-8147-912a09ff80b3",
+      "description": "Find completed comparisons for planned control arm rear right replace on a 8-year-old Volkswagen Golf VII at 65462 km. Known before work: visible corrosion.",
+      "repairCode": "CONTROL_ARM_REAR_RIGHT_REPLACE",
+      "manufacturer": "Volkswagen",
+      "model": "Golf VII",
+      "vehicleAgeYears": 8,
+      "mileageKm": 65462,
+      "knownConditions": [
+        "VISIBLE_CORROSION"
+      ],
+      "asOfUtc": "2026-01-01T00:00:00+00:00",
+      "relevance": {
+        "05652519-7315-54ee-8147-912a09ff80b3": 3,
+        "a9ba5a21-b271-5300-a436-69e629d8b134": 2,
+        "239de577-a60b-5cbb-b637-274e1b31c91f": 2,
+        "83cb8324-957f-598d-bfd7-36297d57a85e": 1,
+        "453352ad-c671-5ab7-ac73-4504421cabf5": 1
+      },
+      "expectsNoResult": false,
+      "manuallyReviewed": false
+    },
+    {
+      "id": "query-0634ba21-3ad6-5951-85cd-398243df3249",
+      "description": "Find completed comparisons for planned control arm rear right replace on a 14-year-old \u0160koda Octavia III at 296818 km. Known before work: visible corrosion.",
+      "repairCode": "CONTROL_ARM_REAR_RIGHT_REPLACE",
+      "manufacturer": "\u0160koda",
+      "model": "Octavia III",
+      "vehicleAgeYears": 14,
+      "mileageKm": 296818,
+      "knownConditions": [
+        "VISIBLE_CORROSION"
+      ],
+      "asOfUtc": "2026-01-01T00:00:00+00:00",
+      "relevance": {
+        "0634ba21-3ad6-5951-85cd-398243df3249": 3,
+        "90b1c019-0aa0-5ff7-a239-6fd7039a54d8": 2,
+        "b7e6e15f-67da-53a3-887c-8144db36b750": 2,
+        "ba4c7c71-fc91-57a4-b23a-7a9e1d694c19": 1,
+        "8ab8f514-b10d-561e-aee9-a01f1285e1e7": 1
+      },
+      "expectsNoResult": false,
+      "manuallyReviewed": false
+    },
+    {
+      "id": "query-06524395-1ad2-5f5b-a6d4-7a8d3bed9f3b",
+      "description": "Find completed comparisons for planned control arm rear right replace on a 10-year-old Opel Astra K at 122621 km. Known before work: visible corrosion, visible prior damage.",
+      "repairCode": "CONTROL_ARM_REAR_RIGHT_REPLACE",
+      "manufacturer": "Opel",
+      "model": "Astra K",
+      "vehicleAgeYears": 10,
+      "mileageKm": 122621,
+      "knownConditions": [
+        "VISIBLE_CORROSION",
+        "VISIBLE_PRIOR_DAMAGE"
+      ],
+      "asOfUtc": "2026-01-01T00:00:00+00:00",
+      "relevance": {
+        "06524395-1ad2-5f5b-a6d4-7a8d3bed9f3b": 3,
+        "853648b4-aa87-500f-9784-c9d98ec9cdb8": 2,
+        "126ad065-b84c-5291-89e3-b49c6571a916": 2,
+        "b5c42fac-3e59-5df3-955b-5abb4be51afa": 1,
+        "c4ea9de0-711d-5a56-8835-db8d41f05755": 1
+      },
+      "expectsNoResult": false,
+      "manuallyReviewed": false
+    },
+    {
+      "id": "query-06d7fa14-a293-5fef-896f-b6cee9759013",
+      "description": "Find completed comparisons for planned control arm rear right replace on a 6-year-old Volkswagen Passat B8 at 15000 km. No pre-existing condition was recorded.",
+      "repairCode": "CONTROL_ARM_REAR_RIGHT_REPLACE",
+      "manufacturer": "Volkswagen",
+      "model": "Passat B8",
+      "vehicleAgeYears": 6,
+      "mileageKm": 15000,
+      "knownConditions": [],
+      "asOfUtc": "2026-01-01T00:00:00+00:00",
+      "relevance": {
+        "06d7fa14-a293-5fef-896f-b6cee9759013": 3,
+        "77045376-a9de-5fb3-a333-509ce15b9e17": 2,
+        "de55e669-631a-580d-9a3f-30c36f201011": 2,
+        "df8f3714-dbb3-5c62-be71-681b86bc2c2d": 1,
+        "486e370e-a50b-54d5-960e-402921035be8": 1
+      },
+      "expectsNoResult": false,
+      "manuallyReviewed": false
+    },
+    {
+      "id": "query-0aeb5f95-2cc2-5823-afb2-7113ea26ba74",
+      "description": "Find completed comparisons for planned control arm rear right replace on a 7-year-old Mercedes-Benz C-Class W205 at 39423 km. No pre-existing condition was recorded.",
+      "repairCode": "CONTROL_ARM_REAR_RIGHT_REPLACE",
+      "manufacturer": "Mercedes-Benz",
+      "model": "C-Class W205",
+      "vehicleAgeYears": 7,
+      "mileageKm": 39423,
+      "knownConditions": [],
+      "asOfUtc": "2026-01-01T00:00:00+00:00",
+      "relevance": {
+        "0aeb5f95-2cc2-5823-afb2-7113ea26ba74": 3,
+        "140eaf3b-8432-5d2d-8499-8cdaaa4a45bb": 2,
+        "d79ce635-a05b-5c0d-9b2c-4f58a800ac48": 2,
+        "68652350-7c19-5fb9-9af7-f29b82cc0381": 1,
+        "95dfcf9e-55ac-57d6-a138-758b0d1c5a79": 1
+      },
+      "expectsNoResult": false,
+      "manuallyReviewed": false
+    },
+    {
+      "id": "query-0b82de76-3cfa-5441-acb0-ee3587f7ccbf",
+      "description": "Find completed comparisons for planned control arm rear right replace on a 10-year-old Opel Astra K at 78903 km. No pre-existing condition was recorded.",
+      "repairCode": "CONTROL_ARM_REAR_RIGHT_REPLACE",
+      "manufacturer": "Opel",
+      "model": "Astra K",
+      "vehicleAgeYears": 10,
+      "mileageKm": 78903,
+      "knownConditions": [],
+      "asOfUtc": "2026-01-01T00:00:00+00:00",
+      "relevance": {
+        "0b82de76-3cfa-5441-acb0-ee3587f7ccbf": 3,
+        "c4ea9de0-711d-5a56-8835-db8d41f05755": 2,
+        "43d26891-900c-55a8-9749-bac4a153ec99": 2,
+        "126ad065-b84c-5291-89e3-b49c6571a916": 1,
+        "a91d16cb-947c-5acd-8738-49a543dad79d": 1
+      },
+      "expectsNoResult": false,
+      "manuallyReviewed": false
+    },
+    {
+      "id": "no-result-01",
+      "description": "Brake disc and pad replacement request variant 1 with no suspension work.",
+      "repairCode": "BRAKE_DISC_FRONT_REPLACE",
+      "manufacturer": "Volkswagen",
+      "model": null,
+      "vehicleAgeYears": 8,
+      "mileageKm": 80000,
+      "knownConditions": [],
+      "asOfUtc": "2026-01-01T00:00:00+00:00",
+      "relevance": {},
+      "expectsNoResult": true,
+      "manuallyReviewed": false
+    },
+    {
+      "id": "no-result-02",
+      "description": "Brake disc and pad replacement request variant 2 with no suspension work.",
+      "repairCode": "BRAKE_DISC_FRONT_REPLACE",
+      "manufacturer": "BMW",
+      "model": null,
+      "vehicleAgeYears": 9,
+      "mileageKm": 100000,
+      "knownConditions": [],
+      "asOfUtc": "2026-01-01T00:00:00+00:00",
+      "relevance": {},
+      "expectsNoResult": true,
+      "manuallyReviewed": false
+    },
+    {
+      "id": "no-result-03",
+      "description": "Brake disc and pad replacement request variant 3 with no suspension work.",
+      "repairCode": "BRAKE_DISC_FRONT_REPLACE",
+      "manufacturer": "Volkswagen",
+      "model": null,
+      "vehicleAgeYears": 10,
+      "mileageKm": 120000,
+      "knownConditions": [],
+      "asOfUtc": "2026-01-01T00:00:00+00:00",
+      "relevance": {},
+      "expectsNoResult": true,
+      "manuallyReviewed": false
+    },
+    {
+      "id": "no-result-04",
+      "description": "Brake disc and pad replacement request variant 4 with no suspension work.",
+      "repairCode": "BRAKE_DISC_FRONT_REPLACE",
+      "manufacturer": "BMW",
+      "model": null,
+      "vehicleAgeYears": 11,
+      "mileageKm": 140000,
+      "knownConditions": [],
+      "asOfUtc": "2026-01-01T00:00:00+00:00",
+      "relevance": {},
+      "expectsNoResult": true,
+      "manuallyReviewed": false
+    },
+    {
+      "id": "no-result-05",
+      "description": "Brake disc and pad replacement request variant 5 with no suspension work.",
+      "repairCode": "BRAKE_DISC_FRONT_REPLACE",
+      "manufacturer": "Volkswagen",
+      "model": null,
+      "vehicleAgeYears": 12,
+      "mileageKm": 160000,
+      "knownConditions": [],
+      "asOfUtc": "2026-01-01T00:00:00+00:00",
+      "relevance": {},
+      "expectsNoResult": true,
+      "manuallyReviewed": false
+    }
+  ]
+}

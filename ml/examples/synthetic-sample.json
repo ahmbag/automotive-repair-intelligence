@@ -1,0 +1,172 @@
+{
+  "manifest": {
+    "datasetId": "ari-suspension-sample-v1",
+    "generatorVersion": "1.0.0",
+    "seed": 20261023,
+    "recordCount": 3,
+    "dataClassification": "SYNTHETIC",
+    "schemaVersion": 2,
+    "checksum": "d65c643d08dff4ed600789979b7d1276d58b8704da749f507f092c907b57d5d9",
+    "checksumAlgorithm": "SHA256-CANONICAL-JSON",
+    "repairFamily": "SUSPENSION",
+    "startDate": "2021-01-01",
+    "endDate": "2025-12-31"
+  },
+  "records": [
+    {
+      "vehicle": {
+        "id": "5a9c5187-0b44-5e21-9acf-a73d056ec2fb",
+        "manufacturer": "Opel",
+        "model": "Astra K",
+        "modelYear": 2016,
+        "mileageKm": 100174,
+        "capturedAtUtc": "2022-05-29T06:17:00Z"
+      },
+      "order": {
+        "id": "462daea6-ec18-552e-a168-ab6bb0cce657",
+        "repairCode": "CONTROL_ARM_FRONT_RIGHT_REPLACE",
+        "problemDescription": "Suspension repair requested after scheduled inspection.",
+        "createdAtUtc": "2022-05-29T07:30:00Z",
+        "knownConditions": [
+          "VISIBLE_CORROSION"
+        ]
+      },
+      "operations": [
+        {
+          "id": "123fe3c5-6345-52a1-9a0a-70e7c3220773",
+          "repairOrderId": "462daea6-ec18-552e-a168-ab6bb0cce657",
+          "assemblyCode": "FRONT_SUSPENSION",
+          "operationCode": "CONTROL_ARM_FRONT_RIGHT_REPLACE",
+          "referenceLaborHours": 1.8
+        }
+      ],
+      "knownConditions": [
+        {
+          "conditionCode": "VISIBLE_CORROSION",
+          "severity": "LOW",
+          "documentedAtUtc": "2022-05-29T06:30:00Z"
+        }
+      ],
+      "execution": {
+        "id": "f5460cd9-e7f7-5b35-b7a5-8ab10280a43c",
+        "repairOrderId": "462daea6-ec18-552e-a168-ab6bb0cce657",
+        "actualLaborMinutes": 178,
+        "startedAtUtc": "2022-06-03T11:30:00Z",
+        "completedAtUtc": "2022-06-03T15:55:00Z",
+        "performedOperationCodes": [
+          "CONTROL_ARM_FRONT_RIGHT_REPLACE"
+        ],
+        "repairReport": "One or more fasteners resisted removal and needed careful release. Additional work was carried out around the worn bushing mounting area."
+      },
+      "complications": [
+        {
+          "id": "8f58430e-9da4-5eee-9c5f-332a2cd5ba34",
+          "repairExecutionId": "f5460cd9-e7f7-5b35-b7a5-8ab10280a43c",
+          "complicationCode": "SEIZED_FASTENER",
+          "additionalLaborMinutes": 44,
+          "additionalPartCodes": [
+            "MOUNTING_HARDWARE_KIT"
+          ],
+          "occurredAtUtc": "2022-06-03T12:58:00Z"
+        },
+        {
+          "id": "4888772a-9fc2-51ae-b93c-a1d0ea158ef7",
+          "repairExecutionId": "f5460cd9-e7f7-5b35-b7a5-8ab10280a43c",
+          "complicationCode": "DAMAGED_BUSHING_SEAT",
+          "additionalLaborMinutes": 24,
+          "additionalPartCodes": [
+            "BUSHING",
+            "RETAINING_HARDWARE"
+          ],
+          "occurredAtUtc": "2022-06-03T14:26:00Z"
+        }
+      ]
+    },
+    {
+      "vehicle": {
+        "id": "89a00d7b-2785-55d4-b6d2-96a55fa470a8",
+        "manufacturer": "BMW",
+        "model": "3 Series F30",
+        "modelYear": 2011,
+        "mileageKm": 257360,
+        "capturedAtUtc": "2024-12-13T01:55:00Z"
+      },
+      "order": {
+        "id": "48013b32-a8d4-52ef-b44f-c0a04af30980",
+        "repairCode": "CONTROL_ARM_REAR_LEFT_REPLACE",
+        "problemDescription": "Customer reports suspension noise over uneven roads.",
+        "createdAtUtc": "2024-12-13T03:15:00Z",
+        "knownConditions": []
+      },
+      "operations": [
+        {
+          "id": "73850f14-ed91-5425-8ce6-86e5d3100854",
+          "repairOrderId": "48013b32-a8d4-52ef-b44f-c0a04af30980",
+          "assemblyCode": "REAR_SUSPENSION",
+          "operationCode": "CONTROL_ARM_REAR_LEFT_REPLACE",
+          "referenceLaborHours": 2.1
+        }
+      ],
+      "knownConditions": [],
+      "execution": {
+        "id": "8e3296f5-d3df-55cb-97eb-aa92e6c6cd12",
+        "repairOrderId": "48013b32-a8d4-52ef-b44f-c0a04af30980",
+        "actualLaborMinutes": 130,
+        "startedAtUtc": "2024-12-25T11:15:00Z",
+        "completedAtUtc": "2024-12-25T14:57:00Z",
+        "performedOperationCodes": [
+          "CONTROL_ARM_REAR_LEFT_REPLACE"
+        ],
+        "repairReport": "Repair completed as planned. No additional dismantling work was required."
+      },
+      "complications": []
+    },
+    {
+      "vehicle": {
+        "id": "69123039-7a76-53bc-a53c-bb1e60d1a19e",
+        "manufacturer": "Škoda",
+        "model": "Octavia III",
+        "modelYear": 2016,
+        "mileageKm": 148594,
+        "capturedAtUtc": "2022-07-16T00:37:00Z"
+      },
+      "order": {
+        "id": "bdbb06e3-a322-524e-a6ee-af92539094fc",
+        "repairCode": "CONTROL_ARM_REAR_LEFT_REPLACE",
+        "problemDescription": null,
+        "createdAtUtc": "2022-07-16T01:00:00Z",
+        "knownConditions": [
+          "VISIBLE_PRIOR_DAMAGE"
+        ]
+      },
+      "operations": [
+        {
+          "id": "e1b602f9-ebc1-514f-af83-94a3e7cb5c78",
+          "repairOrderId": "bdbb06e3-a322-524e-a6ee-af92539094fc",
+          "assemblyCode": "REAR_SUSPENSION",
+          "operationCode": "CONTROL_ARM_REAR_LEFT_REPLACE",
+          "referenceLaborHours": 2.1
+        }
+      ],
+      "knownConditions": [
+        {
+          "conditionCode": "VISIBLE_PRIOR_DAMAGE",
+          "severity": "LOW",
+          "documentedAtUtc": "2022-07-16T00:19:00Z"
+        }
+      ],
+      "execution": {
+        "id": "b15de43b-8afc-5460-b33f-c417c28c591a",
+        "repairOrderId": "bdbb06e3-a322-524e-a6ee-af92539094fc",
+        "actualLaborMinutes": 119,
+        "startedAtUtc": "2022-07-28T09:00:00Z",
+        "completedAtUtc": "2022-07-28T12:57:00Z",
+        "performedOperationCodes": [
+          "CONTROL_ARM_REAR_LEFT_REPLACE"
+        ],
+        "repairReport": "The control-arm replacement followed the standard procedure and final checks passed."
+      },
+      "complications": []
+    }
+  ]
+}

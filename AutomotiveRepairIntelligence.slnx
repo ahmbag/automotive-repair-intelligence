@@ -1,0 +1,23 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/ARI.Api/ARI.Api.csproj" />
+    <Project Path="src/ARI.Core/ARI.Core.csproj" />
+    <Project Path="src/ARI.Infrastructure/ARI.Infrastructure.csproj" />
+    <Project Path="src/ARI.Web/ARI.Web.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/ARI.Api.Tests/ARI.Api.Tests.csproj" />
+    <Project Path="tests/ARI.Core.Tests/ARI.Core.Tests.csproj" />
+    <Project Path="tests/ARI.Infrastructure.IntegrationTests/ARI.Infrastructure.IntegrationTests.csproj" />
+    <Project Path="tests/ARI.Web.Tests/ARI.Web.Tests.csproj" />
+    <Project Path="tests/ARI.Web.E2ETests/ARI.Web.E2ETests.csproj" />
+  </Folder>
+  <Folder Name="/tools/">
+    <Project Path="tools/ARI.DataQualityReport/ARI.DataQualityReport.csproj" />
+    <Project Path="tools/ARI.DatabaseMigrator/ARI.DatabaseMigrator.csproj" />
+    <Project Path="tools/ARI.HistoricalDataImporter/ARI.HistoricalDataImporter.csproj" />
+    <Project Path="tools/ARI.MlDatasetExporter/ARI.MlDatasetExporter.csproj" />
+    <Project Path="tools/ARI.LlmEvaluation/ARI.LlmEvaluation.csproj" />
+    <Project Path="tools/ARI.RagTool/ARI.RagTool.csproj" />
+  </Folder>
+</Solution>

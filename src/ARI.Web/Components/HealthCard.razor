@@ -1,0 +1,6 @@
+<article class="health-card"><span class="health-dot @State.ToString().ToLowerInvariant()" aria-hidden="true"></span><div><h2>@Name</h2><strong>@State.ToString().ToUpperInvariant()</strong><p>@Detail</p></div></article>
+@code {
+    [Parameter, EditorRequired] public string Name { get; set; } = "";
+    [Parameter] public ProbeState State { get; set; }
+    [Parameter, EditorRequired] public string Detail { get; set; } = "";
+}

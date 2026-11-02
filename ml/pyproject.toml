@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ari-ml"
+version = "0.1.0"
+description = "Training, evaluation, and inference boundary for Automotive Repair Intelligence"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "fastapi>=0.116,<1",
+  "joblib>=1.5,<2",
+  "numpy>=2.3,<3",
+  "pandas>=2.3,<4",
+  "scikit-learn>=1.7,<2",
+  "uvicorn>=0.35,<1",
+]
+
+[project.optional-dependencies]
+test = ["httpx>=0.28,<1", "pytest>=8.4,<10"]
+
+[project.scripts]
+ari-ml-train = "ari_ml.training.train:main"
+ari-ml-serve = "ari_ml.inference.api:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]

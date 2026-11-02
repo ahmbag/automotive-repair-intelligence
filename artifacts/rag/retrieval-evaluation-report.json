@@ -1,0 +1,1396 @@
+{
+  "reportVersion": "ari-rag-evaluation-report-v1",
+  "datasetId": "ari-rag-retrieval-evaluation-v1",
+  "datasetChecksum": "2b1e3e8a878b77618c9bda027f15f0e83cb21e58b1493b553d76227e79368f3c",
+  "evaluatedAtUtc": "2026-10-27T18:10:00.7221081+00:00",
+  "embeddingModel": "text-embedding-3-small",
+  "embeddingVersion": "repair-report-embedding-v1",
+  "experiments": [
+    {
+      "strategy": "STRUCTURED",
+      "metrics": {
+        "recallAt5": 0.6114285714285715,
+        "precisionAt5": 0.6114285714285715,
+        "mrr": 0.9428571428571428,
+        "ndcgAt5": 0.7935482005364151,
+        "noResultAccuracy": 1,
+        "p50LatencyMilliseconds": 217,
+        "p95LatencyMilliseconds": 229,
+        "queryCount": 40
+      },
+      "errorTypes": {},
+      "outcomes": [
+        {
+          "caseId": "query-01454ea3-9c0a-504e-a1a4-e4c5075b3144",
+          "retrievedIds": [
+            "01454ea3-9c0a-504e-a1a4-e4c5075b3144",
+            "4bd9660b-29a1-5860-a027-d3951189a677",
+            "642d91c0-f111-5af8-84cb-d182eb3378ef",
+            "7fa7e09f-7446-58d1-bcb4-4345732ab11b",
+            "9716d3a1-8edf-59b3-ab3e-71865ce98112"
+          ],
+          "latencyMilliseconds": 2137,
+          "errorType": null
+        },
+        {
+          "caseId": "query-02bd05dd-84e4-59de-93ef-890c2981f6be",
+          "retrievedIds": [
+            "01454ea3-9c0a-504e-a1a4-e4c5075b3144",
+            "02bd05dd-84e4-59de-93ef-890c2981f6be",
+            "0e70b7bf-7be2-53e6-afb4-52ce58277b99",
+            "24598ed2-7b25-539e-8c9b-bb09317a1a1c",
+            "41360fc9-5b57-51fa-b927-fb5b1add0e89"
+          ],
+          "latencyMilliseconds": 217,
+          "errorType": null
+        },
+        {
+          "caseId": "query-03608e3e-6216-5f50-b44a-31e462c08546",
+          "retrievedIds": [
+            "03608e3e-6216-5f50-b44a-31e462c08546",
+            "10955dbe-25ff-5f5d-a626-6d4c97c307fc",
+            "379351c6-305f-5fc0-99e4-ce8772df9257",
+            "994f81f6-2ce1-5b34-baf3-58d011ce4416",
+            "9b73e440-9f2e-5741-af4d-557596868ad1"
+          ],
+          "latencyMilliseconds": 221,
+          "errorType": null
+        },
+        {
+          "caseId": "query-03f07375-956c-5869-a0ad-013681626ace",
+          "retrievedIds": [
+            "03f07375-956c-5869-a0ad-013681626ace",
+            "1c20f7c3-84b8-5a02-9cfc-fe8eb43445fa",
+            "886c02b3-21bb-5873-870f-a10e98a56dfb",
+            "c88682d2-e875-5d0c-a5c8-71d452be9cde",
+            "e8bdb92d-5ee5-5316-b39b-b5ac1cdf018f"
+          ],
+          "latencyMilliseconds": 215,
+          "errorType": null
+        },
+        {
+          "caseId": "query-043bc4cf-9482-5484-b8fa-5f49e6bb2891",
+          "retrievedIds": [
+            "043bc4cf-9482-5484-b8fa-5f49e6bb2891",
+            "0e70b7bf-7be2-53e6-afb4-52ce58277b99",
+            "41360fc9-5b57-51fa-b927-fb5b1add0e89",
+            "4738b475-8767-5a89-af69-c075aae861f9",
+            "4a8b2ebf-e792-53d3-8a9b-098c93405e25"
+          ],
+          "latencyMilliseconds": 215,
+          "errorType": null
+        },
+        {
+          "caseId": "query-04ee8b41-5fe3-5820-b9fa-bf72c35fbb9a",
+          "retrievedIds": [
+            "04ee8b41-5fe3-5820-b9fa-bf72c35fbb9a",
+            "63366728-4eff-5695-90f0-5353d4b9af17",
+            "637607c1-5e34-52bc-ab73-2791cdab27b3",
+            "7ab6253a-e074-59fc-a14c-484a628d027e",
+            "92f321aa-2cb2-5b9f-a4f5-e878e1207fc6"
+          ],
+          "latencyMilliseconds": 217,
+          "errorType": null
+        },
+        {
+          "caseId": "query-08be10d4-10d4-5617-946a-5dad753622ff",
+          "retrievedIds": [
+            "08be10d4-10d4-5617-946a-5dad753622ff",
+            "269599cd-20bd-53ca-97d7-9d5e038b422f",
+            "26f9cc41-1ad4-5ce0-809c-ab5fb73bfce7",
+            "a1cb2212-48bc-54d4-bf56-cc1b2a03c37e",
+            "ad5cbb90-0ab8-50a6-bc99-7ff9e8326eb3"
+          ],
+          "latencyMilliseconds": 220,
+          "errorType": null
+        },
+        {
+          "caseId": "query-00950352-5f6e-5a3a-95d5-cb0663fe4c5c",
+          "retrievedIds": [
+            "00950352-5f6e-5a3a-95d5-cb0663fe4c5c",
+            "03410b55-8377-58a7-84f7-9f982da90f04",
+            "0cce0717-aebf-5686-86c7-1f2c1aaeb1b6",
+            "247d87af-01cb-50a7-a26c-5d923a1581f8",
+            "25519449-3a9f-5e83-84a0-dfd639c94b8a"
+          ],
+          "latencyMilliseconds": 223,
+          "errorType": null
+        },
+        {
+          "caseId": "query-03410b55-8377-58a7-84f7-9f982da90f04",
+          "retrievedIds": [
+            "00950352-5f6e-5a3a-95d5-cb0663fe4c5c",
+            "03410b55-8377-58a7-84f7-9f982da90f04",
+            "0cce0717-aebf-5686-86c7-1f2c1aaeb1b6",
+            "247d87af-01cb-50a7-a26c-5d923a1581f8",
+            "25519449-3a9f-5e83-84a0-dfd639c94b8a"
+          ],
+          "latencyMilliseconds": 213,
+          "errorType": null
+        },
+        {
+          "caseId": "query-04ad0e42-3046-51c4-aced-34ed643e6b87",
+          "retrievedIds": [
+            "04ad0e42-3046-51c4-aced-34ed643e6b87",
+            "251f683b-f7f7-55b1-9fe1-813b428bea60",
+            "afdcadab-9761-5d78-bc55-91eea8f5f5c8",
+            "beedd31e-160e-5a73-a4f4-fc6f525cd06a",
+            "1ff39175-fd17-593c-9478-59c26c1ea1d5"
+          ],
+          "latencyMilliseconds": 216,
+          "errorType": null
+        },
+        {
+          "caseId": "query-04e51055-d80b-5621-96dd-564098541300",
+          "retrievedIds": [
+            "04e51055-d80b-5621-96dd-564098541300",
+            "c312d5aa-081b-5e5e-9361-007b2e0ecfa8",
+            "e6abcb77-470b-5c90-aa4f-ff99ee749cb1",
+            "9bc9dcc5-6cb9-569e-a70a-4ab0ec7ce5f4",
+            "c07cdd2b-20d1-56e4-b764-0cd85e5009f4"
+          ],
+          "latencyMilliseconds": 219,
+          "errorType": null
+        },
+        {
+          "caseId": "query-077bf18c-8500-55c4-b1f2-8e9a70e5fd36",
+          "retrievedIds": [
+            "077bf18c-8500-55c4-b1f2-8e9a70e5fd36",
+            "1d5f14c9-9c25-5964-8c78-34ea4937991b",
+            "2d58ae3c-aef4-5814-adfd-62cc5ee7796a",
+            "2dc229e6-5f62-545e-a30a-0134b13cb4d4",
+            "33c2d629-29e7-5f58-9154-5012ec94455b"
+          ],
+          "latencyMilliseconds": 213,
+          "errorType": null
+        },
+        {
+          "caseId": "query-0b18be7f-c396-5236-b96c-0666fcf00f31",
+          "retrievedIds": [
+            "0b18be7f-c396-5236-b96c-0666fcf00f31",
+            "165c0781-a7b0-5353-9451-cf7de3a72aa8",
+            "2f8ee7f2-3bfe-5d18-9008-d990437353b1",
+            "3c10ec74-aa91-5cf7-b0ed-194f9ad3eb67",
+            "4bc0c3f4-8e4b-5cef-87c8-ca3faff5519f"
+          ],
+          "latencyMilliseconds": 213,
+          "errorType": null
+        },
+        {
+          "caseId": "query-0cce0717-aebf-5686-86c7-1f2c1aaeb1b6",
+          "retrievedIds": [
+            "00950352-5f6e-5a3a-95d5-cb0663fe4c5c",
+            "03410b55-8377-58a7-84f7-9f982da90f04",
+            "0cce0717-aebf-5686-86c7-1f2c1aaeb1b6",
+            "247d87af-01cb-50a7-a26c-5d923a1581f8",
+            "25519449-3a9f-5e83-84a0-dfd639c94b8a"
+          ],
+          "latencyMilliseconds": 214,
+          "errorType": null
+        },
+        {
+          "caseId": "query-001b8898-4558-5c31-894e-bbb9d3a3f88c",
+          "retrievedIds": [
+            "001b8898-4558-5c31-894e-bbb9d3a3f88c",
+            "27ab934f-3152-51b7-bc44-5c0b353c20f7",
+            "368b5685-a834-50b6-bb41-6b9aacb24c9a",
+            "4f0646a3-a8ec-5694-8be1-fa1b9d5707d5",
+            "51ce0c95-c9d8-5b8b-985b-2cd1ca483b61"
+          ],
+          "latencyMilliseconds": 222,
+          "errorType": null
+        },
+        {
+          "caseId": "query-03d02c5d-c9d2-5042-9ead-564cc2662691",
+          "retrievedIds": [
+            "03d02c5d-c9d2-5042-9ead-564cc2662691",
+            "06713dec-674c-52a1-8b39-cd796c909257",
+            "201f5b9b-7d4f-54da-b12d-bee555e89745",
+            "383de7f7-7c18-5be0-a255-3def06f60989",
+            "67966d9f-11e7-5361-b2e3-52096de447bf"
+          ],
+          "latencyMilliseconds": 220,
+          "errorType": null
+        },
+        {
+          "caseId": "query-03f90ece-5720-509f-95f2-4088ec7f5b22",
+          "retrievedIds": [
+            "03f90ece-5720-509f-95f2-4088ec7f5b22",
+            "5fa25c42-bea9-519f-b947-bb3ac473da47",
+            "cc460d12-8996-5fd5-9389-413ee9c34db2",
+            "09877bb9-cb2a-54c1-899b-38465c048bde",
+            "0ea782a4-d553-5a6e-89c0-5ec232b7a63b"
+          ],
+          "latencyMilliseconds": 219,
+          "errorType": null
+        },
+        {
+          "caseId": "query-03fb2653-dfe4-5420-a97a-80012cbb80e2",
+          "retrievedIds": [
+            "03fb2653-dfe4-5420-a97a-80012cbb80e2",
+            "16a2db9a-efbb-566e-87cf-9a0d275c23a0",
+            "6dba1344-bf18-58b2-a549-b1e815ed34cc",
+            "9e4349e1-7f8d-5e4c-94d6-f4f89ba50599",
+            "c46cdbe0-2ead-5246-9c2e-9e726023ae33"
+          ],
+          "latencyMilliseconds": 221,
+          "errorType": null
+        },
+        {
+          "caseId": "query-04886c06-1542-5290-b8da-48474561d2dc",
+          "retrievedIds": [
+            "04886c06-1542-5290-b8da-48474561d2dc",
+            "6b797898-13f0-5988-b6ae-2a5ae93596c4",
+            "7cf1d37a-73c0-5306-85c7-ee8f58649535",
+            "b0371c61-db70-5a0e-8e86-f348ae0fc6f3",
+            "ccd428ef-e288-5322-831c-ee0835c11161"
+          ],
+          "latencyMilliseconds": 216,
+          "errorType": null
+        },
+        {
+          "caseId": "query-04d60d07-65fe-5c9e-87de-7719f4f16256",
+          "retrievedIds": [
+            "04d60d07-65fe-5c9e-87de-7719f4f16256",
+            "0ea782a4-d553-5a6e-89c0-5ec232b7a63b",
+            "2f6b45d9-0e11-55fe-9a09-db32009034a4",
+            "5d3a538f-f603-5180-aae8-d8cabd848a1f",
+            "76400192-d7ae-5a77-b738-cab401a888fd"
+          ],
+          "latencyMilliseconds": 220,
+          "errorType": null
+        },
+        {
+          "caseId": "query-053b0ecd-226f-55af-90a3-faf0243e9017",
+          "retrievedIds": [
+            "053b0ecd-226f-55af-90a3-faf0243e9017",
+            "235c531a-09c4-565c-b702-6f4f5f67b5fe",
+            "368b5685-a834-50b6-bb41-6b9aacb24c9a",
+            "4a2f708d-79fc-5069-9582-0a680ee83207",
+            "55521c34-3ce1-52dd-af79-d40b187fde89"
+          ],
+          "latencyMilliseconds": 220,
+          "errorType": null
+        },
+        {
+          "caseId": "query-0068124b-578d-5189-b375-3bc898217e8b",
+          "retrievedIds": [
+            "0068124b-578d-5189-b375-3bc898217e8b",
+            "23afd686-88d6-5ae8-b95d-0aa66a7c7698",
+            "843bb8c0-c96f-5188-9584-b14816f56196",
+            "943d0469-b443-523e-8826-9f482cd6a298",
+            "9e35bfce-34b5-584a-adc7-af8d3715ea21"
+          ],
+          "latencyMilliseconds": 217,
+          "errorType": null
+        },
+        {
+          "caseId": "query-009f4062-3f47-54d8-a4dd-d8b112359b67",
+          "retrievedIds": [
+            "009f4062-3f47-54d8-a4dd-d8b112359b67",
+            "397073db-4753-5b7c-9a1a-024c1238bc00",
+            "137e6c17-c68d-56d0-b077-2b9eb9f37d24",
+            "1a0292cd-aff8-5ea2-a540-07d21f94f749",
+            "1e44510d-a688-5553-8573-09d22c9a1f83"
+          ],
+          "latencyMilliseconds": 218,
+          "errorType": null
+        },
+        {
+          "caseId": "query-027ce672-e4aa-5007-b3ea-18aeaba30601",
+          "retrievedIds": [
+            "027ce672-e4aa-5007-b3ea-18aeaba30601",
+            "4c76fc96-7b67-5979-930b-448668e49d0b",
+            "af82a83f-72a2-5764-aadf-c1b51e49ecfe",
+            "419f0022-c42e-521c-bc18-307e06aff7f7",
+            "6cee3463-c88c-5ba3-be68-9a2055fadfe7"
+          ],
+          "latencyMilliseconds": 215,
+          "errorType": null
+        },
+        {
+          "caseId": "query-03c6ca7a-3d21-5c51-86fd-5b955cd8a2e2",
+          "retrievedIds": [
+            "03c6ca7a-3d21-5c51-86fd-5b955cd8a2e2",
+            "29c11abc-4d70-5f6a-9a51-66e8b101be99",
+            "2bfc66b5-c7c2-53b4-a987-698d3b4e55f7",
+            "347159c4-e57a-561b-81a4-f2020c8805f1",
+            "4f3fc419-da76-595b-b153-283f4b81377d"
+          ],
+          "latencyMilliseconds": 214,
+          "errorType": null
+        },
+        {
+          "caseId": "query-06770bbd-b562-5982-9292-02ed3a462f7f",
+          "retrievedIds": [
+            "06770bbd-b562-5982-9292-02ed3a462f7f",
+            "1ec436f0-f8be-54dc-b995-068e08bf5ebd",
+            "297102d3-1cc2-595d-9cc4-81c3578c1074",
+            "5a5c43b7-c2c1-5669-bae8-2a14cff7d33b",
+            "978c85fa-ebd0-5ad2-adb3-461687d940bf"
+          ],
+          "latencyMilliseconds": 228,
+          "errorType": null
+        },
+        {
+          "caseId": "query-07b7d861-acad-59e7-9667-9a5cf7e702a4",
+          "retrievedIds": [
+            "07b7d861-acad-59e7-9667-9a5cf7e702a4",
+            "55629997-f27f-5e76-9368-15970e4654a5",
+            "45f471e0-f87d-5e48-82d2-1859310ce4a8",
+            "87160570-25c3-5512-8f01-2765fb96ae4d",
+            "db5e515d-5814-50d1-881b-45bbf52824fb"
+          ],
+          "latencyMilliseconds": 217,
+          "errorType": null
+        },
+        {
+          "caseId": "query-083f290f-9280-52f8-af2c-be3f4c7cadf8",
+          "retrievedIds": [
+            "083f290f-9280-52f8-af2c-be3f4c7cadf8",
+            "1e44510d-a688-5553-8573-09d22c9a1f83",
+            "9500c3f8-420d-5167-bab4-8d7a2f872883",
+            "0e5d002a-d835-57a5-ad91-f0baeeffef84",
+            "137e6c17-c68d-56d0-b077-2b9eb9f37d24"
+          ],
+          "latencyMilliseconds": 229,
+          "errorType": null
+        },
+        {
+          "caseId": "query-027520ac-83e5-5a98-9801-a8048be1dcb0",
+          "retrievedIds": [
+            "027520ac-83e5-5a98-9801-a8048be1dcb0",
+            "120cd33d-ac9c-5b7f-8c4b-e71cdd6dc6a0",
+            "22d4282c-3035-5b0e-9643-ca20bbb0d89f",
+            "35aed90b-85cb-57fd-9357-09dd9b8feb73",
+            "3d9e0290-164f-5972-82dc-35381ea43904"
+          ],
+          "latencyMilliseconds": 237,
+          "errorType": null
+        },
+        {
+          "caseId": "query-05652519-7315-54ee-8147-912a09ff80b3",
+          "retrievedIds": [
+            "05652519-7315-54ee-8147-912a09ff80b3",
+            "239de577-a60b-5cbb-b637-274e1b31c91f",
+            "a9ba5a21-b271-5300-a436-69e629d8b134",
+            "1099d3a3-5d79-5675-bc09-50a48498e81f",
+            "26ed8e20-57e2-5c34-8fe5-2b32708984a8"
+          ],
+          "latencyMilliseconds": 214,
+          "errorType": null
+        },
+        {
+          "caseId": "query-0634ba21-3ad6-5951-85cd-398243df3249",
+          "retrievedIds": [
+            "0634ba21-3ad6-5951-85cd-398243df3249",
+            "90b1c019-0aa0-5ff7-a239-6fd7039a54d8",
+            "27f60b55-a1fa-5f86-b4c2-66d0315d50e8",
+            "6c05493f-6e5b-534b-b23e-0dbd9c1be43a",
+            "8ab8f514-b10d-561e-aee9-a01f1285e1e7"
+          ],
+          "latencyMilliseconds": 217,
+          "errorType": null
+        },
+        {
+          "caseId": "query-06524395-1ad2-5f5b-a6d4-7a8d3bed9f3b",
+          "retrievedIds": [
+            "06524395-1ad2-5f5b-a6d4-7a8d3bed9f3b",
+            "126ad065-b84c-5291-89e3-b49c6571a916",
+            "a76efbd4-8f83-55d4-ac82-537b4128fea7",
+            "b2d2ffc0-cedf-5c3e-9aba-dc0ce6513e37",
+            "b5c42fac-3e59-5df3-955b-5abb4be51afa"
+          ],
+          "latencyMilliseconds": 219,
+          "errorType": null
+        },
+        {
+          "caseId": "query-06d7fa14-a293-5fef-896f-b6cee9759013",
+          "retrievedIds": [
+            "06d7fa14-a293-5fef-896f-b6cee9759013",
+            "3aa282f4-0a90-5976-b9f3-bb847c4b223b",
+            "44ccf0d1-696d-5568-a3d7-d613a010cbf9",
+            "486e370e-a50b-54d5-960e-402921035be8",
+            "77045376-a9de-5fb3-a333-509ce15b9e17"
+          ],
+          "latencyMilliseconds": 216,
+          "errorType": null
+        },
+        {
+          "caseId": "query-0aeb5f95-2cc2-5823-afb2-7113ea26ba74",
+          "retrievedIds": [
+            "0aeb5f95-2cc2-5823-afb2-7113ea26ba74",
+            "140eaf3b-8432-5d2d-8499-8cdaaa4a45bb",
+            "5991a2f5-67cc-5ff1-9423-c7669d8ae3ed",
+            "68652350-7c19-5fb9-9af7-f29b82cc0381",
+            "76398304-1936-5847-8510-36a3dd7dad78"
+          ],
+          "latencyMilliseconds": 212,
+          "errorType": null
+        },
+        {
+          "caseId": "query-0b82de76-3cfa-5441-acb0-ee3587f7ccbf",
+          "retrievedIds": [
+            "06524395-1ad2-5f5b-a6d4-7a8d3bed9f3b",
+            "0b82de76-3cfa-5441-acb0-ee3587f7ccbf",
+            "126ad065-b84c-5291-89e3-b49c6571a916",
+            "22d4282c-3035-5b0e-9643-ca20bbb0d89f",
+            "35aed90b-85cb-57fd-9357-09dd9b8feb73"
+          ],
+          "latencyMilliseconds": 216,
+          "errorType": null
+        },
+        {
+          "caseId": "no-result-01",
+          "retrievedIds": [],
+          "latencyMilliseconds": 209,
+          "errorType": null
+        },
+        {
+          "caseId": "no-result-02",
+          "retrievedIds": [],
+          "latencyMilliseconds": 210,
+          "errorType": null
+        },
+        {
+          "caseId": "no-result-03",
+          "retrievedIds": [],
+          "latencyMilliseconds": 217,
+          "errorType": null
+        },
+        {
+          "caseId": "no-result-04",
+          "retrievedIds": [],
+          "latencyMilliseconds": 208,
+          "errorType": null
+        },
+        {
+          "caseId": "no-result-05",
+          "retrievedIds": [],
+          "latencyMilliseconds": 216,
+          "errorType": null
+        }
+      ]
+    },
+    {
+      "strategy": "SEMANTIC",
+      "metrics": {
+        "recallAt5": 0.017142857142857144,
+        "precisionAt5": 0.017142857142857144,
+        "mrr": 0.05,
+        "ndcgAt5": 0.03019459183300474,
+        "noResultAccuracy": 1,
+        "p50LatencyMilliseconds": 415,
+        "p95LatencyMilliseconds": 514,
+        "queryCount": 40
+      },
+      "errorTypes": {},
+      "outcomes": [
+        {
+          "caseId": "query-01454ea3-9c0a-504e-a1a4-e4c5075b3144",
+          "retrievedIds": [
+            "009f4062-3f47-54d8-a4dd-d8b112359b67",
+            "03f07375-956c-5869-a0ad-013681626ace",
+            "06295ec2-1009-52ba-bc52-86595bd19074",
+            "0ea782a4-d553-5a6e-89c0-5ec232b7a63b",
+            "0f73d1d8-2985-5fbc-9b62-dbd4275922f3"
+          ],
+          "latencyMilliseconds": 2537,
+          "errorType": null
+        },
+        {
+          "caseId": "query-02bd05dd-84e4-59de-93ef-890c2981f6be",
+          "retrievedIds": [
+            "009f4062-3f47-54d8-a4dd-d8b112359b67",
+            "03f07375-956c-5869-a0ad-013681626ace",
+            "06295ec2-1009-52ba-bc52-86595bd19074",
+            "0ea782a4-d553-5a6e-89c0-5ec232b7a63b",
+            "0f73d1d8-2985-5fbc-9b62-dbd4275922f3"
+          ],
+          "latencyMilliseconds": 887,
+          "errorType": null
+        },
+        {
+          "caseId": "query-03608e3e-6216-5f50-b44a-31e462c08546",
+          "retrievedIds": [
+            "009f4062-3f47-54d8-a4dd-d8b112359b67",
+            "03f07375-956c-5869-a0ad-013681626ace",
+            "06295ec2-1009-52ba-bc52-86595bd19074",
+            "0ea782a4-d553-5a6e-89c0-5ec232b7a63b",
+            "0f73d1d8-2985-5fbc-9b62-dbd4275922f3"
+          ],
+          "latencyMilliseconds": 487,
+          "errorType": null
+        },
+        {
+          "caseId": "query-03f07375-956c-5869-a0ad-013681626ace",
+          "retrievedIds": [
+            "009f4062-3f47-54d8-a4dd-d8b112359b67",
+            "03f07375-956c-5869-a0ad-013681626ace",
+            "06295ec2-1009-52ba-bc52-86595bd19074",
+            "0ea782a4-d553-5a6e-89c0-5ec232b7a63b",
+            "0f73d1d8-2985-5fbc-9b62-dbd4275922f3"
+          ],
+          "latencyMilliseconds": 406,
+          "errorType": null
+        },
+        {
+          "caseId": "query-043bc4cf-9482-5484-b8fa-5f49e6bb2891",
+          "retrievedIds": [
+            "009f4062-3f47-54d8-a4dd-d8b112359b67",
+            "03f07375-956c-5869-a0ad-013681626ace",
+            "06295ec2-1009-52ba-bc52-86595bd19074",
+            "0ea782a4-d553-5a6e-89c0-5ec232b7a63b",
+            "0f73d1d8-2985-5fbc-9b62-dbd4275922f3"
+          ],
+          "latencyMilliseconds": 420,
+          "errorType": null
+        },
+        {
+          "caseId": "query-04ee8b41-5fe3-5820-b9fa-bf72c35fbb9a",
+          "retrievedIds": [
+            "009f4062-3f47-54d8-a4dd-d8b112359b67",
+            "03f07375-956c-5869-a0ad-013681626ace",
+            "06295ec2-1009-52ba-bc52-86595bd19074",
+            "0ea782a4-d553-5a6e-89c0-5ec232b7a63b",
+            "0f73d1d8-2985-5fbc-9b62-dbd4275922f3"
+          ],
+          "latencyMilliseconds": 419,
+          "errorType": null
+        },
+        {
+          "caseId": "query-08be10d4-10d4-5617-946a-5dad753622ff",
+          "retrievedIds": [
+            "009f4062-3f47-54d8-a4dd-d8b112359b67",
+            "03f07375-956c-5869-a0ad-013681626ace",
+            "06295ec2-1009-52ba-bc52-86595bd19074",
+            "0ea782a4-d553-5a6e-89c0-5ec232b7a63b",
+            "0f73d1d8-2985-5fbc-9b62-dbd4275922f3"
+          ],
+          "latencyMilliseconds": 416,
+          "errorType": null
+        },
+        {
+          "caseId": "query-00950352-5f6e-5a3a-95d5-cb0663fe4c5c",
+          "retrievedIds": [
+            "009f4062-3f47-54d8-a4dd-d8b112359b67",
+            "03f07375-956c-5869-a0ad-013681626ace",
+            "06295ec2-1009-52ba-bc52-86595bd19074",
+            "0ea782a4-d553-5a6e-89c0-5ec232b7a63b",
+            "0f73d1d8-2985-5fbc-9b62-dbd4275922f3"
+          ],
+          "latencyMilliseconds": 484,
+          "errorType": null
+        },
+        {
+          "caseId": "query-03410b55-8377-58a7-84f7-9f982da90f04",
+          "retrievedIds": [
+            "009f4062-3f47-54d8-a4dd-d8b112359b67",
+            "03f07375-956c-5869-a0ad-013681626ace",
+            "06295ec2-1009-52ba-bc52-86595bd19074",
+            "0ea782a4-d553-5a6e-89c0-5ec232b7a63b",
+            "0f73d1d8-2985-5fbc-9b62-dbd4275922f3"
+          ],
+          "latencyMilliseconds": 438,
+          "errorType": null
+        },
+        {
+          "caseId": "query-04ad0e42-3046-51c4-aced-34ed643e6b87",
+          "retrievedIds": [],
+          "latencyMilliseconds": 397,
+          "errorType": null
+        },
+        {
+          "caseId": "query-04e51055-d80b-5621-96dd-564098541300",
+          "retrievedIds": [
+            "009f4062-3f47-54d8-a4dd-d8b112359b67",
+            "03f07375-956c-5869-a0ad-013681626ace",
+            "06295ec2-1009-52ba-bc52-86595bd19074",
+            "0ea782a4-d553-5a6e-89c0-5ec232b7a63b",
+            "0f73d1d8-2985-5fbc-9b62-dbd4275922f3"
+          ],
+          "latencyMilliseconds": 389,
+          "errorType": null
+        },
+        {
+          "caseId": "query-077bf18c-8500-55c4-b1f2-8e9a70e5fd36",
+          "retrievedIds": [
+            "009f4062-3f47-54d8-a4dd-d8b112359b67",
+            "03f07375-956c-5869-a0ad-013681626ace",
+            "06295ec2-1009-52ba-bc52-86595bd19074",
+            "0ea782a4-d553-5a6e-89c0-5ec232b7a63b",
+            "0f73d1d8-2985-5fbc-9b62-dbd4275922f3"
+          ],
+          "latencyMilliseconds": 369,
+          "errorType": null
+        },
+        {
+          "caseId": "query-0b18be7f-c396-5236-b96c-0666fcf00f31",
+          "retrievedIds": [
+            "009f4062-3f47-54d8-a4dd-d8b112359b67",
+            "03f07375-956c-5869-a0ad-013681626ace",
+            "06295ec2-1009-52ba-bc52-86595bd19074",
+            "0ea782a4-d553-5a6e-89c0-5ec232b7a63b",
+            "0f73d1d8-2985-5fbc-9b62-dbd4275922f3"
+          ],
+          "latencyMilliseconds": 447,
+          "errorType": null
+        },
+        {
+          "caseId": "query-0cce0717-aebf-5686-86c7-1f2c1aaeb1b6",
+          "retrievedIds": [
+            "009f4062-3f47-54d8-a4dd-d8b112359b67",
+            "03f07375-956c-5869-a0ad-013681626ace",
+            "06295ec2-1009-52ba-bc52-86595bd19074",
+            "0ea782a4-d553-5a6e-89c0-5ec232b7a63b",
+            "0f73d1d8-2985-5fbc-9b62-dbd4275922f3"
+          ],
+          "latencyMilliseconds": 418,
+          "errorType": null
+        },
+        {
+          "caseId": "query-001b8898-4558-5c31-894e-bbb9d3a3f88c",
+          "retrievedIds": [
+            "009f4062-3f47-54d8-a4dd-d8b112359b67",
+            "03f07375-956c-5869-a0ad-013681626ace",
+            "06295ec2-1009-52ba-bc52-86595bd19074",
+            "0ea782a4-d553-5a6e-89c0-5ec232b7a63b",
+            "0f73d1d8-2985-5fbc-9b62-dbd4275922f3"
+          ],
+          "latencyMilliseconds": 420,
+          "errorType": null
+        },
+        {
+          "caseId": "query-03d02c5d-c9d2-5042-9ead-564cc2662691",
+          "retrievedIds": [
+            "009f4062-3f47-54d8-a4dd-d8b112359b67",
+            "03f07375-956c-5869-a0ad-013681626ace",
+            "06295ec2-1009-52ba-bc52-86595bd19074",
+            "0ea782a4-d553-5a6e-89c0-5ec232b7a63b",
+            "0f73d1d8-2985-5fbc-9b62-dbd4275922f3"
+          ],
+          "latencyMilliseconds": 403,
+          "errorType": null
+        },
+        {
+          "caseId": "query-03f90ece-5720-509f-95f2-4088ec7f5b22",
+          "retrievedIds": [
+            "009f4062-3f47-54d8-a4dd-d8b112359b67",
+            "03f07375-956c-5869-a0ad-013681626ace",
+            "06295ec2-1009-52ba-bc52-86595bd19074",
+            "0ea782a4-d553-5a6e-89c0-5ec232b7a63b",
+            "0f73d1d8-2985-5fbc-9b62-dbd4275922f3"
+          ],
+          "latencyMilliseconds": 476,
+          "errorType": null
+        },
+        {
+          "caseId": "query-03fb2653-dfe4-5420-a97a-80012cbb80e2",
+          "retrievedIds": [
+            "009f4062-3f47-54d8-a4dd-d8b112359b67",
+            "03f07375-956c-5869-a0ad-013681626ace",
+            "06295ec2-1009-52ba-bc52-86595bd19074",
+            "0ea782a4-d553-5a6e-89c0-5ec232b7a63b",
+            "0f73d1d8-2985-5fbc-9b62-dbd4275922f3"
+          ],
+          "latencyMilliseconds": 378,
+          "errorType": null
+        },
+        {
+          "caseId": "query-04886c06-1542-5290-b8da-48474561d2dc",
+          "retrievedIds": [
+            "009f4062-3f47-54d8-a4dd-d8b112359b67",
+            "03f07375-956c-5869-a0ad-013681626ace",
+            "06295ec2-1009-52ba-bc52-86595bd19074",
+            "0ea782a4-d553-5a6e-89c0-5ec232b7a63b",
+            "0f73d1d8-2985-5fbc-9b62-dbd4275922f3"
+          ],
+          "latencyMilliseconds": 415,
+          "errorType": null
+        },
+        {
+          "caseId": "query-04d60d07-65fe-5c9e-87de-7719f4f16256",
+          "retrievedIds": [
+            "009f4062-3f47-54d8-a4dd-d8b112359b67",
+            "03f07375-956c-5869-a0ad-013681626ace",
+            "06295ec2-1009-52ba-bc52-86595bd19074",
+            "0ea782a4-d553-5a6e-89c0-5ec232b7a63b",
+            "0f73d1d8-2985-5fbc-9b62-dbd4275922f3"
+          ],
+          "latencyMilliseconds": 457,
+          "errorType": null
+        },
+        {
+          "caseId": "query-053b0ecd-226f-55af-90a3-faf0243e9017",
+          "retrievedIds": [
+            "009f4062-3f47-54d8-a4dd-d8b112359b67",
+            "03f07375-956c-5869-a0ad-013681626ace",
+            "06295ec2-1009-52ba-bc52-86595bd19074",
+            "0ea782a4-d553-5a6e-89c0-5ec232b7a63b",
+            "0f73d1d8-2985-5fbc-9b62-dbd4275922f3"
+          ],
+          "latencyMilliseconds": 498,
+          "errorType": null
+        },
+        {
+          "caseId": "query-0068124b-578d-5189-b375-3bc898217e8b",
+          "retrievedIds": [
+            "009f4062-3f47-54d8-a4dd-d8b112359b67",
+            "03f07375-956c-5869-a0ad-013681626ace",
+            "06295ec2-1009-52ba-bc52-86595bd19074",
+            "0ea782a4-d553-5a6e-89c0-5ec232b7a63b",
+            "0f73d1d8-2985-5fbc-9b62-dbd4275922f3"
+          ],
+          "latencyMilliseconds": 381,
+          "errorType": null
+        },
+        {
+          "caseId": "query-009f4062-3f47-54d8-a4dd-d8b112359b67",
+          "retrievedIds": [
+            "009f4062-3f47-54d8-a4dd-d8b112359b67",
+            "03f07375-956c-5869-a0ad-013681626ace",
+            "06295ec2-1009-52ba-bc52-86595bd19074",
+            "0ea782a4-d553-5a6e-89c0-5ec232b7a63b",
+            "0f73d1d8-2985-5fbc-9b62-dbd4275922f3"
+          ],
+          "latencyMilliseconds": 397,
+          "errorType": null
+        },
+        {
+          "caseId": "query-027ce672-e4aa-5007-b3ea-18aeaba30601",
+          "retrievedIds": [
+            "009f4062-3f47-54d8-a4dd-d8b112359b67",
+            "03f07375-956c-5869-a0ad-013681626ace",
+            "06295ec2-1009-52ba-bc52-86595bd19074",
+            "0ea782a4-d553-5a6e-89c0-5ec232b7a63b",
+            "0f73d1d8-2985-5fbc-9b62-dbd4275922f3"
+          ],
+          "latencyMilliseconds": 397,
+          "errorType": null
+        },
+        {
+          "caseId": "query-03c6ca7a-3d21-5c51-86fd-5b955cd8a2e2",
+          "retrievedIds": [
+            "009f4062-3f47-54d8-a4dd-d8b112359b67",
+            "03f07375-956c-5869-a0ad-013681626ace",
+            "06295ec2-1009-52ba-bc52-86595bd19074",
+            "0ea782a4-d553-5a6e-89c0-5ec232b7a63b",
+            "0f73d1d8-2985-5fbc-9b62-dbd4275922f3"
+          ],
+          "latencyMilliseconds": 387,
+          "errorType": null
+        },
+        {
+          "caseId": "query-06770bbd-b562-5982-9292-02ed3a462f7f",
+          "retrievedIds": [
+            "009f4062-3f47-54d8-a4dd-d8b112359b67",
+            "03f07375-956c-5869-a0ad-013681626ace",
+            "06295ec2-1009-52ba-bc52-86595bd19074",
+            "0ea782a4-d553-5a6e-89c0-5ec232b7a63b",
+            "0f73d1d8-2985-5fbc-9b62-dbd4275922f3"
+          ],
+          "latencyMilliseconds": 437,
+          "errorType": null
+        },
+        {
+          "caseId": "query-07b7d861-acad-59e7-9667-9a5cf7e702a4",
+          "retrievedIds": [
+            "009f4062-3f47-54d8-a4dd-d8b112359b67",
+            "03f07375-956c-5869-a0ad-013681626ace",
+            "06295ec2-1009-52ba-bc52-86595bd19074",
+            "0ea782a4-d553-5a6e-89c0-5ec232b7a63b",
+            "0f73d1d8-2985-5fbc-9b62-dbd4275922f3"
+          ],
+          "latencyMilliseconds": 387,
+          "errorType": null
+        },
+        {
+          "caseId": "query-083f290f-9280-52f8-af2c-be3f4c7cadf8",
+          "retrievedIds": [
+            "009f4062-3f47-54d8-a4dd-d8b112359b67",
+            "03f07375-956c-5869-a0ad-013681626ace",
+            "06295ec2-1009-52ba-bc52-86595bd19074",
+            "0ea782a4-d553-5a6e-89c0-5ec232b7a63b",
+            "0f73d1d8-2985-5fbc-9b62-dbd4275922f3"
+          ],
+          "latencyMilliseconds": 514,
+          "errorType": null
+        },
+        {
+          "caseId": "query-027520ac-83e5-5a98-9801-a8048be1dcb0",
+          "retrievedIds": [
+            "009f4062-3f47-54d8-a4dd-d8b112359b67",
+            "03f07375-956c-5869-a0ad-013681626ace",
+            "06295ec2-1009-52ba-bc52-86595bd19074",
+            "0ea782a4-d553-5a6e-89c0-5ec232b7a63b",
+            "0f73d1d8-2985-5fbc-9b62-dbd4275922f3"
+          ],
+          "latencyMilliseconds": 394,
+          "errorType": null
+        },
+        {
+          "caseId": "query-05652519-7315-54ee-8147-912a09ff80b3",
+          "retrievedIds": [
+            "009f4062-3f47-54d8-a4dd-d8b112359b67",
+            "03f07375-956c-5869-a0ad-013681626ace",
+            "06295ec2-1009-52ba-bc52-86595bd19074",
+            "0ea782a4-d553-5a6e-89c0-5ec232b7a63b",
+            "0f73d1d8-2985-5fbc-9b62-dbd4275922f3"
+          ],
+          "latencyMilliseconds": 410,
+          "errorType": null
+        },
+        {
+          "caseId": "query-0634ba21-3ad6-5951-85cd-398243df3249",
+          "retrievedIds": [
+            "009f4062-3f47-54d8-a4dd-d8b112359b67",
+            "03f07375-956c-5869-a0ad-013681626ace",
+            "06295ec2-1009-52ba-bc52-86595bd19074",
+            "0ea782a4-d553-5a6e-89c0-5ec232b7a63b",
+            "0f73d1d8-2985-5fbc-9b62-dbd4275922f3"
+          ],
+          "latencyMilliseconds": 412,
+          "errorType": null
+        },
+        {
+          "caseId": "query-06524395-1ad2-5f5b-a6d4-7a8d3bed9f3b",
+          "retrievedIds": [
+            "009f4062-3f47-54d8-a4dd-d8b112359b67",
+            "03f07375-956c-5869-a0ad-013681626ace",
+            "06295ec2-1009-52ba-bc52-86595bd19074",
+            "0ea782a4-d553-5a6e-89c0-5ec232b7a63b",
+            "0f73d1d8-2985-5fbc-9b62-dbd4275922f3"
+          ],
+          "latencyMilliseconds": 429,
+          "errorType": null
+        },
+        {
+          "caseId": "query-06d7fa14-a293-5fef-896f-b6cee9759013",
+          "retrievedIds": [
+            "009f4062-3f47-54d8-a4dd-d8b112359b67",
+            "03f07375-956c-5869-a0ad-013681626ace",
+            "06295ec2-1009-52ba-bc52-86595bd19074",
+            "0ea782a4-d553-5a6e-89c0-5ec232b7a63b",
+            "0f73d1d8-2985-5fbc-9b62-dbd4275922f3"
+          ],
+          "latencyMilliseconds": 396,
+          "errorType": null
+        },
+        {
+          "caseId": "query-0aeb5f95-2cc2-5823-afb2-7113ea26ba74",
+          "retrievedIds": [
+            "009f4062-3f47-54d8-a4dd-d8b112359b67",
+            "03f07375-956c-5869-a0ad-013681626ace",
+            "06295ec2-1009-52ba-bc52-86595bd19074",
+            "0ea782a4-d553-5a6e-89c0-5ec232b7a63b",
+            "0f73d1d8-2985-5fbc-9b62-dbd4275922f3"
+          ],
+          "latencyMilliseconds": 402,
+          "errorType": null
+        },
+        {
+          "caseId": "query-0b82de76-3cfa-5441-acb0-ee3587f7ccbf",
+          "retrievedIds": [
+            "009f4062-3f47-54d8-a4dd-d8b112359b67",
+            "03f07375-956c-5869-a0ad-013681626ace",
+            "06295ec2-1009-52ba-bc52-86595bd19074",
+            "0ea782a4-d553-5a6e-89c0-5ec232b7a63b",
+            "0f73d1d8-2985-5fbc-9b62-dbd4275922f3"
+          ],
+          "latencyMilliseconds": 411,
+          "errorType": null
+        },
+        {
+          "caseId": "no-result-01",
+          "retrievedIds": [],
+          "latencyMilliseconds": 413,
+          "errorType": null
+        },
+        {
+          "caseId": "no-result-02",
+          "retrievedIds": [],
+          "latencyMilliseconds": 410,
+          "errorType": null
+        },
+        {
+          "caseId": "no-result-03",
+          "retrievedIds": [],
+          "latencyMilliseconds": 433,
+          "errorType": null
+        },
+        {
+          "caseId": "no-result-04",
+          "retrievedIds": [],
+          "latencyMilliseconds": 447,
+          "errorType": null
+        },
+        {
+          "caseId": "no-result-05",
+          "retrievedIds": [],
+          "latencyMilliseconds": 431,
+          "errorType": null
+        }
+      ]
+    },
+    {
+      "strategy": "HYBRID",
+      "metrics": {
+        "recallAt5": 0.16000000000000006,
+        "precisionAt5": 0.16000000000000006,
+        "mrr": 0.5380952380952382,
+        "ndcgAt5": 0.17198881320371537,
+        "noResultAccuracy": 1,
+        "p50LatencyMilliseconds": 430,
+        "p95LatencyMilliseconds": 538,
+        "queryCount": 40
+      },
+      "errorTypes": {},
+      "outcomes": [
+        {
+          "caseId": "query-01454ea3-9c0a-504e-a1a4-e4c5075b3144",
+          "retrievedIds": [
+            "ed750964-a574-5f0a-9651-372a49714d59",
+            "41360fc9-5b57-51fa-b927-fb5b1add0e89",
+            "66c4ed4e-4b53-5b71-8f1f-fca04866e60f",
+            "b27083d5-971e-50d2-b03f-e2996cc89e94",
+            "4a8b2ebf-e792-53d3-8a9b-098c93405e25"
+          ],
+          "latencyMilliseconds": 787,
+          "errorType": null
+        },
+        {
+          "caseId": "query-02bd05dd-84e4-59de-93ef-890c2981f6be",
+          "retrievedIds": [
+            "41360fc9-5b57-51fa-b927-fb5b1add0e89",
+            "64f410f0-0d6b-569f-a242-391e2a4eb3a2",
+            "66c4ed4e-4b53-5b71-8f1f-fca04866e60f",
+            "ed750964-a574-5f0a-9651-372a49714d59",
+            "b27083d5-971e-50d2-b03f-e2996cc89e94"
+          ],
+          "latencyMilliseconds": 423,
+          "errorType": null
+        },
+        {
+          "caseId": "query-03608e3e-6216-5f50-b44a-31e462c08546",
+          "retrievedIds": [
+            "379351c6-305f-5fc0-99e4-ce8772df9257",
+            "e2b675d2-d7c9-5e0d-9d2e-5cd7a0e36a8e",
+            "b99fd99a-7f7e-5c37-8693-c8872102b0ee",
+            "e46e0c7a-8c4a-543f-8ec5-a739d96f863a",
+            "2bb33612-1ee1-57a3-8f06-847427ebc092"
+          ],
+          "latencyMilliseconds": 439,
+          "errorType": null
+        },
+        {
+          "caseId": "query-03f07375-956c-5869-a0ad-013681626ace",
+          "retrievedIds": [
+            "03f07375-956c-5869-a0ad-013681626ace",
+            "886c02b3-21bb-5873-870f-a10e98a56dfb",
+            "d0bbc08f-1f02-53f0-a840-33fdc7401a6b",
+            "ed750964-a574-5f0a-9651-372a49714d59",
+            "f5ce89b9-f535-50f0-a3a7-98686be67b44"
+          ],
+          "latencyMilliseconds": 420,
+          "errorType": null
+        },
+        {
+          "caseId": "query-043bc4cf-9482-5484-b8fa-5f49e6bb2891",
+          "retrievedIds": [
+            "41360fc9-5b57-51fa-b927-fb5b1add0e89",
+            "4a8b2ebf-e792-53d3-8a9b-098c93405e25",
+            "64f410f0-0d6b-569f-a242-391e2a4eb3a2",
+            "66c4ed4e-4b53-5b71-8f1f-fca04866e60f",
+            "b58d5e8e-a60b-51b7-96f4-93ecf0979d36"
+          ],
+          "latencyMilliseconds": 437,
+          "errorType": null
+        },
+        {
+          "caseId": "query-04ee8b41-5fe3-5820-b9fa-bf72c35fbb9a",
+          "retrievedIds": [
+            "63366728-4eff-5695-90f0-5353d4b9af17",
+            "445f74e1-0c6a-5a7c-821f-a529567b5a11",
+            "fc05fb0c-d184-53f8-93ca-81689ce326d4",
+            "b4676837-b234-5fdd-ada9-c4f9dffe5484",
+            "03f07375-956c-5869-a0ad-013681626ace"
+          ],
+          "latencyMilliseconds": 430,
+          "errorType": null
+        },
+        {
+          "caseId": "query-08be10d4-10d4-5617-946a-5dad753622ff",
+          "retrievedIds": [
+            "a1cb2212-48bc-54d4-bf56-cc1b2a03c37e",
+            "f5ce89b9-f535-50f0-a3a7-98686be67b44",
+            "43d40c60-b388-5c17-bd83-b087f28c12e7",
+            "b7ad9759-66e8-5242-a4bc-608ba1b84515",
+            "03f07375-956c-5869-a0ad-013681626ace"
+          ],
+          "latencyMilliseconds": 464,
+          "errorType": null
+        },
+        {
+          "caseId": "query-00950352-5f6e-5a3a-95d5-cb0663fe4c5c",
+          "retrievedIds": [
+            "b095d36a-bd16-5cc7-beef-6942e78b8576",
+            "ce05a639-f51d-5fd4-9934-1eca687fc27c",
+            "25519449-3a9f-5e83-84a0-dfd639c94b8a",
+            "e5448629-b5f7-5050-a30b-1bcc4633ec88",
+            "73880a86-17b1-55e3-837a-15736c88dd77"
+          ],
+          "latencyMilliseconds": 402,
+          "errorType": null
+        },
+        {
+          "caseId": "query-03410b55-8377-58a7-84f7-9f982da90f04",
+          "retrievedIds": [
+            "b095d36a-bd16-5cc7-beef-6942e78b8576",
+            "ce05a639-f51d-5fd4-9934-1eca687fc27c",
+            "25519449-3a9f-5e83-84a0-dfd639c94b8a",
+            "f539c6c3-7208-578c-9132-9409d6cd2bc8",
+            "73880a86-17b1-55e3-837a-15736c88dd77"
+          ],
+          "latencyMilliseconds": 468,
+          "errorType": null
+        },
+        {
+          "caseId": "query-04ad0e42-3046-51c4-aced-34ed643e6b87",
+          "retrievedIds": [],
+          "latencyMilliseconds": 429,
+          "errorType": null
+        },
+        {
+          "caseId": "query-04e51055-d80b-5621-96dd-564098541300",
+          "retrievedIds": [
+            "c312d5aa-081b-5e5e-9361-007b2e0ecfa8",
+            "c07cdd2b-20d1-56e4-b764-0cd85e5009f4",
+            "8553d32e-115b-5b29-807b-6b1e75341d63",
+            "1e19e601-8982-5983-917f-817968f2eadc",
+            "39432a71-4e1d-5680-956c-f3e78f8c9e66"
+          ],
+          "latencyMilliseconds": 486,
+          "errorType": null
+        },
+        {
+          "caseId": "query-077bf18c-8500-55c4-b1f2-8e9a70e5fd36",
+          "retrievedIds": [
+            "64b2117e-4a7f-5141-a601-d23d19781d89",
+            "ed4cb1ca-8650-5753-8010-ab58eb902e53",
+            "1685f356-2748-5d2a-9b47-ddd5ee196b90",
+            "55d71203-61b2-5827-bcef-7815d199e359",
+            "da95bf72-f4aa-5e6a-ac6c-d4392c9e9a70"
+          ],
+          "latencyMilliseconds": 397,
+          "errorType": null
+        },
+        {
+          "caseId": "query-0b18be7f-c396-5236-b96c-0666fcf00f31",
+          "retrievedIds": [
+            "0b18be7f-c396-5236-b96c-0666fcf00f31",
+            "55d71203-61b2-5827-bcef-7815d199e359",
+            "da95bf72-f4aa-5e6a-ac6c-d4392c9e9a70",
+            "1685f356-2748-5d2a-9b47-ddd5ee196b90",
+            "64b2117e-4a7f-5141-a601-d23d19781d89"
+          ],
+          "latencyMilliseconds": 407,
+          "errorType": null
+        },
+        {
+          "caseId": "query-0cce0717-aebf-5686-86c7-1f2c1aaeb1b6",
+          "retrievedIds": [
+            "b095d36a-bd16-5cc7-beef-6942e78b8576",
+            "ce05a639-f51d-5fd4-9934-1eca687fc27c",
+            "25519449-3a9f-5e83-84a0-dfd639c94b8a",
+            "f539c6c3-7208-578c-9132-9409d6cd2bc8",
+            "73880a86-17b1-55e3-837a-15736c88dd77"
+          ],
+          "latencyMilliseconds": 442,
+          "errorType": null
+        },
+        {
+          "caseId": "query-001b8898-4558-5c31-894e-bbb9d3a3f88c",
+          "retrievedIds": [
+            "99aa93a4-5da5-5089-bc08-389e7cb326a2",
+            "b6d10dea-e17e-5573-a22d-6203a2c99cd4",
+            "368b5685-a834-50b6-bb41-6b9aacb24c9a",
+            "76488ac4-3f7c-597e-b362-fe4c5d203b78",
+            "b0ffeea6-175e-5e7f-b01c-3030517e7b72"
+          ],
+          "latencyMilliseconds": 453,
+          "errorType": null
+        },
+        {
+          "caseId": "query-03d02c5d-c9d2-5042-9ead-564cc2662691",
+          "retrievedIds": [
+            "201f5b9b-7d4f-54da-b12d-bee555e89745",
+            "75e7311c-d38a-5167-bc4b-1a0cb98e08ac",
+            "2b937980-d0f6-5500-a4d8-b1fdc2715e16",
+            "06295ec2-1009-52ba-bc52-86595bd19074",
+            "56282386-88bb-5d8a-b079-6e9086849ff3"
+          ],
+          "latencyMilliseconds": 416,
+          "errorType": null
+        },
+        {
+          "caseId": "query-03f90ece-5720-509f-95f2-4088ec7f5b22",
+          "retrievedIds": [
+            "0ea782a4-d553-5a6e-89c0-5ec232b7a63b",
+            "76400192-d7ae-5a77-b738-cab401a888fd",
+            "8954aacf-dcf8-530a-85ae-fbdaecbc45c4",
+            "20ee8eda-265d-5c93-8edd-963e2745dae4",
+            "9ddf6351-9bb8-5a05-9dc9-fca1e72268d2"
+          ],
+          "latencyMilliseconds": 400,
+          "errorType": null
+        },
+        {
+          "caseId": "query-03fb2653-dfe4-5420-a97a-80012cbb80e2",
+          "retrievedIds": [
+            "9e4349e1-7f8d-5e4c-94d6-f4f89ba50599",
+            "1158d23b-75b8-5b58-ae85-bf5ccf80d69a",
+            "f5fac022-9594-5256-afea-a0f5dc3a4a1b",
+            "3056831a-7973-59bb-b3b0-4a5b87b2ca93",
+            "75e7311c-d38a-5167-bc4b-1a0cb98e08ac"
+          ],
+          "latencyMilliseconds": 450,
+          "errorType": null
+        },
+        {
+          "caseId": "query-04886c06-1542-5290-b8da-48474561d2dc",
+          "retrievedIds": [
+            "dcf98e45-c632-59cf-8e5d-971027119701",
+            "3056831a-7973-59bb-b3b0-4a5b87b2ca93",
+            "9683bef9-00b5-5e11-afe1-3befdbcf184c",
+            "2d276984-87b4-54f9-85f6-5cbd5adf2451",
+            "29c9c4a7-6d4a-57ee-ae35-964804e17148"
+          ],
+          "latencyMilliseconds": 492,
+          "errorType": null
+        },
+        {
+          "caseId": "query-04d60d07-65fe-5c9e-87de-7719f4f16256",
+          "retrievedIds": [
+            "0ea782a4-d553-5a6e-89c0-5ec232b7a63b",
+            "8954aacf-dcf8-530a-85ae-fbdaecbc45c4",
+            "76400192-d7ae-5a77-b738-cab401a888fd",
+            "9ddf6351-9bb8-5a05-9dc9-fca1e72268d2",
+            "20ee8eda-265d-5c93-8edd-963e2745dae4"
+          ],
+          "latencyMilliseconds": 395,
+          "errorType": null
+        },
+        {
+          "caseId": "query-053b0ecd-226f-55af-90a3-faf0243e9017",
+          "retrievedIds": [
+            "ff50367c-1195-5e9c-8c2c-aaaa28490280",
+            "b6d10dea-e17e-5573-a22d-6203a2c99cd4",
+            "368b5685-a834-50b6-bb41-6b9aacb24c9a",
+            "76488ac4-3f7c-597e-b362-fe4c5d203b78",
+            "99aa93a4-5da5-5089-bc08-389e7cb326a2"
+          ],
+          "latencyMilliseconds": 418,
+          "errorType": null
+        },
+        {
+          "caseId": "query-0068124b-578d-5189-b375-3bc898217e8b",
+          "retrievedIds": [
+            "a6c7618e-748e-5b26-8915-9c3f12376c03",
+            "f5758ec4-e9b3-5958-9876-b43eb93c5f3a",
+            "1aaca54e-fd28-51bf-bde6-7dce48c9ff70",
+            "f079a2c9-c61a-54e4-b4ca-f918800356f4",
+            "fcd383bc-3c45-5bbe-9c70-a129cb58dc39"
+          ],
+          "latencyMilliseconds": 410,
+          "errorType": null
+        },
+        {
+          "caseId": "query-009f4062-3f47-54d8-a4dd-d8b112359b67",
+          "retrievedIds": [
+            "009f4062-3f47-54d8-a4dd-d8b112359b67",
+            "3a2193ec-4b4d-5679-a1e2-8716cbb7b94d",
+            "a5a5628c-dc71-55e2-88cd-030ff259fe51",
+            "b7fff8a8-ca1d-5405-bc8a-eebb010bb589",
+            "b3d02dce-e1af-5f25-9879-662076b4fbab"
+          ],
+          "latencyMilliseconds": 538,
+          "errorType": null
+        },
+        {
+          "caseId": "query-027ce672-e4aa-5007-b3ea-18aeaba30601",
+          "retrievedIds": [
+            "f9942fda-5e89-5643-af1b-a4b303df8c37",
+            "297102d3-1cc2-595d-9cc4-81c3578c1074",
+            "df7c48f1-a174-5356-984e-5d18d5d06159",
+            "ca03e1a1-cc18-5838-b71f-95b56c0d1920",
+            "3a2193ec-4b4d-5679-a1e2-8716cbb7b94d"
+          ],
+          "latencyMilliseconds": 446,
+          "errorType": null
+        },
+        {
+          "caseId": "query-03c6ca7a-3d21-5c51-86fd-5b955cd8a2e2",
+          "retrievedIds": [
+            "b398e9a4-1688-56ed-b954-9185894dbae7",
+            "45335a9a-f5bb-55b0-921f-912e5a6ee9ac",
+            "df7c48f1-a174-5356-984e-5d18d5d06159",
+            "1741bfaa-cb38-5fcc-8622-4e5a8fed8be7",
+            "4dfae262-3906-552c-8ba6-6f564fa68910"
+          ],
+          "latencyMilliseconds": 719,
+          "errorType": null
+        },
+        {
+          "caseId": "query-06770bbd-b562-5982-9292-02ed3a462f7f",
+          "retrievedIds": [
+            "297102d3-1cc2-595d-9cc4-81c3578c1074",
+            "f9942fda-5e89-5643-af1b-a4b303df8c37",
+            "1aaca54e-fd28-51bf-bde6-7dce48c9ff70",
+            "a5a5628c-dc71-55e2-88cd-030ff259fe51",
+            "b7fff8a8-ca1d-5405-bc8a-eebb010bb589"
+          ],
+          "latencyMilliseconds": 432,
+          "errorType": null
+        },
+        {
+          "caseId": "query-07b7d861-acad-59e7-9667-9a5cf7e702a4",
+          "retrievedIds": [
+            "f7965dd0-a5cb-5dde-bbe6-58afe2b6ffad",
+            "39bf980d-490e-55ca-8876-09147ccbbaa1",
+            "cb9a2ed6-6978-58b5-b391-a00e564d622c",
+            "297102d3-1cc2-595d-9cc4-81c3578c1074",
+            "a5a5628c-dc71-55e2-88cd-030ff259fe51"
+          ],
+          "latencyMilliseconds": 430,
+          "errorType": null
+        },
+        {
+          "caseId": "query-083f290f-9280-52f8-af2c-be3f4c7cadf8",
+          "retrievedIds": [
+            "b7fff8a8-ca1d-5405-bc8a-eebb010bb589",
+            "009f4062-3f47-54d8-a4dd-d8b112359b67",
+            "a5a5628c-dc71-55e2-88cd-030ff259fe51",
+            "b3d02dce-e1af-5f25-9879-662076b4fbab",
+            "fb774d74-a45c-56c6-83bc-7dc5f3305a5f"
+          ],
+          "latencyMilliseconds": 481,
+          "errorType": null
+        },
+        {
+          "caseId": "query-027520ac-83e5-5a98-9801-a8048be1dcb0",
+          "retrievedIds": [
+            "bc3b58bb-4bd3-5e7b-a086-a5f013729997",
+            "027520ac-83e5-5a98-9801-a8048be1dcb0",
+            "a349892b-6b10-54cb-ac5f-2f849f4016e6",
+            "b5771e17-d4be-5e71-9e46-1bd8b2eb15dd",
+            "c5ef2251-f19e-556a-80b6-f7250d6ddb16"
+          ],
+          "latencyMilliseconds": 420,
+          "errorType": null
+        },
+        {
+          "caseId": "query-05652519-7315-54ee-8147-912a09ff80b3",
+          "retrievedIds": [
+            "239de577-a60b-5cbb-b637-274e1b31c91f",
+            "278a108d-4e41-5fd9-b5d3-e9f6e48f0572",
+            "140eaf3b-8432-5d2d-8499-8cdaaa4a45bb",
+            "514b9874-d22f-5367-a96b-0367e43805c1",
+            "76398304-1936-5847-8510-36a3dd7dad78"
+          ],
+          "latencyMilliseconds": 454,
+          "errorType": null
+        },
+        {
+          "caseId": "query-0634ba21-3ad6-5951-85cd-398243df3249",
+          "retrievedIds": [
+            "4cb24cf9-8022-58a0-8ef9-288265e81467",
+            "211c5f88-9224-5350-b1b5-d98f920d6d4a",
+            "6f085540-32b5-5214-a47b-63e9e745a7ca",
+            "c941ac27-e8a9-5b2d-b892-2a26b513be52",
+            "d72b1dcd-a7fe-5338-aec1-90e90d8aa7cf"
+          ],
+          "latencyMilliseconds": 436,
+          "errorType": null
+        },
+        {
+          "caseId": "query-06524395-1ad2-5f5b-a6d4-7a8d3bed9f3b",
+          "retrievedIds": [
+            "853648b4-aa87-500f-9784-c9d98ec9cdb8",
+            "3db264a8-42c3-5ba0-87da-96d2666bc884",
+            "a349892b-6b10-54cb-ac5f-2f849f4016e6",
+            "af03fb33-61f3-5309-938e-1548b1cebe21",
+            "bc3b58bb-4bd3-5e7b-a086-a5f013729997"
+          ],
+          "latencyMilliseconds": 407,
+          "errorType": null
+        },
+        {
+          "caseId": "query-06d7fa14-a293-5fef-896f-b6cee9759013",
+          "retrievedIds": [
+            "df8f3714-dbb3-5c62-be71-681b86bc2c2d",
+            "211c5f88-9224-5350-b1b5-d98f920d6d4a",
+            "140eaf3b-8432-5d2d-8499-8cdaaa4a45bb",
+            "514b9874-d22f-5367-a96b-0367e43805c1",
+            "bc3b58bb-4bd3-5e7b-a086-a5f013729997"
+          ],
+          "latencyMilliseconds": 423,
+          "errorType": null
+        },
+        {
+          "caseId": "query-0aeb5f95-2cc2-5823-afb2-7113ea26ba74",
+          "retrievedIds": [
+            "140eaf3b-8432-5d2d-8499-8cdaaa4a45bb",
+            "76398304-1936-5847-8510-36a3dd7dad78",
+            "d79ce635-a05b-5c0d-9b2c-4f58a800ac48",
+            "ea90d7a9-c8c8-5eea-8fe1-0bc4ff3a83bf",
+            "22034c0c-5749-50f7-a3a0-337d3cadd7e5"
+          ],
+          "latencyMilliseconds": 465,
+          "errorType": null
+        },
+        {
+          "caseId": "query-0b82de76-3cfa-5441-acb0-ee3587f7ccbf",
+          "retrievedIds": [
+            "853648b4-aa87-500f-9784-c9d98ec9cdb8",
+            "bc3b58bb-4bd3-5e7b-a086-a5f013729997",
+            "3db264a8-42c3-5ba0-87da-96d2666bc884",
+            "a349892b-6b10-54cb-ac5f-2f849f4016e6",
+            "c5ef2251-f19e-556a-80b6-f7250d6ddb16"
+          ],
+          "latencyMilliseconds": 445,
+          "errorType": null
+        },
+        {
+          "caseId": "no-result-01",
+          "retrievedIds": [],
+          "latencyMilliseconds": 388,
+          "errorType": null
+        },
+        {
+          "caseId": "no-result-02",
+          "retrievedIds": [],
+          "latencyMilliseconds": 416,
+          "errorType": null
+        },
+        {
+          "caseId": "no-result-03",
+          "retrievedIds": [],
+          "latencyMilliseconds": 432,
+          "errorType": null
+        },
+        {
+          "caseId": "no-result-04",
+          "retrievedIds": [],
+          "latencyMilliseconds": 419,
+          "errorType": null
+        },
+        {
+          "caseId": "no-result-05",
+          "retrievedIds": [],
+          "latencyMilliseconds": 398,
+          "errorType": null
+        }
+      ]
+    }
+  ]
+}

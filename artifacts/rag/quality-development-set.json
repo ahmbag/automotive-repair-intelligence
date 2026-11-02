@@ -1,0 +1,1024 @@
+{
+  "datasetId": "rag-quality-dev-v2",
+  "sourceDatasetId": "ari-suspension-synthetic-v1",
+  "selectionVersion": "ari-rag-quality-dev-selection-v2",
+  "caseCount": 50,
+  "checksum": "61d5d35f27794a154b0f618d25221a8fe245e75fe8596faea4e6f355ce4f6172",
+  "cases": [
+    {
+      "id": "development-query-0bcb364f-98b8-5027-ab0c-fafe96bb5e0d",
+      "description": "Need historical comparisons for control arm front left replace. Vehicle: Mercedes-Benz C-Class W205, model year 2016, 90568 km. No visible pre-repair condition is documented.",
+      "repairCode": "CONTROL_ARM_FRONT_LEFT_REPLACE",
+      "manufacturer": "Mercedes-Benz",
+      "model": "C-Class W205",
+      "vehicleAgeYears": 10,
+      "mileageKm": 90568,
+      "knownConditions": [],
+      "asOfUtc": "2026-10-29T00:00:00+00:00",
+      "relevance": {
+        "0bcb364f-98b8-5027-ab0c-fafe96bb5e0d": 3,
+        "c3b2b4f4-3731-5670-83fd-56cee020467b": 2,
+        "7ae9e1e5-6d8c-5b20-8ce3-a229b23cf799": 2,
+        "8b3a7a34-5066-5c95-b266-c3d40ec69949": 1,
+        "34e626e3-7160-5f4f-9c70-7da0716c9be8": 1
+      },
+      "expectsNoResult": false,
+      "manuallyReviewed": true
+    },
+    {
+      "id": "development-query-0de1ab1d-81fc-5173-a688-83775a6f5d3b",
+      "description": "Estimate a planned control arm front pair replace and find comparable completed jobs. Vehicle: \u0160koda Octavia III, model year 2012, 251024 km. Known before work: visible corrosion, visible prior damage.",
+      "repairCode": "CONTROL_ARM_FRONT_PAIR_REPLACE",
+      "manufacturer": "\u0160koda",
+      "model": "Octavia III",
+      "vehicleAgeYears": 14,
+      "mileageKm": 251024,
+      "knownConditions": [
+        "VISIBLE_CORROSION",
+        "VISIBLE_PRIOR_DAMAGE"
+      ],
+      "asOfUtc": "2026-10-29T00:00:00+00:00",
+      "relevance": {
+        "0de1ab1d-81fc-5173-a688-83775a6f5d3b": 3,
+        "b1e97d6d-1ae4-5a56-a5c1-9f254e8181cc": 2,
+        "ebc678ff-7ef2-5b73-93a2-f888bd4c17c6": 2,
+        "84511322-ddf0-5bcf-b4b6-9c3e80842fcf": 1,
+        "b3231bcd-e46f-56dd-829a-4fd836df4b6e": 1
+      },
+      "expectsNoResult": false,
+      "manuallyReviewed": true
+    },
+    {
+      "id": "development-query-055caddf-3212-5573-ad41-a9b28853d744",
+      "description": "Workshop request: control arm front right replace; retrieve similar prior repairs. Vehicle: Audi A3 8V, model year 2018, 95997 km. No visible pre-repair condition is documented.",
+      "repairCode": "CONTROL_ARM_FRONT_RIGHT_REPLACE",
+      "manufacturer": "Audi",
+      "model": "A3 8V",
+      "vehicleAgeYears": 8,
+      "mileageKm": 95997,
+      "knownConditions": [],
+      "asOfUtc": "2026-10-29T00:00:00+00:00",
+      "relevance": {
+        "055caddf-3212-5573-ad41-a9b28853d744": 3,
+        "1158d23b-75b8-5b58-ae85-bf5ccf80d69a": 2,
+        "b51dc730-e504-5086-9109-d0fff12ae48c": 2,
+        "cb91f0d9-7978-5986-aeaa-c72f58ae4bce": 1,
+        "f8f963c7-d75c-580a-b632-ec122e0e3d90": 1
+      },
+      "expectsNoResult": false,
+      "manuallyReviewed": true
+    },
+    {
+      "id": "development-query-0e5d002a-d835-57a5-ad91-f0baeeffef84",
+      "description": "Need historical comparisons for control arm rear left replace. Vehicle: Audi A3 8V, model year 2017, 142596 km. Known before work: visible corrosion.",
+      "repairCode": "CONTROL_ARM_REAR_LEFT_REPLACE",
+      "manufacturer": "Audi",
+      "model": "A3 8V",
+      "vehicleAgeYears": 9,
+      "mileageKm": 142596,
+      "knownConditions": [
+        "VISIBLE_CORROSION"
+      ],
+      "asOfUtc": "2026-10-29T00:00:00+00:00",
+      "relevance": {
+        "0e5d002a-d835-57a5-ad91-f0baeeffef84": 3,
+        "83e2aab0-4169-57b0-b082-db50f3d29c80": 2,
+        "d9832591-e90b-59c5-9fe7-baba0d989c8b": 2,
+        "1e44510d-a688-5553-8573-09d22c9a1f83": 1,
+        "79d5b9bd-8bd7-57c7-bd9d-6e6b0d5685f5": 1
+      },
+      "expectsNoResult": false,
+      "manuallyReviewed": true
+    },
+    {
+      "id": "development-query-0bec4b74-d761-55c4-a825-ed57fc70c4a5",
+      "description": "Estimate a planned control arm rear right replace and find comparable completed jobs. Vehicle: BMW 3 Series F30, model year 2016, 159346 km. Known before work: visible corrosion.",
+      "repairCode": "CONTROL_ARM_REAR_RIGHT_REPLACE",
+      "manufacturer": "BMW",
+      "model": "3 Series F30",
+      "vehicleAgeYears": 10,
+      "mileageKm": 159346,
+      "knownConditions": [
+        "VISIBLE_CORROSION"
+      ],
+      "asOfUtc": "2026-10-29T00:00:00+00:00",
+      "relevance": {
+        "0bec4b74-d761-55c4-a825-ed57fc70c4a5": 3,
+        "c6dcb61f-c247-5ab4-b61c-81a0e7b53334": 2,
+        "4f6cc284-5d1f-59af-b838-431452057dc2": 2,
+        "7721811c-67d2-5d47-ba4f-01b16eae1dac": 1,
+        "2ddfa3ba-8b7e-5e57-9493-2c6514121f61": 1
+      },
+      "expectsNoResult": false,
+      "manuallyReviewed": true
+    },
+    {
+      "id": "development-query-0dc239d1-1421-52db-8ded-1f1185f18d9a",
+      "description": "Workshop request: control arm front left replace; retrieve similar prior repairs. Vehicle: Mercedes-Benz C-Class W205, model year 2019, 50750 km. No visible pre-repair condition is documented.",
+      "repairCode": "CONTROL_ARM_FRONT_LEFT_REPLACE",
+      "manufacturer": "Mercedes-Benz",
+      "model": "C-Class W205",
+      "vehicleAgeYears": 7,
+      "mileageKm": 50750,
+      "knownConditions": [],
+      "asOfUtc": "2026-10-29T00:00:00+00:00",
+      "relevance": {
+        "0dc239d1-1421-52db-8ded-1f1185f18d9a": 3,
+        "3b028d64-4d23-5b8e-ad2a-e9c2a308eaa2": 2,
+        "a8eaa832-416b-5d0b-ad4b-64ad474e258d": 2,
+        "491561f2-e3ba-57ab-816f-493f65f3aca1": 1,
+        "7983d07e-99e8-5d54-8f05-7e58c5e8d053": 1
+      },
+      "expectsNoResult": false,
+      "manuallyReviewed": true
+    },
+    {
+      "id": "development-query-0f479239-45de-5f7d-8eb7-a323805d92e1",
+      "description": "Need historical comparisons for control arm front pair replace. Vehicle: Audi A3 8V, model year 2020, 51450 km. No visible pre-repair condition is documented.",
+      "repairCode": "CONTROL_ARM_FRONT_PAIR_REPLACE",
+      "manufacturer": "Audi",
+      "model": "A3 8V",
+      "vehicleAgeYears": 6,
+      "mileageKm": 51450,
+      "knownConditions": [],
+      "asOfUtc": "2026-10-29T00:00:00+00:00",
+      "relevance": {
+        "0f479239-45de-5f7d-8eb7-a323805d92e1": 3,
+        "915821f4-df74-584b-b47d-6c2d38c5b9f4": 2,
+        "39432a71-4e1d-5680-956c-f3e78f8c9e66": 2,
+        "a7241076-3c6b-5ba7-8132-935e139ab451": 1,
+        "d4939fcf-0b3f-5967-8a96-6edeafbb8769": 1
+      },
+      "expectsNoResult": false,
+      "manuallyReviewed": true
+    },
+    {
+      "id": "development-query-06295ec2-1009-52ba-bc52-86595bd19074",
+      "description": "Estimate a planned control arm front right replace and find comparable completed jobs. Vehicle: Volkswagen Passat B8, model year 2020, 27329 km. No visible pre-repair condition is documented.",
+      "repairCode": "CONTROL_ARM_FRONT_RIGHT_REPLACE",
+      "manufacturer": "Volkswagen",
+      "model": "Passat B8",
+      "vehicleAgeYears": 6,
+      "mileageKm": 27329,
+      "knownConditions": [],
+      "asOfUtc": "2026-10-29T00:00:00+00:00",
+      "relevance": {
+        "06295ec2-1009-52ba-bc52-86595bd19074": 3,
+        "2f102892-a34d-5f9a-a215-df3ef0f8a175": 2,
+        "1ba28842-9a1f-5826-8281-8d3097744c9d": 2,
+        "be69205e-3dd3-5070-87e9-56b56fc54cf4": 1,
+        "ac2e7596-a063-5cb6-828c-b890d59b0c82": 1
+      },
+      "expectsNoResult": false,
+      "manuallyReviewed": true
+    },
+    {
+      "id": "development-query-0ff4cccc-f5c2-568b-93ad-cc68fcf83a49",
+      "description": "Workshop request: control arm rear left replace; retrieve similar prior repairs. Vehicle: Ford Focus Mk3, model year 2015, 190529 km. Known before work: visible corrosion.",
+      "repairCode": "CONTROL_ARM_REAR_LEFT_REPLACE",
+      "manufacturer": "Ford",
+      "model": "Focus Mk3",
+      "vehicleAgeYears": 11,
+      "mileageKm": 190529,
+      "knownConditions": [
+        "VISIBLE_CORROSION"
+      ],
+      "asOfUtc": "2026-10-29T00:00:00+00:00",
+      "relevance": {
+        "0ff4cccc-f5c2-568b-93ad-cc68fcf83a49": 3,
+        "cb9a2ed6-6978-58b5-b391-a00e564d622c": 2,
+        "51c14566-667c-5b24-9d23-a8efc9e30529": 2,
+        "baec03e9-eb38-5ae0-8c70-834f99aab9f7": 1,
+        "b6a15379-1a0c-505e-b38e-28c9d8436ab8": 1
+      },
+      "expectsNoResult": false,
+      "manuallyReviewed": true
+    },
+    {
+      "id": "development-query-0c5c7d60-e490-5de3-9036-34791f0266cd",
+      "description": "Need historical comparisons for control arm rear right replace. Vehicle: Volkswagen Golf VII, model year 2012, 93992 km. Known before work: visible prior damage.",
+      "repairCode": "CONTROL_ARM_REAR_RIGHT_REPLACE",
+      "manufacturer": "Volkswagen",
+      "model": "Golf VII",
+      "vehicleAgeYears": 14,
+      "mileageKm": 93992,
+      "knownConditions": [
+        "VISIBLE_PRIOR_DAMAGE"
+      ],
+      "asOfUtc": "2026-10-29T00:00:00+00:00",
+      "relevance": {
+        "0c5c7d60-e490-5de3-9036-34791f0266cd": 3,
+        "d7c2cc34-f815-57e0-ba6e-bb389be1f751": 2,
+        "ca9fa2c1-724d-5546-801a-afb50d893666": 2,
+        "788e96d6-9948-520b-a9aa-414e927bb7e6": 1,
+        "3f71b81a-436c-5f5f-afd7-8f1947fceb5a": 1
+      },
+      "expectsNoResult": false,
+      "manuallyReviewed": true
+    },
+    {
+      "id": "development-query-0e70b7bf-7be2-53e6-afb4-52ce58277b99",
+      "description": "Estimate a planned control arm front left replace and find comparable completed jobs. Vehicle: Volkswagen Passat B8, model year 2016, 69927 km. No visible pre-repair condition is documented.",
+      "repairCode": "CONTROL_ARM_FRONT_LEFT_REPLACE",
+      "manufacturer": "Volkswagen",
+      "model": "Passat B8",
+      "vehicleAgeYears": 10,
+      "mileageKm": 69927,
+      "knownConditions": [],
+      "asOfUtc": "2026-10-29T00:00:00+00:00",
+      "relevance": {
+        "0e70b7bf-7be2-53e6-afb4-52ce58277b99": 3,
+        "b27083d5-971e-50d2-b03f-e2996cc89e94": 2,
+        "41360fc9-5b57-51fa-b927-fb5b1add0e89": 2,
+        "02bd05dd-84e4-59de-93ef-890c2981f6be": 1,
+        "af59f418-182a-5bed-91ed-13bfa96e37b3": 1
+      },
+      "expectsNoResult": false,
+      "manuallyReviewed": true
+    },
+    {
+      "id": "development-query-1054c1bf-814d-51f8-b56e-1b73d7810ece",
+      "description": "Workshop request: control arm front pair replace; retrieve similar prior repairs. Vehicle: Audi A3 8V, model year 2013, 194559 km. Known before work: visible prior damage.",
+      "repairCode": "CONTROL_ARM_FRONT_PAIR_REPLACE",
+      "manufacturer": "Audi",
+      "model": "A3 8V",
+      "vehicleAgeYears": 13,
+      "mileageKm": 194559,
+      "knownConditions": [
+        "VISIBLE_PRIOR_DAMAGE"
+      ],
+      "asOfUtc": "2026-10-29T00:00:00+00:00",
+      "relevance": {
+        "1054c1bf-814d-51f8-b56e-1b73d7810ece": 3,
+        "04e51055-d80b-5621-96dd-564098541300": 2,
+        "ce061786-7f56-57b0-8b51-7a8f409e8479": 2,
+        "d6e119b6-3399-53a4-8182-f022b89064c6": 1,
+        "1e19e601-8982-5983-917f-817968f2eadc": 1
+      },
+      "expectsNoResult": false,
+      "manuallyReviewed": true
+    },
+    {
+      "id": "development-query-06713dec-674c-52a1-8b39-cd796c909257",
+      "description": "Need historical comparisons for control arm front right replace. Vehicle: Volkswagen Golf VII, model year 2019, 46534 km. No visible pre-repair condition is documented.",
+      "repairCode": "CONTROL_ARM_FRONT_RIGHT_REPLACE",
+      "manufacturer": "Volkswagen",
+      "model": "Golf VII",
+      "vehicleAgeYears": 7,
+      "mileageKm": 46534,
+      "knownConditions": [],
+      "asOfUtc": "2026-10-29T00:00:00+00:00",
+      "relevance": {
+        "06713dec-674c-52a1-8b39-cd796c909257": 3,
+        "f5a75793-96d1-5aaf-a2a4-b4757df8aa4d": 2,
+        "03d02c5d-c9d2-5042-9ead-564cc2662691": 2,
+        "67966d9f-11e7-5361-b2e3-52096de447bf": 1,
+        "838ed84f-2659-5e68-8d88-d36831915a83": 1
+      },
+      "expectsNoResult": false,
+      "manuallyReviewed": true
+    },
+    {
+      "id": "development-query-118725e2-d55e-50e6-8091-d76b5b8e35cd",
+      "description": "Estimate a planned control arm rear left replace and find comparable completed jobs. Vehicle: Volkswagen Passat B8, model year 2019, 40891 km. Known before work: visible prior damage.",
+      "repairCode": "CONTROL_ARM_REAR_LEFT_REPLACE",
+      "manufacturer": "Volkswagen",
+      "model": "Passat B8",
+      "vehicleAgeYears": 7,
+      "mileageKm": 40891,
+      "knownConditions": [
+        "VISIBLE_PRIOR_DAMAGE"
+      ],
+      "asOfUtc": "2026-10-29T00:00:00+00:00",
+      "relevance": {
+        "118725e2-d55e-50e6-8091-d76b5b8e35cd": 3,
+        "94e555e5-ba5b-51fb-865c-23de182ecace": 2,
+        "f4e091d7-e9d8-5a81-840a-7ce8f5d8deb6": 2,
+        "60ab5447-ee7e-5e1d-bd90-05c0bf97e569": 1,
+        "89dbe5d5-4d28-560c-b338-d816a37283a8": 1
+      },
+      "expectsNoResult": false,
+      "manuallyReviewed": true
+    },
+    {
+      "id": "development-query-0c74d36d-a006-5c1e-9f49-271c3e98c1d1",
+      "description": "Workshop request: control arm rear right replace; retrieve similar prior repairs. Vehicle: BMW 3 Series F30, model year 2015, 87089 km. Known before work: visible prior damage.",
+      "repairCode": "CONTROL_ARM_REAR_RIGHT_REPLACE",
+      "manufacturer": "BMW",
+      "model": "3 Series F30",
+      "vehicleAgeYears": 11,
+      "mileageKm": 87089,
+      "knownConditions": [
+        "VISIBLE_PRIOR_DAMAGE"
+      ],
+      "asOfUtc": "2026-10-29T00:00:00+00:00",
+      "relevance": {
+        "0c74d36d-a006-5c1e-9f49-271c3e98c1d1": 3,
+        "57c0e890-9c84-5f97-b6d5-f062748aee99": 2,
+        "c6d03aba-655b-5a65-bb24-e3a9bd312a04": 2,
+        "c941ac27-e8a9-5b2d-b892-2a26b513be52": 1,
+        "1e664eda-91df-5fe5-972a-d65fb4db25fc": 1
+      },
+      "expectsNoResult": false,
+      "manuallyReviewed": true
+    },
+    {
+      "id": "development-query-0f663a08-753f-53d0-bcd6-924be884119f",
+      "description": "Need historical comparisons for control arm front left replace. Vehicle: Ford Focus Mk3, model year 2016, 132494 km. Known before work: visible prior damage.",
+      "repairCode": "CONTROL_ARM_FRONT_LEFT_REPLACE",
+      "manufacturer": "Ford",
+      "model": "Focus Mk3",
+      "vehicleAgeYears": 10,
+      "mileageKm": 132494,
+      "knownConditions": [
+        "VISIBLE_PRIOR_DAMAGE"
+      ],
+      "asOfUtc": "2026-10-29T00:00:00+00:00",
+      "relevance": {
+        "0f663a08-753f-53d0-bcd6-924be884119f": 3,
+        "269599cd-20bd-53ca-97d7-9d5e038b422f": 2,
+        "82ce7520-162f-5004-a98e-f3040960c51b": 2,
+        "425b539e-8089-5e28-a47d-99dc0c1210ba": 1,
+        "43d40c60-b388-5c17-bd83-b087f28c12e7": 1
+      },
+      "expectsNoResult": false,
+      "manuallyReviewed": false
+    },
+    {
+      "id": "development-query-14a4da9e-b118-5404-94c5-64da35af826d",
+      "description": "Estimate a planned control arm front pair replace and find comparable completed jobs. Vehicle: Volkswagen Golf VII, model year 2015, 128738 km. No visible pre-repair condition is documented.",
+      "repairCode": "CONTROL_ARM_FRONT_PAIR_REPLACE",
+      "manufacturer": "Volkswagen",
+      "model": "Golf VII",
+      "vehicleAgeYears": 11,
+      "mileageKm": 128738,
+      "knownConditions": [],
+      "asOfUtc": "2026-10-29T00:00:00+00:00",
+      "relevance": {
+        "14a4da9e-b118-5404-94c5-64da35af826d": 3,
+        "5494b84f-4337-5a66-bb5f-b7eb8e05eb9a": 2,
+        "e5448629-b5f7-5050-a30b-1bcc4633ec88": 2,
+        "c64b7c96-7ccc-5185-8c5c-33944c49ad8c": 1,
+        "c4f3d800-1640-5505-87a4-dfa8427feef6": 1
+      },
+      "expectsNoResult": false,
+      "manuallyReviewed": false
+    },
+    {
+      "id": "development-query-09877bb9-cb2a-54c1-899b-38465c048bde",
+      "description": "Workshop request: control arm front right replace; retrieve similar prior repairs. Vehicle: \u0160koda Octavia III, model year 2015, 196518 km. No visible pre-repair condition is documented.",
+      "repairCode": "CONTROL_ARM_FRONT_RIGHT_REPLACE",
+      "manufacturer": "\u0160koda",
+      "model": "Octavia III",
+      "vehicleAgeYears": 11,
+      "mileageKm": 196518,
+      "knownConditions": [],
+      "asOfUtc": "2026-10-29T00:00:00+00:00",
+      "relevance": {
+        "09877bb9-cb2a-54c1-899b-38465c048bde": 3,
+        "9822f7e9-af36-5ace-8691-990385f7651d": 2,
+        "0ba73ba3-b2ea-5b29-a1e1-7dc9c69beb76": 2,
+        "70bd3a18-07e7-592d-9b3d-8a00150bc821": 1,
+        "5fa25c42-bea9-519f-b947-bb3ac473da47": 1
+      },
+      "expectsNoResult": false,
+      "manuallyReviewed": false
+    },
+    {
+      "id": "development-query-118a5db9-4204-58eb-9024-cdbb9734314e",
+      "description": "Need historical comparisons for control arm rear left replace. Vehicle: Mercedes-Benz C-Class W205, model year 2016, 117234 km. No visible pre-repair condition is documented.",
+      "repairCode": "CONTROL_ARM_REAR_LEFT_REPLACE",
+      "manufacturer": "Mercedes-Benz",
+      "model": "C-Class W205",
+      "vehicleAgeYears": 10,
+      "mileageKm": 117234,
+      "knownConditions": [],
+      "asOfUtc": "2026-10-29T00:00:00+00:00",
+      "relevance": {
+        "118a5db9-4204-58eb-9024-cdbb9734314e": 3,
+        "39bf980d-490e-55ca-8876-09147ccbbaa1": 2,
+        "c5f0f615-f112-592b-ab17-4f13ea889224": 2,
+        "bc2b0666-3d18-561d-bb99-609eb6ea8e02": 1,
+        "ce863f45-27ce-54b7-8a90-cad994f5d597": 1
+      },
+      "expectsNoResult": false,
+      "manuallyReviewed": false
+    },
+    {
+      "id": "development-query-0d1e10d2-97cd-53b3-b22b-22b60288d8a6",
+      "description": "Estimate a planned control arm rear right replace and find comparable completed jobs. Vehicle: Volkswagen Golf VII, model year 2014, 75920 km. No visible pre-repair condition is documented.",
+      "repairCode": "CONTROL_ARM_REAR_RIGHT_REPLACE",
+      "manufacturer": "Volkswagen",
+      "model": "Golf VII",
+      "vehicleAgeYears": 12,
+      "mileageKm": 75920,
+      "knownConditions": [],
+      "asOfUtc": "2026-10-29T00:00:00+00:00",
+      "relevance": {
+        "0d1e10d2-97cd-53b3-b22b-22b60288d8a6": 3,
+        "0c5c7d60-e490-5de3-9036-34791f0266cd": 2,
+        "1099d3a3-5d79-5675-bc09-50a48498e81f": 2,
+        "f9b60a1c-8dce-5b30-a573-332fa651070f": 1,
+        "26ed8e20-57e2-5c34-8fe5-2b32708984a8": 1
+      },
+      "expectsNoResult": false,
+      "manuallyReviewed": false
+    },
+    {
+      "id": "development-query-0f73d1d8-2985-5fbc-9b62-dbd4275922f3",
+      "description": "Workshop request: control arm front left replace; retrieve similar prior repairs. Vehicle: Audi A3 8V, model year 2015, 66700 km. Known before work: visible corrosion, visible prior damage.",
+      "repairCode": "CONTROL_ARM_FRONT_LEFT_REPLACE",
+      "manufacturer": "Audi",
+      "model": "A3 8V",
+      "vehicleAgeYears": 11,
+      "mileageKm": 66700,
+      "knownConditions": [
+        "VISIBLE_CORROSION",
+        "VISIBLE_PRIOR_DAMAGE"
+      ],
+      "asOfUtc": "2026-10-29T00:00:00+00:00",
+      "relevance": {
+        "0f73d1d8-2985-5fbc-9b62-dbd4275922f3": 3,
+        "173a4107-7f75-529c-b84e-5ec19505cf88": 2,
+        "5b029830-dc02-52fa-a23e-75fe2442ea60": 2,
+        "d42b3255-913a-5300-8ca7-51a8c8cb89b0": 1,
+        "2e993068-4ac0-5b5f-97f3-523452e4840c": 1
+      },
+      "expectsNoResult": false,
+      "manuallyReviewed": false
+    },
+    {
+      "id": "development-query-14e6dc30-266e-515a-a931-e75e62302ad3",
+      "description": "Need historical comparisons for control arm front pair replace. Vehicle: Audi A3 8V, model year 2015, 159400 km. Known before work: visible corrosion.",
+      "repairCode": "CONTROL_ARM_FRONT_PAIR_REPLACE",
+      "manufacturer": "Audi",
+      "model": "A3 8V",
+      "vehicleAgeYears": 11,
+      "mileageKm": 159400,
+      "knownConditions": [
+        "VISIBLE_CORROSION"
+      ],
+      "asOfUtc": "2026-10-29T00:00:00+00:00",
+      "relevance": {
+        "14e6dc30-266e-515a-a931-e75e62302ad3": 3,
+        "b2bcfc3c-98fb-55ab-8454-cad4464b3c0f": 2,
+        "21207c88-85c1-5255-a99c-2b0f3b2d17a3": 2,
+        "e6abcb77-470b-5c90-aa4f-ff99ee749cb1": 1,
+        "5474bb9c-72b4-50f1-8440-6b6ce3c9e3cc": 1
+      },
+      "expectsNoResult": false,
+      "manuallyReviewed": false
+    },
+    {
+      "id": "development-query-0a2d9ece-4c59-5e92-ae03-e4bbca6f099b",
+      "description": "Estimate a planned control arm front right replace and find comparable completed jobs. Vehicle: Volkswagen Golf VII, model year 2013, 111625 km. Known before work: visible corrosion.",
+      "repairCode": "CONTROL_ARM_FRONT_RIGHT_REPLACE",
+      "manufacturer": "Volkswagen",
+      "model": "Golf VII",
+      "vehicleAgeYears": 13,
+      "mileageKm": 111625,
+      "knownConditions": [
+        "VISIBLE_CORROSION"
+      ],
+      "asOfUtc": "2026-10-29T00:00:00+00:00",
+      "relevance": {
+        "0a2d9ece-4c59-5e92-ae03-e4bbca6f099b": 3,
+        "8cddbed9-4733-51e6-9905-fd3a44155a75": 2,
+        "c345f787-82c7-5f1c-a197-2f2db31c152a": 2,
+        "3a36deb7-6db0-525c-92d2-5eda22a1a144": 1,
+        "b93ff648-9184-52b1-89dd-4a59ea0d3258": 1
+      },
+      "expectsNoResult": false,
+      "manuallyReviewed": false
+    },
+    {
+      "id": "development-query-137e6c17-c68d-56d0-b077-2b9eb9f37d24",
+      "description": "Workshop request: control arm rear left replace; retrieve similar prior repairs. Vehicle: Audi A3 8V, model year 2012, 99625 km. No visible pre-repair condition is documented.",
+      "repairCode": "CONTROL_ARM_REAR_LEFT_REPLACE",
+      "manufacturer": "Audi",
+      "model": "A3 8V",
+      "vehicleAgeYears": 14,
+      "mileageKm": 99625,
+      "knownConditions": [],
+      "asOfUtc": "2026-10-29T00:00:00+00:00",
+      "relevance": {
+        "137e6c17-c68d-56d0-b077-2b9eb9f37d24": 3,
+        "009f4062-3f47-54d8-a4dd-d8b112359b67": 2,
+        "397073db-4753-5b7c-9a1a-024c1238bc00": 2,
+        "3e5513a4-835a-532d-8d37-4992c1c6718d": 1,
+        "9500c3f8-420d-5167-bab4-8d7a2f872883": 1
+      },
+      "expectsNoResult": false,
+      "manuallyReviewed": false
+    },
+    {
+      "id": "development-query-0e4dd702-ea77-5164-a7bf-e366ce3237c4",
+      "description": "Need historical comparisons for control arm rear right replace. Vehicle: Ford Focus Mk3, model year 2015, 61925 km. No visible pre-repair condition is documented.",
+      "repairCode": "CONTROL_ARM_REAR_RIGHT_REPLACE",
+      "manufacturer": "Ford",
+      "model": "Focus Mk3",
+      "vehicleAgeYears": 11,
+      "mileageKm": 61925,
+      "knownConditions": [],
+      "asOfUtc": "2026-10-29T00:00:00+00:00",
+      "relevance": {
+        "0e4dd702-ea77-5164-a7bf-e366ce3237c4": 3,
+        "99ad2de6-380a-5989-8e65-b9b39f7ab548": 2,
+        "7014d613-3a30-570f-b646-1afe73a77a79": 2,
+        "6d7a9064-a7f8-51d1-a5d3-357703950057": 1,
+        "7178bbfb-c32f-5e77-8895-0d46bd37a710": 1
+      },
+      "expectsNoResult": false,
+      "manuallyReviewed": false
+    },
+    {
+      "id": "development-query-0fd00e98-52ba-578e-92b5-797e6df872db",
+      "description": "Estimate a planned control arm front left replace and find comparable completed jobs. Vehicle: Volkswagen Golf VII, model year 2017, 82028 km. No visible pre-repair condition is documented.",
+      "repairCode": "CONTROL_ARM_FRONT_LEFT_REPLACE",
+      "manufacturer": "Volkswagen",
+      "model": "Golf VII",
+      "vehicleAgeYears": 9,
+      "mileageKm": 82028,
+      "knownConditions": [],
+      "asOfUtc": "2026-10-29T00:00:00+00:00",
+      "relevance": {
+        "0fd00e98-52ba-578e-92b5-797e6df872db": 3,
+        "c9a9e4d6-d6dc-5ed8-8470-e36a47fe6bd4": 2,
+        "728345de-95e1-5aec-b149-d3e41b32430d": 2,
+        "6528efd0-5b2e-5de1-8abe-84c5d88e3f23": 1,
+        "9131f670-50f6-5adf-8b71-1337bfffa157": 1
+      },
+      "expectsNoResult": false,
+      "manuallyReviewed": false
+    },
+    {
+      "id": "development-query-165c0781-a7b0-5353-9451-cf7de3a72aa8",
+      "description": "Workshop request: control arm front pair replace; retrieve similar prior repairs. Vehicle: Ford Focus Mk3, model year 2016, 75802 km. No visible pre-repair condition is documented.",
+      "repairCode": "CONTROL_ARM_FRONT_PAIR_REPLACE",
+      "manufacturer": "Ford",
+      "model": "Focus Mk3",
+      "vehicleAgeYears": 10,
+      "mileageKm": 75802,
+      "knownConditions": [],
+      "asOfUtc": "2026-10-29T00:00:00+00:00",
+      "relevance": {
+        "165c0781-a7b0-5353-9451-cf7de3a72aa8": 3,
+        "da95bf72-f4aa-5e6a-ac6c-d4392c9e9a70": 2,
+        "4bc0c3f4-8e4b-5cef-87c8-ca3faff5519f": 2,
+        "f960e25a-ad3d-58b9-a039-dbbce50e9a02": 1,
+        "2f8ee7f2-3bfe-5d18-9008-d990437353b1": 1
+      },
+      "expectsNoResult": false,
+      "manuallyReviewed": false
+    },
+    {
+      "id": "development-query-0ba73ba3-b2ea-5b29-a1e1-7dc9c69beb76",
+      "description": "Need historical comparisons for control arm front right replace. Vehicle: \u0160koda Octavia III, model year 2016, 198006 km. Known before work: visible corrosion.",
+      "repairCode": "CONTROL_ARM_FRONT_RIGHT_REPLACE",
+      "manufacturer": "\u0160koda",
+      "model": "Octavia III",
+      "vehicleAgeYears": 10,
+      "mileageKm": 198006,
+      "knownConditions": [
+        "VISIBLE_CORROSION"
+      ],
+      "asOfUtc": "2026-10-29T00:00:00+00:00",
+      "relevance": {
+        "0ba73ba3-b2ea-5b29-a1e1-7dc9c69beb76": 3,
+        "20ee8eda-265d-5c93-8edd-963e2745dae4": 2,
+        "9822f7e9-af36-5ace-8691-990385f7651d": 2,
+        "cc8af1b0-6640-582a-b426-c18b81b3115f": 1,
+        "2f6b45d9-0e11-55fe-9a09-db32009034a4": 1
+      },
+      "expectsNoResult": false,
+      "manuallyReviewed": false
+    },
+    {
+      "id": "development-query-13c929d6-0a78-5f2d-9143-653da7fa62f4",
+      "description": "Estimate a planned control arm rear left replace and find comparable completed jobs. Vehicle: Ford Focus Mk3, model year 2017, 73903 km. Known before work: visible prior damage.",
+      "repairCode": "CONTROL_ARM_REAR_LEFT_REPLACE",
+      "manufacturer": "Ford",
+      "model": "Focus Mk3",
+      "vehicleAgeYears": 9,
+      "mileageKm": 73903,
+      "knownConditions": [
+        "VISIBLE_PRIOR_DAMAGE"
+      ],
+      "asOfUtc": "2026-10-29T00:00:00+00:00",
+      "relevance": {
+        "13c929d6-0a78-5f2d-9143-653da7fa62f4": 3,
+        "df0570a6-99d1-5de9-94de-58a6067f3b70": 2,
+        "c11defec-4cc3-551e-b35a-e4e30f90b769": 2,
+        "bec7b054-cbf1-59d0-8a1a-3dcbccb5dc10": 1,
+        "6ba8fcdf-ff8a-556e-a00d-1a99fce4a594": 1
+      },
+      "expectsNoResult": false,
+      "manuallyReviewed": false
+    },
+    {
+      "id": "development-query-0eb559a5-f91d-5b8f-aaba-5582e8b341e0",
+      "description": "Workshop request: control arm rear right replace; retrieve similar prior repairs. Vehicle: Mercedes-Benz C-Class W205, model year 2015, 196382 km. Known before work: visible corrosion.",
+      "repairCode": "CONTROL_ARM_REAR_RIGHT_REPLACE",
+      "manufacturer": "Mercedes-Benz",
+      "model": "C-Class W205",
+      "vehicleAgeYears": 11,
+      "mileageKm": 196382,
+      "knownConditions": [
+        "VISIBLE_CORROSION"
+      ],
+      "asOfUtc": "2026-10-29T00:00:00+00:00",
+      "relevance": {
+        "0eb559a5-f91d-5b8f-aaba-5582e8b341e0": 3,
+        "355609a2-1ca2-5f78-961f-6b66a5a37ff1": 2,
+        "ea90d7a9-c8c8-5eea-8fe1-0bc4ff3a83bf": 2,
+        "cc0df359-5422-52e8-8e16-c8e2b8e1405a": 1,
+        "e1cf23ed-8eb4-50d2-b85f-48977dd70ea3": 1
+      },
+      "expectsNoResult": false,
+      "manuallyReviewed": false
+    },
+    {
+      "id": "development-query-10955dbe-25ff-5f5d-a626-6d4c97c307fc",
+      "description": "Need historical comparisons for control arm front left replace. Vehicle: BMW 3 Series F30, model year 2019, 94654 km. No visible pre-repair condition is documented.",
+      "repairCode": "CONTROL_ARM_FRONT_LEFT_REPLACE",
+      "manufacturer": "BMW",
+      "model": "3 Series F30",
+      "vehicleAgeYears": 7,
+      "mileageKm": 94654,
+      "knownConditions": [],
+      "asOfUtc": "2026-10-29T00:00:00+00:00",
+      "relevance": {
+        "10955dbe-25ff-5f5d-a626-6d4c97c307fc": 3,
+        "03608e3e-6216-5f50-b44a-31e462c08546": 2,
+        "379351c6-305f-5fc0-99e4-ce8772df9257": 2,
+        "a571f685-edf5-504a-8f6a-705f22b03b7e": 1,
+        "994f81f6-2ce1-5b34-baf3-58d011ce4416": 1
+      },
+      "expectsNoResult": false,
+      "manuallyReviewed": false
+    },
+    {
+      "id": "development-query-1685f356-2748-5d2a-9b47-ddd5ee196b90",
+      "description": "Estimate a planned control arm front pair replace and find comparable completed jobs. Vehicle: Ford Focus Mk3, model year 2018, 120882 km. No visible pre-repair condition is documented.",
+      "repairCode": "CONTROL_ARM_FRONT_PAIR_REPLACE",
+      "manufacturer": "Ford",
+      "model": "Focus Mk3",
+      "vehicleAgeYears": 8,
+      "mileageKm": 120882,
+      "knownConditions": [],
+      "asOfUtc": "2026-10-29T00:00:00+00:00",
+      "relevance": {
+        "1685f356-2748-5d2a-9b47-ddd5ee196b90": 3,
+        "2e4ce294-dfcc-5c24-9c58-c9a55f168293": 2,
+        "55d71203-61b2-5827-bcef-7815d199e359": 2,
+        "56adf107-a1ca-5311-b61a-82fd4f38d3df": 1,
+        "313a0658-7069-5bb3-87c5-e75816551f91": 1
+      },
+      "expectsNoResult": false,
+      "manuallyReviewed": false
+    },
+    {
+      "id": "development-query-0bc8b205-5246-548f-9370-0aea6af6dfcf",
+      "description": "Workshop request: control arm front right replace; retrieve similar prior repairs. Vehicle: Volkswagen Passat B8, model year 2022, 56407 km. No visible pre-repair condition is documented.",
+      "repairCode": "CONTROL_ARM_FRONT_RIGHT_REPLACE",
+      "manufacturer": "Volkswagen",
+      "model": "Passat B8",
+      "vehicleAgeYears": 4,
+      "mileageKm": 56407,
+      "knownConditions": [],
+      "asOfUtc": "2026-10-29T00:00:00+00:00",
+      "relevance": {
+        "0bc8b205-5246-548f-9370-0aea6af6dfcf": 3,
+        "56282386-88bb-5d8a-b079-6e9086849ff3": 2,
+        "26ec4e18-5281-51a9-8b21-6fd6a342b0a3": 2,
+        "ac2e7596-a063-5cb6-828c-b890d59b0c82": 1,
+        "2f102892-a34d-5f9a-a215-df3ef0f8a175": 1
+      },
+      "expectsNoResult": false,
+      "manuallyReviewed": false
+    },
+    {
+      "id": "development-query-1741bfaa-cb38-5fcc-8622-4e5a8fed8be7",
+      "description": "Need historical comparisons for control arm rear left replace. Vehicle: BMW 3 Series F30, model year 2019, 88258 km. Known before work: visible corrosion.",
+      "repairCode": "CONTROL_ARM_REAR_LEFT_REPLACE",
+      "manufacturer": "BMW",
+      "model": "3 Series F30",
+      "vehicleAgeYears": 7,
+      "mileageKm": 88258,
+      "knownConditions": [
+        "VISIBLE_CORROSION"
+      ],
+      "asOfUtc": "2026-10-29T00:00:00+00:00",
+      "relevance": {
+        "1741bfaa-cb38-5fcc-8622-4e5a8fed8be7": 3,
+        "8ccbab37-b107-5c34-95d8-6b09010cb0f7": 2,
+        "c84521ee-dda3-5ee9-b24a-0bbee8fe150c": 2,
+        "f1fd66a1-9f8b-5851-88e9-e8ffde0824be": 1,
+        "4f3fc419-da76-595b-b153-283f4b81377d": 1
+      },
+      "expectsNoResult": false,
+      "manuallyReviewed": false
+    },
+    {
+      "id": "development-query-1099d3a3-5d79-5675-bc09-50a48498e81f",
+      "description": "Estimate a planned control arm rear right replace and find comparable completed jobs. Vehicle: Volkswagen Golf VII, model year 2016, 107282 km. No visible pre-repair condition is documented.",
+      "repairCode": "CONTROL_ARM_REAR_RIGHT_REPLACE",
+      "manufacturer": "Volkswagen",
+      "model": "Golf VII",
+      "vehicleAgeYears": 10,
+      "mileageKm": 107282,
+      "knownConditions": [],
+      "asOfUtc": "2026-10-29T00:00:00+00:00",
+      "relevance": {
+        "1099d3a3-5d79-5675-bc09-50a48498e81f": 3,
+        "6e5db974-619f-5046-ae10-80b1e0a88e87": 2,
+        "83cb8324-957f-598d-bfd7-36297d57a85e": 2,
+        "239de577-a60b-5cbb-b637-274e1b31c91f": 1,
+        "26ed8e20-57e2-5c34-8fe5-2b32708984a8": 1
+      },
+      "expectsNoResult": false,
+      "manuallyReviewed": false
+    },
+    {
+      "id": "development-query-12e77c53-964b-5d76-a971-acf93d5657e7",
+      "description": "Workshop request: control arm front left replace; retrieve similar prior repairs. Vehicle: Volkswagen Golf VII, model year 2019, 40607 km. Known before work: visible prior damage.",
+      "repairCode": "CONTROL_ARM_FRONT_LEFT_REPLACE",
+      "manufacturer": "Volkswagen",
+      "model": "Golf VII",
+      "vehicleAgeYears": 7,
+      "mileageKm": 40607,
+      "knownConditions": [
+        "VISIBLE_PRIOR_DAMAGE"
+      ],
+      "asOfUtc": "2026-10-29T00:00:00+00:00",
+      "relevance": {
+        "12e77c53-964b-5d76-a971-acf93d5657e7": 3,
+        "413e0219-7f2f-5cc8-a60b-8ea0e9a1b377": 2,
+        "9131f670-50f6-5adf-8b71-1337bfffa157": 2,
+        "c9a9e4d6-d6dc-5ed8-8470-e36a47fe6bd4": 1,
+        "3324215e-a8ed-5d4b-b7d4-cb1fb68a08dd": 1
+      },
+      "expectsNoResult": false,
+      "manuallyReviewed": false
+    },
+    {
+      "id": "development-query-183b0b62-542d-5b04-8202-16c22d66284e",
+      "description": "Need historical comparisons for control arm front pair replace. Vehicle: Mercedes-Benz C-Class W205, model year 2014, 203291 km. Known before work: visible corrosion, visible prior damage.",
+      "repairCode": "CONTROL_ARM_FRONT_PAIR_REPLACE",
+      "manufacturer": "Mercedes-Benz",
+      "model": "C-Class W205",
+      "vehicleAgeYears": 12,
+      "mileageKm": 203291,
+      "knownConditions": [
+        "VISIBLE_CORROSION",
+        "VISIBLE_PRIOR_DAMAGE"
+      ],
+      "asOfUtc": "2026-10-29T00:00:00+00:00",
+      "relevance": {
+        "183b0b62-542d-5b04-8202-16c22d66284e": 3,
+        "4cec2200-6f36-587b-919a-17cd331763c8": 2,
+        "d1648b92-0f87-5baf-88ac-67379b213f69": 2,
+        "a9af7cb2-a546-5746-b339-33ac953b72ba": 1,
+        "e9805b83-5a8d-5b21-8fdd-8d47709044c9": 1
+      },
+      "expectsNoResult": false,
+      "manuallyReviewed": false
+    },
+    {
+      "id": "development-query-0c0ee7cd-a208-5850-9a8b-e811de579114",
+      "description": "Estimate a planned control arm front right replace and find comparable completed jobs. Vehicle: Mercedes-Benz C-Class W205, model year 2014, 122234 km. No visible pre-repair condition is documented.",
+      "repairCode": "CONTROL_ARM_FRONT_RIGHT_REPLACE",
+      "manufacturer": "Mercedes-Benz",
+      "model": "C-Class W205",
+      "vehicleAgeYears": 12,
+      "mileageKm": 122234,
+      "knownConditions": [],
+      "asOfUtc": "2026-10-29T00:00:00+00:00",
+      "relevance": {
+        "0c0ee7cd-a208-5850-9a8b-e811de579114": 3,
+        "905d3190-82b2-5e80-b0fe-64e09bad8bcf": 2,
+        "9c4a4dd6-b319-5563-9884-99a43a9234bd": 2,
+        "387d6a89-2cb9-5490-8d3c-6462c722526c": 1,
+        "235c531a-09c4-565c-b702-6f4f5f67b5fe": 1
+      },
+      "expectsNoResult": false,
+      "manuallyReviewed": false
+    },
+    {
+      "id": "development-query-1a0292cd-aff8-5ea2-a540-07d21f94f749",
+      "description": "Workshop request: control arm rear left replace; retrieve similar prior repairs. Vehicle: Audi A3 8V, model year 2013, 249009 km. Known before work: visible corrosion.",
+      "repairCode": "CONTROL_ARM_REAR_LEFT_REPLACE",
+      "manufacturer": "Audi",
+      "model": "A3 8V",
+      "vehicleAgeYears": 13,
+      "mileageKm": 249009,
+      "knownConditions": [
+        "VISIBLE_CORROSION"
+      ],
+      "asOfUtc": "2026-10-29T00:00:00+00:00",
+      "relevance": {
+        "1a0292cd-aff8-5ea2-a540-07d21f94f749": 3,
+        "3905302f-23ae-550d-9363-ce09019db8e4": 2,
+        "1e44510d-a688-5553-8573-09d22c9a1f83": 2,
+        "397073db-4753-5b7c-9a1a-024c1238bc00": 1,
+        "0e5d002a-d835-57a5-ad91-f0baeeffef84": 1
+      },
+      "expectsNoResult": false,
+      "manuallyReviewed": false
+    },
+    {
+      "id": "development-query-114f414d-8f72-5d88-899b-ed765d5ba31e",
+      "description": "Need historical comparisons for control arm rear right replace. Vehicle: Ford Focus Mk3, model year 2016, 135674 km. No visible pre-repair condition is documented.",
+      "repairCode": "CONTROL_ARM_REAR_RIGHT_REPLACE",
+      "manufacturer": "Ford",
+      "model": "Focus Mk3",
+      "vehicleAgeYears": 10,
+      "mileageKm": 135674,
+      "knownConditions": [],
+      "asOfUtc": "2026-10-29T00:00:00+00:00",
+      "relevance": {
+        "114f414d-8f72-5d88-899b-ed765d5ba31e": 3,
+        "83ce0193-f1ec-542f-904f-b8dd4537118b": 2,
+        "fcb7d7f1-b746-5b36-a08b-77938ad55c38": 2,
+        "40180717-2b43-51b7-b487-f10db954d994": 1,
+        "c91414d9-3f49-5ee1-8287-5e0454a1d788": 1
+      },
+      "expectsNoResult": false,
+      "manuallyReviewed": false
+    },
+    {
+      "id": "development-query-13204d5b-7ba1-5542-b7fa-e94dc7050ee1",
+      "description": "Estimate a planned control arm front left replace and find comparable completed jobs. Vehicle: Audi A3 8V, model year 2012, 215861 km. No visible pre-repair condition is documented.",
+      "repairCode": "CONTROL_ARM_FRONT_LEFT_REPLACE",
+      "manufacturer": "Audi",
+      "model": "A3 8V",
+      "vehicleAgeYears": 14,
+      "mileageKm": 215861,
+      "knownConditions": [],
+      "asOfUtc": "2026-10-29T00:00:00+00:00",
+      "relevance": {
+        "13204d5b-7ba1-5542-b7fa-e94dc7050ee1": 3,
+        "2d4ba28d-e124-5089-9943-018ff28fc94c": 2,
+        "c77ef810-701b-56b3-84c0-35cad2e4c9ae": 2,
+        "ef0c3632-21f3-5ba8-8461-7f79ae80a56f": 1,
+        "efdcd30e-1e8d-58c4-8793-4dab64ca2615": 1
+      },
+      "expectsNoResult": false,
+      "manuallyReviewed": false
+    },
+    {
+      "id": "development-query-1a6036f3-ad41-539d-805d-4770c2d550fd",
+      "description": "Workshop request: control arm front pair replace; retrieve similar prior repairs. Vehicle: Ford Focus Mk3, model year 2012, 125257 km. Known before work: visible corrosion.",
+      "repairCode": "CONTROL_ARM_FRONT_PAIR_REPLACE",
+      "manufacturer": "Ford",
+      "model": "Focus Mk3",
+      "vehicleAgeYears": 14,
+      "mileageKm": 125257,
+      "knownConditions": [
+        "VISIBLE_CORROSION"
+      ],
+      "asOfUtc": "2026-10-29T00:00:00+00:00",
+      "relevance": {
+        "1a6036f3-ad41-539d-805d-4770c2d550fd": 3,
+        "ab19f438-1a32-5abf-b6ff-0ac834498a89": 2,
+        "33c2d629-29e7-5f58-9154-5012ec94455b": 2,
+        "2d58ae3c-aef4-5814-adfd-62cc5ee7796a": 1,
+        "313a0658-7069-5bb3-87c5-e75816551f91": 1
+      },
+      "expectsNoResult": false,
+      "manuallyReviewed": false
+    },
+    {
+      "id": "development-query-0c4ea80d-c788-50c8-ab92-ebd6752df789",
+      "description": "Need historical comparisons for control arm front right replace. Vehicle: Volkswagen Golf VII, model year 2015, 85856 km. No visible pre-repair condition is documented.",
+      "repairCode": "CONTROL_ARM_FRONT_RIGHT_REPLACE",
+      "manufacturer": "Volkswagen",
+      "model": "Golf VII",
+      "vehicleAgeYears": 11,
+      "mileageKm": 85856,
+      "knownConditions": [],
+      "asOfUtc": "2026-10-29T00:00:00+00:00",
+      "relevance": {
+        "0c4ea80d-c788-50c8-ab92-ebd6752df789": 3,
+        "c345f787-82c7-5f1c-a197-2f2db31c152a": 2,
+        "e15a04e1-2ec3-57e8-8ca0-4bf286690354": 2,
+        "132b25bf-c22d-5758-971a-e5b582cd5df5": 1,
+        "201f5b9b-7d4f-54da-b12d-bee555e89745": 1
+      },
+      "expectsNoResult": false,
+      "manuallyReviewed": false
+    },
+    {
+      "id": "development-query-1aaca54e-fd28-51bf-bde6-7dce48c9ff70",
+      "description": "Estimate a planned control arm rear left replace and find comparable completed jobs. Vehicle: Volkswagen Golf VII, model year 2016, 137046 km. No visible pre-repair condition is documented.",
+      "repairCode": "CONTROL_ARM_REAR_LEFT_REPLACE",
+      "manufacturer": "Volkswagen",
+      "model": "Golf VII",
+      "vehicleAgeYears": 10,
+      "mileageKm": 137046,
+      "knownConditions": [],
+      "asOfUtc": "2026-10-29T00:00:00+00:00",
+      "relevance": {
+        "1aaca54e-fd28-51bf-bde6-7dce48c9ff70": 3,
+        "f079a2c9-c61a-54e4-b4ca-f918800356f4": 2,
+        "ca03e1a1-cc18-5838-b71f-95b56c0d1920": 2,
+        "2419c6ef-51e8-54ca-89f4-f7257be68c67": 1,
+        "3154a499-0e25-5a72-a56b-d7e07aea8b72": 1
+      },
+      "expectsNoResult": false,
+      "manuallyReviewed": false
+    },
+    {
+      "id": "development-query-11ac25de-72fa-5a5c-8189-c07378edec79",
+      "description": "Workshop request: control arm rear right replace; retrieve similar prior repairs. Vehicle: Volkswagen Golf VII, model year 2012, 147704 km. Known before work: visible corrosion.",
+      "repairCode": "CONTROL_ARM_REAR_RIGHT_REPLACE",
+      "manufacturer": "Volkswagen",
+      "model": "Golf VII",
+      "vehicleAgeYears": 14,
+      "mileageKm": 147704,
+      "knownConditions": [
+        "VISIBLE_CORROSION"
+      ],
+      "asOfUtc": "2026-10-29T00:00:00+00:00",
+      "relevance": {
+        "11ac25de-72fa-5a5c-8189-c07378edec79": 3,
+        "4e586345-6ac8-5754-b61b-9e90c46fd8ab": 2,
+        "3c21e6ee-b49f-5d9c-a9a2-0e0ab755d745": 2,
+        "f9b60a1c-8dce-5b30-a573-332fa651070f": 1,
+        "83cb8324-957f-598d-bfd7-36297d57a85e": 1
+      },
+      "expectsNoResult": false,
+      "manuallyReviewed": false
+    },
+    {
+      "id": "development-no-result-01",
+      "description": "Planned brake disc and pad service 1; no suspension operation is requested.",
+      "repairCode": "BRAKE_DISC_FRONT_REPLACE",
+      "manufacturer": "Volkswagen",
+      "model": null,
+      "vehicleAgeYears": 5,
+      "mileageKm": 70000,
+      "knownConditions": [],
+      "asOfUtc": "2026-10-29T00:00:00+00:00",
+      "relevance": {},
+      "expectsNoResult": true,
+      "manuallyReviewed": true
+    },
+    {
+      "id": "development-no-result-02",
+      "description": "Planned brake disc and pad service 2; no suspension operation is requested.",
+      "repairCode": "BRAKE_DISC_FRONT_REPLACE",
+      "manufacturer": "BMW",
+      "model": null,
+      "vehicleAgeYears": 7,
+      "mileageKm": 105000,
+      "knownConditions": [],
+      "asOfUtc": "2026-10-29T00:00:00+00:00",
+      "relevance": {},
+      "expectsNoResult": true,
+      "manuallyReviewed": true
+    },
+    {
+      "id": "development-no-result-03",
+      "description": "Planned brake disc and pad service 3; no suspension operation is requested.",
+      "repairCode": "BRAKE_DISC_FRONT_REPLACE",
+      "manufacturer": "Volkswagen",
+      "model": null,
+      "vehicleAgeYears": 9,
+      "mileageKm": 140000,
+      "knownConditions": [],
+      "asOfUtc": "2026-10-29T00:00:00+00:00",
+      "relevance": {},
+      "expectsNoResult": true,
+      "manuallyReviewed": false
+    },
+    {
+      "id": "development-no-result-04",
+      "description": "Planned brake disc and pad service 4; no suspension operation is requested.",
+      "repairCode": "BRAKE_DISC_FRONT_REPLACE",
+      "manufacturer": "BMW",
+      "model": null,
+      "vehicleAgeYears": 11,
+      "mileageKm": 175000,
+      "knownConditions": [],
+      "asOfUtc": "2026-10-29T00:00:00+00:00",
+      "relevance": {},
+      "expectsNoResult": true,
+      "manuallyReviewed": false
+    },
+    {
+      "id": "development-no-result-05",
+      "description": "Planned brake disc and pad service 5; no suspension operation is requested.",
+      "repairCode": "BRAKE_DISC_FRONT_REPLACE",
+      "manufacturer": "Volkswagen",
+      "model": null,
+      "vehicleAgeYears": 13,
+      "mileageKm": 210000,
+      "knownConditions": [],
+      "asOfUtc": "2026-10-29T00:00:00+00:00",
+      "relevance": {},
+      "expectsNoResult": true,
+      "manuallyReviewed": false
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+## .NET
+bin/
+obj/
+TestResults/
+*.user
+*.suo
+
+## Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+dist/
+*.egg-info/
+
+## Editors and OS
+.vs/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+## Local configuration and credentials
+.env
+.env.*
+!.env.example
+appsettings.Local.json
+secrets.json
+
+## Generated datasets and local analytical output
+artifacts/
+
+# Versioned, synthetic LLM quality evidence. Reports contain no credentials or customer data.
+!artifacts/
+artifacts/*
+!artifacts/llm/
+artifacts/llm/*
+!artifacts/llm/evaluation-set.json
+!artifacts/llm/evaluation-report.json
+!artifacts/llm/quality-development-set.json
+!artifacts/llm/quality-development-report.json
+!artifacts/llm/quality-holdout-set.json
+!artifacts/llm/quality-holdout-report.json
+!artifacts/rag/
+artifacts/rag/*
+!artifacts/rag/retrieval-evaluation-set.json
+!artifacts/rag/retrieval-evaluation-report.json
+!artifacts/rag/retrieval-failure-analysis-v1.json
+!artifacts/rag/quality-development-set.json
+!artifacts/rag/quality-development-report.json
+!artifacts/rag/quality-holdout-set.json
+!artifacts/rag/quality-holdout-report.json
+!artifacts/ml/
+artifacts/ml/*
+!artifacts/ml/ari-repair-duration-v1/
+artifacts/ml/ari-repair-duration-v1/*
+!artifacts/ml/ari-repair-duration-v1/metadata.json
+!artifacts/ml/ari-repair-duration-v1/evaluation.json

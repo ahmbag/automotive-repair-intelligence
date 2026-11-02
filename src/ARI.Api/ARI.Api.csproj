@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <ItemGroup>
+    <ProjectReference Include="..\ARI.Core\ARI.Core.csproj" />
+    <ProjectReference Include="..\ARI.Infrastructure\ARI.Infrastructure.csproj" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>AutomotiveRepairIntelligence-ARI.Api-a86eaf40b2724c95aef9c1d4090324bf</UserSecretsId>
+  </PropertyGroup>
+
+</Project>

@@ -1,0 +1,14 @@
+@page "/"
+@inject RepairWorkspace Workspace
+
+<PageTitle>Dashboard · ARI</PageTitle>
+<section class="hero">
+    <div><span class="eyebrow accent">REPAIR DECISION SUPPORT</span><h1>Turn workshop notes into a traceable repair estimate.</h1><p>ARI combines structured extraction, Ridge labor prediction and rank-fused historical evidence—without treating an experimental result as a fact.</p><div class="button-row"><a class="button primary" href="/new">Start new estimate <span aria-hidden="true">→</span></a>@if (Workspace.Baseline is not null) { <a class="button secondary" href="/case">Resume current case</a> }</div></div>
+    <div class="hero-orbit" aria-hidden="true"><span>LLM</span><span>ML</span><span>RRF</span><strong>ARI</strong></div>
+</section>
+<section aria-labelledby="workflow-heading"><div class="section-heading"><div><span class="eyebrow">CONNECTED WORKFLOW</span><h2 id="workflow-heading">One request. Three transparent stages.</h2></div></div><div class="feature-grid">
+    <article class="feature-card"><span class="step">01</span><h3>Extract</h3><p>LLM V3 normalizes only supported pre-repair facts and keeps the exact evidence passage.</p><span class="tech-tag">repair-extraction-v3</span></article>
+    <article class="feature-card"><span class="step">02</span><h3>Predict</h3><p>The versioned Ridge model predicts labor from validated numerical and categorical features.</p><span class="tech-tag">Ridge regression</span></article>
+    <article class="feature-card"><span class="step">03</span><h3>Ground</h3><p>RRF V2 retrieves five comparable synthetic cases and separates evidence from explanation.</p><span class="tech-tag">RANK_FUSION_V2</span></article>
+</div></section>
+<div class="notice info" role="note"><strong>Synthetic data · Experimental prediction.</strong> ARI supports professional judgement; it does not replace inspection, diagnosis or workshop authorization.</div>

@@ -1,0 +1,51 @@
+@page "/new"
+@implements IDisposable
+@inject RepairWorkspace Workspace
+@inject RepairAnalysisCoordinator Coordinator
+@inject NavigationManager Navigation
+
+<PageTitle>New Repair Estimate · ARI</PageTitle>
+<header class="page-header"><div><span class="eyebrow accent">NEW ANALYSIS</span><h1>Repair intake</h1><p>Describe only information known before repair. Contradictions are shown and never merged silently.</p></div><span class="status-pill neutral">@Workspace.Status.ToString().ToUpperInvariant()</span></header>
+<div class="intake-layout">
+    <section class="panel">
+        <div class="panel-heading"><div><span class="panel-index">01</span><h2>Vehicle &amp; operation</h2></div><span class="required-note">* required</span></div>
+        <EditForm Model="model" OnValidSubmit="AnalyzeAsync" FormName="repair-intake">
+            <DataAnnotationsValidator /><ValidationSummary class="validation-summary" />
+            <div class="form-grid two">
+                <div class="field"><label for="manufacturer">Manufacturer</label><InputText id="manufacturer" @bind-Value="model.Manufacturer" maxlength="80" /><small>Optional if unambiguously present in text.</small></div>
+                <div class="field"><label for="model">Model</label><InputText id="model" @bind-Value="model.Model" maxlength="80" /><small>Optional if unambiguously present in text.</small></div>
+                <div class="field"><label for="year">Model year</label><InputNumber id="year" @bind-Value="model.ModelYear" /><ValidationMessage For="@(() => model.ModelYear)" /></div>
+                <div class="field"><label for="mileage">Mileage (km)</label><InputNumber id="mileage" @bind-Value="model.MileageKm" /><ValidationMessage For="@(() => model.MileageKm)" /></div>
+                <div class="field full"><label for="repair">Repair operation *</label><InputSelect id="repair" @bind-Value="model.RepairCode">
+                    @foreach (var operationCode in RepairCatalog.Codes)
+                    {
+                        <option value="@operationCode">@RepairCatalog.Label(operationCode)</option>
+                    }
+                </InputSelect></div>
+                <div class="field"><label for="baseline">Workshop baseline (hours) *</label><InputNumber id="baseline" @bind-Value="model.BaselineLaborHours" step="0.1" /><ValidationMessage For="@(() => model.BaselineLaborHours)" /></div>
+                <div class="field"><label for="asof">Information known as of *</label><InputDate id="asof" @bind-Value="model.AsOfDate" /><ValidationMessage For="@(() => model.AsOfDate)" /></div>
+            </div>
+            <fieldset class="condition-set"><legend>Known pre-repair conditions only</legend><label><InputCheckbox @bind-Value="model.VisibleCorrosion" /> Visible corrosion</label><label><InputCheckbox @bind-Value="model.VisiblePriorDamage" /> Visible prior damage</label></fieldset>
+            <div class="field"><label for="description">Pre-repair description *</label><InputTextArea id="description" @bind-Value="model.Description" maxlength="4000" rows="7" /><div class="field-meta"><ValidationMessage For="@(() => model.Description)" /><span>@model.Description.Length / 4,000</span></div></div>
+            <div class="guardrail"><strong>Excluded by design:</strong> historical actual labor, post-repair complications and completion outcomes cannot be entered as predictive features.</div>
+            <div class="form-actions"><button id="analyze-button" class="button primary" type="submit" disabled="@IsBusy">@(IsBusy ? "Analysis running…" : "Analyze repair case")</button>@if (IsBusy) { <button class="button danger" type="button" @onclick="Cancel">Cancel</button> }</div>
+        </EditForm>
+        @if (!string.IsNullOrWhiteSpace(Workspace.StatusMessage)) { <div class="notice @NoticeClass" role="status" aria-live="polite"><strong>@Workspace.Status:</strong> @Workspace.StatusMessage</div> }
+    </section>
+    <aside class="panel demo-panel" aria-labelledby="demo-heading">
+        <div class="panel-heading"><div><span class="panel-index">02</span><h2 id="demo-heading">Guided demo cases</h2></div></div><p>Each case fills the real form. Analyze still calls the configured API; no live result is hard-coded.</p>
+        <div class="demo-list">@foreach (var demo in DemoCases.All) { <button type="button" @onclick="() => LoadDemo(demo)"><strong>@demo.Name</strong><small>@demo.Description</small><span aria-hidden="true">→</span></button> }</div>
+    </aside>
+</div>
+
+@code {
+    private RepairIntake model = new();
+    private bool IsBusy => Workspace.Status is WorkflowStatus.Validating or WorkflowStatus.Running;
+    private string NoticeClass => Workspace.Status switch { WorkflowStatus.Failed => "error", WorkflowStatus.ManualReviewRequired => "warning", WorkflowStatus.Cancelled => "warning", _ => "info" };
+    protected override void OnInitialized() { model = Workspace.Intake.Copy(); Workspace.Changed += StateChanged; }
+    private void LoadDemo(DemoCase demo) { model = demo.Create(); Workspace.SetIntake(model); }
+    private async Task AnalyzeAsync() { Workspace.SetIntake(model); if (await Coordinator.AnalyzeAsync(model)) Navigation.NavigateTo("/case"); }
+    private void Cancel() => Coordinator.CancelActive();
+    private void StateChanged() => InvokeAsync(StateHasChanged);
+    public void Dispose() => Workspace.Changed -= StateChanged;
+}

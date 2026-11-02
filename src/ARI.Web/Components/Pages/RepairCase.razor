@@ -1,0 +1,50 @@
+@page "/case"
+@inject RepairWorkspace Workspace
+
+<PageTitle>Repair Case 360° · ARI</PageTitle>
+@if (Workspace.Baseline is not { } analysis)
+{
+    <section class="empty-state"><span aria-hidden="true">◎</span><h1>No analyzed repair case</h1><p>Run a repair estimate first. Evidence is never invented for an empty result.</p><a class="button primary" href="/new">Create estimate</a></section>
+}
+else
+{
+    var result = analysis.Result;
+    <header class="page-header"><div><span class="eyebrow accent">REPAIR CASE 360°</span><h1>@result.Extraction.Vehicle.Manufacturer @result.Extraction.Vehicle.Model</h1><p>@result.Extraction.RepairCode?.Replace('_', ' ') · as of @analysis.Intake.AsOfDate.ToString("yyyy-MM-dd")</p></div><span class="status-pill success">@result.Extraction.Status</span></header>
+    <div class="notice info" role="note"><strong>Synthetic data · Experimental prediction.</strong> The number below is an ML prediction, not observed labor or a causal claim.</div>
+    @if (Workspace.Status == WorkflowStatus.PartialResult || result.ExplanationWarning is not null) { <div class="notice warning" role="status"><strong>Partial result:</strong> @result.ExplanationWarning The numerical prediction and validated evidence remain available.</div> }
+    <section class="metric-grid" aria-label="Analysis summary">
+        <article class="metric primary-metric"><span>Predicted labor</span><strong id="predicted-hours">@result.Prediction.PredictedLaborHours.ToString("0.000") <small>h</small></strong><em>Ridge · @result.Prediction.ModelVersion</em></article>
+        <article class="metric"><span>Historical evidence</span><strong>@result.Retrieval.Cases.Count <small>cases</small></strong><em>@result.Retrieval.Strategy</em></article>
+        <article class="metric"><span>Analysis time</span><strong>@analysis.TotalDuration.TotalSeconds.ToString("0.0") <small>s</small></strong><em>end-to-end</em></article>
+        <article class="metric"><span>Quality gate</span><strong class="text-value">@result.Extraction.Status</strong><em>server validated</em></article>
+    </section>
+    <div class="case-grid">
+        <section class="panel"><div class="panel-heading"><div><span class="panel-index">01</span><h2>Validated pre-repair facts</h2></div></div>
+            <dl class="fact-grid"><div><dt>Vehicle</dt><dd>@result.Extraction.Vehicle.ModelYear @result.Extraction.Vehicle.Manufacturer @result.Extraction.Vehicle.Model</dd></div><div><dt>Mileage</dt><dd>@result.Extraction.Vehicle.MileageKm?.ToString("N0") km</dd></div><div><dt>Repair code</dt><dd class="code">@result.Extraction.RepairCode</dd></div><div><dt>Known conditions</dt><dd>@(result.Extraction.KnownBeforeRepair.Count == 0 ? "None extracted" : string.Join(", ", result.Extraction.KnownBeforeRepair.Select(x => x.Code)))</dd></div></dl>
+            @foreach (var fact in result.Extraction.KnownBeforeRepair) { <blockquote><strong>@fact.Code</strong><br />“@fact.Evidence” <small>@fact.InformationTime</small></blockquote> }
+        </section>
+        <section class="panel"><div class="panel-heading"><div><span class="panel-index">02</span><h2>Technical trace</h2></div></div>
+            <dl class="trace-list"><div><dt>ML model</dt><dd>@result.Prediction.ModelVersion · @result.Prediction.PredictionMethod</dd></div><div><dt>LLM extraction</dt><dd>@result.Extraction.Telemetry.PromptVersion · @result.Extraction.Telemetry.ModelId</dd></div><div><dt>Retrieval</dt><dd>@result.Retrieval.Strategy · @result.Retrieval.EmbeddingProfile</dd></div><div><dt>Embedding</dt><dd>@result.Retrieval.EmbeddingModel · @result.Retrieval.EmbeddingVersion</dd></div><div><dt>Data source</dt><dd>@result.Prediction.DataSource</dd></div><div><dt>Used features</dt><dd>repair code, vehicle, age, mileage, baseline, pre-repair conditions</dd></div><div><dt>Correlation ID</dt><dd class="code">@analysis.CorrelationId</dd></div></dl>
+        </section>
+    </div>
+    <section class="panel evidence-section"><div class="panel-heading"><div><span class="panel-index">03</span><h2>Top historical evidence</h2></div><span class="tech-tag">Score ≠ probability</span></div>
+        @if (result.Retrieval.Cases.Count == 0) { <div class="empty-inline"><strong>No historical matches.</strong><p>The prediction is still shown, but no supporting evidence is claimed.</p></div> }
+        else
+        {
+            <div class="evidence-table-wrap"><table><thead><tr><th>Rank</th><th>Reference</th><th>Vehicle / repair</th><th>RRF score</th><th>Actual labor</th><th><span class="sr-only">Action</span></th></tr></thead><tbody>
+            @{ var rank = 0; }
+            @foreach (var item in result.Retrieval.Cases.Take(5)) { rank++; <tr><td><span class="rank">@rank</span></td><td class="code">@item.SourceReference</td><td><strong>@item.ModelYear @item.Manufacturer @item.Model</strong><small>@item.RepairCode.Replace('_', ' ')</small></td><td>@item.Score.ToString("0.000")</td><td>@((item.ActualLaborMinutes / 60m).ToString("0.00")) h <small>documented</small></td><td><button class="text-button" @onclick="() => selected = item">Inspect evidence</button></td></tr> }
+            </tbody></table></div>
+        }
+    </section>
+    <section class="panel"><div class="panel-heading"><div><span class="panel-index">04</span><h2>Grounded explanation</h2></div><span class="status-pill neutral">@(result.Explanation?.EvidenceStrength ?? "UNAVAILABLE")</span></div>
+        @if (result.Explanation is { } explanation) { <p class="lead">@explanation.Summary</p>@foreach (var observation in explanation.Observations) { <article class="observation"><p>@observation.Statement</p><blockquote>“@observation.EvidenceQuote”</blockquote><small>Sources: @string.Join(", ", observation.SourceReferences)</small></article> } }
+        else { <p>No generated explanation is available. No substitute text has been invented.</p> }
+    </section>
+    <div class="button-row"><a class="button primary" href="/what-if">Explore what-if scenarios →</a><a class="button secondary" href="/new">New estimate</a></div>
+    @if (selected is not null)
+    {
+        <div class="modal-backdrop" role="presentation" @onclick="() => selected = null"><section class="evidence-modal" role="dialog" aria-modal="true" aria-labelledby="evidence-title" @onclick:stopPropagation="true"><button class="modal-close" aria-label="Close evidence details" @onclick="() => selected = null">×</button><span class="eyebrow">VALIDATED COMPLETION EVIDENCE</span><h2 id="evidence-title">@selected.SourceReference</h2><dl class="trace-list"><div><dt>Pre-repair profile</dt><dd>@selected.ModelYear @selected.Manufacturer @selected.Model · @selected.MileageKm.ToString("N0") km · @selected.RepairCode</dd></div><div><dt>During / after event</dt><dd>Completion evidence below is descriptive history and was never supplied as a predictive feature.</dd></div><div><dt>Historical actual labor</dt><dd>@selected.ActualLaborMinutes minutes</dd></div><div><dt>Source classification</dt><dd>@selected.SourceType · @selected.SourceClassification</dd></div></dl><h3>Documented excerpt</h3><blockquote>“@selected.SourceExcerpt”</blockquote><p class="security-note">Reference is rendered as plain text. External links are not derived from source data.</p></section></div>
+    }
+}
+@code { private SimilarRepairCase? selected; }

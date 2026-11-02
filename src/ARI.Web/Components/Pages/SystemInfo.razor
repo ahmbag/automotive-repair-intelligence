@@ -1,0 +1,30 @@
+@page "/system"
+@implements IDisposable
+@inject IAriApiClient Client
+
+<PageTitle>System & Models · ARI</PageTitle>
+<header class="page-header"><div><span class="eyebrow accent">OPERATIONS</span><h1>System &amp; model information</h1><p>Readiness is reported only where a dedicated probe exists. Unknown is not shown as online.</p></div><button class="button secondary" @onclick="RefreshAsync" disabled="@loading">@(loading ? "Checking…" : "Refresh status")</button></header>
+@if (health is null) { <div class="notice info" role="status">Checking service readiness…</div> }
+else
+{
+    <section class="health-grid" aria-label="Service health">
+        <HealthCard Name="ARI.Api" State="health.Api" Detail="Independent liveness endpoint" />
+        <HealthCard Name="SAP HANA Cloud" State="health.Hana" Detail="Authenticated database readiness" />
+        <HealthCard Name="Python ML" State="health.MachineLearning" Detail="Ridge inference readiness" />
+        <HealthCard Name="LLM provider" State="health.Llm" Detail="No dedicated probe — checked during analysis" />
+        <HealthCard Name="Embedding provider" State="health.Embeddings" Detail="No dedicated probe — checked during retrieval" />
+    </section>
+    <p class="checked-at">Last checked @health.CheckedAtUtc.ToLocalTime().ToString("yyyy-MM-dd HH:mm:ss zzz")</p>
+}
+<div class="case-grid">
+    <section class="panel"><div class="panel-heading"><div><span class="panel-index">01</span><h2>Model registry</h2></div></div><dl class="trace-list"><div><dt>Extraction prompt</dt><dd>repair-extraction-v3</dd></div><div><dt>Prediction family</dt><dd>Versioned Ridge regression</dd></div><div><dt>Retrieval</dt><dd>RANK_FUSION_V2</dd></div><div><dt>Embedding profile</dt><dd>REPAIR_PROFILE_V2</dd></div><div><dt>Data</dt><dd>Synthetic historical repairs</dd></div></dl></section>
+    <section class="panel"><div class="panel-heading"><div><span class="panel-index">02</span><h2>Security boundary</h2></div></div><ul class="check-list"><li>Browser contains no HANA or AI credentials.</li><li>ARI.Web calls only ARI.Api over the typed server-side client.</li><li>ARI.Core has no Blazor, SAP or OpenAI dependency.</li><li>Provider messages and stack traces are translated before display.</li><li>Raw prompts and full descriptions are excluded from application logs.</li></ul></section>
+</div>
+<section class="panel"><div class="panel-heading"><div><span class="panel-index">03</span><h2>Recovery guide</h2></div></div><div class="recovery-grid"><article><h3>API offline</h3><p>Start ARI.Api and retry. No incomplete result is committed.</p></article><article><h3>HANA paused</h3><p>Resume the HANA instance; readiness returns HTTP 503 until available.</p></article><article><h3>OpenAI rate limit</h3><p>Wait briefly and retry. Existing completed snapshots remain intact.</p></article><article><h3>Python unavailable</h3><p>Start the ML service. Prediction is never replaced with a browser-side estimate.</p></article><article><h3>No RAG matches</h3><p>The prediction remains visible while evidence explicitly reports no matches.</p></article><article><h3>Circuit disconnected</h3><p>Blazor reconnects automatically; a reload returns to a safe empty session.</p></article></div></section>
+
+@code {
+    private SystemHealthSnapshot? health; private bool loading; private readonly CancellationTokenSource disposeToken = new();
+    protected override Task OnInitializedAsync() => RefreshAsync();
+    private async Task RefreshAsync() { loading = true; health = await Client.GetHealthAsync(disposeToken.Token); loading = false; }
+    public void Dispose() { disposeToken.Cancel(); disposeToken.Dispose(); }
+}

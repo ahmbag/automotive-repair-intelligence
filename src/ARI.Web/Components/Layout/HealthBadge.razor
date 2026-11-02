@@ -1,0 +1,15 @@
+@implements IDisposable
+@inject IAriApiClient Client
+
+<button class="health-badge" title="Refresh service status" @onclick="RefreshAsync" disabled="@loading"><span class="health-dot @StatusClass" aria-hidden="true"></span><span>@StatusText</span></button>
+
+@code {
+    private SystemHealthSnapshot? health;
+    private bool loading;
+    private readonly CancellationTokenSource disposeToken = new();
+    private string StatusClass => health?.Api == ProbeState.Online && health.Hana == ProbeState.Online && health.MachineLearning == ProbeState.Online ? "online" : health?.Api == ProbeState.Offline ? "offline" : "degraded";
+    private string StatusText => health is null ? "Check system" : health.Api == ProbeState.Offline ? "API offline" : health.Hana == ProbeState.Offline ? "HANA unavailable" : health.MachineLearning == ProbeState.Offline ? "ML unavailable" : "Core systems ready";
+    protected override Task OnInitializedAsync() => RefreshAsync();
+    private async Task RefreshAsync() { loading = true; health = await Client.GetHealthAsync(disposeToken.Token); loading = false; }
+    public void Dispose() { disposeToken.Cancel(); disposeToken.Dispose(); }
+}

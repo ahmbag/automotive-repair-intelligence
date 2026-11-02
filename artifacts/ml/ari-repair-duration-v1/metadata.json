@@ -1,0 +1,71 @@
+{
+  "dataClassification": "SYNTHETIC",
+  "datasetId": "ari-suspension-synthetic-v1",
+  "datasetSha256": "960588c090ad9092dc98f59721e08ad8df3718d899012ace0b344fb238ff1384",
+  "dependencyVersions": {
+    "joblib": "1.6.0",
+    "numpy": "2.5.4",
+    "pandas": "3.1.0",
+    "python": "3.14.6",
+    "scikitLearn": "1.9.1"
+  },
+  "evaluationMetrics": {
+    "mae_minutes": 24.842032041166863,
+    "mean_error_bias_minutes": -1.6094117445773648,
+    "median_absolute_error_minutes": 18.628374402020484,
+    "p90_absolute_error_minutes": 52.95934632320526,
+    "rmse_minutes": 31.8729332908604,
+    "underestimation_rate_percent": 46.0
+  },
+  "featureColumns": [
+    "vehicle_age_years",
+    "mileage_km",
+    "baseline_labor_minutes",
+    "known_corrosion",
+    "repair_code",
+    "manufacturer",
+    "model"
+  ],
+  "featureSchemaVersion": "ari-labor-features-v1",
+  "generatorVersion": "1.0.0",
+  "modelArtifactSha256": "d206f94f7c532d23c210ca0300b978ce5253786143ca4f67c0c8b6a3d8b06840",
+  "modelVersion": "ari-repair-duration-v1",
+  "predictionMethod": "ML_REGRESSION",
+  "recommendedStrategy": "STATISTICAL_BASELINE",
+  "selectedModel": "ridge",
+  "trainedAtUtc": "2026-10-24T21:19:05.794935+00:00",
+  "trainingConfiguration": {
+    "baseline": {
+      "minimum_group_size": 10
+    },
+    "dataset": {
+      "data_classification": "SYNTHETIC",
+      "dataset_id": "ari-suspension-synthetic-v1"
+    },
+    "evaluation": {
+      "permutation_repeats": 20,
+      "primary_metric": "mae_minutes"
+    },
+    "experiment": {
+      "feature_schema_version": "ari-labor-features-v1",
+      "model_version": "ari-repair-duration-v1",
+      "name": "ari-repair-duration-v1",
+      "random_state": 42
+    },
+    "random_forest": {
+      "max_depth": 12,
+      "min_samples_leaf": 4,
+      "n_estimators": 300
+    },
+    "ridge": {
+      "alpha": 10.0
+    },
+    "split": {
+      "test_fraction": 0.15,
+      "train_fraction": 0.7,
+      "validation_fraction": 0.15
+    }
+  },
+  "trainingExportSha256": "325f6a9fd2d63efc7829a0d8a4a9b031c7e162267f80c13c96f975694a401def",
+  "trustedArtifactNotice": "Load only artifacts produced by this repository's training command."
+}

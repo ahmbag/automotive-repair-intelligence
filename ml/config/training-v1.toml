@@ -1,0 +1,29 @@
+[experiment]
+name = "ari-repair-duration-v1"
+model_version = "ari-repair-duration-v1"
+random_state = 42
+feature_schema_version = "ari-labor-features-v1"
+
+[dataset]
+dataset_id = "ari-suspension-synthetic-v1"
+data_classification = "SYNTHETIC"
+
+[split]
+train_fraction = 0.70
+validation_fraction = 0.15
+test_fraction = 0.15
+
+[baseline]
+minimum_group_size = 10
+
+[ridge]
+alpha = 10.0
+
+[random_forest]
+n_estimators = 300
+max_depth = 12
+min_samples_leaf = 4
+
+[evaluation]
+primary_metric = "mae_minutes"
+permutation_repeats = 20

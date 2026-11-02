@@ -1,0 +1,47 @@
+@page "/what-if"
+@implements IDisposable
+@inject RepairWorkspace Workspace
+@inject RepairAnalysisCoordinator Coordinator
+
+<PageTitle>What-if Analysis · ARI</PageTitle>
+@if (Workspace.Baseline is not { } baseline)
+{
+    <section class="empty-state"><span aria-hidden="true">↗</span><h1>What-if needs a baseline</h1><p>Complete a repair analysis first. Scenarios cannot exist without an immutable baseline.</p><a class="button primary" href="/new">Create baseline</a></section>
+}
+else
+{
+    <header class="page-header"><div><span class="eyebrow accent">WHAT-IF ANALYSIS</span><h1>Compare pre-repair scenarios</h1><p>Change model features only. Every run creates a new snapshot; the baseline remains immutable.</p></div><span class="status-pill neutral">@Workspace.Scenarios.Count / 5 SCENARIOS</span></header>
+    <div class="notice warning" role="note"><strong>Not a causal estimate.</strong> A delta shows model sensitivity to changed inputs, not what will happen to this vehicle.</div>
+    <div class="whatif-layout">
+        <section class="panel"><div class="panel-heading"><div><span class="panel-index">01</span><h2>Scenario features</h2></div></div>
+            <EditForm Model="draft" OnValidSubmit="RunAsync" FormName="scenario"><div class="form-grid two">
+                <div class="field full"><label for="scenario-name">Scenario name</label><InputText id="scenario-name" @bind-Value="draft.Name" maxlength="60" /></div>
+                <div class="field"><label for="scenario-mileage">Mileage (km)</label><InputNumber id="scenario-mileage" @bind-Value="draft.MileageKm" min="0" max="5000000" /></div>
+                <div class="field"><label for="scenario-age">Vehicle age (years)</label><InputNumber id="scenario-age" @bind-Value="draft.VehicleAgeYears" min="0" max="100" /></div>
+                <div class="field full"><label for="scenario-repair">Repair operation</label><InputSelect id="scenario-repair" @bind-Value="draft.RepairCode">
+                    @foreach (var operationCode in RepairCatalog.Codes)
+                    {
+                        <option value="@operationCode">@RepairCatalog.Label(operationCode)</option>
+                    }
+                </InputSelect></div>
+            </div><fieldset class="condition-set"><legend>Hypothetical pre-repair condition</legend><label><InputCheckbox @bind-Value="draft.VisibleCorrosion" /> Visible corrosion</label></fieldset><label class="refresh-option"><InputCheckbox @bind-Value="draft.FullEvidenceRefresh" /><span><strong>Full Evidence Refresh</strong><small>Runs extraction, ML and retrieval. Off = faster ML-only scenario.</small></span></label>
+            <button id="run-scenario" class="button primary" type="submit" disabled="@(running || Workspace.Scenarios.Count >= 5)">@(running ? "Running scenario…" : "Run new scenario")</button></EditForm>
+            @if (error is not null) { <div class="notice error" role="alert">@error</div> }
+            <div class="guardrail"><strong>Never accepted:</strong> actual labor, post-repair complications or completion outcomes.</div>
+        </section>
+        <section class="panel"><div class="panel-heading"><div><span class="panel-index">02</span><h2>Baseline</h2></div><span class="lock">Locked</span></div><div class="baseline-value"><strong>@baseline.Result.Prediction.PredictedLaborHours.ToString("0.000") h</strong><span>@baseline.Result.Prediction.ModelVersion</span></div><dl class="trace-list"><div><dt>Mileage</dt><dd>@baseline.BaselineInput.MileageKm.ToString("N0") km</dd></div><div><dt>Vehicle age</dt><dd>@baseline.BaselineInput.VehicleAgeYears years</dd></div><div><dt>Repair</dt><dd class="code">@baseline.BaselineInput.RepairCode</dd></div><div><dt>Conditions</dt><dd>@(baseline.BaselineInput.ExtractedConditions.Count == 0 ? "None" : string.Join(", ", baseline.BaselineInput.ExtractedConditions))</dd></div></dl></section>
+    </div>
+    <section class="panel scenario-results"><div class="panel-heading"><div><span class="panel-index">03</span><h2>Snapshot comparison</h2></div></div>
+        @if (Workspace.Scenarios.Count == 0) { <div class="empty-inline"><strong>No scenarios yet.</strong><p>Run at least two scenarios to compare model sensitivity.</p></div> }
+        else { <div class="scenario-grid">@foreach (var scenario in Workspace.Scenarios) { var delta = scenario.DeltaHours(baseline.Result.Prediction.PredictedLaborHours); <article class="scenario-card"><div><span class="tech-tag">@(scenario.FullEvidenceRefresh ? "FULL EVIDENCE" : "ML-ONLY")</span><h3>@scenario.Name</h3></div><strong>@scenario.Prediction.PredictedLaborHours.ToString("0.000") h</strong><p class="delta @(delta >= 0 ? "up" : "down")">@($"{delta:+0.000;-0.000;0.000} h") · @($"{scenario.DeltaPercent(baseline.Result.Prediction.PredictedLaborHours):+0.0;-0.0;0.0}%")</p><small>@scenario.Input.MileageKm.ToString("N0") km · @scenario.Input.VehicleAgeYears years · @scenario.Prediction.ModelVersion</small></article> }</div> }
+    </section>
+}
+
+@code {
+    private ScenarioDraft draft = new(); private bool running; private string? error;
+    protected override void OnInitialized() { InitializeDraft(); Workspace.Changed += StateChanged; }
+    private void InitializeDraft() { if (Workspace.Baseline is { } b) draft = new() { Name = $"Scenario {Workspace.Scenarios.Count + 1}", MileageKm = b.BaselineInput.MileageKm, VehicleAgeYears = b.BaselineInput.VehicleAgeYears, RepairCode = b.BaselineInput.RepairCode, VisibleCorrosion = b.BaselineInput.ExtractedConditions.Contains("VISIBLE_CORROSION") }; }
+    private async Task RunAsync() { running = true; error = null; try { await Coordinator.RunScenarioAsync(draft); InitializeDraft(); } catch (Exception ex) when (ex is ArgumentException or InvalidOperationException or AriApiException) { error = ex.Message; } finally { running = false; } }
+    private void StateChanged() => InvokeAsync(StateHasChanged);
+    public void Dispose() => Workspace.Changed -= StateChanged;
+}
