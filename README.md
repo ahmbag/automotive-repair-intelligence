@@ -136,6 +136,12 @@ dotnet test tests/ARI.Web.E2ETests --filter "Category=Live"
 
 See [grounding policy](docs/grounding-policy.md), [feature/leakage contract](docs/ml-feature-schema.md), and [candidate limitations](docs/release-scope-and-audit.md#known-limitations-and-open-boundaries).
 
+Security policy, publication boundaries, and responsible disclosure are documented in [`SECURITY.md`](SECURITY.md). The repeatable [01E release-hygiene review](docs/security-and-release-hygiene.md) covers Git history, configurations, screenshots, dependencies, and residual risks.
+
 ## Roadmap
 
 After the `ARI-RC1` evidence candidate, future work may add independent real-workshop validation, calibrated uncertainty intervals, stronger identity/tenant isolation, observability and deployment hardening, and broader repair operations. Those items are intentionally not represented as completed in this release candidate.
+
+## License
+
+ARI-owned code and documentation are available under the [MIT License](LICENSE). Third-party dependencies retain their own terms; see [Third-party notices](THIRD-PARTY-NOTICES.md). The SAP HANA .NET provider is separately licensed and is not redistributed by this repository.

@@ -7,6 +7,7 @@ name = "ari-ml"
 version = "0.1.0"
 description = "Training, evaluation, and inference boundary for Automotive Repair Intelligence"
 readme = "README.md"
+license = "MIT"
 requires-python = ">=3.11"
 dependencies = [
   "fastapi>=0.116,<1",
