@@ -1,6 +1,6 @@
 # ARI-SHOWCASE-01A–01D acceptance record
 
-**Candidate:** `ARI-RC1` / `0.1.0-rc.1`  
+**Candidate:** `ARI-RC1` / `0.1.0-rc.2`<br>
 **Scope:** only Showcase packages 01A, 01B, 01C, and 01D  
 **Date:** 2026-11-02
 
@@ -39,4 +39,3 @@
 ## Result
 
 **12/12 criteria pass for ARI-SHOWCASE-01A–01D.** Packages 01E–01H are intentionally not claimed or executed by this acceptance record.
-

@@ -1,6 +1,6 @@
 # Automotive Repair Intelligence
 
-> **Showcase candidate:** `ARI-RC1` (`0.1.0-rc.1`) · synthetic-data engineering demonstrator · not a production workshop system
+> **Showcase candidate:** `ARI-RC1` (`0.1.0-rc.2`) · synthetic-data engineering demonstrator · not a production workshop system
 
 Automotive Repair Intelligence (ARI) is an auditable repair-effort decision-support prototype. It turns a pre-repair workshop description into validated structured facts, predicts labor time with a versioned Ridge model, retrieves comparable synthetic repairs from SAP HANA Cloud, and generates an explanation that is restricted to those retrieved sources. A Blazor UI exposes the full workflow and lets reviewers compare controlled what-if scenarios without overwriting the baseline.
 
