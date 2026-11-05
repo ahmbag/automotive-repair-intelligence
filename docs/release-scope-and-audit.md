@@ -1,7 +1,7 @@
 # ARI-RC1 scope and repository audit
 
 **Candidate:** `ARI-RC1`  
-**Semantic version:** `0.1.0-rc.3` (see [`VERSION`](../VERSION))<br>
+**Semantic version:** `0.1.0-rc.4` (see [`VERSION`](../VERSION))<br>
 **Scope freeze date:** 2026-11-02  
 **Data classification:** synthetic only
 

@@ -135,9 +135,26 @@ public sealed class RepairUiAcceptanceTests : PageTest
     public async Task KeyboardNavigation()
     {
         await Page.GotoAsync($"{WebServerFixture.BaseUrl}/new");
-        await Page.Keyboard.PressAsync("Tab");
-        var tag = await Page.EvaluateAsync<string>("() => document.activeElement?.tagName ?? ''");
-        Assert.True(tag is "A" or "BUTTON" or "INPUT");
+
+        // Headless browsers do not share one platform-independent initial focus origin.
+        // Advance through a small, bounded number of tab stops and verify the actual
+        // accessibility contract: keyboard focus reaches a visible interactive control.
+        var interactiveFocusIsVisible = false;
+        for (var tabStop = 0; tabStop < 5 && !interactiveFocusIsVisible; tabStop++)
+        {
+            await Page.Keyboard.PressAsync("Tab");
+            interactiveFocusIsVisible = await Page.EvaluateAsync<bool>("""
+                () => {
+                    const element = document.activeElement;
+                    return element !== null
+                        && element !== document.body
+                        && ['A', 'BUTTON', 'INPUT', 'SELECT', 'TEXTAREA'].includes(element.tagName)
+                        && element.matches(':focus-visible');
+                }
+                """);
+        }
+
+        Assert.True(interactiveFocusIsVisible);
         await Page.Locator("#analyze-button").FocusAsync();
         await Page.Keyboard.PressAsync("Enter");
         await Page.WaitForURLAsync("**/case");
