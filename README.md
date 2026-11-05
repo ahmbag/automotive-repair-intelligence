@@ -86,17 +86,17 @@ The Ridge model uses a chronological 70/15/15 split and only seven features avai
 
 ## Getting started
 
-Prerequisites are the .NET 10 SDK and Python 3.11+. Live mode additionally requires reachable SAP HANA Cloud and OpenAI credentials. Never place credentials in tracked files.
+The release-candidate toolchain is pinned to .NET SDK 10.0.401 and Python 3.14.6. Live mode additionally requires reachable SAP HANA Cloud and OpenAI credentials. Never place credentials in tracked files.
 
 ```powershell
-dotnet restore AutomotiveRepairIntelligence.slnx
-dotnet build AutomotiveRepairIntelligence.slnx --no-restore
+dotnet restore AutomotiveRepairIntelligence.slnx --locked-mode
+dotnet build AutomotiveRepairIntelligence.slnx --configuration Release --no-restore
 
 python -m venv .venv
-.venv\Scripts\Activate.ps1
-python -m pip install -e ".\ml[test]"
+.venv\Scripts\python.exe -m pip install --requirement ml/requirements.lock
+.venv\Scripts\python.exe -m pip install --no-build-isolation --no-deps --editable ml
 $env:ARI_ML_ARTIFACT_DIR = "$PWD\artifacts\ml\ari-repair-duration-v1"
-python -m ari_ml.inference.api
+.venv\Scripts\python.exe -m ari_ml.inference.api
 ```
 
 In separate terminals, start the API and UI:
@@ -109,13 +109,17 @@ dotnet run --project src/ARI.Web --urls http://127.0.0.1:5200
 Configure HANA and OpenAI through .NET User Secrets or environment variables as described in [HANA connectivity](docs/hana-connectivity.md) and [LLM architecture](docs/llm-architecture.md). Then open `http://127.0.0.1:5200`. For an offline portfolio walkthrough, set `AriApi__UseFixture=true`; the UI displays a visible **AUTOMATED TEST DATA** banner.
 
 The implemented HTTP surface and response semantics are documented in [API contracts](docs/api-contract.md).
+The complete fresh-checkout, database preparation, model rebuild, service-start, and live-verification procedure is in [Reproducibility and CI](docs/reproducibility-and-ci.md).
 
 ## Testing
 
+The single local release gate performs locked restore, Release build, 121 deterministic public-checkout tests, browser acceptance, and the publication scan. Three additional Python tests exercise the intentionally unpublished trained model in the documented live gate:
+
 ```powershell
-dotnet test AutomotiveRepairIntelligence.slnx --no-build --filter "Category!=HanaIntegration&Category!=DataAcceptance&Category!=Live&Category!=LiveCapture"
-python -m unittest discover -s ml/tests -v
+& .\tools\validate-release.ps1
 ```
+
+The same test boundaries run on every push and pull request in [GitHub Actions](.github/workflows/ci.yml). Normal CI has read-only permissions, receives no provider secrets, and never invokes HANA or OpenAI. The current evidence is recorded in [ARI-SHOWCASE-01F acceptance](docs/showcase-01f-acceptance.md).
 
 Real HANA and complete browser acceptance are explicit opt-in suites:
 

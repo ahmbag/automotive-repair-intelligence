@@ -10,8 +10,10 @@ public sealed class WebServerFixture : IAsyncLifetime
     public async Task InitializeAsync()
     {
         var root = FindRepositoryRoot();
+        var configuration = new DirectoryInfo(AppContext.BaseDirectory).Parent?.Name ?? "Debug";
         var start = new ProcessStartInfo("dotnet",
-            $"run --project \"{Path.Combine(root, "src", "ARI.Web", "ARI.Web.csproj")}\" --no-build --no-launch-profile --urls {BaseUrl}")
+            $"run --project \"{Path.Combine(root, "src", "ARI.Web", "ARI.Web.csproj")}\" " +
+            $"--configuration {configuration} --no-build --no-launch-profile --urls {BaseUrl}")
         {
             WorkingDirectory = root,
             RedirectStandardOutput = true,

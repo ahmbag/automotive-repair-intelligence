@@ -2,16 +2,14 @@
 param()
 
 $ErrorActionPreference = 'Stop'
-$repositoryRoot = (git rev-parse --show-toplevel).Trim()
-if (-not $repositoryRoot) {
-    throw 'Run this script from inside the ARI Git repository.'
-}
+$repositoryRoot = Split-Path -Parent $PSScriptRoot
+$gitOptions = @('-c', "safe.directory=$repositoryRoot")
 
 Push-Location $repositoryRoot
 try {
     $failures = [System.Collections.Generic.List[string]]::new()
     # Include already tracked files and untracked, non-ignored files that would enter the next commit.
-    $publicationFiles = @(git ls-files --cached --others --exclude-standard)
+    $publicationFiles = @(& git @gitOptions ls-files --cached --others --exclude-standard)
 
     $forbiddenPaths = @(
         '(^|/)(bin|obj|\.venv|\.pytest_cache|TestResults|playwright-report|blob-report|logs?)(/|$)',
@@ -20,6 +18,10 @@ try {
         '(^|/)(secrets\.json|appsettings\.Local\.json)$'
     )
     foreach ($path in $publicationFiles) {
+        # The tracked template is intentionally value-free and is still scanned for secret patterns below.
+        if ($path -eq '.env.example') {
+            continue
+        }
         foreach ($pattern in $forbiddenPaths) {
             if ($path -match $pattern) {
                 $failures.Add("Forbidden tracked path: $path")
@@ -47,10 +49,10 @@ try {
         }
     }
 
-    $commits = @(git rev-list --all)
+    $commits = @(& git @gitOptions rev-list --all)
     foreach ($commit in $commits) {
         foreach ($entry in $secretPatterns.GetEnumerator()) {
-            $matches = @(git grep -n -I -E -e $entry.Value $commit -- ':!*.png' 2>$null)
+            $matches = @(& git @gitOptions grep -n -I -E -e $entry.Value $commit -- ':!*.png' 2>$null)
             if ($LASTEXITCODE -eq 0) {
                 foreach ($match in $matches) {
                     $location = ($match -split ':', 4)[0..2] -join ':'
@@ -95,6 +97,8 @@ try {
 
     Write-Host "Security audit passed: $($publicationFiles.Count) publication files and $($commits.Count) commit(s) scanned."
     Write-Host 'No known API-key/private-key/bearer pattern, committed secret config, or forbidden local artifact was found.'
+    # Leave a successful native exit code for callers and CI shells after expected git-grep no-match results.
+    & git @gitOptions rev-parse --is-inside-work-tree | Out-Null
 }
 finally {
     Pop-Location

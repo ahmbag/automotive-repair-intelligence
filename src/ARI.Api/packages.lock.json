@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "dependencies": {
+    "net10.0": {
+      "Sap.Data.Hana.Net.v10.0": {
+        "type": "Transitive",
+        "resolved": "2.30.27",
+        "contentHash": "qx4B0pDxgfmbusfNLfeh8dIXCKK1nFpqb6RV0oT75sv/pfXyaYhrkLTN8kDXpzJ9WaJI05bPZgtc0uIsZZYavQ=="
+      },
+      "ari.core": {
+        "type": "Project"
+      },
+      "ari.infrastructure": {
+        "type": "Project",
+        "dependencies": {
+          "ARI.Core": "[1.0.0, )",
+          "Sap.Data.Hana.Net.v10.0": "[2.30.27, )"
+        }
+      }
+    }
+  }
+}
