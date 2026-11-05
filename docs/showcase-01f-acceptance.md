@@ -1,6 +1,6 @@
 # ARI-SHOWCASE-01F acceptance record
 
-Candidate: `ARI-RC1` / `0.1.0-rc.2`<br>
+Candidate: `ARI-RC1` / `0.1.0-rc.3`<br>
 Execution date: 2026-11-05  
 Scope: reproducibility, deterministic CI path, and fresh live end-to-end regression
 
