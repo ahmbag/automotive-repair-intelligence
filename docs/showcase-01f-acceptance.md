@@ -49,11 +49,21 @@ The fresh 2026-11-05 execution produced:
 | ARI.Web `/health-ui` | PASS — HTTP 200, fixture mode disabled |
 | HANA integration and data acceptance | PASS — 16/16, no skips |
 | Trained-model acceptance | PASS — 3/3, no skips |
-| Live browser | **BLOCKED — 0/1; OpenAI Responses API returned HTTP 401** |
+| Live browser | PASS — 1/1 in 22 s, no skips |
 
-The browser failure is not a product assertion failure: API logs show that the configured OpenAI credential was rejected before extraction. No key value was logged or copied into the repository. The older green browser report is not used as a substitute. A valid replacement key and one rerun are required to close 01F.
+The successful rerun used an explicitly authorized temporary OpenAI key only in the `ARI.Api` process environment. It was not written to User Secrets, configuration, logs, screenshots, Git, or test artifacts; that process was stopped immediately after the run.
 
-Current fresh regression: **140 tests passed** (121 public-checkout + 3 trained-model + 16 HANA), **1 live browser test failed at provider authentication**. The 141-test release reference is therefore not yet re-established.
+Provider evidence from the successful run:
+
+- OpenAI LLM V3 extraction: HTTP 200, model `gpt-6-luna`, prompt `repair-extraction-v3`;
+- OpenAI embeddings: HTTP 200;
+- grounded explanation: HTTP 200 and restricted to the five retrieved source IDs;
+- Python Ridge inference: HTTP 200, `ari-repair-duration-v1`;
+- HANA retrieval: five `RANK_FUSION_V2` / `REPAIR_PROFILE_V2` sources;
+- baseline: 2.447 h; high mileage: 2.497 h; visible corrosion: 2.655 h;
+- baseline remained unchanged after both what-if runs.
+
+Final fresh regression: **141/141 tests passed** (121 public-checkout + 3 trained-model + 16 HANA + 1 live browser), with no skips in the live suites. The refreshed Repair Case 360° and intake screenshots contain synthetic data only and were visually rechecked for credentials and internal access information.
 
 ## Definition of Done
 
@@ -61,6 +71,6 @@ Current fresh regression: **140 tests passed** (121 public-checkout + 3 trained-
 | --- | --- | --- |
 | Documented .NET/Python environment builds from a fresh checkout | PASS | pinned toolchains, locks, [reproduction guide](reproducibility-and-ci.md), and isolated clone run |
 | Deterministic tests and GitHub CI succeed | PASS locally / hosted pending 01G | 121/121 from the public checkout; workflow has read-only permissions and no live secrets |
-| Fresh live E2E and final regression are documented | BLOCKED | current evidence recorded above; valid OpenAI credential and one live-browser rerun required |
+| Fresh live E2E and final regression are documented | PASS | all readiness gates HTTP 200; 16 HANA + 3 model + 1 browser acceptance tests passed |
 
 No unavailable or skipped live test is counted as a pass.
